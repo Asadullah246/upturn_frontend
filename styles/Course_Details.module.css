@@ -1,0 +1,252 @@
+.heroH1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 140.5%;
+    /* or 70px */
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: #252525;
+    margin-bottom: 30px;
+}
+
+.heroH3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140.5%;
+    /* or 42px */
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: #252525;
+    margin-top: 70px;
+
+}
+
+.imgCard1 {
+    margin:  34px 36px 36px 60px;
+}
+
+.heroH4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 132.69%;
+    /* or 34px */
+    color: #252525;
+}
+
+.heroP2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150.19%;
+    /* or 27px */
+
+    /* display: flex;
+    align-items: center; */
+    color: #252525;
+    /* margin-right: 40px; */
+}
+
+.heroIcon {
+    margin-left: 40px;
+}
+
+.heroMore {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 132.69%;
+    /* identical to box height, or 27px */
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #252525;
+}
+
+.cardTime {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 132.69%;
+    /* or 24px */
+    display: flex;
+    align-items: center;
+    color: #E76F51;
+}
+
+.cardPrice {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 132.69%;
+    /* identical to box height, or 48px */
+    display: flex;
+    align-items: center;
+    color: #1D1D1D;
+}
+
+.cardH6 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 132.69%;
+    /* identical to box height, or 27px */
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #414141;
+}
+
+.cardIP {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 132.69%;
+    /* or 21px */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #414141;margin-top: 5px;
+}
+
+.cardH5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 132.69%;
+    /* identical to box height, or 29px */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #1D1D1D;
+}
+
+.learnCard {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-right: 50px;
+    /* padding-left: 22px; */
+}
+
+.requirements {
+    /* padding: 40px, 0px, 30px, 40px; */
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140.5%;
+    /* or 42px */
+
+    text-transform: capitalize;
+
+    color: #E9C46A;
+}
+
+.requP {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150.19%;
+    /* or 24px */
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-right: 55px;
+}
+
+.content {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 140.5%;
+    /* or 42px */
+    margin-top: 69px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #252525;
+}
+
+.contentH4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 132.69%;
+    /* identical to box height, or 32px */
+    margin-bottom: 32px;
+    color: #414141;
+}
+
+/* .fixed_card {
+    position: fixed;
+} */
+
+.stickyCard {
+    position: -webkit-sticky; /*Safari */
+    position: sticky;
+    top: 20px;
+    /* float: none;
+    z-index: 6;
+    left: auto; */
+}
+
+/* @media (max-width: 767px) {
+    .stickyCard {
+      position: static;
+    }
+} */
+
+/* Course Content */
+
+.items {
+    padding: 28px, 24px 28px, 24px;
+    margin-bottom: 8px;
+}
+
+.faqH5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 132.69%;
+    /* identical to box height, or 32px */
+    color: #414141;
+}
+
+.faqP {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150.19%;
+    /* or 30px */
+    color: #414141;
+}

@@ -1,0 +1,39 @@
+.color_background {
+  background-color: #fefaed;
+}
+.heading_padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.element_gap {
+ gap: 10px;
+}
+.desktop_view {
+  display: flex;
+}
+
+.mobile_view {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+.mobile_img {
+  width: 100%;
+}
+.slick-dots {
+  /* styles for dots navigation */
+  bottom: -50px;
+}
+
+.slick-dots li button:before {
+  /* styles for dot itself */
+  font-size: 10px;
+  color: gray;
+}
+
+.slick-dots .slick-active button:before {
+  /* styles for active dot */
+  color: black;
+}
