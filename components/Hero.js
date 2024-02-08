@@ -12,10 +12,12 @@ const Hero = () => {
             className="c0[-12 col-sm-12 col-lg-6"
             style={{ marginTop: "143px" }}
           >
-            <h5 className={styles.h5}>Bright Your Future With</h5>
-            <h1 className={styles.h1}>Learn New Technology From All Experts</h1>
+
+            <h1 className={` ${styles.h1Extra} `}>Upturn Idea</h1>
+            <h5 className={` ${styles.h5} color-secondary my-3`}>Bright Your Future With</h5>
             <p className={styles.p}>
               Build skills with courses, certificates, and degrees online from
+              world-class universities and companies. Build skills with courses, certificates, and degrees online from
               world-class universities and companies.
             </p>
             {/* <div className={styles.btnn}>
@@ -25,10 +27,10 @@ const Hero = () => {
             <Link href="/virtual">
               <button
                 type="button"
-                style={{ marginTop: "41px" }}
+                style={{ marginTop: "30px" }}
                 className={styles.btm}
               >
-                Join Virtual Classroom
+                Our Courses
               </button>
             </Link>
           </div>

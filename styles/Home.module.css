@@ -38,7 +38,7 @@
 }
 
 /* Navbar */
-.btm {
+.btm2 {
   background: #e9c46a;
   font-family: "Poppins";
   font-style: normal;
@@ -53,34 +53,43 @@
   padding: 15px;
 }
 
-.button {
+/* .button {
   background: #e9c46a;
   border-radius: 6px;
   color: #252525;
   font-family: "Poppins";
-}
+} */
 
 .btm {
-  background: #e9c46a;
+  background: #d63384;
   font-family: "Poppins";
-  font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 132.69%;
+  /* font-size: 20px; */
+  /* line-height: 132.69%; */
   /* identical to box height, or 27px */
-  justify-content: end;
+  /* justify-content: end; */
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 500;
+  /* font-size: 20px; */
+  border-radius:35px ;
+  color:white ;
+  border: none;
+  padding:8px 25px ;
+  transition:transform ease-in-out 0.3s ;
+
+}
+
+.btm:hover {
+ opacity: 0.8 ;
 }
 /* .cardBox_size {
   height: 547px;
   width: 420px;
 } */
-.button:hover {
+/* .button:hover {
   background: #e9c46a;
   color: #252525;
-}
+} */
 
 /* .button:hover {
   background: #e9c46a;
@@ -119,9 +128,9 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 22px;
   line-height: 116.5%;
-  color: #252525;
+  /* color: #252525; */
 }
 
 .h1 {
@@ -136,12 +145,24 @@
   margin-top: 13px;
   margin-bottom: 42px;
 }
+.h1Extra {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 116.5%;
+  /* or 58px */
+  color: #252525;
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  margin-top: 13px;
+  /* margin-bottom: 42px; */
+}
 
 .p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  /* font-size: 22px; */
   line-height: 150%;
   /* or 33px */
   color: #414141;
