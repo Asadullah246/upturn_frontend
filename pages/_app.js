@@ -5,6 +5,8 @@ import SSRProvider from "react-bootstrap/SSRProvider";
 import Nav from "../components/Nav";
 import "../styles/globals.css";
 import Footer from "../components/Footer";
+import Navbar2 from "../components/Navbar2";
+import Header from "../components/header";
 
 
 
@@ -28,7 +30,8 @@ function MyApp({ Component, pageProps }) {
           --paragraph-font: ${paragraph_font.style.fontFamily};
         }
       `}</style> */}
-      <Nav></Nav>
+      {/* <Nav></Nav> */}
+      <Navbar2/>
       <SSRProvider>
         <Component {...pageProps} />
       </SSRProvider>

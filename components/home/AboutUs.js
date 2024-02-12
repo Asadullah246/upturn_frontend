@@ -5,13 +5,13 @@ import SupportIcon from "@mui/icons-material/Support";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div style={{marginTop:"120px"}}>
       <SectionTitle text={"About Upturn Idea"}></SectionTitle>
-      <div className="row">
+      <div className="row" style={{marginTop:"50px "}}>
         <div className="col-12 col-md-6 ">
           <img src="/home/new/abouUs.png" alt="About" className="h-75" />
         </div>
-        <div className="col-12 col-md-6 pe-3 "> 
+        <div className="col-12 col-md-6 pe-3 ">
           {/* <FontAwesomeIcon icon="fa-solid fa-envelope" />   */}
         {[...Array(3)].map((index, d)=>{
             return (

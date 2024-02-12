@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import { Container, Row, Col, Image, Accordion } from "react-bootstrap";
 
 import { useState } from "react";
+import SectionTitle from "./shared/SectionTitle";
 
 const Question = () => {
   const [selected, setSelected] = useState(null);
@@ -15,11 +16,10 @@ const Question = () => {
   };
 
   return (
-    <section className={`primary_background`}>
-      <div className="container">
-        <div className={styles.secHeader}>
-          <h1 className="text-center">Frequently Ask Questions</h1>
-        </div>
+    <section className={``} style={{marginTop:"120px"}}>
+
+      <SectionTitle text="Frequently Asked Questions"></SectionTitle>
+      <div className="container" style={{marginTop:"50px" }}>
         {data.map(({ question, answer }) => (
           <Accordion
             defaultActiveKey="0"
@@ -33,11 +33,11 @@ const Question = () => {
             </Accordion.Item>
           </Accordion>
         ))}
-        <div className="text-center" style={{ marginTop: "60px" }}>
+        {/* <div className="text-center" style={{ marginTop: "60px" }}>
           <button type="button" className={styles.btm}>
             View All FAQ
           </button>
-        </div>
+        </div> */} 
       </div>
     </section>
   );
