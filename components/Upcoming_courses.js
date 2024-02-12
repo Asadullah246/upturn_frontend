@@ -3,63 +3,6 @@ import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-// const upcommingCourses = [
-//   {
-//     title: "Microsoft office bundle course",
-//     images: "/home/courses/microsoftCourse.svg",
-//     time: "4 Months",
-//     starting_date: "Starts On 23 Dec - Ends On 08 Jan",
-//     mentor_image: "/home/courses/mentor/officeMentor.svg",
-//     mentorName: "David Junior",
-//     money: "৳1200",
-//   },
-//   {
-//     title: "Complete graphics design",
-//     images: "/home/courses/graphicCourse.svg",
-//     time: "4 Months",
-//     starting_date: "Starts On 22 Dec - Ends On 10 Jan",
-//     mentor_image: "/home/courses/mentor/graphicMentor.svg",
-//     mentorName: "David Junior",
-//     money: "৳2500",
-//   },
-//   {
-//     title: "Flutter app development",
-//     images: "/home/courses/flutterCourse.svg",
-//     time: "5 Months",
-//     starting_date: "Starts On 6 Jan - Ends On 22 Jan",
-//     mentor_image: "/home/courses/mentor/flutterMentor.svg",
-//     mentorName: "David Junior",
-//     money: "৳3800",
-//   },
-//   {
-//     title: "Data structure & algorithm with C programming",
-//     images: "/home/courses/datastructureCourse.svg",
-//     time: "3 Months",
-//     starting_date: "Starts On 2 Jan - Ends On 18 Jan",
-//     mentor_image: "/home/courses/mentor/datastructureMentor.svg",
-//     mentorName: "David Junior",
-//     money: "৳2200",
-//   },
-//   {
-//     title: "Complete web development with django",
-//     images: "/home/courses/webDevelopmentCourse.svg",
-//     time: "4 Months",
-//     starting_date: "Starts On 26 Dec - Ends On 15 Jan",
-//     mentor_image: "/home/courses/mentor/jangoMentor.svg",
-//     mentorName: "David Junior",
-//     money: "৳2500",
-//   },
-//   {
-//     title: "Python for data science",
-//     images: "/home/courses/PythonCourse.svg",
-//     time: "4 Months",
-//     starting_date: "Starts On 6 Jan - Ends On 22 Jan",
-//     mentor_image: "/home/courses/mentor/pythonMentor.svg",
-//     mentorName: "David Junior",
-//     money: "৳3500",
-//   },
-// ];
-
 const Upcoming_courses = ({
   image,
   title,
@@ -91,7 +34,7 @@ const Upcoming_courses = ({
               </div>
               <div className={`paragraph`}>
                 <h2 className={styles.titleHeader}>{title}</h2>
-                <p className={styles.starting_date}>{starting_date}</p>
+                <p className={` ${styles.starting_date} color-secondary  `}>{starting_date}</p>
               </div>
               <div
                 className={`d-flex align-items-center justify-content-between ${styles.cart_lastPadding}`}
@@ -108,7 +51,7 @@ const Upcoming_courses = ({
               </div>
             </div>
           </div>
-          <Link className={`${styles.Enroll_button}`} href={`/courses/${slug}`}>
+          <Link className={`${styles.Enroll_button} bg-color-primary text-white `} href={`/courses/${slug}`}>
             Enrolls Now
           </Link>
         </div>

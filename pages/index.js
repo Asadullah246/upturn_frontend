@@ -10,6 +10,11 @@ import LearnIndustry from "../components/LearnIndustry";
 import Upcoming_courses from "../components/Upcoming_courses";
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "../components/Slider";
+import AboutUs from "../components/home/AboutUs";
+import VideoSection from "../components/home/VideoSection";
+import TargetMarketPlace from "../components/home/TargetMarketPlace";
+import AboutCeo from "../components/home/AboutCeo";
+import PopularCourses from "../components/home/PopularCourses";
 
 // const Heading = Raleway({ weight: ["600", "700"], subsets: ["sans-serif"] });
 // const paragraph_font = Poppins({ weight: "500", subsets: ["sans-serif"] });
@@ -53,29 +58,14 @@ export default function Home(props) {
         ></script>
       </Head>
       <Hero />
+      <AboutUs/>
+      <VideoSection/>
+      <TargetMarketPlace/>
+      <AboutCeo/>
+      <PopularCourses courses={courses}/>
       <Service />
       <Career />
       <LearnIndustry />
-      <div className="container">
-        <div className="d-flex justify-content-center align-items-center">
-          <h1 className={styles.secHeader}>Our Upcoming Courses</h1>
-        </div>
-        <div className="row row-cols-1 row-cols-md-3 g-5">
-          {courses.courses.map((course) => (
-            <Upcoming_courses
-              key={course._id}
-              title={course.title}
-              image={course.images}
-              time={course.time}
-              starting_date={course.starting_date}
-              mentor_image={course.mentor_image}
-              mentorName={course.mentorName}
-              money={course.money}
-              slug={course.slug}
-            />
-          ))}
-        </div>
-      </div>
       <Slider />
       <Mentor />
       <Question />

@@ -1,3 +1,18 @@
+
+/* new css */
+
+.heroImg {
+  width:400px;
+  height:auto ;
+}
+/* new css end */
+
+
+
+
+
+
+
 .wapper {
   display: flex;
   height: 100vh;
@@ -60,28 +75,7 @@
   font-family: "Poppins";
 } */
 
-.btm {
-  background: #d63384;
-  font-family: "Poppins";
-  font-weight: 600;
-  /* font-size: 20px; */
-  /* line-height: 132.69%; */
-  /* identical to box height, or 27px */
-  /* justify-content: end; */
-  font-style: normal;
-  font-weight: 500;
-  /* font-size: 20px; */
-  border-radius:35px ;
-  color:white ;
-  border: none;
-  padding:8px 25px ;
-  transition:transform ease-in-out 0.3s ;
 
-}
-
-.btm:hover {
- opacity: 0.8 ;
-}
 /* .cardBox_size {
   height: 547px;
   width: 420px;
@@ -162,7 +156,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  /* font-size: 22px; */
+  font-size: 22px;
   line-height: 150%;
   /* or 33px */
   color: #414141;
@@ -307,7 +301,7 @@
   flex: start;
 }
 .starting_date {
-  color: #e76f51;
+  /* color: #e76f51; */
   margin-bottom: 64.42px;
   font-family: "Poppins";
   font-style: Medium;
@@ -343,7 +337,8 @@
 }
 .Enroll_button {
   /* margin-top: 30px; */
-  background-color: #e9c46a;
+  /* background-color: #e9c46a; */
+  color:white ; 
   padding-top: 15px;
   padding-bottom: 15.37px;
   display: flex;

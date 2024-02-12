@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
+import CustomButton from "./shared/CustomButton";
 
 const Hero = () => {
   return (
@@ -25,13 +26,12 @@ const Hero = () => {
                         </div> */}
             {/* <Button className={styles.button} size="lg" style={{marginTop:"41px"}}>Join Virtual Classroom</Button>{' '}  */}
             <Link href="/virtual">
-              <button
-                type="button"
-                style={{ marginTop: "30px" }}
-                className={styles.btm}
-              >
-                Our Courses
-              </button>
+
+ 
+              <CustomButton
+              style={{marginTop:"30px"}}
+              className=""
+              text={"Our Courses"} />
             </Link>
           </div>
 
