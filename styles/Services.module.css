@@ -17,6 +17,9 @@
 .svccard2:hover img[src="/icon/vector.svg"] {
   filter: brightness(0) invert(1);
 }
+.svccard2:hover .cardP{
+  color:white ; 
+}
 .svccard2:hover img[src="/home/ai_artificial_intelligence_chip_icon.png"] {
   filter: brightness(0) invert(1);
 }
@@ -105,7 +108,7 @@
 
 /* .ipic:hover {
     filter: invert(1);
-    
+
 } */
 
 /* Modal */

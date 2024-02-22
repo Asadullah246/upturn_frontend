@@ -13,8 +13,8 @@ const Contact = () => {
       <div className={styles.formBackground}>
         <div>
           <div className="mb-4">
-            <h4 className="color-primary fw-bolder ">FILL UP THE FORM!</h4>
-            <h2 className="fs-1 fw-bold">Get a call within 30 minutes</h2>
+            <h4 className="color-primary fw-bolder " style={{fontSize:"1.3rem"}} >FILL UP THE FORM!</h4>
+            <h2 className=" fw-bold">Get a call within 30 minutes</h2>
             <p className="mt-3 ls-2 ">
               Let us know the pain point of your business, our team will get
               back within 30 minutes in working days, holidays are exceptional.

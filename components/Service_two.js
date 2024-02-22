@@ -255,9 +255,9 @@ function ArtificialIntelligent(props) {
             className="text-center"
             style={{ marginTop: "60px", marginBottom: "40px" }}
           >
-            <button type="button" className={styles.btm}>
+            {/* <button type="button" className={styles.btm}>
               Contact Us
-            </button>
+            </button> */} 
           </div>
         </Container>
       </Modal.Header>
