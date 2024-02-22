@@ -7,7 +7,7 @@ import CustomButton from "./shared/CustomButton";
 const Hero = () => {
   return (
     <section
-    //  style={{ background: "#FEFAED" }} 
+    //  style={{ background: "#FEFAED" }}
      >
       <div className="container">
         <div className="row g-0">
@@ -27,7 +27,7 @@ const Hero = () => {
                             <button type="button" className="btn" >Join Virtual Classroom</button>
                         </div> */}
             {/* <Button className={styles.button} size="lg" style={{marginTop:"41px"}}>Join Virtual Classroom</Button>{' '}  */}
-            <Link href="/virtual">
+            <Link href="/courses"> 
 
 
               <CustomButton

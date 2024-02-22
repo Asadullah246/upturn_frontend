@@ -4,15 +4,17 @@ import ReactPlayer from "react-player";
 
 const VideoSection = () => {
   return (
-    <div>
+    <div style={{marginTop:"30px" }}>
       <ReactPlayer
-        url="https://youtu.be/fvf3e1Ae9w4?si=ei5UXazrqSEnLtsK"
+        url="https://youtu.be/UVAyIh5V4NY?si=43sXbXhxe7jDBLR_"
         controls={true}
         width="100%"
         height="60vw"
         // playIcon={true}
       />
     </div>
+
+
   );
 };
 

@@ -120,7 +120,7 @@ const slug = ({ myCourse }) => {
                             className={`text-center text-lg-start ${style.heroP2}`}
                           >
                             {/* Digital Content Creator <br /> */}
-                            Author, Basic Education
+                            Author, Upturn Idea
                           </p>
                         </div>
                       </div>
@@ -312,21 +312,21 @@ const slug = ({ myCourse }) => {
                     )}
                   </div>
                   <div className="d-grid mb-3" style={{ marginTop: "16px" }}>
-                    <a
+                    {/* <a
                       href={course.pdf_file}
                       className={`${styles.btm} text-center text-capitalize text-decoration-none`}
                       type="button"
                       target="_blank"
                     >
                       Show Full Details
-                    </a>
+                    </a> */}
                   </div>
                   <div className="col-5"></div>
                 </div>
 
-                {/* ======== Right card ======== */} 
+                {/* ======== Right card ======== */}
 
-                <div id="fixedDivId" style={{ position: isFixed ? 'fixed' : 'static', top: 0}} className="col-12 col-lg-5">
+                <div id="fixedDivId"  className="col-12 col-lg-5">
                   <div className={`mt-5 ${style.stickyCard}`}>
                     <div
                       className={`card border-0 shadow mb-3`}

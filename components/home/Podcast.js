@@ -12,7 +12,7 @@ const Podcast = () => {
             return(
                 <div key={index} className="col-12 col-md-6 col-lg-4">
                 <ReactPlayer
-                  url="https://youtu.be/fvf3e1Ae9w4?si=ei5UXazrqSEnLtsK"
+                  url="https://youtu.be/8RJHcPEjq9c?si=JZ5N5DQPN2U3Gd5-" 
                   controls={true}
                   width="100%"
                   height="350px"
