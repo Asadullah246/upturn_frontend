@@ -30,8 +30,8 @@ function MyApp({ Component, pageProps }) {
           --paragraph-font: ${paragraph_font.style.fontFamily};
         }
       `}</style> */}
-      {/* <Nav></Nav> */}
-      <Navbar2/>
+      <Nav></Nav>
+      {/* <Navbar2/> */}
       <SSRProvider>
         <Component {...pageProps} />
       </SSRProvider>

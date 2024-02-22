@@ -14,8 +14,8 @@ const Hero = () => {
             style={{ marginTop: "143px" }}
           >
 
-            <h1 className={` ${styles.h1Extra} `}>Upturn Idea</h1>
-            <h5 className={` ${styles.h5} color-secondary my-3`}>Bright Your Future With</h5>
+            <h1 className={` ${styles.h1Extra} color-secondary  `}>Upturn Idea</h1>
+            <h5 className={` ${styles.h5} color-primary my-3`}>Bright Your Future With</h5> 
             <p className={styles.p}>
               Build skills with courses, certificates, and degrees online from
               world-class universities and companies. Build skills with courses, certificates, and degrees online from
@@ -27,7 +27,7 @@ const Hero = () => {
             {/* <Button className={styles.button} size="lg" style={{marginTop:"41px"}}>Join Virtual Classroom</Button>{' '}  */}
             <Link href="/virtual">
 
- 
+
               <CustomButton
               style={{marginTop:"30px"}}
               className=""

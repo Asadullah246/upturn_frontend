@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="row ">
             <div className="col-lg-3 col-md-6  ">
               <div className="d-flex align-items-center  gap-2">
-                <img src="/home/short_logo.png" width="44px" height="49px" />
+                <img src="/mainLogo.png" width="44px" height="49px" /> 
                 <h3 className="mb-0 color-secondary fw-bold">Upturn Idea</h3>
               </div>
               <h4 className={"mt-3"}>Contact Us: </h4>

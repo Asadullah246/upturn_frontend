@@ -51,7 +51,7 @@ const Success = () => {
                                <div className={`${(index % 2== 0 )? "bg-color-primary" : "bg-color-secondary "}  p-2 `} style={{ width:"fit-content", borderRadius:"50%", margin:"auto auto" }}>
                                <Logo style={{fontSize:"2.8rem" ,  color:"white "}}/>
                                </div>
-                            <h4 className='mt-3 fw-semibold'> <span className='color-primary fw-bold '>{number}+ </span> <br />{sub}</h4>
+                            <h4 className='mt-3 fw-semibold'> <span className='color-primary fw-bold '>{number} </span> <br />{sub}</h4>
                             <p className='mt-3' style={{fontSize:"1.1em"}}>{desc}</p>
                         </div>
                         )

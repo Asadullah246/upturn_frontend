@@ -102,6 +102,8 @@
   font-weight: 500;
   font-size: 20px;
   color: #232323;
+  padding:20px ;
+  /* background-color:red; */
   margin-right: 41px;
   display: flex;
   align-items: center;
@@ -140,13 +142,14 @@
   margin-bottom: 42px;
 }
 .h1Extra {
-  font-family: "Raleway";
+  /* font-family: "Raleway"; */
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 70px;
   line-height: 116.5%;
   /* or 58px */
-  color: #252525;
+  /* color: #252525; */
   /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   margin-top: 13px;
   /* margin-bottom: 42px; */

@@ -13,7 +13,7 @@ const Upcoming_courses = ({
   money,
   slug,
 }) => {
-  console.log(image);
+  // console.log(image);
   return (
     <>
       <div className={`cardBox_size`}>

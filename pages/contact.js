@@ -3,120 +3,132 @@ import Contact from "../components/Contact";
 import styles from "../styles/contact.module.css";
 import Image from "next/image";
 import design from "/styles/Home.module.css";
+import TopHeader from "../components/shared/TopHeader";
+
 const contact = () => {
   return (
-    <section className={`primary_background`}>
-      <div className="container">
-        <div className={`row`}>
-          <div className={`col `}>
-            <div className={`${styles.textWrapper}`}>
-              <h1 className={design.h5}>Get in Touch</h1>
-              <p>
-                For Enroll problem or buying a project just any query just give
-                us message
-              </p>
+    <div>
+      <TopHeader pageName={"Contact Us"} />
+      <section
+        style={{ width: "85%", margin: "auto", marginTop: "80px" }} 
+        className={``}
+      >
+        <div className="">
+          <div className={`row row-cols-1 row-cols-lg-2`}>
+            <div className={`col mt-5`}>
+              <Contact />
             </div>
-            <div className={styles.contentWrapper}>
-              <div className={`d-flex gap-3 `}>
-                <div className={styles.iconPadding}>
-                  <span>
-                    <Image
-                      src="/icon/location.png"
-                      alt=""
-                      height="50"
-                      width="50"
-                    />
-                  </span>
-                </div>
-                <div>
-                  <b>
-                    <p>Address</p>
-                  </b>
-                  <p>V-19 Noorjahan Road, Mohammadpur, Dhaka-1207</p>
-                </div>
+            <div className={`col ps-md-4 mt-5  `}>
+              <div className={`${styles.textWrapper}`}>
+                <h4 className="color-primary fw-bolder ">CONTACT US</h4>
+                <h2 className="fs-1 fw-bold">Questions or ideas?</h2>
+                <p className="mt-3 ls-2 ">
+                  Unlock possibilities! Connect with us to explore solutions
+                  tailored to your needs. Let's collaborate and turn your vision
+                  into reality.
+                </p>
               </div>
-              <div className={`d-flex gap-3 ${styles.textWrapper}`}>
-                <div className={styles.iconPadding}>
-                  <span>
-                    <Image
-                      src="/icon/email.png"
-                      alt=""
-                      height="50"
-                      width="50"
-                    />
-                  </span>
-                </div>
-                <div>
-                  <b>
-                    <p>Email</p>
-                  </b>
-                  <p>basiceducation360@gmail.com</p>
-                </div>
-              </div>
-              <div className={`d-flex gap-3`}>
-                <div className={styles.iconPadding}>
-                  <span>
-                    <Image
-                      src="/icon/phone.png"
-                      alt=""
-                      height="50"
-                      width="50"
-                    />
-                  </span>
-                </div>
-                <div>
-                  <b>
-                    <p>Phone Number</p>
-                  </b>
+              <div className={styles.contentWrapper}>
+                <div className={`d-flex gap-3 `}>
+                  <div className={styles.iconPadding}>
+                    <span>
+                      <Image
+                        src="/newIcons/gps.png"
+                        alt=""
+                        height="50"
+                        width="50"
+                      />
+                    </span>
+                  </div>
                   <div>
-                    <p>+88015 6830 8586</p>
+                    <b>
+                      <p className="mb-0 pb-0 fw-bold  ">Address</p>
+                    </b>
+                    <p className=" ">
+                      V-19 Noorjahan Road, Mohammadpur, Dhaka-1207
+                    </p>
+                  </div>
+                </div>
+                <div className={`d-flex gap-3 ${styles.textWrapper}`}>
+                  <div className={styles.iconPadding}>
+                    <span>
+                      <Image
+                        src="/newIcons/email.png"
+                        alt=""
+                        height="50"
+                        width="50"
+                      />
+                    </span>
+                  </div>
+                  <div>
+                    <b>
+                      <p className="mb-0 pb-0 fw-bold  ">Email</p>
+                    </b>
+                    <p>basiceducation360@gmail.com</p>
+                  </div>
+                </div>
+                <div className={`d-flex gap-3`}>
+                  <div className={styles.iconPadding}>
+                    <span>
+                      <Image
+                        src="/newIcons/phone-call.png"
+                        alt=""
+                        height="50"
+                        width="50"
+                      />
+                    </span>
+                  </div>
+                  <div>
+                    <b>
+                      <p className="mb-0 pb-0 fw-bold  ">Phone Number</p>
+                    </b>
+                    <div>
+                      <p>+88015 6830 8586</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.socialSection}>
+                <div>
+                  <b>
+                    <p className="mt-2 fw-bold ">SOCIAL MEDIA</p>
+                  </b>
+
+                  <div className={`d-flex gap-3 align-items-center`}>
+                    <a href="https://www.facebook.com/">
+                      <Image
+                        className={styles.link}
+                        src="/newIcons/facebook.png"
+                        alt=""
+                        width="50"
+                        height="50"
+                      />
+                    </a>
+                    <a href="https://www.facebook.com/">
+                      <Image
+                        src="/newIcons/linkedin.png"
+                        alt=""
+                        width="50"
+                        height="50"
+                      />
+                    </a>
+                    <a href="https://www.facebook.com">
+                      <Image
+                        src="/newIcons/twitter.png"
+                        alt=""
+                        width="50"
+                        height="50"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className={styles.socialSection}>
-              <div>
-                <b>
-                  <p className="mt-2">SOCIAL MEDIA</p>
-                </b>
-
-                <div className={`d-flex gap-3 align-items-center`}>
-                  <a href="https://www.facebook.com/basiceducation0to100">
-                    <Image
-                      className={styles.link}
-                      src="/icon/facebook.png"
-                      alt=""
-                      width="50"
-                      height="50"
-                    />
-                  </a>
-                  <a href="https://www.facebook.com/basiceducation0to100">
-                    <Image
-                      src="/icon/linkedin.png"
-                      alt=""
-                      width="50"
-                      height="50"
-                    />
-                  </a>
-                  <a href="https://www.facebook.com/basiceducation0to100">
-                    <Image
-                      src="/icon/whatsapp.png"
-                      alt=""
-                      width="50"
-                      height="50"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
-          <div className={`col`}>
-            <Contact />
-          </div>
+          {/* <div className={`d-flex justify-content-spacebetween `}></div> */}
         </div>
-        {/* <div className={`d-flex justify-content-spacebetween `}></div> */}
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

@@ -15,7 +15,35 @@ const slug = ({ myCourse }) => {
     return <div>Loading...</div>;
   }
   const [course, setCourses] = useState(myCourse);
-  console.log(course.course);
+
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById('fixedDivId');
+      if (section) {
+        const sectionTop = section.offsetTop;
+        const scrollPosition = window.scrollY;
+        console.log("section top", sectionTop);
+        console.log("scrollPosition", scrollPosition);
+
+        // Check if the scroll position is greater than or equal to the section's top position
+        // If it is, fix the section
+        setIsFixed(scrollPosition >= sectionTop);
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  // console.log(course.course);
   return (
     <div>
       <Head>
@@ -200,7 +228,7 @@ const slug = ({ myCourse }) => {
                         width="9"
                         layout="fixed"
                       />
-                    </div> 
+                    </div>
                   </div> */}
 
                   {/*========== Requirements ==========*/}
@@ -296,9 +324,9 @@ const slug = ({ myCourse }) => {
                   <div className="col-5"></div>
                 </div>
 
-                {/* ======== Right card ======== */}
+                {/* ======== Right card ======== */} 
 
-                <div className="col-12 col-lg-5">
+                <div id="fixedDivId" style={{ position: isFixed ? 'fixed' : 'static', top: 0}} className="col-12 col-lg-5">
                   <div className={`mt-5 ${style.stickyCard}`}>
                     <div
                       className={`card border-0 shadow mb-3`}

@@ -17,11 +17,11 @@ const customStyles = {
 };
 
 const CustomButton = ({ text, style, className}) => {
-    console.log("sty", style );
+    // console.log("sty", style );
   return (
     <button
       type="button"
-      style={{...style, ...customStyles.btm }}
+      style={{...customStyles.btm , ...style }}
       className={`${className}`}
     >
       {text}

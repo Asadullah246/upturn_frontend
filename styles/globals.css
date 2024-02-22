@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Whisper&display=swap')
+
 :root {
   --text-white: white;
   --text-black: black;
@@ -63,6 +65,13 @@ body {
   overflow-x: hidden;
   font-family: var(--heading-font);
 }
+
+.baloo-2  {
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
 p {
   margin-top: 0px;
   margin-bottom: 0rem;
@@ -101,6 +110,19 @@ p{
   /* or 33px */
   color: #414141;
 }
+
+.custom-container {
+  width:85% ;
+  margin: 0 auto ;
+}
+@media screen and (max-width: 600px) {
+  .custom-container {
+    width:90% ;
+    margin: 0 auto ;
+  }
+}
+
+
 .primary_background {
   background-color: #fefaed;
   padding-top: 50px;
@@ -132,45 +154,29 @@ p{
   height: auto ;
 }
 
-/* dropdwon menu  -------------------------*/
-.mainParent{
-  position:relative;
+.activeNav{
+  background-color:#d63384 !important;
+  color:white !important ;
+  /* padding:10px !important;   */
 }
-.menu {
-  list-style-type: none;
-  display: inline-flex;
-  padding: 0;
-  position:relative; 
+a{
+  text-decoration:none !important;
 }
+.logoText{
+  color:#045280 ;
+  font-family: "Rubik", sans-serif;
+  font-weight:800 ;
+  margin-bottom:0;
+  padding-bottom:0;
 
-.menu li {
-  /* position: relative; */
-  margin-right: 20px;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0 !important;
-  right: 0;
-  width: 100vw !important; /* Set the width to 100% of the viewport width */
-  background-color: #fff;
-  border: 1px solid #ccc;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-
-/* dropdwon menu end */
 
 .color-primary {
   color:#d63384;
 }
 .color-secondary {
-  color:#0dcaf0;
+  color:#045280;
 }
 .color-white {
   color:white ;
@@ -204,6 +210,118 @@ p{
   color:#0dcaf0 !important;
   transform: translateX(5px);
 }
+.headingText{
+  font-weight:800 ;
+  font-size:3.7rem ;
+  letter-spacing: 2px;
+  /* font-family: "Rubik sans-serif "!important;  */
+  font-family: "Rubik", sans-serif !important;
+
+}
+.headingLink{
+  color:#d63384 ;
+}
+
+.dark-overlay {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* about us page  */
+
+.expDiv{
+  width:230px ;
+  height:140px ;
+  position:absolute;
+  top:0;
+  left:0;
+  clip-path: polygon(0% 0%, 86% 0%, 86% 85%,  100% 100%, 0% 100%) ;
+}
+
+.teamCard{
+  position:relative ;
+  border-radius:16px ;
+}
+.teamCardImg{
+  width:100% ;
+  border-radius:16px ;
+}
+.teamCardTextDiv{
+  position:absolute ;
+  width:90% ;
+  bottom:10px;
+  left:50% ;
+  transform: translate(-50%);
+  background-color:white;
+  border-radius:16px ;
+
+
+}
+.teamCardImg{
+  height:400px ;
+
+}
+
+.TeamCardIconsDiv {
+  width:100% ;
+  height:100% ;
+  position:relative ;
+}
+.TeamCardIconsDivInside{
+  position:absolute ;
+  top:-14px;
+  right:10px ;
+  z-index:9999 ;
+}
+.smallIcon{
+  width:40px ;
+  height:40px ;
+}
+.teamDescDiv{
+  position:absolute;
+  z-index : 3 ;
+  width:80% ;
+  height: 90% ;
+  top:50% ;
+  left:50% ;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius:16px ;
+  color:white ;
+  padding:20px ;
+  display:none;
+}
+
+
+.teamCard:hover .teamDescDiv {
+  display:block ;
+
+}
+.teamCard:hover .teamCardTextDiv{
+  display:none ;
+}
+
+
+
+
+
+
+/* about us page end */
+
+
+
+
+
+
+
+
+
+
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
