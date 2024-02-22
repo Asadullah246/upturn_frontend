@@ -60,7 +60,7 @@ const ContactUs = () => {
                   <b>
                     <p className="mb-0 pb-0 fw-bold  ">Email</p>
                   </b>
-                  <p>basiceducation360@gmail.com</p>
+                  <p>upturn@gmail.com</p>
                 </div>
               </div>
               <div className={`d-flex gap-3`}>
@@ -79,7 +79,7 @@ const ContactUs = () => {
                     <p className="mb-0 pb-0 fw-bold  ">Phone Number</p>
                   </b>
                   <div>
-                    <p>+88015 6830 8586</p>
+                    <p>+88015 4444 5555</p>
                   </div>
                 </div>
               </div>

@@ -6,7 +6,9 @@ import CustomButton from "./shared/CustomButton";
 
 const Hero = () => {
   return (
-    <section style={{ background: "#FEFAED" }}>
+    <section
+    //  style={{ background: "#FEFAED" }} 
+     >
       <div className="container">
         <div className="row g-0">
           <div
@@ -15,7 +17,7 @@ const Hero = () => {
           >
 
             <h1 className={` ${styles.h1Extra} color-secondary  `}>Upturn Idea</h1>
-            <h5 className={` ${styles.h5} color-primary my-3`}>Bright Your Future With</h5> 
+            <h5 className={` ${styles.h5} color-primary my-3`}>Bright Your Future With</h5>
             <p className={styles.p}>
               Build skills with courses, certificates, and degrees online from
               world-class universities and companies. Build skills with courses, certificates, and degrees online from

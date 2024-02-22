@@ -51,13 +51,13 @@ function NavBar() {
             className={`${styles.navitem} ${route=="/virtual" && "activeNav"}`}
             // href="/">
             href="/virtual">
-              Virtual Classroom
+             Blogs
             </Link>
             <Link
               id="RouterNavLink"
               className={`${styles.navitem} ${route=="/about-us" && "activeNav"}`}
               // href="/"
-              href="/about-us"
+              href="/blogs" 
             >
               About Us
             </Link>

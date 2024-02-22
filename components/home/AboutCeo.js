@@ -8,11 +8,11 @@ const AboutCeo = () => {
     <div className="container mx-auto " style={{ marginTop: "120px" }}>
       <SectionTitle text={"About CEO"}></SectionTitle>
       <div className="row align-items-center " style={{ marginTop: "60px" }}>
-        <div className="col-6 pe-5 " style={{ textAlign: "right" }}>
+        <div className="col-6 pe-5 " style={{ textAlign:"center"  }}>
           <img
             src="/home/new/mr_rayhan.jpg"
             alt=""
-            className={`mr-0   ${styles.heroImg}`}
+            className={`   ${styles.heroImg}`}
           />
         </div>
         <div className="col-6 ps-5">

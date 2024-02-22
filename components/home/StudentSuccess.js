@@ -32,8 +32,8 @@ const StudentSuccess = () => {
           })}
         </div>
 
-        <div className="col-12 col-md-6 text-end pe-4">
-          <img src="/home/new/success.png" alt="About" className="h-100" />
+        <div className="col-12 col-md-6 text-end ">
+          <img src="/home/new/success.png" alt="About" className="h-100 " />
         </div>
       </div>
     </div>

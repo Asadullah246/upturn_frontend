@@ -5,7 +5,7 @@ import SupportIcon from "@mui/icons-material/Support";
 
 const AboutUs = () => {
   return (
-    <div style={{marginTop:"120px"}}>
+    <div style={{marginTop:"120px" , padding:"0 30px "}}>
       <SectionTitle text={"About Upturn Idea"}></SectionTitle>
       <div className="row" style={{marginTop:"50px "}}>
         <div className="col-12 col-md-6 ">
