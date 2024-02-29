@@ -165,7 +165,7 @@ h6{
 
 .auto-container{
 	position:static;
-	max-width:1200px;
+	max-width:1250px; 
 	padding:0px 15px;
 	margin:0 auto;
 }
@@ -3516,7 +3516,8 @@ img{
     -o-transition: all 900ms ease;
 }
 
-.banner-section .active .patern-layer-one{
+/* .banner-section .active .patern-layer-one{ */
+.banner-section .patern-layer-one{
 	opacity:1;
 	transform: translateX(0px);
 }
@@ -3538,7 +3539,8 @@ img{
     -o-transition: all 900ms ease;
 }
 
-.banner-section .active .patern-layer-two{
+/* .banner-section .active .patern-layer-two{ */
+.banner-section .patern-layer-two{
 	transform: translateX(00px);
 	-webkit-transition-delay: 300ms;
 	-moz-transition-delay: 300ms;
@@ -3574,6 +3576,7 @@ img{
 	transition: all 1000ms ease;
 }
 
+/* .banner-section .content-column .title{ */
 .banner-section .active .content-column .title{
 	opacity: 1;
 	transform: scaleY(1);
@@ -3599,7 +3602,8 @@ img{
 	transition: all 1000ms ease;
 }
 
-.banner-section .active .content-column h1{
+/* .banner-section .active .content-column h1{ */
+.banner-section .content-column h1{
 	opacity: 1;
 	transform: scaleY(1);
 	-webkit-transition-delay: 600ms;
@@ -3621,7 +3625,8 @@ img{
 	transition: all 1000ms ease;
 }
 
-.banner-section .active .content-column .btns-box{
+/* .banner-section .active .content-column .btns-box{ */
+.banner-section .content-column .btns-box{
 	opacity: 1;
 	transform: scaleY(1);
 	-webkit-transition-delay: 1200ms;
@@ -3648,7 +3653,8 @@ img{
 	transition: all 1000ms ease;
 }
 
-.banner-section .active .image-column{
+/* .banner-section .active .image-column{ */
+.banner-section .image-column{
 	opacity: 1;
 	transform: scaleX(1);
 	-webkit-transition-delay: 600ms;
@@ -14984,7 +14990,8 @@ img{
 	transition: all 1000ms ease;
 }
 
-.banner-section-four .active .content-column .title{
+/* .banner-section-four .active .content-column .title{ */
+.banner-section-four  .content-column .title{
 	opacity: 1;
 	transform: scaleY(1);
 	-webkit-transition-delay: 300ms;
@@ -15009,7 +15016,8 @@ img{
 	transition: all 1000ms ease;
 }
 
-.banner-section-four .active .content-column h1{
+/* .banner-section-four .active .content-column h1{ */
+.banner-section-four  .content-column h1{
 	opacity: 1;
 	transform: scaleY(1);
 	-webkit-transition-delay: 600ms;
@@ -15031,7 +15039,8 @@ img{
 	transition: all 1000ms ease;
 }
 
-.banner-section-four .active .content-column .btns-box{
+/* .banner-section-four .active .content-column .btns-box{ */
+.banner-section-four  .content-column .btns-box{
 	opacity: 1;
 	transform: scaleY(1);
 	-webkit-transition-delay: 1200ms;
@@ -15058,7 +15067,8 @@ img{
 	transition: all 1000ms ease;
 }
 
-.banner-section-four .active .image-column{
+/* .banner-section-four .active .image-column{ */
+.banner-section-four .image-column{
 	opacity: 1;
 	transform: scaleX(1);
 	-webkit-transition-delay: 600ms;
@@ -15153,7 +15163,7 @@ img{
 }
 
 .banner-section-four .owl-nav .owl-prev{
-	position:absolute; 
+	position:absolute;
 	left:20px;
 	width:60px;
 	height:60px;

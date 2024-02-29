@@ -7,6 +7,13 @@ import "../styles/globals.css";
 import Footer from "../components/Footer";
 import Navbar2 from "../components/Navbar2";
 import Header from "../components/header";
+import Loader from "../components/shared/Loader";
+import HandlePreloader from "../components/shared/HandlePreloader";
+import HeaderStyle from "../components/shared/HeaderStyle";
+import SearchBox from "../components/shared/SearchBox";
+import HiddenBar from "../components/shared/HiddenBar";
+import HiddenBar2 from "../components/shared/Hiddenbar2";
+import HiddenBarMenuConfig from "../components/shared/HiddenBarMenuConfig";
 
 
 
@@ -31,11 +38,24 @@ function MyApp({ Component, pageProps }) {
         }
       `}</style> */}
       {/* <Nav></Nav> */}
-      {/* <Navbar2/> */} 
+      {/* <Navbar2/> */}
+      <Loader/>
+      <HandlePreloader/>
+      <HeaderStyle/>
+      <SearchBox/>
+      <HiddenBar/>
+      <HiddenBar2/>
+      <HiddenBarMenuConfig/> 
+
+
+
+
       <SSRProvider>
         <Component {...pageProps} />
       </SSRProvider>
-      <Footer></Footer>
+      <Footer>
+
+      </Footer>
     </>
   );
 }
