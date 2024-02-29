@@ -1,0 +1,198 @@
+/* Top Card */
+
+.topCard {
+  background: #1d1d1d;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.check {
+  background-image: url("/icon/vector.svg");
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+}
+
+/* hover effect for icon */
+.svccard2:hover img[src="/icon/vector.svg"] {
+  filter: brightness(0) invert(1);
+}
+.svccard2:hover .cardP{
+  color:white ; 
+}
+.svccard2:hover img[src="/home/ai_artificial_intelligence_chip_icon.png"] {
+  filter: brightness(0) invert(1);
+}
+.svccard2:hover img[src="/home/webIcon.png"] {
+  filter: brightness(0) invert(1);
+}
+.svccard2:hover img[src="/home/appDevelopmentIcon.png"] {
+  filter: brightness(0) invert(1);
+}
+.topCardText {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 116.5%;
+  /* identical to box height, or 70px */
+  margin-top: 82px;
+  margin-bottom: 82px;
+  /* margin-left: 377px; */
+  color: #ffffff;
+}
+
+/* Service Card */
+
+.svccard2 {
+  background: #ffffff;
+  box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  /* margin-top: 80px; */
+  background-image: url("/icon/vector.svg") no-repeat;
+  color: #252525;
+  /* filter: invert(1); */
+  cursor: pointer;
+}
+.svccard3 {
+  background: #ffffff;
+  box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  color: #252525;
+}
+
+.h6 {
+  font-family: "Raleway";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 132.69%;
+  /* identical to box height, or 32px */
+  text-transform: capitalize;
+  margin-left: 40px;
+  padding-top: 84px;
+}
+
+.cardP {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 132.69%;
+  /* or 27px */
+  /* color: #414141; */
+  margin: 16px 15px 46px 40px;
+  padding-bottom: 40px;
+}
+
+.ipic {
+  position: relative;
+  left: -40px;
+  top: 40px;
+  /* filter: invert(100%); */
+}
+
+.svccard2:hover {
+  background: #1d1d1d;
+  color: #ffffff;
+  /* filter: invert(1); */
+  /* background: url("/icon/Group (1).png") no-repeat; */
+}
+
+.svccard3:hover {
+  background: #1d1d1d;
+  color: #ffffff;
+
+  /* filter: invert(1); */
+}
+
+/* .ipic:hover {
+    filter: invert(1);
+
+} */
+
+/* Modal */
+
+.modalH1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 140.5%;
+  /* identical to box height, or 65px */
+  color: #252525;
+}
+
+.modalP1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 155.7%;
+  /* or 34px */
+  color: #414141;
+}
+
+.modalP2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150.19%;
+  /* identical to box height, or 30px */
+  color: #414141;
+}
+
+.modalH3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 140.5%;
+  color: #252525;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.modalBtn {
+  position: absolute;
+  top: 30px;
+}
+
+.Btn {
+  background: #737373;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  padding: 15px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 132.69%;
+  justify-content: end;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.modal-header .btn-close {
+  position: absolute;
+  top: -255px !important;
+  margin-top: -300px !important;
+}
+
+.modal-header .closeButton {
+  margin-top: -300px !important;
+}
+
+.modal-header .close {
+  position: absolute;
+  right: 15px;
+  top: -255px !important;
+}
+
+.imgsize {
+  height: 300px;
+  width: 400px;
+}

@@ -1,0 +1,48 @@
+/*** Service ***/
+.serviceItem {
+  background: var(--light);
+  transition: 0.5s;
+  pointer: mouseover;
+}
+
+.serviceItem:hover {
+  margin-top: -10px;
+  /* background: var(--primary); */
+}
+
+/* .serviceItem * {
+  transition: 0.5s;
+} */
+
+.serviceItem:hover * {
+  color: var(--light) !important;
+}
+.button {
+  background: #e9c46a;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 132.69%;
+  justify-content: end;
+  color: #252525;
+  border-radius: 6px;
+  border: none;
+  padding: 15px;
+  width: 21%;
+}
+.buttonSize {
+  text-decoration: none;
+  height: auto;
+}
+.svccard2 {
+  background: #ffffff;
+  box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  color: #252525;
+  cursor: pointer;
+}
+.svccard2:hover {
+  background: #1d1d1d;
+  color: #ffffff;
+}
