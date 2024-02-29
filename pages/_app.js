@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
       <SearchBox/>
       <HiddenBar/>
       <HiddenBar2/>
-      <HiddenBarMenuConfig/> 
+      <HiddenBarMenuConfig/>
 
 
 
