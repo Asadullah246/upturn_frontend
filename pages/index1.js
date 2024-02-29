@@ -1,17 +1,7 @@
-"user client";
 import Head from "next/head";
 import React from "react";
-// import OwlCarousel from "react-owl-carousel";
 
-// Dynamic import of react-owl-carousel
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
-  ssr: false, // Disable server-side rendering
-});
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import dynamic from "next/dynamic";
-
-const NewHome = () => {
+const Index1 = () => {
   return (
     <div>
       <Head>
@@ -20,6 +10,10 @@ const NewHome = () => {
           href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet"
+        ></link>
 
         {/* font end */}
 
@@ -74,14 +68,13 @@ const NewHome = () => {
         {/* js end */}
       </Head>
 
-      {/* main content  */}
-
+      {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
-          {/* <div className="preloader">
+          <div className="preloader">
             <div className="box" />
-          </div> */}
+          </div>
           {/* Main Header*/}
           <header className="main-header header-style-one">
             {/*Header-Upper*/}
@@ -90,7 +83,7 @@ const NewHome = () => {
                 <div className="pull-left logo-box">
                   <div className="logo">
                     <a href="index.html">
-                      <img src="/newupdate/images/logo.png" alt="" title="" />
+                      <img src="images/logo.png" alt="" title="" />
                     </a>
                   </div>
                 </div>
@@ -446,11 +439,7 @@ const NewHome = () => {
                 {/*Logo*/}
                 <div className="logo pull-left">
                   <a href="index.html" title="">
-                    <img
-                      src="/newupdate/images/logo-small.png"
-                      alt=""
-                      title=""
-                    />
+                    <img src="images/logo-small.png" alt="" title="" />
                   </a>
                 </div>
                 {/*Right Col*/}
@@ -489,7 +478,7 @@ const NewHome = () => {
               <nav className="menu-box">
                 <div className="nav-logo">
                   <a href="index.html">
-                    <img src="/newupdate/images/logo-3.png" alt="" title="" />
+                    <img src="images/logo-3.png" alt="" title="" />
                   </a>
                 </div>
                 <div className="menu-outer">
@@ -500,23 +489,20 @@ const NewHome = () => {
             {/* End Mobile Menu */}
           </header>
           {/* End Main Header */}
-
-
-             {/* Banner Section Four */}
-             <section className="banner-section-four">
-            <div className="main-slider-carousel ">
+          {/* Banner Section Four */}
+          <section className="banner-section-four">
+            <div className="main-slider-carousel owl-carousel owl-theme">
               <div
                 className="slide"
                 style={{
-                  backgroundImage:
-                    "url(/newupdate/images/main-slider/image-2.jpg)",
+                  backgroundImage: "url(images/main-slider/image-2.jpg)",
                 }}
               >
                 <div
                   className="dotted-layer"
                   style={{
                     backgroundImage:
-                      "url(/newupdate/images/main-slider/dotted-layer-1.png)",
+                      "url(images/main-slider/dotted-layer-1.png)",
                   }}
                 />
                 <div className="auto-container">
@@ -549,20 +535,152 @@ const NewHome = () => {
                       <div className="inner-column">
                         <div className="image">
                           <img
-                            src="/newupdate/images/main-slider/content-image-2.png"
+                            src="images/main-slider/content-image-2.png"
                             alt=""
                           />
                         </div>
                         <div className="images-icons parallax-scene-1">
                           <div className="image-1" data-depth="0.50">
                             <img
-                              src="/newupdate/images/main-slider/content-image-3.png"
+                              src="images/main-slider/content-image-3.png"
                               alt=""
                             />
                           </div>
                           <div className="image-2" data-depth="0.50">
                             <img
-                              src="/newupdate/images/main-slider/content-image-4.png"
+                              src="images/main-slider/content-image-4.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="slide"
+                style={{
+                  backgroundImage: "url(images/main-slider/image-2.jpg)",
+                }}
+              >
+                <div
+                  className="dotted-layer"
+                  style={{
+                    backgroundImage:
+                      "url(images/main-slider/dotted-layer-1.png)",
+                  }}
+                />
+                <div className="auto-container">
+                  <div className="row clearfix">
+                    {/* Content Column */}
+                    <div className="content-column col-lg-6 col-md-12 col-sm-12">
+                      <div className="inner-column">
+                        <div className="title">What’s Your SEO Score</div>
+                        <h1>
+                          SEO Services Provide <br /> For Your Agency
+                        </h1>
+                        <div className="btns-box">
+                          <a
+                            href="about.html"
+                            className="theme-btn btn-style-eight"
+                          >
+                            <span className="txt">Lets Start</span>
+                          </a>
+                          <a
+                            href="contact.html"
+                            className="theme-btn btn-style-nine"
+                          >
+                            <span className="txt">Contact Now</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Image Column */}
+                    <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                      <div className="inner-column">
+                        <div className="image">
+                          <img
+                            src="images/main-slider/content-image-2.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="images-icons parallax-scene-1">
+                          <div className="image-1" data-depth="0.50">
+                            <img
+                              src="images/main-slider/content-image-3.png"
+                              alt=""
+                            />
+                          </div>
+                          <div className="image-2" data-depth="0.50">
+                            <img
+                              src="images/main-slider/content-image-4.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="slide"
+                style={{
+                  backgroundImage: "url(images/main-slider/image-2.jpg)",
+                }}
+              >
+                <div
+                  className="dotted-layer"
+                  style={{
+                    backgroundImage:
+                      "url(images/main-slider/dotted-layer-1.png)",
+                  }}
+                />
+                <div className="auto-container">
+                  <div className="row clearfix">
+                    {/* Content Column */}
+                    <div className="content-column col-lg-6 col-md-12 col-sm-12">
+                      <div className="inner-column">
+                        <div className="title">What’s Your SEO Score</div>
+                        <h1>
+                          SEO Services Provide <br /> For Your Agency
+                        </h1>
+                        <div className="btns-box">
+                          <a
+                            href="about.html"
+                            className="theme-btn btn-style-eight"
+                          >
+                            <span className="txt">Lets Start</span>
+                          </a>
+                          <a
+                            href="contact.html"
+                            className="theme-btn btn-style-nine"
+                          >
+                            <span className="txt">Contact Now</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Image Column */}
+                    <div className="image-column col-lg-6 col-md-12 col-sm-12">
+                      <div className="inner-column">
+                        <div className="image">
+                          <img
+                            src="images/main-slider/content-image-2.png"
+                            alt=""
+                          />
+                        </div>
+                        <div className="images-icons parallax-scene-1">
+                          <div className="image-1" data-depth="0.50">
+                            <img
+                              src="images/main-slider/content-image-3.png"
+                              alt=""
+                            />
+                          </div>
+                          <div className="image-2" data-depth="0.50">
+                            <img
+                              src="images/main-slider/content-image-4.png"
                               alt=""
                             />
                           </div>
@@ -631,14 +749,14 @@ const NewHome = () => {
                       className="pattern-layer-one"
                       style={{
                         backgroundImage:
-                          "url(/newupdate/images/icons/service-pattern.png)",
+                          "url(images/icons/service-pattern.png)",
                       }}
                     />
                     <div
                       className="pattern-layer-two"
                       style={{
                         backgroundImage:
-                          "url(/newupdate/images/icons/service-pattern-2.png)",
+                          "url(images/icons/service-pattern-2.png)",
                       }}
                     />
                     <div className="icon-box">
@@ -668,14 +786,14 @@ const NewHome = () => {
                       className="pattern-layer-one"
                       style={{
                         backgroundImage:
-                          "url(/newupdate/images/icons/service-pattern.png)",
+                          "url(images/icons/service-pattern.png)",
                       }}
                     />
                     <div
                       className="pattern-layer-two"
                       style={{
                         backgroundImage:
-                          "url(/newupdate/images/icons/service-pattern-2.png)",
+                          "url(images/icons/service-pattern-2.png)",
                       }}
                     />
                     <div className="icon-box">
@@ -705,14 +823,14 @@ const NewHome = () => {
                       className="pattern-layer-one"
                       style={{
                         backgroundImage:
-                          "url(/newupdate/images/icons/service-pattern.png)",
+                          "url(images/icons/service-pattern.png)",
                       }}
                     />
                     <div
                       className="pattern-layer-two"
                       style={{
                         backgroundImage:
-                          "url(/newupdate/images/icons/service-pattern-2.png)",
+                          "url(images/icons/service-pattern-2.png)",
                       }}
                     />
                     <div className="icon-box">
@@ -742,14 +860,14 @@ const NewHome = () => {
                       className="pattern-layer-one"
                       style={{
                         backgroundImage:
-                          "url(/newupdate/images/icons/service-pattern.png)",
+                          "url(images/icons/service-pattern.png)",
                       }}
                     />
                     <div
                       className="pattern-layer-two"
                       style={{
                         backgroundImage:
-                          "url(/newupdate/images/icons/service-pattern-2.png)",
+                          "url(images/icons/service-pattern-2.png)",
                       }}
                     />
                     <div className="icon-box">
@@ -775,10 +893,7 @@ const NewHome = () => {
           <section className="about-section style-two">
             <div
               className="circle-layer"
-              style={{
-                backgroundImage:
-                  "url(/newupdate/images/icons/about-circle.png)",
-              }}
+              style={{ backgroundImage: "url(images/icons/about-circle.png)" }}
             />
             <div className="auto-container">
               <div className="row clearfix">
@@ -786,10 +901,7 @@ const NewHome = () => {
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={1}>
-                      <img
-                        src="/newupdate/images/resource/about-1.png"
-                        alt=""
-                      />
+                      <img src="images/resource/about-1.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -826,7 +938,7 @@ const NewHome = () => {
             <div className="auto-container">
               {/* Sec Title */}
               <div className="sec-title centered">
-                <div className="">Our Services</div>
+                <div className="title">Our Services</div>
                 <h2>You Take Growth For Business</h2>
               </div>
               <div className="inner-container">
@@ -838,29 +950,25 @@ const NewHome = () => {
                       <div
                         className="icon-one"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
+                          backgroundImage: "url(images/icons/icon-1.png)",
                         }}
                       />
                       <div
                         className="icon-two"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
+                          backgroundImage: "url(images/icons/icon-2.png)",
                         }}
                       />
                       <div
                         className="icon-three"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
+                          backgroundImage: "url(images/icons/icon-19.png)",
                         }}
                       />
                       <div
                         className="icon-four"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
+                          backgroundImage: "url(images/icons/icon-4.png)",
                         }}
                       />
                       <div className="icon-box">
@@ -883,29 +991,25 @@ const NewHome = () => {
                       <div
                         className="icon-one"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
+                          backgroundImage: "url(images/icons/icon-1.png)",
                         }}
                       />
                       <div
                         className="icon-two"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
+                          backgroundImage: "url(images/icons/icon-2.png)",
                         }}
                       />
                       <div
                         className="icon-three"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
+                          backgroundImage: "url(images/icons/icon-19.png)",
                         }}
                       />
                       <div
                         className="icon-four"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
+                          backgroundImage: "url(images/icons/icon-4.png)",
                         }}
                       />
                       <div className="icon-box">
@@ -927,29 +1031,25 @@ const NewHome = () => {
                       <div
                         className="icon-one"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
+                          backgroundImage: "url(images/icons/icon-1.png)",
                         }}
                       />
                       <div
                         className="icon-two"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
+                          backgroundImage: "url(images/icons/icon-2.png)",
                         }}
                       />
                       <div
                         className="icon-three"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
+                          backgroundImage: "url(images/icons/icon-19.png)",
                         }}
                       />
                       <div
                         className="icon-four"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
+                          backgroundImage: "url(images/icons/icon-4.png)",
                         }}
                       />
                       <div className="icon-box">
@@ -971,29 +1071,25 @@ const NewHome = () => {
                       <div
                         className="icon-one"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
+                          backgroundImage: "url(images/icons/icon-1.png)",
                         }}
                       />
                       <div
                         className="icon-two"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
+                          backgroundImage: "url(images/icons/icon-2.png)",
                         }}
                       />
                       <div
                         className="icon-three"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
+                          backgroundImage: "url(images/icons/icon-19.png)",
                         }}
                       />
                       <div
                         className="icon-four"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
+                          backgroundImage: "url(images/icons/icon-4.png)",
                         }}
                       />
                       <div className="icon-box">
@@ -1015,29 +1111,25 @@ const NewHome = () => {
                       <div
                         className="icon-one"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
+                          backgroundImage: "url(images/icons/icon-1.png)",
                         }}
                       />
                       <div
                         className="icon-two"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
+                          backgroundImage: "url(images/icons/icon-2.png)",
                         }}
                       />
                       <div
                         className="icon-three"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
+                          backgroundImage: "url(images/icons/icon-19.png)",
                         }}
                       />
                       <div
                         className="icon-four"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
+                          backgroundImage: "url(images/icons/icon-4.png)",
                         }}
                       />
                       <div className="icon-box">
@@ -1059,29 +1151,25 @@ const NewHome = () => {
                       <div
                         className="icon-one"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
+                          backgroundImage: "url(images/icons/icon-1.png)",
                         }}
                       />
                       <div
                         className="icon-two"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
+                          backgroundImage: "url(images/icons/icon-2.png)",
                         }}
                       />
                       <div
                         className="icon-three"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
+                          backgroundImage: "url(images/icons/icon-19.png)",
                         }}
                       />
                       <div
                         className="icon-four"
                         style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
+                          backgroundImage: "url(images/icons/icon-4.png)",
                         }}
                       />
                       <div className="icon-box">
@@ -1213,15 +1301,12 @@ const NewHome = () => {
           <section
             className="call-to-action-section style-two"
             style={{
-              backgroundImage:
-                "url(/newupdate/images/background/map-pattern.png)",
+              backgroundImage: "url(images/background/map-pattern.png)",
             }}
           >
             <div
               className="circle-layer"
-              style={{
-                backgroundImage: "url(/newupdate/images/resource/cta-bg.png)",
-              }}
+              style={{ backgroundImage: "url(images/resource/cta-bg.png)" }}
             />
             <div className="auto-container">
               <div className="row clearfix">
@@ -1241,7 +1326,7 @@ const NewHome = () => {
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img src="/newupdate/images/resource/cta.png" alt="" />
+                      <img src="images/resource/cta.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -1281,10 +1366,7 @@ const NewHome = () => {
                     </ul>
                     <div className="image">
                       <a href="team-detail.html">
-                        <img
-                          src="/newupdate/images/resource/team-12.jpg"
-                          alt=""
-                        />
+                        <img src="images/resource/team-12.jpg" alt="" />
                       </a>
                     </div>
                     <div className="lower-content">
@@ -1318,10 +1400,7 @@ const NewHome = () => {
                     </ul>
                     <div className="image">
                       <a href="team-detail.html">
-                        <img
-                          src="/newupdate/images/resource/team-13.jpg"
-                          alt=""
-                        />
+                        <img src="images/resource/team-13.jpg" alt="" />
                       </a>
                     </div>
                     <div className="lower-content">
@@ -1355,10 +1434,7 @@ const NewHome = () => {
                     </ul>
                     <div className="image">
                       <a href="team-detail.html">
-                        <img
-                          src="/newupdate/images/resource/team-14.jpg"
-                          alt=""
-                        />
+                        <img src="images/resource/team-14.jpg" alt="" />
                       </a>
                     </div>
                     <div className="lower-content">
@@ -1377,33 +1453,23 @@ const NewHome = () => {
           <section className="testimonial-section">
             <div
               className="icon-layer-one"
-              style={{
-                backgroundImage: "url(/newupdate/images/icons/icon-3.png)",
-              }}
+              style={{ backgroundImage: "url(images/icons/icon-3.png)" }}
             />
             <div
               className="icon-layer-two"
-              style={{
-                backgroundImage: "url(/newupdate/images/icons/icon-7.png)",
-              }}
+              style={{ backgroundImage: "url(images/icons/icon-7.png)" }}
             />
             <div
               className="icon-layer-three"
-              style={{
-                backgroundImage: "url(/newupdate/images/icons/icon-8.png)",
-              }}
+              style={{ backgroundImage: "url(images/icons/icon-8.png)" }}
             />
             <div
               className="icon-layer-four"
-              style={{
-                backgroundImage: "url(/newupdate/images/icons/icon-9.png)",
-              }}
+              style={{ backgroundImage: "url(images/icons/icon-9.png)" }}
             />
             <div
               className="icon-layer-five"
-              style={{
-                backgroundImage: "url(/newupdate/images/icons/icon-10.png)",
-              }}
+              style={{ backgroundImage: "url(images/icons/icon-10.png)" }}
             />
             <div className="auto-container">
               {/* Sec Title */}
@@ -1424,10 +1490,7 @@ const NewHome = () => {
                     <div className="pattern-layer" />
                     <div className="author-image-outer">
                       <div className="author-image">
-                        <img
-                          src="/newupdate/images/resource/author-1.png"
-                          alt=""
-                        />
+                        <img src="images/resource/author-1.png" alt="" />
                       </div>
                       <div className="rating">
                         <span className="fa fa-star" />
@@ -1454,10 +1517,7 @@ const NewHome = () => {
                     <div className="pattern-layer" />
                     <div className="author-image-outer">
                       <div className="author-image">
-                        <img
-                          src="/newupdate/images/resource/author-2.png"
-                          alt=""
-                        />
+                        <img src="images/resource/author-2.png" alt="" />
                       </div>
                       <div className="rating">
                         <span className="fa fa-star" />
@@ -1485,10 +1545,7 @@ const NewHome = () => {
                     <div className="pattern-layer" />
                     <div className="author-image-outer">
                       <div className="author-image">
-                        <img
-                          src="/newupdate/images/resource/author-1.png"
-                          alt=""
-                        />
+                        <img src="images/resource/author-1.png" alt="" />
                       </div>
                       <div className="rating">
                         <span className="fa fa-star" />
@@ -1515,10 +1572,7 @@ const NewHome = () => {
                     <div className="pattern-layer" />
                     <div className="author-image-outer">
                       <div className="author-image">
-                        <img
-                          src="/newupdate/images/resource/author-2.png"
-                          alt=""
-                        />
+                        <img src="images/resource/author-2.png" alt="" />
                       </div>
                       <div className="rating">
                         <span className="fa fa-star" />
@@ -1549,15 +1603,13 @@ const NewHome = () => {
             <div
               className="pattern-layer"
               style={{
-                backgroundImage:
-                  "url(/newupdate/images/background/pattern-1.png)",
+                backgroundImage: "url(images/background/pattern-1.png)",
               }}
             />
             <div
               className="pattern-layer-two"
               style={{
-                backgroundImage:
-                  "url(/newupdate/images/background/pattern-20.png)",
+                backgroundImage: "url(images/background/pattern-20.png)",
               }}
             />
             <div className="auto-container">
@@ -1597,7 +1649,7 @@ const NewHome = () => {
                               className="price-pattern-layer"
                               style={{
                                 backgroundImage:
-                                  "url(/newupdate/images/background/price-pattern-1.png)",
+                                  "url(images/background/price-pattern-1.png)",
                               }}
                             />
                           </div>
@@ -1621,7 +1673,7 @@ const NewHome = () => {
                               className="price-pattern-layer style-two"
                               style={{
                                 backgroundImage:
-                                  "url(/newupdate/images/background/price-pattern-3.png)",
+                                  "url(images/background/price-pattern-3.png)",
                               }}
                             />
                           </div>
@@ -1645,7 +1697,7 @@ const NewHome = () => {
                               className="price-pattern-layer"
                               style={{
                                 backgroundImage:
-                                  "url(/newupdate/images/background/price-pattern-2.png)",
+                                  "url(images/background/price-pattern-2.png)",
                               }}
                             />
                           </div>
@@ -1676,7 +1728,7 @@ const NewHome = () => {
                               className="price-pattern-layer"
                               style={{
                                 backgroundImage:
-                                  "url(/newupdate/images/background/price-pattern-1.png)",
+                                  "url(images/background/price-pattern-1.png)",
                               }}
                             />
                           </div>
@@ -1700,7 +1752,7 @@ const NewHome = () => {
                               className="price-pattern-layer style-two"
                               style={{
                                 backgroundImage:
-                                  "url(/newupdate/images/background/price-pattern-3.png)",
+                                  "url(images/background/price-pattern-3.png)",
                               }}
                             />
                           </div>
@@ -1724,7 +1776,7 @@ const NewHome = () => {
                               className="price-pattern-layer"
                               style={{
                                 backgroundImage:
-                                  "url(/newupdate/images/background/price-pattern-2.png)",
+                                  "url(images/background/price-pattern-2.png)",
                               }}
                             />
                           </div>
@@ -1757,56 +1809,56 @@ const NewHome = () => {
                   <li className="slide-item">
                     <figure className="image-box">
                       <a href="#">
-                        <img src="/newupdate/images/clients/1.png" alt="" />
+                        <img src="images/clients/1.png" alt="" />
                       </a>
                     </figure>
                   </li>
                   <li className="slide-item">
                     <figure className="image-box">
                       <a href="#">
-                        <img src="/newupdate/images/clients/2.png" alt="" />
+                        <img src="images/clients/2.png" alt="" />
                       </a>
                     </figure>
                   </li>
                   <li className="slide-item">
                     <figure className="image-box">
                       <a href="#">
-                        <img src="/newupdate/images/clients/3.png" alt="" />
+                        <img src="images/clients/3.png" alt="" />
                       </a>
                     </figure>
                   </li>
                   <li className="slide-item">
                     <figure className="image-box">
                       <a href="#">
-                        <img src="/newupdate/images/clients/4.png" alt="" />
+                        <img src="images/clients/4.png" alt="" />
                       </a>
                     </figure>
                   </li>
                   <li className="slide-item">
                     <figure className="image-box">
                       <a href="#">
-                        <img src="/newupdate/images/clients/5.png" alt="" />
+                        <img src="images/clients/5.png" alt="" />
                       </a>
                     </figure>
                   </li>
                   <li className="slide-item">
                     <figure className="image-box">
                       <a href="#">
-                        <img src="/newupdate/images/clients/1.png" alt="" />
+                        <img src="images/clients/1.png" alt="" />
                       </a>
                     </figure>
                   </li>
                   <li className="slide-item">
                     <figure className="image-box">
                       <a href="#">
-                        <img src="/newupdate/images/clients/2.png" alt="" />
+                        <img src="images/clients/2.png" alt="" />
                       </a>
                     </figure>
                   </li>
                   <li className="slide-item">
                     <figure className="image-box">
                       <a href="#">
-                        <img src="/newupdate/images/clients/3.png" alt="" />
+                        <img src="images/clients/3.png" alt="" />
                       </a>
                     </figure>
                   </li>
@@ -1819,9 +1871,7 @@ const NewHome = () => {
           <section className="news-section">
             <div
               className="pattern-layer"
-              style={{
-                backgroundImage: "url(/newupdate/images/resource/cta-bg.png)",
-              }}
+              style={{ backgroundImage: "url(images/resource/cta-bg.png)" }}
             />
             <div className="auto-container">
               {/* Sec Title */}
@@ -1852,7 +1902,7 @@ const NewHome = () => {
                     data-wow-duration="1500ms"
                   >
                     <div className="image">
-                      <img src="/newupdate/images/resource/news-1.jpg" alt="" />
+                      <img src="images/resource/news-1.jpg" alt="" />
                       {/* Overlay Box */}
                       <div className="overlay-box">
                         <div className="overlay-inner">
@@ -1897,7 +1947,7 @@ const NewHome = () => {
                     data-wow-duration="1500ms"
                   >
                     <div className="image">
-                      <img src="/newupdate/images/resource/news-2.jpg" alt="" />
+                      <img src="images/resource/news-2.jpg" alt="" />
                       {/* Overlay Box */}
                       <div className="overlay-box">
                         <div className="overlay-inner">
@@ -1942,7 +1992,7 @@ const NewHome = () => {
                     data-wow-duration="1500ms"
                   >
                     <div className="image">
-                      <img src="/newupdate/images/resource/news-3.jpg" alt="" />
+                      <img src="images/resource/news-3.jpg" alt="" />
                       {/* Overlay Box */}
                       <div className="overlay-box">
                         <div className="overlay-inner">
@@ -1987,22 +2037,19 @@ const NewHome = () => {
             <div
               className="pattern-layer"
               style={{
-                backgroundImage:
-                  "url(/newupdate/images/background/pattern-3.png)",
+                backgroundImage: "url(images/background/pattern-3.png)",
               }}
             />
             <div
               className="pattern-layer-two"
               style={{
-                backgroundImage:
-                  "url(/newupdate/images/background/pattern-4.png)",
+                backgroundImage: "url(images/background/pattern-4.png)",
               }}
             />
             <div
               className="pattern-layer-three"
               style={{
-                backgroundImage:
-                  "url(/newupdate/images/background/pattern-5.png)",
+                backgroundImage: "url(images/background/pattern-5.png)",
               }}
             />
             <div className="auto-container">
@@ -2017,7 +2064,7 @@ const NewHome = () => {
                         <div className="footer-widget logo-widget">
                           <div className="logo">
                             <a href="index.html">
-                              <img src="/newupdate/images/logo.png" alt="" />
+                              <img src="images/logo.png" alt="" />
                             </a>
                           </div>
                           <div className="text">
@@ -2086,7 +2133,7 @@ const NewHome = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="/newupdate/images/gallery/footer-gallery-thumb-1.jpg"
+                                    src="images/gallery/footer-gallery-thumb-1.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -2101,7 +2148,7 @@ const NewHome = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="/newupdate/images/gallery/footer-gallery-thumb-2.jpg"
+                                    src="images/gallery/footer-gallery-thumb-2.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -2116,7 +2163,7 @@ const NewHome = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="/newupdate/images/gallery/footer-gallery-thumb-3.jpg"
+                                    src="images/gallery/footer-gallery-thumb-3.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -2131,7 +2178,7 @@ const NewHome = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="/newupdate/images/gallery/footer-gallery-thumb-4.jpg"
+                                    src="images/gallery/footer-gallery-thumb-4.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -2146,7 +2193,7 @@ const NewHome = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="/newupdate/images/gallery/footer-gallery-thumb-5.jpg"
+                                    src="images/gallery/footer-gallery-thumb-5.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -2161,7 +2208,7 @@ const NewHome = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="/newupdate/images/gallery/footer-gallery-thumb-6.jpg"
+                                    src="images/gallery/footer-gallery-thumb-6.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -2288,10 +2335,9 @@ const NewHome = () => {
           TOP
         </div>
       </body>
-
-      {/* main content ends  */}
+      {/* body end  */}
     </div>
   );
 };
 
-export default NewHome;
+export default Index1;
