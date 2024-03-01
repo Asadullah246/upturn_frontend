@@ -1,8 +1,9 @@
 import React from "react";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
+import PageHeader from "../components/shared/pageHeader";
 
-const termsAndConditions = () => {
+const TermsAndConditions = () => {
   return (
     <div className="px-3 py-3">
       <h1 className="text-center">Terms And Conditions</h1>
@@ -93,10 +94,11 @@ const termsAndConditions = () => {
           </p>
         </div>
       </div>
+      <PageHeader pagename={"Terms And Conditions"}/>
       <SearchPopUp />
       <TopScrolling />
     </div>
   );
 };
 
-export default termsAndConditions;
+export default TermsAndConditions;

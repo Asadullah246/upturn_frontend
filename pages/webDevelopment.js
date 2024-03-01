@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
+import PageHeader from "../components/shared/pageHeader";
 
 const WebDevelopment = () => {
   return (
@@ -71,6 +72,8 @@ const WebDevelopment = () => {
       </Head>
 
       {/* body  */}
+
+      <PageHeader pagename={"Web Development"} />
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
