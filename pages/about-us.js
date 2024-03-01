@@ -6,6 +6,8 @@ import Link from "next/link";
 import TopHeader from "../components/shared/TopHeader";
 import SupportIcon from "@mui/icons-material/Support";
 import SectionTitle from "../components/shared/SectionTitle";
+import TopScrolling from "../components/shared/ScrollToTop";
+import SearchPopUp from "../components/shared/SearchPopUp";
 
 const aboutUs = () => {
   const data = [
@@ -121,7 +123,7 @@ const aboutUs = () => {
         <SectionTitle text={"Our Services"}></SectionTitle>
 
         <div className=" py-4 ">
-          <div className="custom-container"> 
+          <div className="custom-container">
             <div className="row g-4">
               <div
                 className="col-lg-3 col-sm-6 wow fadeInUp"
@@ -231,7 +233,7 @@ const aboutUs = () => {
 
       <section style={{ marginTop: "120px" }}>
         <SectionTitle text={"Our Dedicated Team"}></SectionTitle>
-        <div className="custom-container" >
+        <div className="custom-container">
           <div className="row">
             {teamData?.map((single, index) => {
               return (
@@ -375,6 +377,8 @@ const aboutUs = () => {
         </div>
 
       </div> */}
+      <SearchPopUp />
+      <TopScrolling />
     </div>
   );
 };
