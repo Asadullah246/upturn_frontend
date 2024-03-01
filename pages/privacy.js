@@ -2,8 +2,9 @@ import Head from "next/head";
 import React from "react";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
+import PageHeader from "../components/shared/pageHeader";
 
-const privacy = () => {
+const Privacy = () => {
   return (
     <div>
       <Head>
@@ -78,6 +79,9 @@ const privacy = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
+
+          <PageHeader pagename={"Privacy"}/>
+
           <header className="main-header">
             {/*Header-Upper*/}
             <div className="header-upper">
@@ -163,373 +167,7 @@ const privacy = () => {
                             </li>
                           </ul>
                         </li>
-                        <li className="current dropdown">
-                          <a href="#">About</a>
-                          <ul>
-                            <li>
-                              <a href="about.html">About Us</a>
-                            </li>
-                            <li>
-                              <a href="faq.html">Faq</a>
-                            </li>
-                            <li>
-                              <a href="price.html">Price</a>
-                            </li>
-                            <li>
-                              <a href="team.html">Team</a>
-                            </li>
-                            <li>
-                              <a href="team-detail.html">Team Detail</a>
-                            </li>
-                            <li>
-                              <a href="testimonial.html">Testimonial</a>
-                            </li>
-                            <li>
-                              <a href="comming-soon.html">Comming Soon</a>
-                            </li>
-                            <li>
-                              <a href="terms.html">Terms &amp; Condition</a>
-                            </li>
-                            <li>
-                              <a href="privacy.html">Privacy &amp; Policy</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Services</a>
-                          <ul>
-                            <li>
-                              <a href="services.html">Services</a>
-                            </li>
-                            <li>
-                              <a href="content-marketing.html">
-                                Content Marketing
-                              </a>
-                            </li>
-                            <li>
-                              <a href="social-marketing.html">
-                                Social Marketing
-                              </a>
-                            </li>
-                            <li>
-                              <a href="app-development.html">App Development</a>
-                            </li>
-                            <li>
-                              <a href="seo.html">SEO Optimization</a>
-                            </li>
-                            <li>
-                              <a href="web-development.html">Web Development</a>
-                            </li>
-                            <li>
-                              <a href="advertising.html">PPC Advertising</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Projects</a>
-                          <ul>
-                            <li>
-                              <a href="projects.html">Projects</a>
-                            </li>
-                            <li>
-                              <a href="projects-left-sidebar.html">
-                                Projects Left Sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="projects-right-sidebar.html">
-                                Projects Right Sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="projects-detail.html">Projects Detail</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="dropdown has-mega-menu">
-                          <a href="#">Pages</a>
-                          <div className="mega-menu">
-                            <div className="mega-menu-bar row clearfix">
-                              <div className="column col-lg-3 col-md-4 col-sm-12">
-                                <h3>About Us</h3>
-                                <ul>
-                                  <li>
-                                    <a href="about.html">About Us</a>
-                                  </li>
-                                  <li>
-                                    <a href="faq.html">Faq</a>
-                                  </li>
-                                  <li>
-                                    <a href="price.html">Price</a>
-                                  </li>
-                                  <li>
-                                    <a href="team.html">Team</a>
-                                  </li>
-                                  <li>
-                                    <a href="team-detail.html">Team Detail</a>
-                                  </li>
-                                  <li>
-                                    <a href="testimonial.html">Testimonial</a>
-                                  </li>
-                                  <li>
-                                    <a href="comming-soon.html">Comming Soon</a>
-                                  </li>
-                                  <li>
-                                    <a href="terms.html">
-                                      Terms &amp; Condition
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="privacy.html">
-                                      Privacy &amp; Policy
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="column col-lg-3 col-md-4 col-sm-12">
-                                <h3>Services</h3>
-                                <ul>
-                                  <li>
-                                    <a href="content-marketing.html">
-                                      Content Marketing
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="social-marketing.html">
-                                      Social Marketing
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="app-development.html">
-                                      App Development
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="seo.html">SEO Optimization</a>
-                                  </li>
-                                  <li>
-                                    <a href="web-development.html">
-                                      Web Development
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="advertising.html">
-                                      PPC Advertising
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="column col-lg-3 col-md-4 col-sm-12">
-                                <h3>Blog</h3>
-                                <ul>
-                                  <li>
-                                    <a href="blog.html">Our Blog</a>
-                                  </li>
-                                  <li>
-                                    <a href="blog-classic.html">Blog Classic</a>
-                                  </li>
-                                  <li>
-                                    <a href="blog-left-sidebar.html">
-                                      Blog Left Sidebar
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="news-detail.html">Blog Single</a>
-                                  </li>
-                                  <li>
-                                    <a href="not-found.html">Not Found</a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="column col-lg-3 col-md-4 col-sm-12">
-                                <h3>Our Shop</h3>
-                                <ul>
-                                  <li>
-                                    <a href="shop.html">Shop</a>
-                                  </li>
-                                  <li>
-                                    <a href="shop-single.html">Shop Details</a>
-                                  </li>
-                                  <li>
-                                    <a href="shoping-cart.html">Cart Page</a>
-                                  </li>
-                                  <li>
-                                    <a href="checkout.html">Checkout Page</a>
-                                  </li>
-                                  <li>
-                                    <a href="login.html">Login</a>
-                                  </li>
-                                  <li>
-                                    <a href="register.html">Register</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Shop</a>
-                          <ul>
-                            <li>
-                              <a href="shop.html">Our Products</a>
-                            </li>
-                            <li>
-                              <a href="shop-single.html">Product Single</a>
-                            </li>
-                            <li>
-                              <a href="shopping-cart.html">Shopping Cart</a>
-                            </li>
-                            <li>
-                              <a href="checkout.html">Checkout</a>
-                            </li>
-                            <li>
-                              <a href="account.html">Account</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Blog</a>
-                          <ul>
-                            <li>
-                              <a href="blog.html">Our Blog</a>
-                            </li>
-                            <li>
-                              <a href="blog-classic.html">Blog Classic</a>
-                            </li>
-                            <li>
-                              <a href="blog-left-sidebar.html">
-                                Blog Left Sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="news-detail.html">Blog Single</a>
-                            </li>
-                            <li>
-                              <a href="not-found.html">Not Found</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="contact.html">Contact us</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-                  {/* Main Menu End*/}
-                  <div className="outer-box clearfix">
-                    {/* Quote Btn */}
-                    <div className="btn-box">
-                      <a
-                        href="contact.html"
-                        className="theme-btn btn-style-one"
-                      >
-                        <span className="txt">Get A Quote</span>
-                      </a>
-                    </div>
-                    {/* Search Btn */}
-                    <div className="search-box-btn search-box-outer">
-                      <span className="icon fa fa-search" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*End Header Upper*/}
-            {/* Sticky Header  */}
-            <div className="sticky-header">
-              <div className="auto-container clearfix">
-                {/*Logo*/}
-                <div className="logo pull-left">
-                  <a href="/" title="">
-                    <img src="images/logo-small.png" alt="" title="" />
-                  </a>
-                </div>
-                {/*Right Col*/}
-                <div className="pull-right">
-                  {/* Main Menu */}
-                  <nav className="main-menu">
-                    {/*Keep This Empty / Menu will come through Javascript*/}
-                  </nav>
-                  {/* Main Menu End*/}
-                  {/* Main Menu End*/}
-                  <div className="outer-box clearfix">
-                    {/* Quote Btn */}
-                    <div className="btn-box">
-                      <a
-                        href="contact.html"
-                        className="theme-btn btn-style-two"
-                      >
-                        <span className="txt">Get A Quote</span>
-                      </a>
-                    </div>
-                    {/* Search Btn */}
-                    <div className="search-box-btn search-box-outer">
-                      <span className="icon fa fa-search" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* End Sticky Menu */}
-            {/* Mobile Menu  */}
-            <div className="mobile-menu">
-              <div className="menu-backdrop" />
-              <div className="close-btn">
-                <span className="icon flaticon-multiply" />
-              </div>
-              <nav className="menu-box">
-                <div className="nav-logo">
-                  <a href="/">
-                    <img src="images/logo-3.png" alt="" title="" />
-                  </a>
-                </div>
-                <div className="menu-outer">
-                  {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
-                </div>
-              </nav>
-            </div>
-            {/* End Mobile Menu */}
-          </header>
-          {/* End Main Header */}
-          {/* Page Title Section */}
-          <section
-            className="page-title"
-            style={{
-              backgroundImage: "url(images/background/pattern-16.png)",
-            }}
-          >
-            <div
-              className="pattern-layer-one"
-              style={{
-                backgroundImage: "url(images/main-slider/pattern-1.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-two"
-              style={{
-                backgroundImage: "url(images/background/pattern-17.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-three"
-              style={{
-                backgroundImage: "url(images/background/pattern-18.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-four"
-              style={{ backgroundImage: "url(images/icons/cross-icon.png)" }}
-            />
-            <div className="auto-container">
-              <h2>Privacy Policy</h2>
-              <ul className="page-breadcrumb">
-                <li>
-                  <a href="/">home</a>
-                </li>
-                <li>Privacy Policy</li>
-              </ul>
-            </div>
-          </section>
+
           {/* End Page Title Section */}
           {/* Privacy Section */}
           <section className="privacy-section">
@@ -735,10 +373,7 @@ const privacy = () => {
                       donec tempus pellentesque dui vel tristique purus justo{" "}
                     </div>
                     <div className="newsletter-form">
-                      <form
-                        method="post"
-                        action="https://///contact.html"
-                      >
+                      <form method="post" action="https://///contact.html">
                         <div className="form-group">
                           <input
                             type="email"
@@ -762,7 +397,11 @@ const privacy = () => {
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img src="images/resource/newsletter.png" alt="" />
+                      <img
+                        src="/newupdate/images
+/resource/newsletter.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -775,19 +414,19 @@ const privacy = () => {
             <div
               className="pattern-layer"
               style={{
-                backgroundImage: "url(images/background/pattern-3.png)",
+                backgroundImage: "url(/newupdate/images/background/pattern-3.png)",
               }}
             />
             <div
               className="pattern-layer-two"
               style={{
-                backgroundImage: "url(images/background/pattern-4.png)",
+                backgroundImage: "url(/newupdate/images/background/pattern-4.png)",
               }}
             />
             <div
               className="pattern-layer-three"
               style={{
-                backgroundImage: "url(images/background/pattern-5.png)",
+                backgroundImage: "url(/newupdate/images/background/pattern-5.png)",
               }}
             />
             <div className="auto-container">
@@ -801,8 +440,13 @@ const privacy = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="/">
-                              <img src="images/logo.png" alt="" />
+
+                            <a href="index.html">
+                              <img
+                                src="/newupdate/images/logo.png"
+                                alt=""
+                              />
+
                             </a>
                           </div>
                           <div className="text">
@@ -871,7 +515,8 @@ const privacy = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-1.jpg"
+                                    src="/newupdate/images
+/gallery/footer-gallery-thumb-1.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -886,7 +531,8 @@ const privacy = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-2.jpg"
+                                    src="/newupdate/images
+/gallery/footer-gallery-thumb-2.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -901,7 +547,8 @@ const privacy = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-3.jpg"
+                                    src="/newupdate/images
+/gallery/footer-gallery-thumb-3.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -916,7 +563,8 @@ const privacy = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-4.jpg"
+                                    src="/newupdate/images
+/gallery/footer-gallery-thumb-4.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -931,7 +579,8 @@ const privacy = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-5.jpg"
+                                    src="/newupdate/images
+/gallery/footer-gallery-thumb-5.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -946,7 +595,8 @@ const privacy = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-6.jpg"
+                                    src="/newupdate/images
+/gallery/footer-gallery-thumb-6.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -1009,4 +659,4 @@ const privacy = () => {
   );
 };
 
-export default privacy;
+export default Privacy;

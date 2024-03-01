@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import SearchPopUp from "../components/shared/SearchPopUp";
 import TopScrolling from "../components/shared/ScrollToTop";
+import PageHeader from "../components/shared/pageHeader";
 
 const NotFound = () => {
   return (
@@ -70,7 +71,9 @@ const NotFound = () => {
         {/* js end */}
       </Head>
 
+      <PageHeader pagename={"Not Found"} />
       {/* body  */}
+
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}

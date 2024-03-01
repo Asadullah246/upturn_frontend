@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
+import PageHeader from "../components/shared/pageHeader";
 
 const Price = () => {
   return (
@@ -69,7 +70,7 @@ const Price = () => {
 
         {/* js end */}
       </Head>
-
+      <PageHeader pagename={"Price"}/>
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -84,8 +85,10 @@ const Price = () => {
               <div className="auto-container clearfix">
                 <div className="pull-left logo-box">
                   <div className="logo">
-                    <a href="/">
-                      <img src="images/logo.png" alt="" title="" />
+
+                    <a href="index.html">
+                      <img src="/newupdate/images/logo.png" alt="" title="" />
+
                     </a>
                   </div>
                 </div>
@@ -440,8 +443,10 @@ const Price = () => {
               <div className="auto-container clearfix">
                 {/*Logo*/}
                 <div className="logo pull-left">
-                  <a href="/" title="">
-                    <img src="images/logo-small.png" alt="" title="" />
+
+                  <a href="index.html" title="">
+                    <img src="/newupdate/images/logo-small.png" alt="" title="" />
+
                   </a>
                 </div>
                 {/*Right Col*/}
@@ -479,8 +484,10 @@ const Price = () => {
               </div>
               <nav className="menu-box">
                 <div className="nav-logo">
-                  <a href="/">
-                    <img src="images/logo-3.png" alt="" title="" />
+
+                  <a href="index.html">
+                    <img src="/newupdate/images/logo-3.png" alt="" title="" />
+
                   </a>
                 </div>
                 <div className="menu-outer">
@@ -494,29 +501,29 @@ const Price = () => {
           {/* Page Title Section */}
           <section
             className="page-title"
-            style={{ backgroundImage: "url(images/background/pattern-16.png)" }}
+            style={{ backgroundImage: "url(/newupdate/pages/background/pattern-16.png)" }}
           >
             <div
               className="pattern-layer-one"
               style={{
-                backgroundImage: "url(images/main-slider/pattern-1.png)",
+                backgroundImage: "url(/newupdate/pages/main-slider/pattern-1.png)",
               }}
             />
             <div
               className="pattern-layer-two"
               style={{
-                backgroundImage: "url(images/background/pattern-17.png)",
+                backgroundImage: "url(/newupdate/pages/background/pattern-17.png)",
               }}
             />
             <div
               className="pattern-layer-three"
               style={{
-                backgroundImage: "url(images/background/pattern-18.png)",
+                backgroundImage: "url(/newupdate/pages/background/pattern-18.png)",
               }}
             />
             <div
               className="pattern-layer-four"
-              style={{ backgroundImage: "url(images/icons/cross-icon.png)" }}
+              style={{ backgroundImage: "url(/newupdate/pages/icons/cross-icon.png)" }}
             />
             <div className="auto-container">
               <h2>Price Plan</h2>
@@ -568,7 +575,7 @@ const Price = () => {
                               className="price-pattern-layer"
                               style={{
                                 backgroundImage:
-                                  "url(images/background/price-pattern-1.png)",
+                                  "url(/newupdate/pages/background/price-pattern-1.png)",
                               }}
                             />
                           </div>
@@ -592,7 +599,7 @@ const Price = () => {
                               className="price-pattern-layer style-two"
                               style={{
                                 backgroundImage:
-                                  "url(images/background/price-pattern-3.png)",
+                                  "url(/newupdate/pages/background/price-pattern-3.png)",
                               }}
                             />
                           </div>
@@ -616,7 +623,7 @@ const Price = () => {
                               className="price-pattern-layer"
                               style={{
                                 backgroundImage:
-                                  "url(images/background/price-pattern-2.png)",
+                                  "url(/newupdate/pages/background/price-pattern-2.png)",
                               }}
                             />
                           </div>
@@ -647,7 +654,7 @@ const Price = () => {
                               className="price-pattern-layer"
                               style={{
                                 backgroundImage:
-                                  "url(images/background/price-pattern-1.png)",
+                                  "url(/newupdate/pages/background/price-pattern-1.png)",
                               }}
                             />
                           </div>
@@ -671,7 +678,7 @@ const Price = () => {
                               className="price-pattern-layer style-two"
                               style={{
                                 backgroundImage:
-                                  "url(images/background/price-pattern-3.png)",
+                                  "url(/newupdate/pages/background/price-pattern-3.png)",
                               }}
                             />
                           </div>
@@ -695,7 +702,7 @@ const Price = () => {
                               className="price-pattern-layer"
                               style={{
                                 backgroundImage:
-                                  "url(images/background/price-pattern-2.png)",
+                                  "url(/newupdate/pages/background/price-pattern-2.png)",
                               }}
                             />
                           </div>
@@ -762,7 +769,7 @@ const Price = () => {
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img src="images/resource/newsletter.png" alt="" />
+                      <img src="/newupdate/images/resource/newsletter.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -775,19 +782,19 @@ const Price = () => {
             <div
               className="pattern-layer"
               style={{
-                backgroundImage: "url(images/background/pattern-3.png)",
+                backgroundImage: "url(/newupdate/pages/background/pattern-3.png)",
               }}
             />
             <div
               className="pattern-layer-two"
               style={{
-                backgroundImage: "url(images/background/pattern-4.png)",
+                backgroundImage: "url(/newupdate/pages/background/pattern-4.png)",
               }}
             />
             <div
               className="pattern-layer-three"
               style={{
-                backgroundImage: "url(images/background/pattern-5.png)",
+                backgroundImage: "url(/newupdate/pages/background/pattern-5.png)",
               }}
             />
             <div className="auto-container">
@@ -801,8 +808,10 @@ const Price = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
+
                             <a href="/">
-                              <img src="images/logo.png" alt="" />
+                              <img src="/newupdate/images/logo.png" alt="" />
+
                             </a>
                           </div>
                           <div className="text">
@@ -871,7 +880,7 @@ const Price = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-1.jpg"
+                                    src="/newupdate/images/gallery/footer-gallery-thumb-1.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -886,7 +895,7 @@ const Price = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-2.jpg"
+                                    src="/newupdate/images/gallery/footer-gallery-thumb-2.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -901,7 +910,7 @@ const Price = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-3.jpg"
+                                    src="/newupdate/images/gallery/footer-gallery-thumb-3.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -916,7 +925,7 @@ const Price = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-4.jpg"
+                                    src="/newupdate/images/gallery/footer-gallery-thumb-4.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -931,7 +940,7 @@ const Price = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-5.jpg"
+                                    src="/newupdate/images/gallery/footer-gallery-thumb-5.jpg"
                                     alt=""
                                   />
                                 </a>
@@ -946,7 +955,7 @@ const Price = () => {
                                   data-fancybox-group="footer-gallery"
                                 >
                                   <img
-                                    src="images/gallery/footer-gallery-thumb-6.jpg"
+                                    src="/newupdate/images/gallery/footer-gallery-thumb-6.jpg"
                                     alt=""
                                   />
                                 </a>

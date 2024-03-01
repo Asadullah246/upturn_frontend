@@ -3,8 +3,9 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
+import PageHeader from "../components/shared/pageHeader";
 
-const virtualClassroom = () => {
+const Virtual = () => {
   return (
     <div className="text-center container">
       <h1 className={`${styles.h1} mt-5`}>Under Construction</h1>
@@ -26,4 +27,4 @@ const virtualClassroom = () => {
   );
 };
 
-export default virtualClassroom;
+export default Virtual;
