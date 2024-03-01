@@ -509,8 +509,8 @@ const Testimonial = () => {
                             </li>
                             <li>
                               <span className="icon flaticon-email" />
-                              <a href="mailto:Merix@gmail.com">
-                                Merix@gmail.com
+                              <a href="mailto:upTurnIdea@gmail.com">
+                                upTurnIdea@gmail.com
                               </a>
                             </li>
                             <li>
@@ -527,7 +527,7 @@ const Testimonial = () => {
               {/* Footer Bottom */}
               <div className="footer-bottom">
                 <div className="copyright">
-                  Copyright © 2020 Merix by{" "}
+                  Copyright © 2020 upTurnIdea by{" "}
                   <a href="https://themeforest.net/user/themerange">
                     ThemeRange
                   </a>
