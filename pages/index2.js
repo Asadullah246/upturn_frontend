@@ -1239,7 +1239,7 @@ const Index2 = () => {
                     <div className="seo-form-two">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        action="https://///contact.html"
                       >
                         <div className="form-group clearfix">
                           <input
@@ -2480,7 +2480,7 @@ const Index2 = () => {
           </button>
           <form
             method="post"
-            action="https://html.themerange.net/merix/merix/blog.html"
+            action="https://///blog.html"
           >
             <div className="form-group">
               <input

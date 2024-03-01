@@ -343,7 +343,7 @@ const NewHome = () => {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="news-detail.html">Blog Single</a>
+                                    <a href="/newsDetails">Blog Single</a>
                                   </li>
                                   <li>
                                     <a href="not-found.html">Not Found</a>
@@ -411,7 +411,7 @@ const NewHome = () => {
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">Blog Single</a>
+                              <a href="/newsDetails">Blog Single</a>
                             </li>
                             <li>
                               <a href="not-found.html">Not Found</a>
@@ -1885,7 +1885,7 @@ const NewHome = () => {
                         <div className="overlay-inner">
                           <div className="content">
                             <a
-                              href="news-detail.html"
+                              href="/newsDetails"
                               className="icon flaticon-unlink"
                             />
                           </div>
@@ -1895,20 +1895,20 @@ const NewHome = () => {
                     <div className="lower-content">
                       <ul className="post-meta">
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-user" /> Pablo
                             Villalpando
                           </a>
                         </li>
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-calendar" /> November
                             21, 2020
                           </a>
                         </li>
                       </ul>
                       <h5>
-                        <a href="news-detail.html">
+                        <a href="/newsDetails">
                           Google now disregards or overlooks all reciprocal
                           links
                         </a>
@@ -1930,7 +1930,7 @@ const NewHome = () => {
                         <div className="overlay-inner">
                           <div className="content">
                             <a
-                              href="news-detail.html"
+                              href="/newsDetails"
                               className="icon flaticon-unlink"
                             />
                           </div>
@@ -1940,20 +1940,20 @@ const NewHome = () => {
                     <div className="lower-content">
                       <ul className="post-meta">
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-user" /> Pablo
                             Villalpando
                           </a>
                         </li>
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-calendar" /> November
                             21, 2020
                           </a>
                         </li>
                       </ul>
                       <h5>
-                        <a href="news-detail.html">
+                        <a href="/newsDetails">
                           Absolute Links vs. Relative Links – SEO Intrinsic
                           Value
                         </a>
@@ -1975,7 +1975,7 @@ const NewHome = () => {
                         <div className="overlay-inner">
                           <div className="content">
                             <a
-                              href="news-detail.html"
+                              href="/newsDetails"
                               className="icon flaticon-unlink"
                             />
                           </div>
@@ -1985,20 +1985,20 @@ const NewHome = () => {
                     <div className="lower-content">
                       <ul className="post-meta">
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-user" /> Pablo
                             Villalpando
                           </a>
                         </li>
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-calendar" /> November
                             21, 2020
                           </a>
                         </li>
                       </ul>
                       <h5>
-                        <a href="news-detail.html">
+                        <a href="/newsDetails">
                           How to increase your ROI through scientific SEM?
                         </a>
                       </h5>

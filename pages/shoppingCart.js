@@ -660,7 +660,7 @@ const ShoppingCart = () => {
                       </div>
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/index.html"
+                        action="https://///index.html"
                       >
                         <div className="row clearfix">
                           {/*Form Group*/}
@@ -760,7 +760,7 @@ const ShoppingCart = () => {
                     <div className="newsletter-form">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        action="https://///contact.html"
                       >
                         <div className="form-group">
                           <input

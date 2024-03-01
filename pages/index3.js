@@ -1510,7 +1510,7 @@ const Index3 = () => {
                     <div className="newsletter-form">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        action="https://///contact.html"
                       >
                         <div className="form-group">
                           <input
@@ -1821,7 +1821,7 @@ const Index3 = () => {
           </button>
           <form
             method="post"
-            action="https://html.themerange.net/merix/merix/blog.html"
+            action="https://///blog.html"
           >
             <div className="form-group">
               <input
