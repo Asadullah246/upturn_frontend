@@ -31,7 +31,7 @@
 
 	headerStyle();
 
-// skipped
+// done
 	//Submenu Dropdown Toggle
 	if($('.main-header li.dropdown ul').length){
 		$('.main-header li.dropdown').append('<div class="dropdown-btn"><span class="fa fa-angle-down"></span></div>');
@@ -55,7 +55,8 @@
 
 	}
 
-// skipped
+// done
+
 	//Mobile Nav Hide Show
 	if($('.mobile-menu').length){
 
@@ -101,7 +102,7 @@
 	}
 
 
-
+//  done
 	//Hidden Sidebar
 	if ($('.hidden-bar,.fullscreen-menu').length) {
 		var hiddenBar = $('.hidden-bar');
@@ -121,7 +122,7 @@
 	}
 
 
-
+//  done
 	//Hidden Sidebar
 	if ($('.hidden-bar').length) {
 		var hiddenBar = $('.hidden-bar');
@@ -138,7 +139,7 @@
 		});
 	}
 
-
+//  done 
 	//Hidden Bar Menu Config
 	function hiddenBarMenuConfig() {
 		var menuWrap = $('.hidden-bar .side-menu');

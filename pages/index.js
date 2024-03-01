@@ -13,9 +13,30 @@ import dynamic from "next/dynamic";
 import SearchPopUp from "../components/shared/SearchPopUp";
 import TopScrolling from "../components/shared/ScrollToTop";
 import CountUp from "react-countup";
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const NewHome = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 4,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <div>
       <Head>
@@ -93,8 +114,8 @@ const NewHome = () => {
               <div className="auto-container clearfix">
                 <div className="pull-left logo-box">
                   <div className="logo">
-                    <a href="index.html">
-                      <img src="/newupdate/images/logo.png" alt="" title="" />
+                    <a href="/">
+                      <img src="/newupdate/images/newIcons/logo.png" alt="" title="" className="homepageLogo" />
                     </a>
                   </div>
                 </div>
@@ -130,7 +151,7 @@ const NewHome = () => {
                           <a href="#">Home</a>
                           <ul>
                             <li>
-                              <a href="index.html">Homepage One</a>
+                              <a href="/">Homepage One</a>
                             </li>
                             <li>
                               <a href="index-2.html">Homepage Two</a>
@@ -151,7 +172,7 @@ const NewHome = () => {
                               <a href="#">Header Styles</a>
                               <ul>
                                 <li>
-                                  <a href="index.html">Header Style One</a>
+                                  <a href="/">Header Style One</a>
                                 </li>
                                 <li>
                                   <a href="index-2.html">Header Style Two</a>
@@ -449,7 +470,7 @@ const NewHome = () => {
               <div className="auto-container clearfix">
                 {/*Logo*/}
                 <div className="logo pull-left">
-                  <a href="index.html" title="">
+                  <a href="/" title="">
                     <img
                       src="/newupdate/images/logo-small.png"
                       alt=""
@@ -492,7 +513,7 @@ const NewHome = () => {
               </div>
               <nav className="menu-box">
                 <div className="nav-logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img src="/newupdate/images/logo-3.png" alt="" title="" />
                   </a>
                 </div>
@@ -1444,8 +1465,24 @@ const NewHome = () => {
                   therefore, <br /> we trive to make your company excel in this.
                 </div>
               </div>
-              <div className="testimonial-carousel owl-carousel owl-theme">
-                {/* Testimonial Block */}
+              <Carousel
+                responsive={responsive}
+                swipeable={false}
+                draggable={false}
+                showDots={true}
+                ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={2000}
+                keyBoardControl={true}
+                customTransition="all .5"
+                transitionDuration={500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                // deviceType={this.props.deviceType}
+                // dotListClass="custom-dot-list-style"
+                // itemClass="carousel-item-padding-40-px"
+              >
                 <div className="testimonial-block">
                   <div className="inner-box">
                     <div className="pattern-layer" />
@@ -1567,7 +1604,7 @@ const NewHome = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Carousel>
             </div>
           </section>
           {/* End Testimonial Section */}

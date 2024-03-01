@@ -350,7 +350,7 @@ const Terms = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="index.html">
+                            <a href="/">
                               <img src="/newupdate/images/logo.png" alt="" />
                             </a>
                           </div>

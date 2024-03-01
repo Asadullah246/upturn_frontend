@@ -1341,6 +1341,12 @@ img{
 	padding:0px 40px;
 }
 
+img.homepageLogo {
+    height: 35px;
+    margin-top: 22px;
+
+}
+
 .main-header .main-box .logo-box{
 	position:relative;
 	float:left;
@@ -4778,7 +4784,7 @@ img{
 	content:':';
 	right:-20px;
 	top:-12px;
-	color:#ffffff; 
+	color:#ffffff;
 	font-size:60px;
 	font-weight:700;
 	border-radius:50px;

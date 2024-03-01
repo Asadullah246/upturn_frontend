@@ -84,7 +84,7 @@ const privacy = () => {
               <div className="auto-container clearfix">
                 <div className="pull-left logo-box">
                   <div className="logo">
-                    <a href="index.html">
+                    <a href="/">
                       <img src="images/logo.png" alt="" title="" />
                     </a>
                   </div>
@@ -121,7 +121,7 @@ const privacy = () => {
                           <a href="#">Home</a>
                           <ul>
                             <li>
-                              <a href="index.html">Homepage One</a>
+                              <a href="/">Homepage One</a>
                             </li>
                             <li>
                               <a href="index-2.html">Homepage Two</a>
@@ -142,7 +142,7 @@ const privacy = () => {
                               <a href="#">Header Styles</a>
                               <ul>
                                 <li>
-                                  <a href="index.html">Header Style One</a>
+                                  <a href="/">Header Style One</a>
                                 </li>
                                 <li>
                                   <a href="index-2.html">Header Style Two</a>
@@ -440,7 +440,7 @@ const privacy = () => {
               <div className="auto-container clearfix">
                 {/*Logo*/}
                 <div className="logo pull-left">
-                  <a href="index.html" title="">
+                  <a href="/" title="">
                     <img src="images/logo-small.png" alt="" title="" />
                   </a>
                 </div>
@@ -479,7 +479,7 @@ const privacy = () => {
               </div>
               <nav className="menu-box">
                 <div className="nav-logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img src="images/logo-3.png" alt="" title="" />
                   </a>
                 </div>
@@ -524,7 +524,7 @@ const privacy = () => {
               <h2>Privacy Policy</h2>
               <ul className="page-breadcrumb">
                 <li>
-                  <a href="index.html">home</a>
+                  <a href="/">home</a>
                 </li>
                 <li>Privacy Policy</li>
               </ul>
@@ -801,7 +801,7 @@ const privacy = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="index.html">
+                            <a href="/">
                               <img src="images/logo.png" alt="" />
                             </a>
                           </div>
