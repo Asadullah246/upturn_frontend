@@ -520,8 +520,8 @@ const Terms = () => {
                             <li>
                               <span className="icon flaticon-phone-call" />
                               <a href="tel:+0987-654-321">0987 654 321</a>{" "}
-                              <a href="tel:+0123-456-789">0123 456 789</a>
-                            </li>
+                              <a href="tel:+01upTurnIdea6-789">0123 456 789</a>
+                            </liupTurnIdea
                             <li>
                               <span className="icon flaticon-email" />
                               <a href="mailto:Merix@gmail.com">
@@ -538,7 +538,7 @@ const Terms = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>upTurnIdea
               {/* Footer Bottom */}
               <div className="footer-bottom">
                 <div className="copyright">

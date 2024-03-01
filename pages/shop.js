@@ -80,7 +80,7 @@ const Shop = () => {
           </div>
           {/* Main Header*/}
 
-          
+
           <PageHeader pagename={"Shop"}/>
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
@@ -1482,3 +1482,4 @@ const Shop = () => {
 };
 
 export default Shop;
+upTurnIdeaupTurnIdeaupTurnIdea

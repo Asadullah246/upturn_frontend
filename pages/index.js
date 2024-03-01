@@ -719,7 +719,7 @@ const NewHome = () => {
                       <h2>Grow Business with SEO</h2>
                     </div>
                     <div className="bold-text">
-                      Over 12 years Merix helping companies reach their
+                      Over 12 years upTurnIdea helping companies reach their
                       financial and branding goals.
                     </div>
                     <div className="text">
