@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React from "react";
+import SearchPopUp from "../components/shared/SearchPopUp";
+import TopScrolling from "../components/shared/ScrollToTop";
 
 const NewsDetail = () => {
   return (
@@ -1408,77 +1410,8 @@ const NewsDetail = () => {
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
-        {/* Color Palate / Color Switcher */}
-        <div className="color-palate">
-          <div className="color-trigger">
-            <i className="fa fa-gear" />
-          </div>
-          <div className="color-palate-head">
-            <h6>Choose Your Options</h6>
-          </div>
-          <h5>RTL Version</h5>
-          <ul className="rtl-version option-box">
-            {" "}
-            <li className="rtl">RTL Version</li> <li>LTR Version</li>{" "}
-          </ul>
-          <h5>Boxed Version</h5>
-          <ul className="box-version option-box">
-            {" "}
-            <li className="box">Boxed</li> <li>Full width</li>
-          </ul>
-          <h5>Want Sticky Header</h5>
-          <ul className="header-version option-box">
-            {" "}
-            <li className="box">No</li> <li>Yes</li>
-          </ul>
-          <h5>Dark Verion</h5>
-          <ul className="dark-version option-box">
-            {" "}
-            <li className="box">Yes</li> <li>No</li>
-          </ul>
-          <a href="#" className="purchase-btn">
-            Purchase now $17
-          </a>
-          <div className="palate-foo">
-            <span>
-              You will find much more options and styling in admin panel.
-            </span>
-          </div>
-        </div>
-        {/* Search Popup */}
-        <div className="search-popup">
-          <button className="close-search style-two">
-            <span className="flaticon-multiply" />
-          </button>
-          <button className="close-search">
-            <span className="fa fa-arrow-up" />
-          </button>
-          <form
-            method="post"
-            action="https://html.themerange.net/merix/merix/blog.html"
-          >
-            <div className="form-group">
-              <input
-                type="search"
-                name="search-field"
-                defaultValue=""
-                placeholder="Search Here"
-                required=""
-              />
-              <button type="submit">
-                <i className="fa fa-search" />
-              </button>
-            </div>
-          </form>
-        </div>
-        {/* End Header Search */}
-        {/* Scroll To Top */}
-        <div
-          className="back-to-top scroll-to-target show-back-to-top"
-          data-target="html"
-        >
-          TOP
-        </div>
+        <SearchPopUp />
+        <TopScrolling />
       </body>
       {/* body end  */}
     </div>
