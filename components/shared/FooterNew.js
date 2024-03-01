@@ -37,7 +37,7 @@ const FooterNew = () => {
                       <div className="logo">
                         <a href="/">
                           <img style={{height:"50px"}}
-                            src="/newupdate/images/newIcons/logo.png" 
+                            src="/newupdate/images/newIcons/logo.png"
                             alt=""
                           />
                         </a>
@@ -226,10 +226,7 @@ const FooterNew = () => {
           {/* Footer Bottom */}
           <div className="footer-bottom">
             <div className="copyright">
-              Copyright © 2020 Merix by{" "}
-              <a href="https://themeforest.net/user/themerange">
-                ThemeRange
-              </a>
+              Copyright © 2020 UpTurnIdea
               . All Rights Reserved. All Rights Reserved.
             </div>
           </div>
