@@ -16,8 +16,8 @@ import HiddenBar2 from "../components/shared/Hiddenbar2";
 import HiddenBarMenuConfig from "../components/shared/HiddenBarMenuConfig";
 import WowHandle from "../components/shared/WowHandle";
 import ScrollToTop from "../components/shared/ScrollToTop";
-
-
+import CountManage from "../components/shared/CountManage";
+import FooterNew from "../components/shared/FooterNew";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -41,25 +41,20 @@ function MyApp({ Component, pageProps }) {
       `}</style> */}
       {/* <Nav></Nav> */}
       {/* <Navbar2/> */}
-      <Loader/>
-      <HandlePreloader/>
-      <WowHandle/>
-      <HeaderStyle/>
-      <SearchBox/>
-      <HiddenBar/>
-      <HiddenBar2/>
-      <HiddenBarMenuConfig/>
-
-
-
+      <Loader />
+      <HandlePreloader />
+      <WowHandle />
+      <HeaderStyle />
+      <SearchBox />
+      <HiddenBar />
+      <HiddenBar2 />
+      <HiddenBarMenuConfig />
 
       <SSRProvider>
         <Component {...pageProps} />
       </SSRProvider>
 
-    
-
-
+      <FooterNew />
       {/* <Footer>
 
       </Footer> */}

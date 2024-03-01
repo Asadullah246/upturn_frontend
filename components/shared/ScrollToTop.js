@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-const YourComponent = () => {
+const TopScrolling = () => {
   const scrollToTop = () => {
     const scrollStep = -window.scrollY / (500 / 15); 
     const scrollInterval = setInterval(() => {
@@ -37,4 +37,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default TopScrolling;
