@@ -86,7 +86,7 @@ const ComingSoon = () => {
               <div className="content-inner">
                 <div className="auto-container">
                   <div className="logo">
-                    <a href="index.html">
+                    <a href="/">
                       <img src="images/logo-2.png" alt="" />
                     </a>
                   </div>

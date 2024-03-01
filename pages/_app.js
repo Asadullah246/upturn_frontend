@@ -19,6 +19,8 @@ import ScrollToTop from "../components/shared/ScrollToTop";
 import CountManage from "../components/shared/CountManage";
 import FooterNew from "../components/shared/FooterNew";
 import Preloader from "../components/shared/Preloader";
+import MobileMenu from "../components/shared/MobileMenu";
+import SubmenuDropdownToggle from "../components/shared/SubmenuDropdownToggle";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -42,13 +44,15 @@ function MyApp({ Component, pageProps }) {
       `}</style> */}
       {/* <Nav></Nav> */}
       {/* <Navbar2/> */}
-      <Loader /> 
+      <Loader />
       <Preloader/>
 
       <HandlePreloader />
       <WowHandle />
       <HeaderStyle />
       <SearchBox />
+      <MobileMenu/>
+      <SubmenuDropdownToggle/>
       <HiddenBar />
       <HiddenBar2 />
       <HiddenBarMenuConfig />
