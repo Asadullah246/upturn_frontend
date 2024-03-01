@@ -14,6 +14,8 @@ import SearchBox from "../components/shared/SearchBox";
 import HiddenBar from "../components/shared/HiddenBar";
 import HiddenBar2 from "../components/shared/Hiddenbar2";
 import HiddenBarMenuConfig from "../components/shared/HiddenBarMenuConfig";
+import WowHandle from "../components/shared/WowHandle";
+import ScrollToTop from "../components/shared/ScrollToTop";
 
 
 
@@ -41,6 +43,7 @@ function MyApp({ Component, pageProps }) {
       {/* <Navbar2/> */}
       <Loader/>
       <HandlePreloader/>
+      <WowHandle/>
       <HeaderStyle/>
       <SearchBox/>
       <HiddenBar/>
@@ -53,9 +56,13 @@ function MyApp({ Component, pageProps }) {
       <SSRProvider>
         <Component {...pageProps} />
       </SSRProvider>
-      <Footer>
 
-      </Footer>
+    
+
+
+      {/* <Footer>
+
+      </Footer> */}
     </>
   );
 }
