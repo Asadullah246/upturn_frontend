@@ -1482,4 +1482,4 @@ const Shop = () => {
 };
 
 export default Shop;
-upTurnIdeaupTurnIdeaupTurnIdea
+ 
