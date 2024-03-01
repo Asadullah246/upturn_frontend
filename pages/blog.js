@@ -101,7 +101,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -111,20 +111,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Google now disregards or overlooks all reciprocal
                               links
                             </a>
@@ -146,7 +146,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -156,20 +156,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Absolute Links vs. Relative Links – SEO Intrinsic
                               Value
                             </a>
@@ -191,7 +191,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -201,20 +201,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               How to increase your ROI through scientific SEM?
                             </a>
                           </h5>
@@ -235,7 +235,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -245,20 +245,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Google now disregards or overlooks all reciprocal
                               links
                             </a>
@@ -280,7 +280,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -290,20 +290,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Absolute Links vs. Relative Links – SEO Intrinsic
                               Value
                             </a>
@@ -325,7 +325,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -335,20 +335,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               How to increase your ROI through scientific SEM?
                             </a>
                           </h5>
@@ -369,7 +369,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -379,20 +379,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Google now disregards or overlooks all reciprocal
                               links
                             </a>
@@ -414,7 +414,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -424,20 +424,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Absolute Links vs. Relative Links – SEO Intrinsic
                               Value
                             </a>
@@ -459,7 +459,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -469,20 +469,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               How to increase your ROI through scientific SEM?
                             </a>
                           </h5>
@@ -503,7 +503,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -513,20 +513,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Google now disregards or overlooks all reciprocal
                               links
                             </a>
@@ -548,7 +548,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -558,20 +558,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Absolute Links vs. Relative Links – SEO Intrinsic
                               Value
                             </a>
@@ -593,7 +593,7 @@ const Blog = () => {
                             <div className="overlay-inner">
                               <div className="content">
                                 <a
-                                  href="news-detail.html"
+                                  href="newsDetails"
                                   className="icon flaticon-unlink"
                                 />
                               </div>
@@ -603,20 +603,20 @@ const Blog = () => {
                         <div className="lower-content">
                           <ul className="post-meta">
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-user" /> Pablo
                                 Villalpando
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">
+                              <a href="newsDetails">
                                 <span className="icon fa fa-calendar" />{" "}
                                 November 21, 2020
                               </a>
                             </li>
                           </ul>
                           <h5>
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               How to increase your ROI through scientific SEM?
                             </a>
                           </h5>
@@ -724,12 +724,12 @@ const Blog = () => {
                               src="/newupdate/images/resource/post-thumb-1.jpg"
                               alt=""
                             />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <div className="text">
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               Google now disregards overlooks all links.
                             </a>
                           </div>
@@ -741,12 +741,12 @@ const Blog = () => {
                               src="/newupdate/images/resource/post-thumb-2.jpg"
                               alt=""
                             />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <div className="text">
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               How to increase your ROI through scientific SEM?
                             </a>
                           </div>
@@ -758,12 +758,12 @@ const Blog = () => {
                               src="/newupdate/images/resource/post-thumb-3.jpg"
                               alt=""
                             />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <div className="text">
-                            <a href="news-detail.html">
+                            <a href="newsDetails">
                               A Guide to Google SEO <br /> Algorithm Updates
                             </a>
                           </div>
@@ -815,37 +815,37 @@ const Blog = () => {
                         <div className="clearfix">
                           <figure className="post-thumb">
                             <img src="/newupdate/images/resource/instagram-1.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
                             <img src="/newupdate/images/resource/instagram-2.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
                             <img src="/newupdate/images/resource/instagram-3.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
                             <img src="/newupdate/images/resource/instagram-4.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
                             <img src="/newupdate/images/resource/instagram-5.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
                             <img src="/newupdate/images/resource/instagram-6.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
+                            <a href="newsDetails" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>

@@ -46,7 +46,7 @@ const HeaderLinks = () => {
                 id="navbarSupportedContent"
               >
                 <ul className="navigation clearfix">
-                  <li className="current dropdown">
+                  <li className="current ">
                     <a href="/">Home</a>
                     {/* <ul>
                       <li>
@@ -150,8 +150,8 @@ const HeaderLinks = () => {
                       </li>
                     </ul>
                   </li>
-                  <li className="dropdown">
-                    <a href="/project">Projects</a>
+                  <li className="">
+                    <a href="/projects">Projects</a>
                     {/* <ul>
                       <li>
                         <a href="/project">Projects</a>
@@ -305,7 +305,7 @@ const HeaderLinks = () => {
                         <a href="/blog">Our Blog</a>
                       </li>
                       <li>
-                        <a href="/blogCLassic">Blog Classic</a>
+                        <a href="#">Blog Classic</a>
                       </li>
 
                     </ul>
@@ -339,7 +339,7 @@ const HeaderLinks = () => {
           {/*Logo*/}
           <div className="logo pull-left">
             <a href="/" title="">
-              <img src="/newupdate/images/logo-small.png" alt="" title="" />
+              <img src="/newupdate/images/newIcons/logo.png" alt="" title="" className="smallLogo" />
             </a>
           </div>
           {/*Right Col*/}
@@ -375,7 +375,7 @@ const HeaderLinks = () => {
         <nav className="menu-box">
           <div className="nav-logo">
             <a href="/">
-              <img src="/newupdate/images/logo-3.png" alt="" title="" />
+              <img src="/newupdate/images/newIcons/logo.png" alt="" title="" />
             </a>
           </div>
           <div className="menu-outer">
