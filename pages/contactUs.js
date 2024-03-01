@@ -78,7 +78,7 @@ const ContactUs = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-         <PageHeader pagename={"Contact Us"}/> 
+         <PageHeader pagename={"Contact Us"}/>
           {/* End Main Header */}
 
           {/* Contact Info Section */}
@@ -186,7 +186,7 @@ const ContactUs = () => {
                   {/*Contact Form*/}
                   <form
                     method="post"
-                    action="https://html.themerange.net/merix/merix/sendemail.php"
+                    action="https://///sendemail.php"
                     id="contact-form"
                   >
                     <div className="row clearfix">
@@ -482,6 +482,7 @@ const ContactUs = () => {
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
+
         <SearchPopUp />
         <TopScrolling />
       </body>

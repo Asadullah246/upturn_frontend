@@ -188,7 +188,7 @@ const NewHome = () => {
                               <a href="team.html">Team</a>
                             </li>
                             <li>
-                              <a href="team-detail.html">Team Detail</a>
+                              <a href="/teamDetail">Team Detail</a>
                             </li>
                             <li>
                               <a href="testimonial.html">Testimonial</a>
@@ -275,7 +275,7 @@ const NewHome = () => {
                                     <a href="team.html">Team</a>
                                   </li>
                                   <li>
-                                    <a href="team-detail.html">Team Detail</a>
+                                    <a href="/teamDetail">Team Detail</a>
                                   </li>
                                   <li>
                                     <a href="testimonial.html">Testimonial</a>
@@ -343,7 +343,7 @@ const NewHome = () => {
                                     </a>
                                   </li>
                                   <li>
-                                    <a href="news-detail.html">Blog Single</a>
+                                    <a href="/newsDetails">Blog Single</a>
                                   </li>
                                   <li>
                                     <a href="not-found.html">Not Found</a>
@@ -411,7 +411,7 @@ const NewHome = () => {
                               </a>
                             </li>
                             <li>
-                              <a href="news-detail.html">Blog Single</a>
+                              <a href="/newsDetails">Blog Single</a>
                             </li>
                             <li>
                               <a href="not-found.html">Not Found</a>
@@ -1307,7 +1307,7 @@ const NewHome = () => {
                       </li>
                     </ul>
                     <div className="image">
-                      <a href="team-detail.html">
+                      <a href="/teamDetail">
                         <img
                           src="/newupdate/images/resource/team-12.jpg"
                           alt=""
@@ -1316,7 +1316,7 @@ const NewHome = () => {
                     </div>
                     <div className="lower-content">
                       <h3>
-                        <a href="team-detail.html">Christina Tores</a>
+                        <a href="/teamDetail">Christina Tores</a>
                       </h3>
                       <div className="designation">CEO of Company</div>
                     </div>
@@ -1344,7 +1344,7 @@ const NewHome = () => {
                       </li>
                     </ul>
                     <div className="image">
-                      <a href="team-detail.html">
+                      <a href="/teamDetail">
                         <img
                           src="/newupdate/images/resource/team-13.jpg"
                           alt=""
@@ -1353,7 +1353,7 @@ const NewHome = () => {
                     </div>
                     <div className="lower-content">
                       <h3>
-                        <a href="team-detail.html">Jacken Mike</a>
+                        <a href="/teamDetail">Jacken Mike</a>
                       </h3>
                       <div className="designation">General Manager</div>
                     </div>
@@ -1381,7 +1381,7 @@ const NewHome = () => {
                       </li>
                     </ul>
                     <div className="image">
-                      <a href="team-detail.html">
+                      <a href="/teamDetail">
                         <img
                           src="/newupdate/images/resource/team-14.jpg"
                           alt=""
@@ -1390,7 +1390,7 @@ const NewHome = () => {
                     </div>
                     <div className="lower-content">
                       <h3>
-                        <a href="team-detail.html">Regina Blackly</a>
+                        <a href="/teamDetail">Regina Blackly</a>
                       </h3>
                       <div className="designation">CTO of Company</div>
                     </div>
@@ -1885,7 +1885,7 @@ const NewHome = () => {
                         <div className="overlay-inner">
                           <div className="content">
                             <a
-                              href="news-detail.html"
+                              href="/newsDetails"
                               className="icon flaticon-unlink"
                             />
                           </div>
@@ -1895,20 +1895,20 @@ const NewHome = () => {
                     <div className="lower-content">
                       <ul className="post-meta">
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-user" /> Pablo
                             Villalpando
                           </a>
                         </li>
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-calendar" /> November
                             21, 2020
                           </a>
                         </li>
                       </ul>
                       <h5>
-                        <a href="news-detail.html">
+                        <a href="/newsDetails">
                           Google now disregards or overlooks all reciprocal
                           links
                         </a>
@@ -1930,7 +1930,7 @@ const NewHome = () => {
                         <div className="overlay-inner">
                           <div className="content">
                             <a
-                              href="news-detail.html"
+                              href="/newsDetails"
                               className="icon flaticon-unlink"
                             />
                           </div>
@@ -1940,20 +1940,20 @@ const NewHome = () => {
                     <div className="lower-content">
                       <ul className="post-meta">
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-user" /> Pablo
                             Villalpando
                           </a>
                         </li>
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-calendar" /> November
                             21, 2020
                           </a>
                         </li>
                       </ul>
                       <h5>
-                        <a href="news-detail.html">
+                        <a href="/newsDetails">
                           Absolute Links vs. Relative Links – SEO Intrinsic
                           Value
                         </a>
@@ -1975,7 +1975,7 @@ const NewHome = () => {
                         <div className="overlay-inner">
                           <div className="content">
                             <a
-                              href="news-detail.html"
+                              href="/newsDetails"
                               className="icon flaticon-unlink"
                             />
                           </div>
@@ -1985,20 +1985,20 @@ const NewHome = () => {
                     <div className="lower-content">
                       <ul className="post-meta">
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-user" /> Pablo
                             Villalpando
                           </a>
                         </li>
                         <li>
-                          <a href="news-detail.html">
+                          <a href="/newsDetails">
                             <span className="icon fa fa-calendar" /> November
                             21, 2020
                           </a>
                         </li>
                       </ul>
                       <h5>
-                        <a href="news-detail.html">
+                        <a href="/newsDetails">
                           How to increase your ROI through scientific SEM?
                         </a>
                       </h5>

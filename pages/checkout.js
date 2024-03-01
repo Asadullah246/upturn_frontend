@@ -544,7 +544,7 @@ const Checkout = () => {
               <div className="checkout-form">
                 <form
                   method="post"
-                  action="https://html.themerange.net/merix/merix/checkout.html"
+                  action="https://///checkout.html"
                 >
                   <div className="row clearfix">
                     {/*Column*/}
@@ -892,7 +892,7 @@ const Checkout = () => {
                     <div className="newsletter-form">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        action="https://///contact.html"
                       >
                         <div className="form-group">
                           <input
@@ -1156,6 +1156,7 @@ const Checkout = () => {
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
+
         <SearchPopUp />
         <TopScrolling />
       </body>

@@ -1033,8 +1033,10 @@ const AppDevelopment = () => {
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
+
         <SearchPopUp />
         <TopScrolling />
+
       </body>
 
       {/* body end  */}

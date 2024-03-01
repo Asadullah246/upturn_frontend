@@ -674,7 +674,7 @@ const AboutUs = () => {
                     <div className="newsletter-form">
                       <form
                         method="post"
-                        // action="https://html.themerange.net/merix/merix/contact.html"
+                        // action="https://///contact.html"
                         action="#"
                       >
                         <div className="form-group">
@@ -701,12 +701,13 @@ const AboutUs = () => {
           </section>
           {/* End Newsleter Section */}
           {/* Main Footer */}
-        
+
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
+      <SearchPopUp />
         <TopScrolling />
+
       </body>
       {/* body end  */}
     </div>

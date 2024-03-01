@@ -656,7 +656,7 @@ const Blog = () => {
                     <div className="sidebar-widget search-box">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        action="https://///contact.html"
                       >
                         <div className="form-group">
                           <input
@@ -941,7 +941,7 @@ const Blog = () => {
             </div>
           </section>
           {/* End Clients Section */}
-       
+
         </div>
         {/*End pagewrapper*/}
         {/* Color Palate / Color Switcher */}

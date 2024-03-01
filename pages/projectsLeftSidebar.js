@@ -542,7 +542,7 @@ const ProjectsLeftSidebar = () => {
                     <div className="sidebar-widget search-box">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        action="https://///contact.html"
                       >
                         <div className="form-group">
                           <input
