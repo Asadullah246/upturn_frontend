@@ -293,7 +293,7 @@ const Terms = () => {
                         <div className="form-group">
                           <input
                             type="email"
-                            name="email"src="/newupdate/images
+                            name="email" src="/newupdate/images"
                             defaultValue=""
                             placeholder="Enter Your Email"
                             required=""
@@ -521,7 +521,7 @@ const Terms = () => {
                               <span className="icon flaticon-phone-call" />
                               <a href="tel:+0987-654-321">0987 654 321</a>{" "}
                               <a href="tel:+01upTurnIdea6-789">0123 456 789</a>
-                            </liupTurnIdea
+                            </li> upTurnIdea
                             <li>
                               <span className="icon flaticon-email" />
                               <a href="mailto:upTurnIdea@gmail.com">
