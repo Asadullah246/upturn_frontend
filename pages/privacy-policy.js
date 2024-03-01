@@ -1,4 +1,6 @@
 import React from "react";
+import TopScrolling from "../components/shared/ScrollToTop";
+import SearchPopUp from "../components/shared/SearchPopUp";
 
 const privacyPolicy = () => {
   return (
@@ -79,6 +81,8 @@ const privacyPolicy = () => {
           </p>
         </div>
       </div>
+      <SearchPopUp />
+      <TopScrolling />
     </div>
   );
 };
