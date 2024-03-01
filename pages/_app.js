@@ -18,6 +18,7 @@ import WowHandle from "../components/shared/WowHandle";
 import ScrollToTop from "../components/shared/ScrollToTop";
 import CountManage from "../components/shared/CountManage";
 import FooterNew from "../components/shared/FooterNew";
+import Preloader from "../components/shared/Preloader";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -41,7 +42,9 @@ function MyApp({ Component, pageProps }) {
       `}</style> */}
       {/* <Nav></Nav> */}
       {/* <Navbar2/> */}
-      <Loader />
+      <Loader /> 
+      <Preloader/>
+
       <HandlePreloader />
       <WowHandle />
       <HeaderStyle />

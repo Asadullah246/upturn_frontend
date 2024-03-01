@@ -432,10 +432,10 @@ const PageHeader = ({ pagename }) => {
           }}
         />
         <div className="auto-container">
-          <h2>About us</h2>
+          <h2>{pagename}</h2>
           <ul className="page-breadcrumb">
             <li>
-              <a href="/">home</a>
+              <a href="/">home</a> 
             </li>
             <li>{pagename}</li>
           </ul>
