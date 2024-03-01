@@ -1346,6 +1346,10 @@ img.homepageLogo {
     margin-top: 22px;
 
 }
+.smallLogo {
+	height: 34px;
+    margin-top: 10px; 
+}
 
 .main-header .main-box .logo-box{
 	position:relative;
