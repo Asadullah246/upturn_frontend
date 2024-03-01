@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/Home.module.css";
+import TopScrolling from "../components/shared/ScrollToTop";
+import SearchPopUp from "../components/shared/SearchPopUp";
 
 const virtualClassroom = () => {
   return (
@@ -18,6 +20,8 @@ const virtualClassroom = () => {
           />
         </div>
       </div>
+      <SearchPopUp />
+      <TopScrolling />
     </div>
   );
 };

@@ -1,4 +1,6 @@
 import React from "react";
+import TopScrolling from "../components/shared/ScrollToTop";
+import SearchPopUp from "../components/shared/SearchPopUp";
 
 const termsAndConditions = () => {
   return (
@@ -91,6 +93,8 @@ const termsAndConditions = () => {
           </p>
         </div>
       </div>
+      <SearchPopUp />
+      <TopScrolling />
     </div>
   );
 };
