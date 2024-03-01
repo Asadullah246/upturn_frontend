@@ -388,7 +388,7 @@ const AboutUs = () => {
                       </h2>
                     </div>
                     <div className="bold-text">
-                      Merix is a brand of digital agency. Competen novate
+                      upTurnIdea is a brand of digital agency. Competen novate
                       synergstic vortas through forward strategic theme areas
                       Compelling extend super was that Proactive myocardinate
                       vertical strategic

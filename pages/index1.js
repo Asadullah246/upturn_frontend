@@ -914,7 +914,7 @@ const Index1 = () => {
                       <h2>Grow Business with SEO</h2>
                     </div>
                     <div className="bold-text">
-                      Over 12 years Merix helping companies reach their
+                      Over 12 years upTurnIdea helping companies reach their
                       financial and branding goals.
                     </div>
                     <div className="text">
@@ -2233,8 +2233,8 @@ const Index1 = () => {
                             </li>
                             <li>
                               <span className="icon flaticon-email" />
-                              <a href="mailto:Merix@gmail.com">
-                                Merix@gmail.com
+                              <a href="mailto:upTurnIdea@gmail.com">
+                                upTurnIdea@gmail.com
                               </a>
                             </li>
                             <li>
@@ -2251,7 +2251,7 @@ const Index1 = () => {
               {/* Footer Bottom */}
               <div className="footer-bottom">
                 <div className="copyright">
-                  Copyright © 2020 Merix by{" "}
+                  Copyright © 2020 upTurnIdea by{" "}
                   <a href="https://themeforest.net/user/themerange">
                     ThemeRange
                   </a>

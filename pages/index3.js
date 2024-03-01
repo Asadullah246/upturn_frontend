@@ -610,7 +610,7 @@ const Index3 = () => {
                           </li>
                           <li>
                             <span className="icon fa fa-envelope" />
-                            <a href="mailto:Merix@gmail.com">Merix@gmail.com</a>
+                            <a href="mailto:upTurnIdea@gmail.com">upTurnIdea@gmail.com</a>
                           </li>
                           <li>
                             <span className="icon fa fa-clock-o" />
@@ -725,7 +725,7 @@ const Index3 = () => {
                       </h2>
                     </div>
                     <div className="bold-text">
-                      Merix is a brand of digital agency. Competen novate
+                      upTurnIdea is a brand of digital agency. Competen novate
                       synergstic vortas through forward strategic theme areas
                       Compelling extend super was that Proactive myocardinate
                       vertical strategic
@@ -1744,8 +1744,8 @@ const Index3 = () => {
                             </li>
                             <li>
                               <span className="icon flaticon-email" />
-                              <a href="mailto:Merix@gmail.com">
-                                Merix@gmail.com
+                              <a href="mailto:upTurnIdea@gmail.com">
+                                upTurnIdea@gmail.com
                               </a>
                             </li>
                             <li>
@@ -1762,7 +1762,7 @@ const Index3 = () => {
               {/* Footer Bottom */}
               <div className="footer-bottom">
                 <div className="copyright">
-                  Copyright © 2020 Merix by{" "}
+                  Copyright © 2020 upTurnIdea by{" "}
                   <a href="https://themeforest.net/user/themerange">
                     ThemeRange
                   </a>

@@ -807,3 +807,4 @@ const ProjectsDetail = () => {
 };
 
 export default ProjectsDetail;
+upTurnIdeaupTurnIdeaupTurnIdea

@@ -748,8 +748,8 @@ const NotFound = () => {
                               <span className="icon flaticon-phone-call" />
                               <a href="tel:+0987-654-321">0987 654 321</a>{" "}
                               <a href="tel:+0123-456-789">0123 456 789</a>
-                            </li>
-                            <li>
+                            </li>upTurnIdea
+                            <li>upTurnIdea
                               <span className="icon flaticon-email" />
                               <a href="mailto:Merix@gmail.com">
                                 Merix@gmail.com
@@ -766,7 +766,7 @@ const NotFound = () => {
                   </div>
                 </div>
               </div>
-              {/* Footer Bottom */}
+              {/* Footer Bottom */}upTurnIdea
               <div className="footer-bottom">
                 <div className="copyright">
                   Copyright © 2020 Merix by{" "}

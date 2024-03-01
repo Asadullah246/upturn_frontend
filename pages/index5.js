@@ -96,9 +96,9 @@ const Index5 = () => {
                       </li>
                       <li>
                         <span className="icon flaticon-big-envelope" />
-                        <a href="mailto:Merix_itcompany@gmail.com">
+                        <a href="mailto:upTurnIdea_itcompany@gmail.com">
                           {" "}
-                          Merix_itcompany@gmail.com
+                          upTurnIdea_itcompany@gmail.com
                         </a>
                       </li>
                     </ul>
@@ -712,7 +712,7 @@ const Index5 = () => {
                           </li>
                           <li>
                             <span className="icon fa fa-envelope" />
-                            <a href="mailto:Merix@gmail.com">Merix@gmail.com</a>
+                            <a href="mailto:upTurnIdea@gmail.com">upTurnIdea@gmail.com</a>
                           </li>
                           <li>
                             <span className="icon fa fa-clock-o" />
@@ -2380,8 +2380,8 @@ const Index5 = () => {
                                 <a href="tel:+0123-456-789">0123 456 789</a>
                               </li>
                               <li>
-                                <a href="mailto:Merix@gmail.com">
-                                  Merix@gmail.com
+                                <a href="mailto:upTurnIdea@gmail.com">
+                                  upTurnIdea@gmail.com
                                 </a>
                               </li>
                               <li>

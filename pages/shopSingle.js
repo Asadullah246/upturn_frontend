@@ -80,7 +80,7 @@ const ShopSingle = () => {
           </div>
           {/* Main Header*/}
 
-          <PageHeader pagename={"Shop Single"}/>                           
+          <PageHeader pagename={"Shop Single"}/>
             <li>
                               <a href="blog.html">Our Blog</a>
                             </li>
@@ -1181,3 +1181,4 @@ const ShopSingle = () => {
 };
 
 export default ShopSingle;
+upTurnIdeaupTurnIdeaupTurnIdea

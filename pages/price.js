@@ -971,8 +971,8 @@ const Price = () => {
                           <ul className="list-style-two">
                             <li>
                               <span className="icon flaticon-wall-clock" />
-                              Mon – Sat 10:00pm - 8:00pm
-                            </li>
+                              Mon – Sat 10:00pupTurnIdea:00pm
+                            </liupTurnIdea
                             <li>
                               <span className="icon flaticon-phone-call" />
                               <a href="tel:+0987-654-321">0987 654 321</a>{" "}
@@ -989,7 +989,7 @@ const Price = () => {
                               16122 Collins Street West, Melbourne, VIC Srsars
                             </li>
                           </ul>
-                        </div>
+                        </div>upTurnIdea
                       </div>
                     </div>
                   </div>

@@ -106,7 +106,7 @@ const TeamDetail = () => {
                     <ul className="post-meta">
                       <li>
                         <span className="icon flaticon-big-envelope" />{" "}
-                        <a href="mailto:Merix@gmail.com">Merix@gmail.com</a>
+                        <a href="mailto:upTurnIdea@gmail.com">upTurnIdea@gmail.com</a>
                       </li>
                       <li>
                         <span className="icon flaticon-phone-call" />{" "}

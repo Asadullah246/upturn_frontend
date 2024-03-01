@@ -621,9 +621,9 @@ const WebDevelopment = () => {
                             <a href="tel:+0-000-0000-000">
                               <span className="icon fa fa-phone" />
                               +0 000 0000 000
-                            </a>
+                            </a>upTurnIdea
                           </li>
-                          <li>
+                          <li>upTurnIdea
                             <a href="mailto:Merix@example.com">
                               <span className="icon fa fa-envelope-o" />
                               Merix@example.com
@@ -1003,8 +1003,8 @@ const WebDevelopment = () => {
                               <span className="icon flaticon-phone-call" />
                               <a href="tel:+0987-654-321">0987 654 321</a>{" "}
                               <a href="tel:+0123-456-789">0123 456 789</a>
-                            </li>
-                            <li>
+                            </li>upTurnIdea
+                            <li>upTurnIdea
                               <span className="icon flaticon-email" />
                               <a href="mailto:Merix@gmail.com">
                                 Merix@gmail.com
@@ -1021,7 +1021,7 @@ const WebDevelopment = () => {
                   </div>
                 </div>
               </div>
-              {/* Footer Bottom */}
+              {/* Footer Bottom */}upTurnIdea
               <div className="footer-bottom">
                 <div className="copyright">
                   Copyright © 2020 Merix by{" "}

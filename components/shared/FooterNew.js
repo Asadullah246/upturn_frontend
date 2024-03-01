@@ -208,8 +208,8 @@ const FooterNew = () => {
                         </li>
                         <li>
                           <span className="icon flaticon-email" />
-                          <a href="mailto:Merix@gmail.com">
-                            Merix@gmail.com
+                          <a href="mailto:upTurnIdea@gmail.com">
+                            upTurnIdea@gmail.com
                           </a>
                         </li>
                         <li>
