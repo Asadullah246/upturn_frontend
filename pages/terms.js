@@ -79,8 +79,9 @@ const Terms = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-          <PageHeader pagename={"Terms"}/>
-          {/* End Page Title Section */}
+
+        <PageHeader pagename={"Terms"}/>
+
           {/* Privacy Section */}
           <section className="privacy-section">
             <div className="auto-container">
@@ -292,7 +293,7 @@ const Terms = () => {
                         <div className="form-group">
                           <input
                             type="email"
-                            name="email"
+                            name="email"src="/newupdate/images
                             defaultValue=""
                             placeholder="Enter Your Email"
                             required=""
@@ -351,7 +352,9 @@ const Terms = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="index.html">
+
+                            <a href="/">
+
                               <img src="/newupdate/images/logo.png" alt="" />
                             </a>
                           </div>

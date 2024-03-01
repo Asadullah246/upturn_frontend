@@ -79,7 +79,147 @@ const ShopSingle = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-          <PageHeader pagename={"Shop Single"}/>
+
+          <PageHeader pagename={"Shop Single"}/>                           
+            <li>
+                              <a href="blog.html">Our Blog</a>
+                            </li>
+                            <li>
+                              <a href="blog-classic.html">Blog Classic</a>
+                            </li>
+                            <li>
+                              <a href="blog-left-sidebar.html">
+                                Blog Left Sidebar
+                              </a>
+                            </li>
+                            <li>
+                              <a href="news-detail.html">Blog Single</a>
+                            </li>
+                            <li>
+                              <a href="not-found.html">Not Found</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="contact.html">Contact us</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  {/* Main Menu End*/}
+                  <div className="outer-box clearfix">
+                    {/* Quote Btn */}
+                    <div className="btn-box">
+                      <a
+                        href="contact.html"
+                        className="theme-btn btn-style-one"
+                      >
+                        <span className="txt">Get A Quote</span>
+                      </a>
+                    </div>
+                    {/* Search Btn */}
+                    <div className="search-box-btn search-box-outer">
+                      <span className="icon fa fa-search" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/*End Header Upper*/}
+            {/* Sticky Header  */}
+            <div className="sticky-header">
+              <div className="auto-container clearfix">
+                {/*Logo*/}
+                <div className="logo pull-left">
+                  <a href="/" title="">
+                    <img src="images/logo-small.png" alt="" title="" />
+                  </a>
+                </div>
+                {/*Right Col*/}
+                <div className="pull-right">
+                  {/* Main Menu */}
+                  <nav className="main-menu">
+                    {/*Keep This Empty / Menu will come through Javascript*/}
+                  </nav>
+                  {/* Main Menu End*/}
+                  {/* Main Menu End*/}
+                  <div className="outer-box clearfix">
+                    {/* Quote Btn */}
+                    <div className="btn-box">
+                      <a
+                        href="contact.html"
+                        className="theme-btn btn-style-two"
+                      >
+                        <span className="txt">Get A Quote</span>
+                      </a>
+                    </div>
+                    {/* Search Btn */}
+                    <div className="search-box-btn search-box-outer">
+                      <span className="icon fa fa-search" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* End Sticky Menu */}
+            {/* Mobile Menu  */}
+            <div className="mobile-menu">
+              <div className="menu-backdrop" />
+              <div className="close-btn">
+                <span className="icon flaticon-multiply" />
+              </div>
+              <nav className="menu-box">
+                <div className="nav-logo">
+                  <a href="/">
+                    <img src="images/logo-3.png" alt="" title="" />
+                  </a>
+                </div>
+                <div className="menu-outer">
+                  {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
+                </div>
+              </nav>
+            </div>
+            {/* End Mobile Menu */}
+          </header>
+          {/* End Main Header */}
+          {/* Page Title Section */}
+          <section
+            className="page-title"
+            style={{ backgroundImage: "url(images/background/pattern-16.png)" }}
+          >
+            <div
+              className="pattern-layer-one"
+              style={{
+                backgroundImage: "url(images/main-slider/pattern-1.png)",
+              }}
+            />
+            <div
+              className="pattern-layer-two"
+              style={{
+                backgroundImage: "url(images/background/pattern-17.png)",
+              }}
+            />
+            <div
+              className="pattern-layer-three"
+              style={{
+                backgroundImage: "url(images/background/pattern-18.png)",
+              }}
+            />
+            <div
+              className="pattern-layer-four"
+              style={{ backgroundImage: "url(images/icons/cross-icon.png)" }}
+            />
+            <div className="auto-container">
+              <h2>Shop Detail</h2>
+              <ul className="page-breadcrumb">
+                <li>
+                  <a href="/">home</a>
+                </li>
+                <li>Shop Detail</li>
+              </ul>
+            </div>
+          </section>
+
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
@@ -831,9 +971,10 @@ const ShopSingle = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="index.html">
+
+                            <a href="/">
                               <img src="/newupdate/images/logo.png" alt="" />
-                            </a>
+              </a>
                           </div>
                           <div className="text">
                             Our approach to SEO is uniquely built around what we

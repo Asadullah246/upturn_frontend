@@ -85,8 +85,10 @@ const Price = () => {
               <div className="auto-container clearfix">
                 <div className="pull-left logo-box">
                   <div className="logo">
+
                     <a href="index.html">
                       <img src="/newupdate/images/logo.png" alt="" title="" />
+
                     </a>
                   </div>
                 </div>
@@ -122,7 +124,7 @@ const Price = () => {
                           <a href="#">Home</a>
                           <ul>
                             <li>
-                              <a href="index.html">Homepage One</a>
+                              <a href="/">Homepage One</a>
                             </li>
                             <li>
                               <a href="index-2.html">Homepage Two</a>
@@ -143,7 +145,7 @@ const Price = () => {
                               <a href="#">Header Styles</a>
                               <ul>
                                 <li>
-                                  <a href="index.html">Header Style One</a>
+                                  <a href="/">Header Style One</a>
                                 </li>
                                 <li>
                                   <a href="index-2.html">Header Style Two</a>
@@ -441,8 +443,10 @@ const Price = () => {
               <div className="auto-container clearfix">
                 {/*Logo*/}
                 <div className="logo pull-left">
+
                   <a href="index.html" title="">
                     <img src="/newupdate/images/logo-small.png" alt="" title="" />
+
                   </a>
                 </div>
                 {/*Right Col*/}
@@ -480,8 +484,10 @@ const Price = () => {
               </div>
               <nav className="menu-box">
                 <div className="nav-logo">
+
                   <a href="index.html">
                     <img src="/newupdate/images/logo-3.png" alt="" title="" />
+
                   </a>
                 </div>
                 <div className="menu-outer">
@@ -523,7 +529,7 @@ const Price = () => {
               <h2>Price Plan</h2>
               <ul className="page-breadcrumb">
                 <li>
-                  <a href="index.html">home</a>
+                  <a href="/">home</a>
                 </li>
                 <li>Price Plan</li>
               </ul>
@@ -802,8 +808,10 @@ const Price = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="index.html">
+
+                            <a href="/">
                               <img src="/newupdate/images/logo.png" alt="" />
+
                             </a>
                           </div>
                           <div className="text">

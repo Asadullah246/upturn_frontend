@@ -388,6 +388,7 @@ const ContentMarketing = () => {
                           <div className="logo">
                             <a href="index.html">
                               <img src="/newupdate/images/logo.png" alt="" />
+
                             </a>
                           </div>
                           <div className="text">

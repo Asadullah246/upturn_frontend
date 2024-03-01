@@ -79,6 +79,7 @@ const SocialMarketing = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
+
           <PageHeader pagename={"Social Marketing"}/>
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
@@ -385,8 +386,10 @@ const SocialMarketing = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="index.html">
+
+                            <a href="/">
                               <img src="/newupdate/images/logo.png" alt="" />
+
                             </a>
                           </div>
                           <div className="text">

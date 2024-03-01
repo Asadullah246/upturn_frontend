@@ -47,7 +47,7 @@ const PageHeader = ({ pagename }) => {
                       <a href="#">Home</a>
                       <ul>
                         <li>
-                          <a href="index.html">Homepage One</a>
+                          <a href="/">Homepage One</a>
                         </li>
                         <li>
                           <a href="index-2.html">Homepage Two</a>
@@ -68,7 +68,7 @@ const PageHeader = ({ pagename }) => {
                           <a href="#">Header Styles</a>
                           <ul>
                             <li>
-                              <a href="index.html">Header Style One</a>
+                              <a href="/">Header Style One</a>
                             </li>
                             <li>
                               <a href="index-2.html">Header Style Two</a>
@@ -351,7 +351,7 @@ const PageHeader = ({ pagename }) => {
           <div className="auto-container clearfix">
             {/*Logo*/}
             <div className="logo pull-left">
-              <a href="index.html" title="">
+              <a href="/" title="">
                 <img src="/newupdate/images/logo-small.png" alt="" title="" />
               </a>
             </div>
@@ -388,7 +388,7 @@ const PageHeader = ({ pagename }) => {
           </div>
           <nav className="menu-box">
             <div className="nav-logo">
-              <a href="index.html">
+              <a href="/">
                 <img src="/newupdate/images/logo-3.png" alt="" title="" />
               </a>
             </div>
@@ -435,7 +435,7 @@ const PageHeader = ({ pagename }) => {
           <h2>{pagename}</h2>
           <ul className="page-breadcrumb">
             <li>
-              <a href="/">home</a> 
+              <a href="/">home</a>
             </li>
             <li>{pagename}</li>
           </ul>

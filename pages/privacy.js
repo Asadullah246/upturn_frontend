@@ -79,7 +79,95 @@ const Privacy = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
+
           <PageHeader pagename={"Privacy"}/>
+
+          <header className="main-header">
+            {/*Header-Upper*/}
+            <div className="header-upper">
+              <div className="auto-container clearfix">
+                <div className="pull-left logo-box">
+                  <div className="logo">
+                    <a href="/">
+                      <img src="images/logo.png" alt="" title="" />
+                    </a>
+                  </div>
+                </div>
+                <div className="nav-outer clearfix">
+                  {/*Mobile Navigation Toggler*/}
+                  <div className="mobile-nav-toggler">
+                    <span className="icon flaticon-menu" />
+                  </div>
+                  {/* Main Menu */}
+                  <nav className="main-menu navbar-expand-md">
+                    <div className="navbar-header">
+                      {/* Toggle Button */}
+                      <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                      >
+                        <span className="icon-bar" />
+                        <span className="icon-bar" />
+                        <span className="icon-bar" />
+                      </button>
+                    </div>
+                    <div
+                      className="navbar-collapse collapse clearfix"
+                      id="navbarSupportedContent"
+                    >
+                      <ul className="navigation clearfix">
+                        <li className="dropdown">
+                          <a href="#">Home</a>
+                          <ul>
+                            <li>
+                              <a href="/">Homepage One</a>
+                            </li>
+                            <li>
+                              <a href="index-2.html">Homepage Two</a>
+                            </li>
+                            <li>
+                              <a href="index-3.html">Homepage Three</a>
+                            </li>
+                            <li>
+                              <a href="index-4.html">Homepage Four</a>
+                            </li>
+                            <li>
+                              <a href="index-5.html">Homepage Five</a>
+                            </li>
+                            <li>
+                              <a href="index-6.html">Homepage Six</a>
+                            </li>
+                            <li className="dropdown">
+                              <a href="#">Header Styles</a>
+                              <ul>
+                                <li>
+                                  <a href="/">Header Style One</a>
+                                </li>
+                                <li>
+                                  <a href="index-2.html">Header Style Two</a>
+                                </li>
+                                <li>
+                                  <a href="index-3.html">Header Style Three</a>
+                                </li>
+                                <li>
+                                  <a href="index-4.html">Header Style Four</a>
+                                </li>
+                                <li>
+                                  <a href="index-5.html">Header Style Five</a>
+                                </li>
+                                <li>
+                                  <a href="index-6.html">Header Style Six</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+
           {/* End Page Title Section */}
           {/* Privacy Section */}
           <section className="privacy-section">
@@ -352,12 +440,13 @@ const Privacy = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
+
                             <a href="index.html">
                               <img
-                                src="/newupdate/images
-/logo.png"
+                                src="/newupdate/images/logo.png"
                                 alt=""
                               />
+
                             </a>
                           </div>
                           <div className="text">

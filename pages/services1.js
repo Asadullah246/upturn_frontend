@@ -79,6 +79,7 @@ const Services1 = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
+
           <PageHeader pagename={"Services1"}/>
           {/* End Page Title Section */}
           {/* Services Page Section */}
@@ -676,8 +677,10 @@ const Services1 = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="index.html">
+
+                            <a href="/">
                               <img src="/newupdate/images/logo.png" alt="" />
+
                             </a>
                           </div>
                           <div className="text">

@@ -79,6 +79,7 @@ const Faq = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
+
           <PageHeader pagename={"Faq"} />
           {/* End Page Title Section */}
           {/* Faq Page Section */}
@@ -398,7 +399,7 @@ const Faq = () => {
                       <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                         <div className="footer-widget logo-widget">
                           <div className="logo">
-                            <a href="index.html">
+                            <a href="/">
                               <img src="images/logo.png" alt="" />
                             </a>
                           </div>
