@@ -1,9 +1,26 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import PageHeader from "../components/shared/pageHeader";
+import CountUp from 'react-countup';
+import { useInView } from "react-intersection-observer";
+import ScrollToTop from "../components/shared/ScrollToTop";
+import CountManage from "../components/shared/CountManage";
 
 const AboutUs = () => {
+
+
+  const [startCountUp, setStartCountUp] = useState(false);
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      setStartCountUp(true);
+    }
+  }, [inView]);
+
   return (
-    <div>
+    <div >
+
       <Head>
         {/* font  */}
         <link
@@ -69,7 +86,7 @@ const AboutUs = () => {
       </Head>
 
       {/* body  */}
-      <body className="hidden-bar-wrapper">
+      <body className="hidden-bar-wrapper"  ref={ref}  >
         <div className="page-wrapper">
           {/* Preloader */}
 
@@ -77,470 +94,28 @@ const AboutUs = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-          <header className="main-header">
-            {/*Header-Upper*/}
-            <div className="header-upper">
-              <div className="auto-container clearfix">
-                <div className="pull-left logo-box">
-                  <div className="logo">
-                    <a href="index.html">
-                      <img src="images/logo.png" alt="" title="" />
-                    </a>
-                  </div>
-                </div>
-                <div className="nav-outer clearfix">
-                  {/*Mobile Navigation Toggler*/}
-                  <div className="mobile-nav-toggler">
-                    <span className="icon flaticon-menu" />
-                  </div>
-                  {/* Main Menu */}
-                  <nav className="main-menu navbar-expand-md">
-                    <div className="navbar-header">
-                      {/* Toggle Button */}
-                      <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                        <span className="icon-bar" />
-                        <span className="icon-bar" />
-                        <span className="icon-bar" />
-                      </button>
-                    </div>
-                    <div
-                      className="navbar-collapse collapse clearfix"
-                      id="navbarSupportedContent"
-                    >
-                      <ul className="navigation clearfix">
-                        <li className="dropdown">
-                          <a href="#">Home</a>
-                          <ul>
-                            <li>
-                              <a href="index.html">Homepage One</a>
-                            </li>
-                            <li>
-                              <a href="index-2.html">Homepage Two</a>
-                            </li>
-                            <li>
-                              <a href="index-3.html">Homepage Three</a>
-                            </li>
-                            <li>
-                              <a href="index-4.html">Homepage Four</a>
-                            </li>
-                            <li>
-                              <a href="index-5.html">Homepage Five</a>
-                            </li>
-                            <li>
-                              <a href="index-6.html">Homepage Six</a>
-                            </li>
-                            <li className="dropdown">
-                              <a href="#">Header Styles</a>
-                              <ul>
-                                <li>
-                                  <a href="index.html">Header Style One</a>
-                                </li>
-                                <li>
-                                  <a href="index-2.html">Header Style Two</a>
-                                </li>
-                                <li>
-                                  <a href="index-3.html">Header Style Three</a>
-                                </li>
-                                <li>
-                                  <a href="index-4.html">Header Style Four</a>
-                                </li>
-                                <li>
-                                  <a href="index-5.html">Header Style Five</a>
-                                </li>
-                                <li>
-                                  <a href="index-6.html">Header Style Six</a>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="current dropdown">
-                          <a href="#">About</a>
-                          <ul>
-                            <li>
-                              <a href="about.html">About Us</a>
-                            </li>
-                            <li>
-                              <a href="faq.html">Faq</a>
-                            </li>
-                            <li>
-                              <a href="price.html">Price</a>
-                            </li>
-                            <li>
-                              <a href="team.html">Team</a>
-                            </li>
-                            <li>
-                              <a href="team-detail.html">Team Detail</a>
-                            </li>
-                            <li>
-                              <a href="testimonial.html">Testimonial</a>
-                            </li>
-                            <li>
-                              <a href="comming-soon.html">Comming Soon</a>
-                            </li>
-                            <li>
-                              <a href="terms.html">Terms &amp; Condition</a>
-                            </li>
-                            <li>
-                              <a href="privacy.html">Privacy &amp; Policy</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Services</a>
-                          <ul>
-                            <li>
-                              <a href="services.html">Services</a>
-                            </li>
-                            <li>
-                              <a href="content-marketing.html">
-                                Content Marketing
-                              </a>
-                            </li>
-                            <li>
-                              <a href="social-marketing.html">
-                                Social Marketing
-                              </a>
-                            </li>
-                            <li>
-                              <a href="app-development.html">App Development</a>
-                            </li>
-                            <li>
-                              <a href="seo.html">SEO Optimization</a>
-                            </li>
-                            <li>
-                              <a href="web-development.html">Web Development</a>
-                            </li>
-                            <li>
-                              <a href="advertising.html">PPC Advertising</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Projects</a>
-                          <ul>
-                            <li>
-                              <a href="projects.html">Projects</a>
-                            </li>
-                            <li>
-                              <a href="projects-left-sidebar.html">
-                                Projects Left Sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="projects-right-sidebar.html">
-                                Projects Right Sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="projects-detail.html">Projects Detail</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="dropdown has-mega-menu">
-                          <a href="#">Pages</a>
-                          <div className="mega-menu">
-                            <div className="mega-menu-bar row clearfix">
-                              <div className="column col-lg-3 col-md-4 col-sm-12">
-                                <h3>About Us</h3>
-                                <ul>
-                                  <li>
-                                    <a href="about.html">About Us</a>
-                                  </li>
-                                  <li>
-                                    <a href="faq.html">Faq</a>
-                                  </li>
-                                  <li>
-                                    <a href="price.html">Price</a>
-                                  </li>
-                                  <li>
-                                    <a href="team.html">Team</a>
-                                  </li>
-                                  <li>
-                                    <a href="team-detail.html">Team Detail</a>
-                                  </li>
-                                  <li>
-                                    <a href="testimonial.html">Testimonial</a>
-                                  </li>
-                                  <li>
-                                    <a href="comming-soon.html">Comming Soon</a>
-                                  </li>
-                                  <li>
-                                    <a href="terms.html">
-                                      Terms &amp; Condition
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="privacy.html">
-                                      Privacy &amp; Policy
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="column col-lg-3 col-md-4 col-sm-12">
-                                <h3>Services</h3>
-                                <ul>
-                                  <li>
-                                    <a href="content-marketing.html">
-                                      Content Marketing
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="social-marketing.html">
-                                      Social Marketing
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="app-development.html">
-                                      App Development
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="seo.html">SEO Optimization</a>
-                                  </li>
-                                  <li>
-                                    <a href="web-development.html">
-                                      Web Development
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="advertising.html">
-                                      PPC Advertising
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="column col-lg-3 col-md-4 col-sm-12">
-                                <h3>Blog</h3>
-                                <ul>
-                                  <li>
-                                    <a href="blog.html">Our Blog</a>
-                                  </li>
-                                  <li>
-                                    <a href="blog-classic.html">Blog Classic</a>
-                                  </li>
-                                  <li>
-                                    <a href="blog-left-sidebar.html">
-                                      Blog Left Sidebar
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="news-detail.html">Blog Single</a>
-                                  </li>
-                                  <li>
-                                    <a href="not-found.html">Not Found</a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="column col-lg-3 col-md-4 col-sm-12">
-                                <h3>Our Shop</h3>
-                                <ul>
-                                  <li>
-                                    <a href="shop.html">Shop</a>
-                                  </li>
-                                  <li>
-                                    <a href="shop-single.html">Shop Details</a>
-                                  </li>
-                                  <li>
-                                    <a href="shoping-cart.html">Cart Page</a>
-                                  </li>
-                                  <li>
-                                    <a href="checkout.html">Checkout Page</a>
-                                  </li>
-                                  <li>
-                                    <a href="login.html">Login</a>
-                                  </li>
-                                  <li>
-                                    <a href="register.html">Register</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Shop</a>
-                          <ul>
-                            <li>
-                              <a href="shop.html">Our Products</a>
-                            </li>
-                            <li>
-                              <a href="shop-single.html">Product Single</a>
-                            </li>
-                            <li>
-                              <a href="shopping-cart.html">Shopping Cart</a>
-                            </li>
-                            <li>
-                              <a href="checkout.html">Checkout</a>
-                            </li>
-                            <li>
-                              <a href="account.html">Account</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li className="dropdown">
-                          <a href="#">Blog</a>
-                          <ul>
-                            <li>
-                              <a href="blog.html">Our Blog</a>
-                            </li>
-                            <li>
-                              <a href="blog-classic.html">Blog Classic</a>
-                            </li>
-                            <li>
-                              <a href="blog-left-sidebar.html">
-                                Blog Left Sidebar
-                              </a>
-                            </li>
-                            <li>
-                              <a href="news-detail.html">Blog Single</a>
-                            </li>
-                            <li>
-                              <a href="not-found.html">Not Found</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="contact.html">Contact us</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-                  {/* Main Menu End*/}
-                  <div className="outer-box clearfix">
-                    {/* Quote Btn */}
-                    <div className="btn-box">
-                      <a
-                        href="contact.html"
-                        className="theme-btn btn-style-one"
-                      >
-                        <span className="txt">Get A Quote</span>
-                      </a>
-                    </div>
-                    {/* Search Btn */}
-                    <div className="search-box-btn search-box-outer">
-                      <span className="icon fa fa-search" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*End Header Upper*/}
-            {/* Sticky Header  */}
-            <div className="sticky-header">
-              <div className="auto-container clearfix">
-                {/*Logo*/}
-                <div className="logo pull-left">
-                  <a href="index.html" title="">
-                    <img src="images/logo-small.png" alt="" title="" />
-                  </a>
-                </div>
-                {/*Right Col*/}
-                <div className="pull-right">
-                  {/* Main Menu */}
-                  <nav className="main-menu">
-                    {/*Keep This Empty / Menu will come through Javascript*/}
-                  </nav>
-                  {/* Main Menu End*/}
-                  {/* Main Menu End*/}
-                  <div className="outer-box clearfix">
-                    {/* Quote Btn */}
-                    <div className="btn-box">
-                      <a
-                        href="contact.html"
-                        className="theme-btn btn-style-two"
-                      >
-                        <span className="txt">Get A Quote</span>
-                      </a>
-                    </div>
-                    {/* Search Btn */}
-                    <div className="search-box-btn search-box-outer">
-                      <span className="icon fa fa-search" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* End Sticky Menu */}
-            {/* Mobile Menu  */}
-            <div className="mobile-menu">
-              <div className="menu-backdrop" />
-              <div className="close-btn">
-                <span className="icon flaticon-multiply" />
-              </div>
-              <nav className="menu-box">
-                <div className="nav-logo">
-                  <a href="index.html">
-                    <img src="images/logo-3.png" alt="" title="" />
-                  </a>
-                </div>
-                <div className="menu-outer">
-                  {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
-                </div>
-              </nav>
-            </div>
-            {/* End Mobile Menu */}
-          </header>
+        <PageHeader pagename="About Us"/>
           {/* End Main Header */}
-          {/* Page Title Section */}
-          <section
-            className="page-title"
-            style={{ backgroundImage: "url(images/background/pattern-16.png)" }}
-          >
-            <div
-              className="pattern-layer-one"
-              style={{
-                backgroundImage: "url(images/main-slider/pattern-1.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-two"
-              style={{
-                backgroundImage: "url(images/background/pattern-17.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-three"
-              style={{
-                backgroundImage: "url(images/background/pattern-18.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-four"
-              style={{ backgroundImage: "url(images/icons/cross-icon.png)" }}
-            />
-            <div className="auto-container">
-              <h2>About us</h2>
-              <ul className="page-breadcrumb">
-                <li>
-                  <a href="index.html">home</a>
-                </li>
-                <li>About us</li>
-              </ul>
-            </div>
-          </section>
-          {/* End Page Title Section */}
+
           {/* Services Section Three */}
           <section className="services-section-three style-two">
             <div
               className="pattern-layer-one"
-              style={{ backgroundImage: "url(images/icons/icon-8.png)" }}
+              style={{
+                backgroundImage: "url(/newupdate/images/icons/icon-8.png)",
+              }}
             />
             <div
               className="pattern-layer-two"
-              style={{ backgroundImage: "url(images/icons/icon-9.png)" }}
+              style={{
+                backgroundImage: "url(/newupdate/images/icons/icon-9.png)",
+              }}
             />
             <div
               className="pattern-layer-three"
-              style={{ backgroundImage: "url(images/icons/icon-10.png)" }}
+              style={{
+                backgroundImage: "url(/newupdate/images/icons/icon-10.png)",
+              }}
             />
             <div className="auto-container">
               <div className="row clearfix">
@@ -654,7 +229,7 @@ const AboutUs = () => {
                         Our easy-to-use control panel and API let you spend
                       </li>
                     </ul>
-                    <a href="contact.html" className="theme-btn btn-style-five">
+                    <a href="/contactUs" className="theme-btn btn-style-five">
                       <span className="txt">Learn More</span>
                     </a>
                   </div>
@@ -680,13 +255,17 @@ const AboutUs = () => {
                         <div className="content">
                           <div className="icon flaticon-in-love" />
                           <div className="count-outer count-box">
-                            <span
+                            {/* <span
                               className="count-text"
                               data-speed={2500}
                               data-stop={230}
                             >
-                              0
-                            </span>
+
+                            </span> */}
+                            <CountUp  start={0}
+                              end={500}
+                              duration={4.75} />
+
                             +
                           </div>
                           <h4 className="counter-title">ACTIVE CLIENTS</h4>
@@ -703,13 +282,16 @@ const AboutUs = () => {
                         <div className="content">
                           <div className="icon flaticon-mentor" />
                           <div className="count-outer count-box alternate">
-                            <span
+                            {/* <span
                               className="count-text"
                               data-speed={2000}
                               data-stop={95}
                             >
                               0
-                            </span>
+                            </span> */}
+                            <CountUp  start={0}
+                              end={30}
+                              duration={4.75} />
                             +
                           </div>
                           <h4 className="counter-title">TEAM ADVISORS</h4>
@@ -726,13 +308,16 @@ const AboutUs = () => {
                         <div className="content">
                           <div className="icon flaticon-target" />
                           <div className="count-outer count-box">
-                            <span
+                            {/* <span
                               className="count-text"
                               data-speed={4000}
                               data-stop={820}
                             >
                               0
-                            </span>
+                            </span> */}
+                            <CountUp  start={0}
+                              end={600}
+                              duration={4.75} />
                             +
                           </div>
                           <h4 className="counter-title">PROJECTS DONE</h4>
@@ -749,13 +334,16 @@ const AboutUs = () => {
                         <div className="content">
                           <div className="icon flaticon-united" />
                           <div className="count-outer count-box">
-                            <span
+                            {/* <span
                               className="count-text"
                               data-speed={2000}
                               data-stop={25}
                             >
                               0
-                            </span>
+                            </span> */}
+                            <CountUp  start={0}
+                              end={7}
+                              duration={4.75} />
                             +
                           </div>
                           <h4 className="counter-title">GLORIOUS YEARS</h4>
@@ -780,7 +368,10 @@ const AboutUs = () => {
                       data-wow-delay="0ms"
                       data-wow-duration="1500ms"
                     >
-                      <img src="images/resource/mission.png" alt="" />
+                      <img
+                        src="/newupdate/images/resource/mission.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -803,21 +394,30 @@ const AboutUs = () => {
                     <ul className="mission-list">
                       <li>
                         <span className="icon">
-                          <img src="images/icons/mission-1.png" alt="" />
+                          <img
+                            src="/newupdate/images/icons/mission-1.png"
+                            alt=""
+                          />
                         </span>
                         If Google can’t crawl your site, it’s not going to rank
                         – but that doesn’t mean avoiding Javascript.
                       </li>
                       <li>
                         <span className="icon">
-                          <img src="images/icons/mission-2.png" alt="" />
+                          <img
+                            src="/newupdate/images/icons/mission-2.png"
+                            alt=""
+                          />
                         </span>
                         For businesses which sell products online &amp; and
                         improve their product listings in the search results..
                       </li>
                       <li>
                         <span className="icon">
-                          <img src="images/icons/mission-3.png" alt="" />
+                          <img
+                            src="/newupdate/images/icons/mission-3.png"
+                            alt=""
+                          />
                         </span>
                         If you’re investing in a new website it’s important to
                         ensure it’s built to succeed in the search results too.
@@ -832,7 +432,10 @@ const AboutUs = () => {
           {/* Steps Section */}
           <section
             className="steps-section"
-            style={{ backgroundImage: "url(images/background/pattern-14.png)" }}
+            style={{
+              backgroundImage:
+                "url(/newupdate/images/background/pattern-14.png)",
+            }}
           >
             <div className="auto-container">
               {/* Sec Title */}
@@ -929,13 +532,20 @@ const AboutUs = () => {
                           <div className="skill-title">Keyword Research</div>
                           <div className="skill-percentage">
                             <div className="count-box">
-                              <span
+                              {/* <span
                                 className="count-text"
                                 data-speed={2000}
                                 data-stop={70}
                               >
                                 0
-                              </span>
+                              </span> */}
+                                 <CountUp
+                              start={0}
+                              end={70}
+                              duration={2.75}
+                              delay={3}
+                              ></CountUp>
+
                               %
                             </div>
                           </div>
@@ -955,13 +565,19 @@ const AboutUs = () => {
                           <div className="skill-title">Technical SEO Audit</div>
                           <div className="skill-percentage">
                             <div className="count-box">
-                              <span
+                              {/* <span
                                 className="count-text"
                                 data-speed={2000}
                                 data-stop={80}
                               >
                                 0
-                              </span>
+                              </span> */}
+                                  <CountUp
+                              start={0}
+                              end={80}
+                              duration={2.75}
+                              delay={3}
+                              ></CountUp>
                               %
                             </div>
                           </div>
@@ -983,13 +599,19 @@ const AboutUs = () => {
                           </div>
                           <div className="skill-percentage">
                             <div className="count-box">
-                              <span
+                              {/* <span
                                 className="count-text"
                                 data-speed={2000}
                                 data-stop={60}
                               >
                                 0
-                              </span>
+                              </span> */}
+                                  <CountUp
+                              start={0}
+                              end={60}
+                              duration={2.75}
+                              delay={3}
+                              ></CountUp>
                               %
                             </div>
                           </div>
@@ -1010,7 +632,10 @@ const AboutUs = () => {
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img src="images/resource/skill.png" alt="" />
+                      <img
+                        src="/newupdate/images/resource/skill.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -1026,7 +651,10 @@ const AboutUs = () => {
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img src="images/resource/newsletter.png" alt="" />
+                      <img
+                        src="/newupdate/images/resource/newsletter.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -1044,7 +672,8 @@ const AboutUs = () => {
                     <div className="newsletter-form">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        // action="https://html.themerange.net/merix/merix/contact.html"
+                        action="#"
                       >
                         <div className="form-group">
                           <input
@@ -1070,233 +699,7 @@ const AboutUs = () => {
           </section>
           {/* End Newsleter Section */}
           {/* Main Footer */}
-          <footer className="main-footer">
-            <div
-              className="pattern-layer"
-              style={{
-                backgroundImage: "url(images/background/pattern-3.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-two"
-              style={{
-                backgroundImage: "url(images/background/pattern-4.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-three"
-              style={{
-                backgroundImage: "url(images/background/pattern-5.png)",
-              }}
-            />
-            <div className="auto-container">
-              {/*Widgets Section*/}
-              <div className="widgets-section">
-                <div className="row clearfix">
-                  {/* Column */}
-                  <div className="big-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="row clearfix">
-                      {/* Footer Column */}
-                      <div className="footer-column col-lg-7 col-md-6 col-sm-12">
-                        <div className="footer-widget logo-widget">
-                          <div className="logo">
-                            <a href="index.html">
-                              <img src="images/logo.png" alt="" />
-                            </a>
-                          </div>
-                          <div className="text">
-                            Our approach to SEO is uniquely built around what we
-                            know works…and what we know doesn’t work. With over
-                            200 verified factors in play.
-                          </div>
-                          {/* Social Box */}
-                          <ul className="social-box">
-                            <li>
-                              <a href="#" className="fa fa-facebook-f" />
-                            </li>
-                            <li>
-                              <a href="#" className="fa fa-linkedin" />
-                            </li>
-                            <li>
-                              <a href="#" className="fa fa-twitter" />
-                            </li>
-                            <li>
-                              <a href="#" className="fa fa-google" />
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      {/* Footer Column */}
-                      <div className="footer-column col-lg-5 col-md-6 col-sm-12">
-                        <div className="footer-widget links-widget">
-                          <h4>Services</h4>
-                          <ul className="list-link">
-                            <li>
-                              <a href="#">SEO for Small Business</a>
-                            </li>
-                            <li>
-                              <a href="#">SEO for Local Services</a>
-                            </li>
-                            <li>
-                              <a href="#">Enterprise SEO</a>
-                            </li>
-                            <li>
-                              <a href="#">National SEO</a>
-                            </li>
-                            <li>
-                              <a href="#">International SEO</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Column */}
-                  <div className="big-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="row clearfix">
-                      {/*Footer Column*/}
-                      <div className="footer-column col-lg-6 col-md-6 col-sm-12">
-                        <div className="footer-widget gallery-widget">
-                          <h4>instagram</h4>
-                          <div className="widget-content">
-                            <div className="images-outer clearfix">
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/1.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-1.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/2.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-2.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/3.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-3.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/4.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-4.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/1.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-5.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/2.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-6.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      {/* Footer Column */}
-                      <div className="footer-column col-lg-5 col-md-6 col-sm-12">
-                        <div className="footer-widget links-widget">
-                          <h4>Contact info</h4>
-                          <ul className="list-style-two">
-                            <li>
-                              <span className="icon flaticon-wall-clock" />
-                              Mon – Sat 10:00pm - 8:00pm
-                            </li>
-                            <li>
-                              <span className="icon flaticon-phone-call" />
-                              <a href="tel:+0987-654-321">0987 654 321</a>{" "}
-                              <a href="tel:+0123-456-789">0123 456 789</a>
-                            </li>
-                            <li>
-                              <span className="icon flaticon-email" />
-                              <a href="mailto:Merix@gmail.com">
-                                Merix@gmail.com
-                              </a>
-                            </li>
-                            <li>
-                              <span className="icon flaticon-maps-and-flags" />
-                              16122 Collins Street West, Melbourne, VIC Srsars
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Footer Bottom */}
-              <div className="footer-bottom">
-                <div className="copyright">
-                  Copyright © 2020 Merix by{" "}
-                  <a href="https://themeforest.net/user/themerange">
-                    ThemeRange
-                  </a>
-                  . All Rights Reserved. All Rights Reserved.
-                </div>
-              </div>
-            </div>
-          </footer>
+        
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
@@ -1365,12 +768,13 @@ const AboutUs = () => {
         </div>
         {/* End Header Search */}
         {/* Scroll To Top */}
-        <div
+        {/* <div
           className="back-to-top scroll-to-target show-back-to-top"
           data-target="html"
         >
           TOP
-        </div>
+        </div> */}
+          <ScrollToTop/>
       </body>
       {/* body end  */}
     </div>

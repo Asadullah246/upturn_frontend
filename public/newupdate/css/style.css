@@ -9418,9 +9418,9 @@ img{
 	position:absolute;
 	content: "/";
 	right:-2px;
-	top:-1px;
+	top:5px;
 	color:#ffffff;
-	font-size:14px;
+	font-size:14px; 
 	font-weight:700;
 	font-family: 'FontAwesome';
 }

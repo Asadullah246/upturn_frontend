@@ -219,6 +219,7 @@
 	}
 
 
+	// handled
 
 	//Fact Counter + Text Count
 	if($('.count-box').length){
@@ -767,6 +768,7 @@
 	}
 
 
+	// done it
 
 	// Elements Animation
 	if($('.wow').length){

@@ -14,12 +14,12 @@ function HiddenBar2() {
     const hiddenBarOpener = document.querySelector('.nav-toggler');
     const hiddenBarCloser = document.querySelector('.hidden-bar-closer');
 
-    hiddenBarOpener.addEventListener('click', handleOpenSidebar);
-    hiddenBarCloser.addEventListener('click', handleCloseSidebar);
+    hiddenBarOpener?.addEventListener('click', handleOpenSidebar);
+    hiddenBarCloser?.addEventListener('click', handleCloseSidebar); 
 
     return () => {
-      hiddenBarOpener.removeEventListener('click', handleOpenSidebar);
-      hiddenBarCloser.removeEventListener('click', handleCloseSidebar);
+      hiddenBarOpener?.removeEventListener('click', handleOpenSidebar);
+      hiddenBarCloser?.removeEventListener('click', handleCloseSidebar);
     };
   }, []);
 
