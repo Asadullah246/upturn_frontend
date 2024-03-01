@@ -154,7 +154,7 @@ const ComingSoon = () => {
                     </div>
                     <form
                       method="post"
-                      action="https://html.themerange.net/merix/merix/index.html"
+                      action="https://///index.html"
                     >
                       <div className="form-group">
                         <input

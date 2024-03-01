@@ -579,7 +579,7 @@ const ShopSingle = () => {
                             <div className="pincode-form">
                               <form
                                 method="post"
-                                action="https://html.themerange.net/merix/merix/contact.html"
+                                action="https://///contact.html"
                               >
                                 <div className="form-group">
                                   <input
@@ -788,7 +788,7 @@ const ShopSingle = () => {
                                 </div>
                                 <form
                                   method="post"
-                                  action="https://html.themerange.net/merix/merix/contact.html"
+                                  action="https://///contact.html"
                                 >
                                   <div className="row clearfix">
                                     <div className="col-md-6 col-sm-6 col-xs-12 form-group">
@@ -1012,7 +1012,7 @@ const ShopSingle = () => {
                     <div className="sidebar-widget search-box">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        action="https://///contact.html"
                       >
                         <div className="form-group">
                           <input
@@ -1213,7 +1213,7 @@ const ShopSingle = () => {
                     <div className="newsletter-form">
                       <form
                         method="post"
-                        action="https://html.themerange.net/merix/merix/contact.html"
+                        action="https://///contact.html"
                       >
                         <div className="form-group">
                           <input
@@ -1524,7 +1524,7 @@ const ShopSingle = () => {
           </button>
           <form
             method="post"
-            action="https://html.themerange.net/merix/merix/blog.html"
+            action="https://///blog.html"
           >
             <div className="form-group">
               <input

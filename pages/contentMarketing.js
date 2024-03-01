@@ -1078,7 +1078,7 @@ const ContentMarketing = () => {
           </button>
           <form
             method="post"
-            action="https://html.themerange.net/merix/merix/blog.html"
+            action="https://///blog.html"
           >
             <div className="form-group">
               <input
