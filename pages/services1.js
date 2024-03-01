@@ -887,5 +887,5 @@ const Services1 = () => {
   );
 };
 
-export default Services1;
-upTurnIdeaupTurnIdeaupTurnIdea
+export default Services1; 
+
