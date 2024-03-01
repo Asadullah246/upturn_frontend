@@ -15,6 +15,8 @@ import Description from "../components/service/Description";
 import MarketingSection from "../components/service/MarketingSection";
 import BrandingSection from "../components/service/BrandingSection";
 import SectionTitle from "../components/shared/SectionTitle";
+import SearchPopUp from "../components/shared/SearchPopUp";
+import TopScrolling from "../components/shared/ScrollToTop";
 
 // const Heading = Raleway({ weight: ["600", "700"], subsets: ["sans-serif"] });
 // const paragraph_font = Poppins({ weight: "500", subsets: ["sans-serif"] });
@@ -67,7 +69,7 @@ const Services = () => {
           </div>
         </div>
       </section> */}
-      <section style={{marginTop:"120px" }}>
+      <section style={{ marginTop: "120px" }}>
         <div className="container mt-3 ">
           <div className="row gx-5">
             <div className="col-4 ">
@@ -130,13 +132,15 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section className="" style={{marginTop:"120px" }}>
+      <section className="" style={{ marginTop: "120px" }}>
         <Service_two />
       </section>
-      <section className="" style={{marginTop:"80px"}}> 
-        <SectionTitle text="Contact With Us"/>
+      <section className="" style={{ marginTop: "80px" }}>
+        <SectionTitle text="Contact With Us" />
         <ContactUs />
       </section>
+      <SearchPopUp />
+      <TopScrolling />
     </>
   );
 };
