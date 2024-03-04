@@ -114,7 +114,7 @@ const NewHome = () => {
           </div>
           {/* Main Header*/}
 
-          <HeaderLinks/> 
+          <HeaderLinks/>
           {/* End Main Header */}
 
           {/* Banner Section Four */}
@@ -145,17 +145,17 @@ const NewHome = () => {
                         </h1>
                         <div className="btns-box">
                           <a
-                            href="about.html"
+                            href="/aboutUs"
                             className="theme-btn btn-style-eight"
                           >
                             <span className="txt">Lets Start</span>
                           </a>
-                          <a
+                          {/* <a
                             href="contact.html"
                             className="theme-btn btn-style-nine"
                           >
                             <span className="txt">Contact Now</span>
-                          </a>
+                          </a> */}
                         </div>
                       </div>
                     </div>
@@ -717,7 +717,7 @@ const NewHome = () => {
               {/* Lower Box */}
               <div className="lower-box">
                 <div className="text">
-                  If You See All Service <a href="#">Click Hare</a> Now.
+                  If You See All Service <a href="/services1">Click Hare</a> Now. 
                 </div>
               </div>
             </div>
