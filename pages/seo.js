@@ -79,7 +79,7 @@ const Seo = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-          <PageHeader pagename={"Seo"}/>
+          <PageHeader pagename={"Seo"} />
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
@@ -188,7 +188,10 @@ const Seo = () => {
                   <div className="service-detail">
                     <div className="inner-box">
                       <div className="image">
-                        <img src="/newupdate/images/resource/service-1.jpg" alt="" />
+                        <img
+                          src="/newupdate/images/resource/service-1.jpg"
+                          alt=""
+                        />
                       </div>
                       <div className="lower-content">
                         <h3>SEO Optimization</h3>
@@ -242,31 +245,33 @@ const Seo = () => {
                             </div>
                           </div>
                         </div>
-                        <h4>Why It’s Good for SEO Pros</h4>
+                        <h4>
+                          The Secret Sauce That Makes Our SEO Company Superior
+                        </h4>
                         <p>
-                          Managing a client’s SEO consists of many different
-                          timelines and action items. Keeping track of client
-                          emails, meetings, and central documents is a full-time
-                          job.
+                          Most SEO agencies will offer you rubbish things:
+                          backlinks, directory submission, forum submission,
+                          social bookmarking, blog commenting, …the list is
+                          endless. But they don’t tell you what they will
+                          deliver in terms of results.
                         </p>
                         <div className="two-columns">
                           <div className="row clearfix">
                             <div className="column col-lg-6 col-md-6 col-sm-12">
                               <p>
-                                By offering one of the best all-encompassing
-                                software solutions, Basecamp helps busy SEO pros
-                                stay on top of their entire business by more
-                                efficiently checking in with their team and
-                                deadlines in one easy to use the app.Casie
-                                Gillette, senior director of digital marketing
-                                at KoMarketing, uses Basecamp mainly for
-                                communicating to clients.
+                                Unfortunately, these are waste of time and
+                                money. We will ask you to forget everything you
+                                think you know about SEO and how other companies
+                                work. Our secret sauce is that we make your
+                                website super useful for your visitors,
+                                customers, and clients. We make sure that they
+                                get exactly what they are looking for. That
+                                makes us skyrocket your profit.
                               </p>
                               <p>
-                                “Basecamp is our primary means of communication
-                                with clients,” Gillette said. “For any
-                                deliverable, it allows an easy way to track the
-                                conversation and adjust docs accordingly.”
+                                However, to protect our ability to outperform
+                                all other SEO companies, we never disclose our
+                                methodology during the build-out phase.
                               </p>
                             </div>
                             <div className="column col-lg-6 col-md-6 col-sm-12">
@@ -353,7 +358,6 @@ const Seo = () => {
               </div>
             </div>
           </section>
-      
         </div>
         {/*End pagewrapper*/}
         <SearchPopUp />
@@ -365,4 +369,3 @@ const Seo = () => {
 };
 
 export default Seo;
-

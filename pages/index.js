@@ -20,7 +20,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import HeaderLinks from "../components/shared/HeaderLinks";
 
-
 const NewHome = () => {
   const responsive = {
     superLargeDesktop: {
@@ -114,7 +113,7 @@ const NewHome = () => {
           </div>
           {/* Main Header*/}
 
-          <HeaderLinks/>
+          <HeaderLinks />
           {/* End Main Header */}
 
           {/* Banner Section Four */}
@@ -414,18 +413,18 @@ const NewHome = () => {
                     {/* Sec Title */}
                     <div className="sec-title">
                       <div className="title">ABOUT US</div>
-                      <h2>Grow Business with SEO</h2>
+                      <h2>Grow Your Business With</h2>
                     </div>
                     <div className="bold-text">
-                      Over 12 years upTurnIdea helping companies reach their
-                      financial and branding goals.
+                      The Best Online Marketing Company
                     </div>
                     <div className="text">
-                      Over the years, we have worked with Fortune 500s and
-                      brand-new startups. We help ambitious businesses like
-                      yours generate more profits by building awareness, driving
-                      web traffic, connecting with customers, and growing
-                      overall sales. Give us a call.
+                      Through our proven Digital Marketing services we can help
+                      you get more traffic, help you convert those traffic into
+                      customers, and customers into advocates of your brand.
+                      Today Bizcope is a leading SEO service provider company in
+                      Bangladesh because of the results we provide our clients
+                      day-in and day-out.
                     </div>
                     <a href="/aboutUs" className="theme-btn btn-style-ten">
                       <span className="txt">Learn More</span>
@@ -441,8 +440,8 @@ const NewHome = () => {
             <div className="auto-container">
               {/* Sec Title */}
               <div className="sec-title centered">
-                <div className="">Our Services</div>
-                <h2>You Take Growth For Business</h2>
+                {/* <div className="">Our Services</div> */}
+                <h2>Our Services</h2>
               </div>
               <div className="inner-container">
                 <div className="clearfix">
@@ -482,12 +481,12 @@ const NewHome = () => {
                         <span className="icon flaticon-pie-chart" />
                       </div>
                       <h5>
-                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="content-marketing.html">Digital Marketing</a>
                       </h5>
                       <div className="text">
-                        You can provide the answers that your potential
-                        customers are trying to find, so you can become the
-                        industry.
+                        Digital marketing creates opportunities for small and
+                        medium business enterprises to compete with larger
+                        business entities.
                       </div>
                     </div>
                   </div>
@@ -527,11 +526,14 @@ const NewHome = () => {
                         <span className="icon flaticon-line-chart" />
                       </div>
                       <h5>
-                        <a href="content-marketing.html">Social Marketing</a>
+                        <a href="content-marketing.html">
+                          Search Engine Optimization
+                        </a>
                       </h5>
                       <div className="text">
-                        Create and manage top-performing social campaigns and
-                        start developing a dedicated customer fan base.
+                        SEO is a part of Digital marketing that help your
+                        targeted customers to find you in search engine results
+                        and take action.
                       </div>
                     </div>
                   </div>
@@ -571,11 +573,13 @@ const NewHome = () => {
                         <span className="icon flaticon-bar-chart" />
                       </div>
                       <h5>
-                        <a href="content-marketing.html">App Development</a>
+                        <a href="content-marketing.html">
+                          Web Design and Development
+                        </a>
                       </h5>
                       <div className="text">
-                        Create, publish, and promote engaging content to
-                        generate more traffic and build a dedicated community.
+                        Professional web Designing is the first step to showcase
+                        your brand and convert visitors into buyers.
                       </div>
                     </div>
                   </div>
@@ -615,11 +619,12 @@ const NewHome = () => {
                         <span className="icon flaticon-search-1" />
                       </div>
                       <h5>
-                        <a href="content-marketing.html">SEO Optimization</a>
+                        <a href="content-marketing.html">E-commerce SEO</a>
                       </h5>
                       <div className="text">
-                        Get more website traffic, more customers, and more
-                        online visibility with powerful SEO services.
+                        SEO has the potential to boost your e-commerce site’s
+                        sales and revenue and make you the market leader in your
+                        industry.
                       </div>
                     </div>
                   </div>
@@ -659,11 +664,13 @@ const NewHome = () => {
                         <span className="icon flaticon-gear" />
                       </div>
                       <h5>
-                        <a href="content-marketing.html">Web Development</a>
+                        <a href="content-marketing.html">
+                          Software Development
+                        </a>
                       </h5>
                       <div className="text">
-                        Your website has to impress your visitors within just a
-                        few seconds. If it runs slow, if it feels outdated.
+                        Building reliable and scalable software development to
+                        meet your business goals.
                       </div>
                     </div>
                   </div>
@@ -703,21 +710,17 @@ const NewHome = () => {
                         <span className="icon flaticon-cloud-computing" />
                       </div>
                       <h5>
-                        <a href="content-marketing.html">PPC Advertising</a>
+                        <a href="content-marketing.html">
+                          Social Media Marketing
+                        </a>
                       </h5>
                       <div className="text">
-                        You can provide the answers that your potential
-                        customers are trying to find, so you can become the
-                        industry.
+                        If you aren’t sure how you should proceed in promoting
+                        your brand let us analyze your business to take most
+                        effective plan.
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              {/* Lower Box */}
-              <div className="lower-box">
-                <div className="text">
-                  If You See All Service <a href="/services1">Click Hare</a> Now. 
                 </div>
               </div>
             </div>

@@ -73,7 +73,6 @@ const WebDevelopment = () => {
 
       {/* body  */}
 
-   
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
@@ -81,7 +80,7 @@ const WebDevelopment = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-        <PageHeader pagename={"Web Development"}/>
+          <PageHeader pagename={"Web Development"} />
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
             <div className="auto-container">
@@ -171,9 +170,11 @@ const WebDevelopment = () => {
                             <a href="tel:+0-000-0000-000">
                               <span className="icon fa fa-phone" />
                               +0 000 0000 000
-                            </a>upTurnIdea
+                            </a>
+                            upTurnIdea
                           </li>
-                          <li>upTurnIdea
+                          <li>
+                            upTurnIdea
                             <a href="mailto:upTurnIdea@example.com">
                               <span className="icon fa fa-envelope-o" />
                               upTurnIdea@example.com
@@ -189,37 +190,41 @@ const WebDevelopment = () => {
                   <div className="service-detail">
                     <div className="inner-box">
                       <div className="image">
-                        <img src="/newupdate/images/resource/service-1.jpg" alt="" />
+                        <img
+                          src="/newupdate/images/resource/service-1.jpg"
+                          alt=""
+                        />
                       </div>
                       <div className="lower-content">
-                        <h3>Web Development</h3>
+                        <h3>Web Development for Conversions</h3>
                         <p>
-                          Having been around for over a decade, Basecamp is
-                          considered a reliable tool that excels at giving
-                          organizations a high-level view of their teams. Like
-                          Asana, Basecamp can help monitor tracking, but also
-                          offers additional features like direct messaging
-                          chats, centralized document storage, and a scheduling
-                          tool.Basecamp aims to take on Slack, Asana, Google
-                          Drive, and Dropbox by melding all of their competitors
-                          into one robust management tool.
+                          What’s the main purpose of your website? Turning the
+                          visitors into customers, right? In web design and
+                          development, we call it conversion.
+                        </p>{" "}
+                        <p>
+                          You see, very few web design and development companies
+                          in Bangladesh understand this. A badly designed
+                          website will cause you to waste your time and money.
+                          The better the website is, the more visitors are
+                          converted into customers. So build your website with
+                          an award-winning web design and development company
+                          that can deliver the result!{" "}
                         </p>
-                        <h4>Features</h4>
+                        <h4>Web Design And Development Services</h4>
                         <p>
-                          Designed with the harried business person in mind,
-                          Basecamp helps managers and team members stay on top
-                          of their professional lives. The app boasts that users
-                          will no longer drown in a sea of emails as that
-                          feature is already embedded into the app.
-                          Additionally, the scheduling and tracking features
-                          help ensure teams never again miss a deadline. Another
-                          interesting component of Basecamp is that managercan
-                          eliminate the need for “check-in” meetings by sending
-                          an automated message daily to employees that ask for a
-                          recap of what they accomplished that day. Then
-                          employees can “tag” teammates in their recaps to
-                          explain what they need help with or what they
-                          finished.
+                          As a leading website design company in Bangladesh, we
+                          ensure top-notch web development services for your
+                          business needs. With decades of experience in the
+                          field of website design and development, we can help
+                          you build a website that appeals your audience and
+                          converts them into leads.
+                        </p>
+                        <p>
+                          As a web development company, we are catering to
+                          everybody: from personal website to corporate or
+                          e-commerce website. Make sure you are working with the
+                          best web design company in Bangladesh.{" "}
                         </p>
                         <div className="two-columns">
                           <div className="row clearfix">
@@ -355,7 +360,6 @@ const WebDevelopment = () => {
             </div>
           </section>
           {/* End Clients Section */}
-
         </div>
         {/*End pagewrapper*/}
         <SearchPopUp />

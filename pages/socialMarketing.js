@@ -80,7 +80,7 @@ const SocialMarketing = () => {
           </div>
           {/* Main Header*/}
 
-          <PageHeader pagename={"Social Marketing"}/>
+          <PageHeader pagename={"Social Marketing"} />
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
@@ -189,37 +189,42 @@ const SocialMarketing = () => {
                   <div className="service-detail">
                     <div className="inner-box">
                       <div className="image">
-                        <img src="/newupdate/images/resource/service-1.jpg" alt="" />
+                        <img
+                          src="/newupdate/images/resource/service-1.jpg"
+                          alt=""
+                        />
                       </div>
                       <div className="lower-content">
-                        <h3>Social Marketing</h3>
+                        <h3>
+                          Best Social Media Marketing company in Bangladesh
+                        </h3>
                         <p>
-                          Having been around for over a decade, Basecamp is
-                          considered a reliable tool that excels at giving
-                          organizations a high-level view of their teams. Like
-                          Asana, Basecamp can help monitor tracking, but also
-                          offers additional features like direct messaging
-                          chats, centralized document storage, and a scheduling
-                          tool.Basecamp aims to take on Slack, Asana, Google
-                          Drive, and Dropbox by melding all of their competitors
-                          into one robust management tool.
+                          You’ve probably heard it from everybody: make your
+                          business visible on the internet – go on social media!
+                          So you went on ahead and created a Facebook page, you
+                          downloaded a free photo-editing app to share better
+                          pictures on Instagram, and you learned your way around
+                          tweets, hashtags, and retweets. The good news is now
+                          you have the social media presence. The bad news is,
+                          so does everyone else.
                         </p>
-                        <h4>Features</h4>
+                        <h4>Bizcope Is Your Social Media Marketing Genius</h4>
                         <p>
-                          Designed with the harried business person in mind,
-                          Basecamp helps managers and team members stay on top
-                          of their professional lives. The app boasts that users
-                          will no longer drown in a sea of emails as that
-                          feature is already embedded into the app.
-                          Additionally, the scheduling and tracking features
-                          help ensure teams never again miss a deadline. Another
-                          interesting component of Basecamp is that managercan
-                          eliminate the need for “check-in” meetings by sending
-                          an automated message daily to employees that ask for a
-                          recap of what they accomplished that day. Then
-                          employees can “tag” teammates in their recaps to
-                          explain what they need help with or what they
-                          finished.
+                          Bizcope can help you create the buzz you need for your
+                          business. Using our wide experience and skill in
+                          digital marketing (Social Media Marketing is a part of
+                          Digital Marketing), Bizcope can take your social media
+                          experience where no one else can. We employ some of
+                          the most effective strategies in converting your
+                          social media activities including: Creating effective
+                          and engaging social media content Directing your
+                          social media activity to reach the intended audience
+                          Tracking your client activity on your account to
+                          determine how to engage them better
+                        </p>
+                        <p>
+                          Making sure you don’t spend money unnecessarily and
+                          carelessly on advertising on social media sites
                         </p>
                         <div className="two-columns">
                           <div className="row clearfix">
@@ -355,8 +360,6 @@ const SocialMarketing = () => {
             </div>
           </section>
           {/* End Clients Section */}
-
-   
         </div>
         {/*End pagewrapper*/}
         <SearchPopUp />
@@ -368,4 +371,3 @@ const SocialMarketing = () => {
 };
 
 export default SocialMarketing;
-

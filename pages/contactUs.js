@@ -78,7 +78,7 @@ const ContactUs = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-         <PageHeader pagename={"Contact Us"}/>
+          <PageHeader pagename={"Contact Us"} />
           {/* End Main Header */}
 
           {/* Contact Info Section */}
@@ -101,7 +101,7 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-clock" />
-                        10:00am to 6:00pm <br /> Sunday Closed
+                        We are open <br /> SAT-THUR 09:30 – 06:00 (GMT 6+)
                       </div>
                     </div>
                   </div>
@@ -110,7 +110,8 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-pin" />
-                        13005 Greenville Avenue <br /> California, TX 70240
+                        Level 4 and 5 Nadian Tower 89/7 <br /> Gopibag Dhaka
+                        1203, Bangladesh
                       </div>
                     </div>
                   </div>
@@ -119,8 +120,8 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-phone-call" />
-                        <a href="tel:+1-000999-0099">+1 000999 0099</a>
-                        <a href="mailto:mail@example.com">mail@example.com</a>
+                        <a href="tel:8801324738600">+8801324-738600</a> <br />
+                        <a href="mailto:hello@bizcope.com">hello@bizcope.com</a>
                       </div>
                     </div>
                   </div>
