@@ -19,6 +19,7 @@ import PageHeader from "../components/shared/pageHeader";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import HeaderLinks from "../components/shared/HeaderLinks";
+import Services from "../components/home/Services";
 
 
 const NewHome = () => {
@@ -139,16 +140,18 @@ const NewHome = () => {
                     {/* Content Column */}
                     <div className="content-column col-lg-6 col-md-12 col-sm-12">
                       <div className="inner-column">
-                        <div className="title">What’s Your SEO Score</div>
+                        {/* <div className="title">What’s Your SEO Score</div> */}
                         <h1>
-                          SEO Services Provide <br /> For Your Agency
+                        Digital Marketing with <br /> Skin in the Game
                         </h1>
+                        <p className="text-white ">With a decade of experience in the digital industry, we proved that the combination of strategic thinking and expertise creates fascinating results.</p>
+                        <p className="text-white">Let’s put the skin in the game! </p>
                         <div className="btns-box">
                           <a
-                            href="/aboutUs"
+                            href="/contactUs"
                             className="theme-btn btn-style-eleven"
                           >
-                            <span className="txt">Lets Start</span>
+                            <span className="txt">Schedule A Call</span>
                           </a>
                           {/* <a
                             href="contact.html"
@@ -260,10 +263,10 @@ const NewHome = () => {
                       <span className="icon flaticon-shuttle" />
                     </div>
                     <h5>
-                      <a href="content-marketing.html">Greate Results</a>
+                      <a href="content-marketing.html">Proof of Results</a>
                     </h5>
                     <div className="text">
-                      We have seen great successes with everyone companies.
+                    Every SEO company says that they can deliver you results, but we don’t just say but also show you the proof from our real projects.
                     </div>
                     <a
                       href="/contentMarketing"
@@ -297,10 +300,10 @@ const NewHome = () => {
                       <span className="icon flaticon-globe" />
                     </div>
                     <h5>
-                      <a href="content-marketing.html">Business Worth</a>
+                      <a href="content-marketing.html">Experience</a>
                     </h5>
                     <div className="text">
-                      We have seen great successes with everyone companies.
+                    Experience is such a thing that you can’t make with money. Our 12+ years of experience of excellent data-driven results make us different from all other SEO companies.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -337,7 +340,7 @@ const NewHome = () => {
                       <a href="content-marketing.html">Keep Your Groth</a>
                     </h5>
                     <div className="text">
-                      We have seen great successes with everyone companies.
+                     Your company will groth continusely. Our recent result prove this. We will continue support you till you want.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -371,10 +374,10 @@ const NewHome = () => {
                       <span className="icon flaticon-bar-chart" />
                     </div>
                     <h5>
-                      <a href="content-marketing.html">Important ROI</a>
+                      <a href="content-marketing.html">Industry Experts</a>
                     </h5>
                     <div className="text">
-                      We have seen great successes with everyone companies.
+                    We are led by biggest industry experts in Bangladesh who give services to the biggest Bangladeshi companies like Rokomari.com, BITM, BASIS and many more.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -414,20 +417,16 @@ const NewHome = () => {
                     {/* Sec Title */}
                     <div className="sec-title">
                       <div className="title">ABOUT US</div>
-                      <h2>Grow Business with SEO</h2>
+                      <h2>Grow Your Business</h2>
                     </div>
                     <div className="bold-text">
                       Over 12 years upTurnIdea helping companies reach their
                       financial and branding goals.
                     </div>
                     <div className="text">
-                      Over the years, we have worked with Fortune 500s and
-                      brand-new startups. We help ambitious businesses like
-                      yours generate more profits by building awareness, driving
-                      web traffic, connecting with customers, and growing
-                      overall sales. Give us a call.
+                    Uptern Idea helps you achieve more sales and revenue from our Digital Marketing services. As we are in the industry for more than 12 years now (from 2012) we have grown high-level expertise in this industry.
                     </div>
-                    <a href="/aboutUs" className="theme-btn btn-style-eleven"> 
+                    <a href="/aboutUs" className="theme-btn btn-style-eleven">
                       <span className="txt">Learn More</span>
                     </a>
                   </div>
@@ -437,291 +436,7 @@ const NewHome = () => {
           </section>
           {/* End About Section / Style Two */}
           {/* Services Section Two */}
-          <section className="services-section-two style-two">
-            <div className="auto-container">
-              {/* Sec Title */}
-              <div className="sec-title centered">
-                <div className="">Our Services</div>
-                <h2>You Take Growth For Business</h2>
-              </div>
-              <div className="inner-container">
-                <div className="clearfix">
-                  {/* Service Block Two / Style Two */}
-                  <div className="service-block-two style-two col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="color-layer" />
-                      <div
-                        className="icon-one"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-two"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-three"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-four"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
-                        }}
-                      />
-                      <div className="icon-box">
-                        <span className="icon flaticon-pie-chart" />
-                      </div>
-                      <h5>
-                        <a href="content-marketing.html">Content Marketing</a>
-                      </h5>
-                      <div className="text">
-                        You can provide the answers that your potential
-                        customers are trying to find, so you can become the
-                        industry.
-                      </div>
-                    </div>
-                  </div>
-                  {/* Service Block Two / Style Two */}
-                  <div className="service-block-two style-two col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="color-layer" />
-                      <div
-                        className="icon-one"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-two"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-three"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-four"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
-                        }}
-                      />
-                      <div className="icon-box">
-                        <span className="icon flaticon-line-chart" />
-                      </div>
-                      <h5>
-                        <a href="content-marketing.html">Social Marketing</a>
-                      </h5>
-                      <div className="text">
-                        Create and manage top-performing social campaigns and
-                        start developing a dedicated customer fan base.
-                      </div>
-                    </div>
-                  </div>
-                  {/* Service Block Two / Style Two */}
-                  <div className="service-block-two style-two col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="color-layer" />
-                      <div
-                        className="icon-one"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-two"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-three"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-four"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
-                        }}
-                      />
-                      <div className="icon-box">
-                        <span className="icon flaticon-bar-chart" />
-                      </div>
-                      <h5>
-                        <a href="content-marketing.html">App Development</a>
-                      </h5>
-                      <div className="text">
-                        Create, publish, and promote engaging content to
-                        generate more traffic and build a dedicated community.
-                      </div>
-                    </div>
-                  </div>
-                  {/* Service Block Two / Style Two */}
-                  <div className="service-block-two style-two col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="color-layer" />
-                      <div
-                        className="icon-one"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-two"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-three"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-four"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
-                        }}
-                      />
-                      <div className="icon-box">
-                        <span className="icon flaticon-search-1" />
-                      </div>
-                      <h5>
-                        <a href="content-marketing.html">SEO Optimization</a>
-                      </h5>
-                      <div className="text">
-                        Get more website traffic, more customers, and more
-                        online visibility with powerful SEO services.
-                      </div>
-                    </div>
-                  </div>
-                  {/* Service Block Two / Style Two */}
-                  <div className="service-block-two style-two col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="color-layer" />
-                      <div
-                        className="icon-one"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-two"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-three"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-four"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
-                        }}
-                      />
-                      <div className="icon-box">
-                        <span className="icon flaticon-gear" />
-                      </div>
-                      <h5>
-                        <a href="content-marketing.html">Web Development</a>
-                      </h5>
-                      <div className="text">
-                        Your website has to impress your visitors within just a
-                        few seconds. If it runs slow, if it feels outdated.
-                      </div>
-                    </div>
-                  </div>
-                  {/* Service Block Two / Style Two */}
-                  <div className="service-block-two style-two col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="color-layer" />
-                      <div
-                        className="icon-one"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-1.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-two"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-2.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-three"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-19.png)",
-                        }}
-                      />
-                      <div
-                        className="icon-four"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/icons/icon-4.png)",
-                        }}
-                      />
-                      <div className="icon-box">
-                        <span className="icon flaticon-cloud-computing" />
-                      </div>
-                      <h5>
-                        <a href="content-marketing.html">PPC Advertising</a>
-                      </h5>
-                      <div className="text">
-                        You can provide the answers that your potential
-                        customers are trying to find, so you can become the
-                        industry.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Lower Box */}
-              <div className="lower-box">
-                <div className="text">
-                  If You See All Service <a href="/services1">Click Hare</a> Now.
-                </div>
-              </div>
-            </div>
-          </section>
+        <Services/> 
           {/* End Services Section Two */}
           {/* Counter Section */}
           <section className="counter-section style-two">
