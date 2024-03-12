@@ -436,7 +436,7 @@ const NewHome = () => {
           </section>
           {/* End About Section / Style Two */}
           {/* Services Section Two */}
-        <Services/> 
+        <Services/>
           {/* End Services Section Two */}
           {/* Counter Section */}
           <section className="counter-section style-two">
@@ -446,7 +446,7 @@ const NewHome = () => {
                 <div className="fact-counter">
                   <div className="row clearfix">
                     {/* Column */}
-                    <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
+                    <div className="column counter-column col-lg-4 col-md-4 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
                         data-wow-delay="0ms"
@@ -463,18 +463,18 @@ const NewHome = () => {
                             </span> */}
                             <CountUp
                               start={0}
-                              end={230}
+                              end={12}
                               duration={2.75}
                               // delay={3}
                             ></CountUp>
                             +
                           </div>
-                          <h4 className="counter-title">ACTIVE CLIENTS</h4>
+                          <h4 className="counter-title">Years Of Experience</h4>
                         </div>
                       </div>
                     </div>
                     {/* Column */}
-                    <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
+                    <div className="column counter-column col-lg-4 col-md-4 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
                         data-wow-delay="300ms"
@@ -491,18 +491,18 @@ const NewHome = () => {
                             </span> */}
                             <CountUp
                               start={0}
-                              end={90}
+                              end={1000}
                               duration={2.75}
                               // delay={3}
                             ></CountUp>
                             +
                           </div>
-                          <h4 className="counter-title">TEAM ADVISORS</h4>
+                          <h4 className="counter-title">Happy Clients</h4>
                         </div>
                       </div>
                     </div>
                     {/* Column */}
-                    <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
+                    <div className="column counter-column col-lg-4 col-md-4 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
                         data-wow-delay="600ms"
@@ -519,44 +519,18 @@ const NewHome = () => {
                             </span> */}
                             <CountUp
                               start={0}
-                              end={730}
+                              end={27}
                               duration={2.75}
                               // delay={3}
                             ></CountUp>
                             +
                           </div>
-                          <h4 className="counter-title">PROJECTS DONE</h4>
+                          <h4 className="counter-title">Brains To Support</h4>
                         </div>
                       </div>
                     </div>
                     {/* Column */}
-                    <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
-                      <div
-                        className="inner wow fadeInLeft"
-                        data-wow-delay="900ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="content">
-                          <div className="count-outer count-box">
-                            {/* <span
-                              className="count-text"
-                              data-speed={2000}
-                              data-stop={25}
-                            >
-                              0
-                            </span> */}
-                            <CountUp
-                              start={0}
-                              end={730}
-                              duration={2.75}
-                              // delay={3}
-                            ></CountUp>
-                            +
-                          </div>
-                          <h4 className="counter-title">GLORIOUS YEARS</h4>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -582,12 +556,12 @@ const NewHome = () => {
                 {/* Title Column */}
                 <div className="title-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
-                    <h2>Take Your Site to Next Level At this moment!</h2>
+                    <h2>Ready To Build Your Brand?</h2>
                     <div className="text">
-                      Make the Right Choice for Your Future. Choose Moto!
+                    YOU ARE JUST ONE STEP AWAY TO EXPERIENCE THE PROGRESS.
                     </div>
-                    <a href="/aboutUs" className="theme-btn btn-style-eleven">
-                      <span className="txt">Lets Start</span>
+                    <a href="/contactUs" className="theme-btn btn-style-eleven"> 
+                      <span className="txt">Lets Us Build Your Business</span>
                     </a>
                   </div>
                 </div>
