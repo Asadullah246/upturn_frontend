@@ -3,74 +3,25 @@ import React from "react";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
 import PageHeader from "../components/shared/pageHeader";
+import SidebarServiceLinks from "../components/service/SidebarServiceLinks";
+import SidebarSubLinks from "../components/service/SidebarSubLinks";
 
 const Seo = () => {
+
+  const links=[
+    {
+        name:"Local SEO",
+        link:"#localseo"
+    },
+    {
+        name:"Healthcare SEO",
+        link:"#healthcareseo"
+    }
+
+]
+
   return (
     <div>
-      <Head>
-        {/* font  */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        ></link>
-
-        {/* font end */}
-
-        {/* styles  */}
-        <link rel="stylesheet" href="/newupdate/css/animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/animation.css" />
-        <link rel="stylesheet" href="/newupdate/css/bootstrap.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/color-switcher-design.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/custom-animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/flaticon.css" />
-        <link rel="stylesheet" href="/newupdate/css/font-awesome.css" />
-        <link rel="stylesheet" href="/newupdate/css/jquery-ui.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.bootstrap-touchspin.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/jquery.fancybox.min.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.mCustomScrollbar.min.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/owl.css" />
-        <link rel="stylesheet" href="/newupdate/css/responsive.css" />
-        <link rel="stylesheet" href="/newupdate/css/style.css" />
-
-        {/* styles end  */}
-
-        {/* js  */}
-        <script src="/newupdate/js/appear.js"></script>
-        <script src="/newupdate/js/bootstrap.min.js"></script>
-        <script src="/newupdate/js/color-settings.js"></script>
-        <script src="/newupdate/js/jquery-ui.js"></script>
-        <script src="/newupdate/js/jquery.bootstrap-touchspin.js"></script>
-        <script src="/newupdate/js/jquery.countdown.js"></script>
-        <script src="/newupdate/js/jquery.fancybox.js"></script>
-        <script src="/newupdate/js/jquery.js"></script>
-        <script src="/newupdate/js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="/newupdate/js/jquery.paroller.min.js"></script>
-        <script src="/newupdate/js/mixitup.js"></script>
-        <script src="/newupdate/js/nav-tool.js"></script>
-        <script src="/newupdate/js/owl.js"></script>
-        <script src="/newupdate/js/parallax.min.js"></script>
-        <script src="/newupdate/js/popper.min.js"></script>
-        <script src="/newupdate/js/script.js"></script>
-        <script src="/newupdate/js/tilt.jquery.min.js"></script>
-        <script src="/newupdate/js/validate.js"></script>
-        <script src="/newupdate/js/wow.js"></script>
-
-        {/* js end */}
-      </Head>
-
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -79,7 +30,7 @@ const Seo = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-          <PageHeader pagename={"Seo"}/>
+          <PageHeader pagename={"Seo"} />
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
@@ -89,72 +40,29 @@ const Seo = () => {
                 <div className="sidebar-side left-sidebar col-lg-4 col-md-12 col-sm-12">
                   <aside className="sidebar sticky-top">
                     {/* Services */}
-                    <div className="sidebar-widget">
-                      <ul className="service-list">
-                        <li>
-                          <a href="services.html">
-                            <span className="color-layer" />
-                            All Services
-                          </a>
-                        </li>
-                        <li>
-                          <a href="content-marketing.html">
-                            <span className="color-layer" />
-                            Content Marketing
-                          </a>
-                        </li>
-                        <li>
-                          <a href="social-marketing.html">
-                            <span className="color-layer" />
-                            Social Marketing
-                          </a>
-                        </li>
-                        <li>
-                          <a href="app-development.html">
-                            <span className="color-layer" />
-                            App Development
-                          </a>
-                        </li>
-                        <li className="current">
-                          <a href="seo.html">
-                            <span className="color-layer" />
-                            SEO Optimization
-                          </a>
-                        </li>
-                        <li>
-                          <a href="web-development.html">
-                            <span className="color-layer" />
-                            Web Development
-                          </a>
-                        </li>
-                        <li>
-                          <a href="advertising.html">
-                            <span className="color-layer" />
-                            PPC Advertising
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                    <SidebarServiceLinks />
                     {/* Broucher Widget */}
                     <div className="broucher-widget">
                       <div
                         className="widget-content"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/background/pattern-19.jpg)",
-                        }}
+                        // style={{
+                        //   backgroundImage:
+                        //     "url(/newupdate/images/background/pattern-19.jpg)",
+                        // }}
                       >
                         <h3>
-                          Download <br /> Our Brochures
+                          {/* Download <br /> Our Brochures */}
+                          SEO Optimization
                         </h3>
-                        <div className="icon flaticon-pdf-1" />
+                        {/* <div className="icon flaticon-pdf-1" />
                         <div className="text">
                           Business is a marketing discipline focused on growing
                           visibility in organic (non-paid) technic required.
                         </div>
                         <a href="#" className="download">
                           Click here to download
-                        </a>
+                        </a> */}
+                        <SidebarSubLinks links={links} />
                       </div>
                     </div>
                     {/* Help Widget */}
@@ -183,12 +91,16 @@ const Seo = () => {
                     </div>
                   </aside>
                 </div>
+
                 {/* Content Side */}
                 <div className="content-side right-sidebar col-lg-8 col-md-12 col-sm-12">
                   <div className="service-detail">
                     <div className="inner-box">
                       <div className="image">
-                        <img src="/newupdate/images/resource/service-1.jpg" alt="" />
+                        <img
+                          src="/newupdate/images/resource/service-1.jpg"
+                          alt=""
+                        />
                       </div>
                       <div className="lower-content">
                         <h3>SEO Optimization</h3>
@@ -353,7 +265,6 @@ const Seo = () => {
               </div>
             </div>
           </section>
-      
         </div>
         {/*End pagewrapper*/}
         <SearchPopUp />
@@ -365,4 +276,3 @@ const Seo = () => {
 };
 
 export default Seo;
-
