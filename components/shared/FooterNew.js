@@ -36,8 +36,8 @@ const FooterNew = () => {
                     <div className="footer-widget logo-widget">
                       <div className="logo">
                         <a href="/">
-                          <img style={{height:"50px"}}
-                            src="/newupdate/images/newIcons/logo.png"
+                          <img style={{height:"40px"}}
+                            src="/newupdate/images/newIcons/logo.svg"
                             alt=""
                           />
                         </a>

@@ -165,7 +165,8 @@ h6{
 
 .auto-container{
 	position:static;
-	max-width:1250px;
+	/* max-width:1250px; */
+	max-width:1320px;
 	padding:0px 15px;
 	margin:0 auto;
 }
@@ -761,11 +762,13 @@ img{
 	overflow: hidden;
 	border-radius: 6px;
 	overflow:hidden;
-	background: #ff0300;
+	/* background: #ff0300; */
+	/* background: #007A00;  */
 	text-transform: capitalize;
 	background: -webkit-linear-gradient(to right, #ff0300 0%, #ff8f00 100%);
 	background: -moz-linear-gradient(to right, #ff0300 0%, #ff8f00 100%);
 	background: linear-gradient(to right, #ff0300 0%, #ff8f00 100%);
+
 }
 
 .btn-style-eight:before{
@@ -1342,14 +1345,18 @@ img{
 }
 
 img.homepageLogo {
-    height: 35px;
-    margin-top: 22px;
+    height: 30px;
+    /* margin-top: 22px; */
 
 }
 .smallLogo {
 	height: 34px;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
+/* .logonewdesign{
+	background-color:white ;
+
+} */
 
 .main-header .main-box .logo-box{
 	position:relative;
@@ -1381,13 +1388,22 @@ img.homepageLogo {
 .main-header .header-upper .inner-container{
 	position:relative;
 }
-
+/* recent changes */
 .main-header .nav-outer{
 	position:static;
-	float:right;
+	/* float:right; */
 	border-radius:50px;
 	padding:0px 15px 0px 40px;
-	background-color:rgba(255,255,255,0.15);
+	/* background-color:rgba(255,255,255,0.15); */
+	background-color:white;
+}
+
+/* recent  */
+.homeLinksLatest li a{
+	color:black !important;
+}
+.homeLinksLatest .current a{
+	color:white !important;
 }
 
 .main-header .header-upper .logo-box{
@@ -1755,7 +1771,7 @@ img.homepageLogo {
 	width:100%;
 	padding:0px 0px;
 	background:#ffffff;
-	z-index:0;
+	z-index:200 !important;
 	border-bottom:1px solid #e8f1f7;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
@@ -1828,7 +1844,8 @@ img.homepageLogo {
 .main-menu .navigation > li:hover > a,
 .main-menu .navigation > li.current > a{
 	opacity:1;
-	color:#eb3867;
+	/* color:#eb3867; */
+	color:white !important;
 }
 
 .main-menu .navigation > li > ul{
@@ -2863,6 +2880,7 @@ img.homepageLogo {
 	cursor: pointer;
 	color:#ffffff;
 	display: none;
+	width:100% ;
 }
 
 .mobile-menu{
@@ -14975,7 +14993,7 @@ img.homepageLogo {
 
 .banner-section-four .content-column{
 	position:relative;
-	z-index:100;
+	z-index:20; 
 }
 
 .banner-section-four .content-column .inner-column{

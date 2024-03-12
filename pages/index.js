@@ -146,7 +146,7 @@ const NewHome = () => {
                         <div className="btns-box">
                           <a
                             href="/aboutUs"
-                            className="theme-btn btn-style-eight"
+                            className="theme-btn btn-style-eleven"
                           >
                             <span className="txt">Lets Start</span>
                           </a>
@@ -266,7 +266,7 @@ const NewHome = () => {
                       We have seen great successes with everyone companies.
                     </div>
                     <a
-                      href="content-marketing.html"
+                      href="/contentMarketing"
                       className="arrow-icon flaticon-arrow-pointing-to-right"
                     />
                   </div>
@@ -427,7 +427,7 @@ const NewHome = () => {
                       web traffic, connecting with customers, and growing
                       overall sales. Give us a call.
                     </div>
-                    <a href="/aboutUs" className="theme-btn btn-style-ten">
+                    <a href="/aboutUs" className="theme-btn btn-style-eleven"> 
                       <span className="txt">Learn More</span>
                     </a>
                   </div>
@@ -717,7 +717,7 @@ const NewHome = () => {
               {/* Lower Box */}
               <div className="lower-box">
                 <div className="text">
-                  If You See All Service <a href="/services1">Click Hare</a> Now. 
+                  If You See All Service <a href="/services1">Click Hare</a> Now.
                 </div>
               </div>
             </div>
@@ -871,7 +871,7 @@ const NewHome = () => {
                     <div className="text">
                       Make the Right Choice for Your Future. Choose Moto!
                     </div>
-                    <a href="/aboutUs" className="theme-btn btn-style-eight">
+                    <a href="/aboutUs" className="theme-btn btn-style-eleven">
                       <span className="txt">Lets Start</span>
                     </a>
                   </div>
@@ -1492,7 +1492,7 @@ const NewHome = () => {
                     </div>
                   </div>
                   <div className="pull-right">
-                    <a href="/blog" className="theme-btn btn-style-eight">
+                    <a href="/blog" className="theme-btn btn-style-eleven">
                       <span className="txt">All News</span>
                     </a>
                   </div>
