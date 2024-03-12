@@ -3,6 +3,9 @@ import React from "react";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
 import PageHeader from "../components/shared/pageHeader";
+import Countup from "../components/shared/Countup";
+import ReadyToBuild from "../components/home/ReadyToBuild";
+import AllServices from "../components/service/AllServices";
 
 const Services1 = () => {
   return (
@@ -80,315 +83,10 @@ const Services1 = () => {
           </div>
           {/* Main Header*/}
 
-          <PageHeader pagename={"Services1"}/>
+          <PageHeader pagename={"Services1"} />
           {/* End Page Title Section */}
           {/* Services Page Section */}
-          <section className="services-page-section">
-            <div className="auto-container">
-              <div className="row clearfix">
-                {/* Service Block Four */}
-                <div className="service-block-four col-lg-4 col-md-6 col-sm-12">
-                  <div className="inner-box">
-                    <div className="color-layer" />
-                    <div
-                      className="icon-one"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-1.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-two"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-2.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-three"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-3.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-four"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-4.png)",
-                      }}
-                    />
-                    <div className="icon-box">
-                      <span className="icon flaticon-pie-chart" />
-                      <div
-                        className="icon-five"
-                        style={{
-                          backgroundImage: "url(/newupdate/images/icons/icon-6.png)",
-                        }}
-                      />
-                    </div>
-                    <h5>
-                      <a href="/contentMarketing">Content Marketing</a>
-                    </h5>
-                    <div className="text">
-                      You can provide the answers that your potential customers
-                      are trying to find, so you can become the industry.
-                    </div>
-                    <a
-                      href="/contentMarketing"
-                      className="arrow-icon flaticon-arrow-pointing-to-right"
-                    />
-                  </div>
-                </div>
-                {/* Service Block Four */}
-                <div className="service-block-four col-lg-4 col-md-6 col-sm-12">
-                  <div className="inner-box">
-                    <div className="color-layer" />
-                    <div
-                      className="icon-one"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-1.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-two"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-2.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-three"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-3.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-four"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-4.png)",
-                      }}
-                    />
-                    <div className="icon-box">
-                      <span className="icon flaticon-line-chart" />
-                      <div
-                        className="icon-five"
-                        style={{
-                          backgroundImage: "url(/newupdate/images/icons/icon-6.png)",
-                        }}
-                      />
-                    </div>
-                    <h5>
-                      <a href="/socialMarketing">Social Marketing</a>
-                    </h5>
-                    <div className="text">
-                      Create and manage top-performing social campaigns and
-                      start developing a dedicated customer fan base.
-                    </div>
-                    <a
-                      href="/socialMarketing"
-                      className="arrow-icon flaticon-arrow-pointing-to-right"
-                    />
-                  </div>
-                </div>
-                {/* Service Block Four */}
-                <div className="service-block-four col-lg-4 col-md-6 col-sm-12">
-                  <div className="inner-box">
-                    <div className="color-layer" />
-                    <div
-                      className="icon-one"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-1.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-two"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-2.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-three"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-3.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-four"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-4.png)",
-                      }}
-                    />
-                    <div className="icon-box">
-                      <span className="icon flaticon-search-1" />
-                      <div
-                        className="icon-five"
-                        style={{
-                          backgroundImage: "url(/newupdate/images/icons/icon-6.png)",
-                        }}
-                      />
-                    </div>
-                    <h5>
-                      <a href="/seo">SEO Optimization</a>
-                    </h5>
-                    <div className="text">
-                      Get more website traffic, more customers, and more online
-                      visibility with powerful SEO services.
-                    </div>
-                    <a
-                      href="/seo"
-                      className="arrow-icon flaticon-arrow-pointing-to-right"
-                    />
-                  </div>
-                </div>
-                {/* Service Block Four */}
-                <div className="service-block-four col-lg-4 col-md-6 col-sm-12">
-                  <div className="inner-box">
-                    <div className="color-layer" />
-                    <div
-                      className="icon-one"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-1.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-two"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-2.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-three"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-3.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-four"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-4.png)",
-                      }}
-                    />
-                    <div className="icon-box">
-                      <span className="icon flaticon-bar-chart" />
-                      <div
-                        className="icon-five"
-                        style={{
-                          backgroundImage: "url(/newupdate/images/icons/icon-6.png)",
-                        }}
-                      />
-                    </div>
-                    <h5>
-                      <a href="/appDevelopment">App Development</a>
-                    </h5>
-                    <div className="text">
-                      Create, publish, and promote engaging content to generate
-                      more traffic and build a dedicated community.
-                    </div>
-                    <a
-                      href="/appDevelopment"
-                      className="arrow-icon flaticon-arrow-pointing-to-right"
-                    />
-                  </div>
-                </div>
-                {/* Service Block Four */}
-                <div className="service-block-four col-lg-4 col-md-6 col-sm-12">
-                  <div className="inner-box">
-                    <div className="color-layer" />
-                    <div
-                      className="icon-one"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-1.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-two"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-2.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-three"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-3.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-four"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-4.png)",
-                      }}
-                    />
-                    <div className="icon-box">
-                      <span className="icon flaticon-gear" />
-                      <div
-                        className="icon-five"
-                        style={{
-                          backgroundImage: "url(/newupdate/images/icons/icon-6.png)",
-                        }}
-                      />
-                    </div>
-                    <h5>
-                      <a href="/webDevelopment">Web Development</a>
-                    </h5>
-                    <div className="text">
-                      Your website has to impress your visitors within just a
-                      few seconds. If it runs slow, if it feels outdated.
-                    </div>
-                    <a
-                      href="/webDevelopment"
-                      className="arrow-icon flaticon-arrow-pointing-to-right"
-                    />
-                  </div>
-                </div>
-                {/* Service Block Four */}
-                <div className="service-block-four col-lg-4 col-md-6 col-sm-12">
-                  <div className="inner-box">
-                    <div className="color-layer" />
-                    <div
-                      className="icon-one"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-1.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-two"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-2.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-three"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-3.png)",
-                      }}
-                    />
-                    <div
-                      className="icon-four"
-                      style={{
-                        backgroundImage: "url(/newupdate/images/icons/icon-4.png)",
-                      }}
-                    />
-                    <div className="icon-box">
-                      <span className="icon flaticon-cloud-computing" />
-                      <div
-                        className="icon-five"
-                        style={{
-                          backgroundImage: "url(/newupdate/images/icons/icon-6.png)",
-                        }}
-                      />
-                    </div>
-                    <h5>
-                      <a href="/advertising">PPC Advertising</a>
-                    </h5>
-                    <div className="text">
-                      You can provide the answers that your potential customers
-                      are trying to find, so you can become the industry.
-                    </div>
-                    <a
-                      href="/advertising"
-                      className="arrow-icon flaticon-arrow-pointing-to-right"
-                    />
-                  </div> 
-                </div>
-              </div>
-            </div>
-          </section>
+       <AllServices/> 
           {/* End Services Page Section */}
           {/* Clients Section */}
           <section className="clients-section">
@@ -458,15 +156,19 @@ const Services1 = () => {
           </section>
           {/* End Clients Section */}
           {/* Call To Action Section */}
+          {/* <ReadyToBuild/> */}
           <section
             className="call-to-action-section"
             style={{
-              backgroundImage: "url(/newupdate/images/background/map-pattern.png)",
+              backgroundImage:
+                "url(/newupdate/images/background/map-pattern.png)",
             }}
           >
             <div
               className="circle-layer"
-              style={{ backgroundImage: "url(/newupdate/images/resource/cta-bg.png)" }}
+              style={{
+                backgroundImage: "url(/newupdate/images/resource/cta-bg.png)",
+              }}
             />
             <div className="auto-container">
               <div className="row clearfix">
@@ -495,13 +197,15 @@ const Services1 = () => {
           </section>
           {/* End Call To Action Section */}
           {/* Counter Section */}
-          <section className="counter-section margin-top">
+
+          <Countup />
+          {/* <section className="counter-section margin-top">
             <div className="auto-container">
               <div className="inner-container">
-                {/* Fact Counter */}
+
                 <div className="fact-counter">
                   <div className="row clearfix">
-                    {/* Column */}
+
                     <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
@@ -523,7 +227,7 @@ const Services1 = () => {
                         </div>
                       </div>
                     </div>
-                    {/* Column */}
+
                     <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
@@ -545,7 +249,7 @@ const Services1 = () => {
                         </div>
                       </div>
                     </div>
-                    {/* Column */}
+
                     <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
@@ -567,7 +271,7 @@ const Services1 = () => {
                         </div>
                       </div>
                     </div>
-                    {/* Column */}
+
                     <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
@@ -593,7 +297,8 @@ const Services1 = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
+
           {/* End Counter Section */}
           {/* Newsleter Section */}
           <section className="newsletter-section">
@@ -611,10 +316,7 @@ const Services1 = () => {
                       donec tempus pellentesque dui vel tristique purus justo{" "}
                     </div>
                     <div className="newsletter-form">
-                      <form
-                        method="post"
-                        action="https://///contact.html"
-                      >
+                      <form method="post" action="https://///contact.html">
                         <div className="form-group">
                           <input
                             type="email"
@@ -638,7 +340,10 @@ const Services1 = () => {
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img src="/newupdate/images/resource/newsletter.png" alt="" />
+                      <img
+                        src="/newupdate/images/resource/newsletter.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -646,8 +351,6 @@ const Services1 = () => {
             </div>
           </section>
           {/* End Newsleter Section */}
-
-
         </div>
         {/*End pagewrapper*/}
         <SearchPopUp />
@@ -659,4 +362,3 @@ const Services1 = () => {
 };
 
 export default Services1;
-
