@@ -67,3 +67,31 @@ existingn sticky header:
             </div>
           </div>
         </div>
+
+
+<!-- count up  -->
+   <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
+                      <div
+                        className="inner wow fadeInLeft"
+                        data-wow-delay="900ms"
+                        data-wow-duration="1500ms"
+                      >
+                        <div className="content">
+                          <div className="icon flaticon-united" />
+                          <div className="count-outer count-box">
+                            {/* <span
+                              className="count-text"
+                              data-speed={2000}
+                              data-stop={25}
+                            >
+                              0
+                            </span> */}
+                            <CountUp  start={0}
+                              end={7}
+                              duration={4.75} />
+                            +
+                          </div>
+                          <h4 className="counter-title">GLORIOUS YEARS</h4>
+                        </div>
+                      </div>
+                    </div>

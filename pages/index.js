@@ -20,6 +20,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import HeaderLinks from "../components/shared/HeaderLinks";
 import Services from "../components/home/Services";
+import ReadyToBuild from "../components/home/ReadyToBuild";
+import ContactForm from "../components/shared/ContactForm";
 
 
 const NewHome = () => {
@@ -538,44 +540,7 @@ const NewHome = () => {
           </section>
           {/* End Counter Section */}
           {/* Call To Action Section */}
-          <section
-            className="call-to-action-section style-two"
-            style={{
-              backgroundImage:
-                "url(/newupdate/images/background/map-pattern.png)",
-            }}
-          >
-            <div
-              className="circle-layer"
-              style={{
-                backgroundImage: "url(/newupdate/images/resource/cta-bg.png)",
-              }}
-            />
-            <div className="auto-container">
-              <div className="row clearfix">
-                {/* Title Column */}
-                <div className="title-column col-lg-6 col-md-12 col-sm-12">
-                  <div className="inner-column">
-                    <h2>Ready To Build Your Brand?</h2>
-                    <div className="text">
-                    YOU ARE JUST ONE STEP AWAY TO EXPERIENCE THE PROGRESS.
-                    </div>
-                    <a href="/contactUs" className="theme-btn btn-style-eleven"> 
-                      <span className="txt">Lets Us Build Your Business</span>
-                    </a>
-                  </div>
-                </div>
-                {/* Image Column */}
-                <div className="image-column col-lg-6 col-md-12 col-sm-12">
-                  <div className="inner-column">
-                    <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img src="/newupdate/images/resource/cta.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+         <ReadyToBuild/>
           {/* End Call To Action Section */}
           {/* Team Section Two */}
           <section className="team-section-two">
@@ -1326,6 +1291,10 @@ const NewHome = () => {
             </div>
           </section>
           {/* End News Section */}
+
+          {/* contact form  */}
+          <ContactForm/> 
+          {/* end of contact form  */}
         </div>
         {/*End pagewrapper*/}
 
