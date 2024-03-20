@@ -11,6 +11,15 @@ const team=[
         designation:"Founder & COO",
     },
     {
+        // name:"MD Rezaul Islam",
+        // image:"/newupdate/images/team/rezaul.png",
+        youtube:"#",
+        linkedIn:"#",
+        facebook:"#",
+        twitter:"#",
+        designation:"Co-Founder & CEO",
+    },
+    {
         name:"MD Rezaul Islam",
         image:"/newupdate/images/team/rezaul.png",
         youtube:"#",
@@ -18,15 +27,6 @@ const team=[
         facebook:"#",
         twitter:"#",
         designation:"Co-Founder & Head of Creative Media",
-    },
-    {
-        name:"MD Rayhan",
-        image:"/newupdate/images/team/rayhan.jpg",
-        youtube:"#",
-        linkedIn:"https://www.linkedin.com/in/mostafa-rayhan-2972391a9",
-        facebook:"#",
-        twitter:"#",
-        designation:"Software Engineer",
     },
 ]
 const TeamLeaders = () => {
@@ -65,7 +65,7 @@ const TeamLeaders = () => {
                   <div className="image">
                     {/* <a href="/teamDetail">
                     <img style={{maxHeight:"400px", minHeight:"400px"}} src={p?.image} alt="" />
-                    </a> */} 
+                    </a> */}
                     <img style={{maxHeight:"400px", minHeight:"400px"}} src={p?.image} alt="" />
                   </div>
                   <div className="lower-content">

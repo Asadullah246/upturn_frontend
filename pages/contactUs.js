@@ -8,7 +8,6 @@ import ContactForm from "../components/shared/ContactForm";
 const ContactUs = () => {
   return (
     <div>
-
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -17,7 +16,7 @@ const ContactUs = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-         <PageHeader pagename={"Contact Us"}/>
+          <PageHeader pagename={"Contact Us"} />
           {/* End Main Header */}
 
           {/* Contact Info Section */}
@@ -58,8 +57,10 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-phone-call" />
-                        <a href="tel:+1-000999-0099">+8801617222302</a> <br />
-                        <a href="mailto:info@upternidea.com">info@upternidea.com</a>
+                        <a href="tel:+1-000999-0099">+880161 7222 302</a> <br />
+                        <a href="mailto:info@upternidea.com">
+                          info@upternidea.com
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -74,10 +75,10 @@ const ContactUs = () => {
                         </i>
                       </span>
                       <li className="facebook">
-                        <a  href="#" className="fa fa-facebook-f" />
+                        <a href="#" className="fa fa-facebook-f" />
                       </li>
                       <li className="twitter">
-                        <a  href="#" className="fa fa-twitter" />
+                        <a href="#" className="fa fa-twitter" />
                       </li>
                       <li className="linkedin">
                         <a href="#" className="fa fa-google-plus" />
@@ -93,23 +94,26 @@ const ContactUs = () => {
               <div className="map-boxed">
                 {/* Map Outer */}
                 <div className="map-outer">
+               
+
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6331292129!2d144.49266890254142!3d-37.97123689954809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1574408946759!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.5393653104136!2d90.4013445983948!3d23.7802106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c73ba848a2fb%3A0xae12bfcecf23f8ab!2sMohakhali%20wirelessgate!5e0!3m2!1sen!2sbd!4v1710959115156!5m2!1sen!2sbd"
                     width="100%"
                     height="560px"
                     frameBorder={0}
                     style={{ border: 0 }}
                     allowFullScreen=""
-                  />
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </div>
             </div>
           </section>
           {/* End Contact Info Section */}
           {/* Contact Form Section */}
-        <ContactForm/>
+          <ContactForm />
           {/* End Contact Form Section */}
-
         </div>
         {/*End pagewrapper*/}
 

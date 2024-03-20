@@ -1,6 +1,7 @@
 import React from "react";
 
 const serviceData = [
+
   {
     title: "Search Engine Optimization (SEO)",
     description:
@@ -13,35 +14,6 @@ const serviceData = [
     description:
       "Engage with your audience on major social platforms to grow your brand and build a community around your products or services.",
     logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  }, 
-
-  {
-    title: "Marketing Analytics",
-    description:
-      "Our free analytics service empowers your strategy by delivering campaign performance information and optimization options.",
-    logoInClass: "icon flaticon-gear",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Video Editing",
-    description:
-      "We create audience-grabbing reels, shorts, commercial, and motion videos.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "YouTube Marketing",
-    description:
-      "Use video to attract attention, build brand awareness, and spread your message on the world's largest video platform.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Graphics Design",
-    description:
-      "We offer logo design and complete visual branding solutions to enhance your brand's appearance",
-    logoInClass: "icon flaticon-bar-chart",
     link: "/contentMarketing",
   },
   {
@@ -92,6 +64,37 @@ const serviceData = [
     logoInClass: "icon flaticon-search-1",
     link: "/contentMarketing",
   },
+  {
+    title: "Marketing Analytics",
+    description:
+      "Our free analytics service empowers your strategy by delivering campaign performance information and optimization options.",
+    logoInClass: "icon flaticon-gear",
+    link: "/contentMarketing",
+  },
+  {
+    title: "YouTube Marketing",
+    description:
+      "Use video to attract attention, build brand awareness, and spread your message on the world's largest video platform.",
+    logoInClass: "icon flaticon-line-chart",
+    link: "/contentMarketing",
+  },
+
+
+  {
+    title: "Video Editing",
+    description:
+      "We create audience-grabbing reels, shorts, commercial, and motion videos.",
+    logoInClass: "icon flaticon-pie-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Graphics Design",
+    description:
+      "We offer logo design and complete visual branding solutions to enhance your brand's appearance",
+    logoInClass: "icon flaticon-bar-chart",
+    link: "/contentMarketing",
+  },
+
 ];
 const Services = () => {
   return (
@@ -103,7 +106,7 @@ const Services = () => {
           <h2>You Take Growth For Business</h2>
         </div>
         <div className="inner-container">
-          <div className="clearfix">
+          <div className="clearfix row">
             {/* Service Block Two / Style Two */}
 
             {serviceData?.map((service, index) => {
