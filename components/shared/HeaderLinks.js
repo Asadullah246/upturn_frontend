@@ -144,10 +144,10 @@ const HeaderLinks = () => {
                     </ul>
                   </li>
                   <li className="dropdown">
-                    <a href="/services1">Services</a>
+                    <a href="/services">Services</a>
                     <ul>
                       <li>
-                        <a href="/services1">Services</a>
+                        <a href="/services">Services</a>
                       </li>
                       <li>
                         <a href="/contentMarketing">Content Marketing</a>
@@ -268,9 +268,9 @@ const HeaderLinks = () => {
                         <div className="column col-lg-3 col-md-4 col-sm-12">
                           <h3 style={{ marginLeft: "30px" }}>Our Shop</h3>
                           <ul>
-                            <li>
+                            {/* <li>
                               <a href="/shop">Shop</a>
-                            </li>
+                            </li> */}
                             {/* <li>
                               <a href="shop-single.html">Shop Details</a>
                             </li> */}
@@ -291,15 +291,13 @@ const HeaderLinks = () => {
                       </div>
                     </div>
                   </li>
-                  <li className="dropdown">
+                  {/* <li className="dropdown">
                     <a href="/shop">Shop</a>
                     <ul>
                       <li>
                         <a href="/shop">Our Products</a>
                       </li>
-                      {/* <li>
-                        <a href="shop-single.html">Product Single</a>
-                      </li> */}
+
                       <li>
                         <a href="/shoppingCart">Shopping Cart</a>
                       </li>
@@ -310,7 +308,7 @@ const HeaderLinks = () => {
                         <a href="/account">Account</a>
                       </li>
                     </ul>
-                  </li>
+                  </li> */} 
                   <li className="dropdown">
                     <a href="/blog">Blog</a>
                     <ul>
@@ -444,10 +442,10 @@ const HeaderLinks = () => {
                     </ul>
                   </li>
                   <li className="dropdown">
-                    <a href="/services1">Services</a>
+                    <a href="/services">Services</a>
                     <ul>
                       <li>
-                        <a href="/services1">Services</a>
+                        <a href="/services">Services</a>
                       </li>
                       <li>
                         <a href="/contentMarketing">Content Marketing</a>
@@ -591,15 +589,12 @@ const HeaderLinks = () => {
                       </div>
                     </div>
                   </li>
-                  <li className="dropdown">
+                  {/* <li className="dropdown">
                     <a href="/shop">Shop</a>
                     <ul>
                       <li>
                         <a href="/shop">Our Products</a>
                       </li>
-                      {/* <li>
-                        <a href="shop-single.html">Product Single</a>
-                      </li> */}
                       <li>
                         <a href="/shoppingCart">Shopping Cart</a>
                       </li>
@@ -610,20 +605,20 @@ const HeaderLinks = () => {
                         <a href="/account">Account</a>
                       </li>
                     </ul>
-                  </li>
-                  <li className="dropdown">
+                  </li> */}
+                  <li className="">
                     <a href="/blog">Blog</a>
-                    <ul>
+                    {/* <ul>
                       <li>
                         <a href="/blog">Our Blog</a>
                       </li>
                       <li>
                         <a href="#">Blog Classic</a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li>
-                    <a href="/contactUs">Contact us</a>
+                    <a href="/contactUs">Contact Us</a>
                   </li>
                 </ul>
               </div>
