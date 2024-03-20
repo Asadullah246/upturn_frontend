@@ -26,7 +26,6 @@ import Countup from "../components/shared/Countup";
 import TeamLeaders from "../components/home/TeamLeaders";
 import Pricing from "../components/home/Pricing";
 
-
 const NewHome = () => {
   const responsive = {
     superLargeDesktop: {
@@ -50,8 +49,6 @@ const NewHome = () => {
 
   return (
     <div>
-
-
       {/* main content  */}
 
       <body className="hidden-bar-wrapper">
@@ -62,7 +59,7 @@ const NewHome = () => {
           </div>
           {/* Main Header*/}
 
-          <HeaderLinks/>
+          <HeaderLinks />
           {/* End Main Header */}
 
           {/* Banner Section Four */}
@@ -89,10 +86,16 @@ const NewHome = () => {
                       <div className="inner-column">
                         {/* <div className="title">What’s Your SEO Score</div> */}
                         <h1>
-                        Digital Marketing with <br /> Skin in the Game
+                          Digital Marketing with <br /> Skin in the Game
                         </h1>
-                        <p className="text-white ">With a decade of experience in the digital industry, we proved that the combination of strategic thinking and expertise creates fascinating results.</p>
-                        <p className="text-white">Let’s put the skin in the game! </p>
+                        <p className="text-white ">
+                          With a decade of experience in the digital industry,
+                          we proved that the combination of strategic thinking
+                          and expertise creates fascinating results.
+                        </p>
+                        <p className="text-white">
+                          Let’s put the skin in the game!{" "}
+                        </p>
                         <div className="btns-box">
                           <a
                             href="/contactUs"
@@ -213,7 +216,9 @@ const NewHome = () => {
                       <a href="content-marketing.html">Proof of Results</a>
                     </h5>
                     <div className="text">
-                    Every SEO company says that they can deliver you results, but we don’t just say but also show you the proof from our real projects.
+                      Every SEO company says that they can deliver you results,
+                      but we don’t just say but also show you the proof from our
+                      real projects.
                     </div>
                     <a
                       href="/contentMarketing"
@@ -250,7 +255,9 @@ const NewHome = () => {
                       <a href="content-marketing.html">Experience</a>
                     </h5>
                     <div className="text">
-                    Experience is such a thing that you can’t make with money. Our 3+ years of experience of excellent data-driven results make us different from all other SEO companies.
+                      Experience is such a thing that you can’t make with money.
+                      Our 3+ years of experience of excellent data-driven
+                      results make us different from all other SEO companies.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -287,7 +294,8 @@ const NewHome = () => {
                       <a href="content-marketing.html">Keep Your Groth</a>
                     </h5>
                     <div className="text">
-                     Your company will groth continusely. Our recent result prove this. We will continue support you till you want.
+                      Your company will groth continusely. Our recent result
+                      prove this. We will continue support you till you want.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -324,7 +332,9 @@ const NewHome = () => {
                       <a href="content-marketing.html">Industry Experts</a>
                     </h5>
                     <div className="text">
-                    We are led by biggest industry experts in Bangladesh who give services to the biggest Bangladeshi companies like Rokomari.com, BITM, BASIS and many more.
+                      We are led by biggest industry experts in Bangladesh who
+                      give services to the biggest Bangladeshi companies like
+                      Rokomari.com, BITM, BASIS and many more.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -371,7 +381,10 @@ const NewHome = () => {
                       financial and branding goals.
                     </div>
                     <div className="text">
-                    Upturn idea helps you achieve more sales and revenue from our Digital Marketing services. As we are in the industry for more than 3 years now (from 2021) we have grown high-level expertise in this industry.
+                      Upturn idea helps you achieve more sales and revenue from
+                      our Digital Marketing services. As we are in the industry
+                      for more than 3 years now (from 2021) we have grown
+                      high-level expertise in this industry.
                     </div>
                     <a href="/aboutUs" className="theme-btn btn-style-eleven">
                       <span className="txt">Learn More</span>
@@ -383,16 +396,16 @@ const NewHome = () => {
           </section>
           {/* End About Section / Style Two */}
           {/* Services Section Two */}
-        <Services/>
+          <Services />
           {/* End Services Section Two */}
           {/* Counter Section */}
-      <Countup/>
+          <Countup />
           {/* End Counter Section */}
           {/* Call To Action Section */}
-         <ReadyToBuild/>
+          <ReadyToBuild />
           {/* End Call To Action Section */}
           {/* Team Section Two */}
-         <TeamLeaders/>
+          <TeamLeaders />
           {/* End Team Section Two */}
           {/* Testimonial Section */}
           <section className="testimonial-section">
@@ -582,7 +595,7 @@ const NewHome = () => {
           </section>
           {/* End Testimonial Section */}
           {/* Pricing Section */}
-         <Pricing/> 
+          <Pricing />
           {/* End Pricing Section */}
           {/* Clients Section */}
           <section className="clients-section">
@@ -820,7 +833,7 @@ const NewHome = () => {
           {/* End News Section */}
 
           {/* contact form  */}
-          <ContactForm/>
+          <ContactForm />
           {/* end of contact form  */}
         </div>
         {/*End pagewrapper*/}
