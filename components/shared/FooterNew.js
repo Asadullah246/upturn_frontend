@@ -122,12 +122,12 @@ const FooterNew = () => {
                       <ul className="list-style-two">
                         <li>
                           <span className="icon flaticon-wall-clock" />
-                          Mon – Sat 10:00pm - 8:00pm
+                          Sat – Thus 10:00pm - 8:00pm
                         </li>
                         <li>
                           <span className="icon flaticon-phone-call" />
-                          <a href="tel:+0987-654-321">0987 654 321</a>{" "}
-                          <a href="tel:+0123-456-789">0123 456 789</a>
+                          <a href="tel:+0987-654-321">+88016 1722 2302</a>{" "}
+                          {/* <a href="tel:+0123-456-789">0123 456 789</a> */}
                         </li>
                         <li>
                           <span className="icon flaticon-email" />
@@ -137,7 +137,7 @@ const FooterNew = () => {
                         </li>
                         <li>
                           <span className="icon flaticon-maps-and-flags" />
-                          16122 Collins Street West, Melbourne, VIC Srsars
+                         Warlessgate, Mohakhali, Dhaka, Bangladesh
                         </li>
                       </ul>
                     </div>
@@ -149,7 +149,7 @@ const FooterNew = () => {
           {/* Footer Bottom */}
           <div className="footer-bottom">
             <div className="copyright">
-              Copyright © 2020 UpTurnIdea
+              Copyright © 2024 UpTurn Idea
               . All Rights Reserved. All Rights Reserved.
             </div>
           </div>

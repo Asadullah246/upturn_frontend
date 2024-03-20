@@ -8,7 +8,7 @@ const team=[
         linkedIn:"#",
         facebook:"#",
         twitter:"#",
-        designation:"Founder & COO", 
+        designation:"Founder & COO",
     },
     {
         name:"MD Rezaul Islam",
@@ -63,13 +63,16 @@ const TeamLeaders = () => {
                     </li>
                   </ul>
                   <div className="image">
-                    <a href="/teamDetail">
-                      <img style={{maxHeight:"400px", minHeight:"400px"}} src={p?.image} alt="" />
-                    </a>
+                    {/* <a href="/teamDetail">
+                    <img style={{maxHeight:"400px", minHeight:"400px"}} src={p?.image} alt="" />
+                    </a> */} 
+                    <img style={{maxHeight:"400px", minHeight:"400px"}} src={p?.image} alt="" />
                   </div>
                   <div className="lower-content">
                     <h3>
-                      <a href="/teamDetail">{p?.name}</a>
+                      {/* <a href="/teamDetail">{p?.name}</a> */}
+                      {p?.name}
+
                     </h3>
                     <div className="designation">{p?.designation}</div>
                   </div>

@@ -7,72 +7,104 @@ import Countup from "../../components/shared/Countup";
 import ReadyToBuild from "../../components/home/ReadyToBuild";
 import AllServices from "../../components/service/AllServices";
 
-const Services1 = () => {
+
+const serviceData = [
+  {
+    title: "Search Engine Optimization (SEO)",
+    description:
+      "Increase your website's search engine rankings to generate more organic visitors and customers.",
+    logoInClass: "icon flaticon-line-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Social Media Marketing (SMM)",
+    description:
+      "Engage with your audience on major social platforms to grow your brand and build a community around your products or services.",
+    logoInClass: "icon flaticon-pie-chart",
+    link: "/contentMarketing",
+  },
+
+  {
+    title: "Marketing Analytics",
+    description:
+      "Our free analytics service empowers your strategy by delivering campaign performance information and optimization options.",
+    logoInClass: "icon flaticon-gear",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Video Editing",
+    description:
+      "We create audience-grabbing reels, shorts, commercial, and motion videos.",
+    logoInClass: "icon flaticon-pie-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "YouTube Marketing",
+    description:
+      "Use video to attract attention, build brand awareness, and spread your message on the world's largest video platform.",
+    logoInClass: "icon flaticon-line-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Graphics Design",
+    description:
+      "We offer logo design and complete visual branding solutions to enhance your brand's appearance",
+    logoInClass: "icon flaticon-bar-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Media Buying Services",
+    description:
+      "Place advertisements strategically on Facebook and Google to maximize visibility and audience interaction.",
+    logoInClass: "icon flaticon-cloud-computing",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Google Shopping Ad & Search Ad",
+    description:
+      "Targeted Google Shopping and search advertisements improve sales and visibility.",
+    logoInClass: "icon flaticon-line-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Small Business 360 Marketing Services:",
+    description:
+      "Customized digital marketing solutions for small businesses to maximize online growth.",
+    logoInClass: "icon flaticon-pie-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Dedicated Landing Page",
+    description:
+      "A dedicated landing page may advance your online marketing by converting visitors into leads or customers.",
+    logoInClass: "icon flaticon-bar-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Media Buying (Facebook Ads & Google Ads)",
+    description: "We maximize your advertising ROI on Facebook and Google.",
+    logoInClass: "icon flaticon-search-1",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Email Marketing",
+    description:
+      "Build customer loyalty and sales with personalized email marketing.",
+    logoInClass: "icon flaticon-bar-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Pay Per Click (PPC)",
+    description:
+      "Use search engines and social media to acquire rapid exposure and tailored website visitors.",
+    logoInClass: "icon flaticon-search-1",
+    link: "/contentMarketing",
+  },
+];
+
+const Services = () => {
   return (
     <div>
-      <Head>
-        {/* font  */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        ></link>
-
-        {/* font end */}
-
-        {/* styles  */}
-        <link rel="stylesheet" href="/newupdate/css/animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/animation.css" />
-        <link rel="stylesheet" href="/newupdate/css/bootstrap.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/color-switcher-design.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/custom-animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/flaticon.css" />
-        <link rel="stylesheet" href="/newupdate/css/font-awesome.css" />
-        <link rel="stylesheet" href="/newupdate/css/jquery-ui.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.bootstrap-touchspin.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/jquery.fancybox.min.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.mCustomScrollbar.min.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/owl.css" />
-        <link rel="stylesheet" href="/newupdate/css/responsive.css" />
-        <link rel="stylesheet" href="/newupdate/css/style.css" />
-
-        {/* styles end  */}
-
-        {/* js  */}
-        <script src="/newupdate/js/appear.js"></script>
-        <script src="/newupdate/js/bootstrap.min.js"></script>
-        <script src="/newupdate/js/color-settings.js"></script>
-        <script src="/newupdate/js/jquery-ui.js"></script>
-        <script src="/newupdate/js/jquery.bootstrap-touchspin.js"></script>
-        <script src="/newupdate/js/jquery.countdown.js"></script>
-        <script src="/newupdate/js/jquery.fancybox.js"></script>
-        <script src="/newupdate/js/jquery.js"></script>
-        <script src="/newupdate/js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="/newupdate/js/jquery.paroller.min.js"></script>
-        <script src="/newupdate/js/mixitup.js"></script>
-        <script src="/newupdate/js/nav-tool.js"></script>
-        <script src="/newupdate/js/owl.js"></script>
-        <script src="/newupdate/js/parallax.min.js"></script>
-        <script src="/newupdate/js/popper.min.js"></script>
-        <script src="/newupdate/js/script.js"></script>
-        <script src="/newupdate/js/tilt.jquery.min.js"></script>
-        <script src="/newupdate/js/validate.js"></script>
-        <script src="/newupdate/js/wow.js"></script>
-
-        {/* js end */}
-      </Head>
 
       {/* body  */}
       <body className="hidden-bar-wrapper">
@@ -86,7 +118,7 @@ const Services1 = () => {
           <PageHeader pagename={"Services1"} />
           {/* End Page Title Section */}
           {/* Services Page Section */}
-       <AllServices/> 
+       <AllServices/>
           {/* End Services Page Section */}
           {/* Clients Section */}
           <section className="clients-section">
@@ -361,4 +393,4 @@ const Services1 = () => {
   );
 };
 
-export default Services1;
+export default Services;
