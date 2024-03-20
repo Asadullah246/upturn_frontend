@@ -1,6 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 
 const ContactForm = () => {
+
+  const form = useRef();
+
+
+
+  const handleSubmit=(e)=>{
+e.preventDefault()
+const body ={
+  name:e.target.name.value,
+  phone:e.target.phone.value,
+  email:e.target.email.value,
+  description:e.target.description.value,
+  subject:e.target.subject.value,
+  archived:false,
+}
+console.log("for current", form.current );
+emailjs
+.sendForm('service_sgi3hat', 'template_dht28wl', form.current, {
+  publicKey: 'RfpSlyoQDXNOWTQGE',
+})
+.then(
+  () => {
+    console.log('SUCCESS!');
+    alert("Thank you for contacting with us")
+  },
+  (error) => {
+    console.log('FAILED...', error.text);
+    alert("Sorry, message not sent")
+  }, 
+);
+  }
   return (
     <section className="contact-form-section">
       <div className="auto-container">
@@ -18,8 +51,8 @@ const ContactForm = () => {
           <div className="contact-form">
             {/*Contact Form*/}
             <form
-              method="post"
-              action="https://///sendemail.php"
+            ref={form}
+             onSubmit={handleSubmit}
               id="contact-form"
             >
               <div className="row clearfix">
@@ -27,7 +60,7 @@ const ContactForm = () => {
                   <span className="icon flaticon-user-2" />
                   <input
                     type="text"
-                    name="username"
+                    name="name"
                     placeholder="Your Name"
                     required=""
                   />
@@ -62,7 +95,7 @@ const ContactForm = () => {
                 <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                   <span className="icon flaticon-message" />
                   <textarea
-                    name="message"
+                    name="description"
                     placeholder="Message"
                     defaultValue={""}
                   />

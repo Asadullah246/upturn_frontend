@@ -8,69 +8,7 @@ import ContactForm from "../components/shared/ContactForm";
 const ContactUs = () => {
   return (
     <div>
-      <Head>
-        {/* font  */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        ></link>
 
-        {/* font end */}
-
-        {/* styles  */}
-        <link rel="stylesheet" href="/newupdate/css/animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/animation.css" />
-        <link rel="stylesheet" href="/newupdate/css/bootstrap.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/color-switcher-design.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/custom-animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/flaticon.css" />
-        <link rel="stylesheet" href="/newupdate/css/font-awesome.css" />
-        <link rel="stylesheet" href="/newupdate/css/jquery-ui.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.bootstrap-touchspin.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/jquery.fancybox.min.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.mCustomScrollbar.min.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/owl.css" />
-        <link rel="stylesheet" href="/newupdate/css/responsive.css" />
-        <link rel="stylesheet" href="/newupdate/css/style.css" />
-
-        {/* styles end  */}
-
-        {/* js  */}
-        <script src="/newupdate/js/appear.js"></script>
-        <script src="/newupdate/js/bootstrap.min.js"></script>
-        <script src="/newupdate/js/color-settings.js"></script>
-        <script src="/newupdate/js/jquery-ui.js"></script>
-        <script src="/newupdate/js/jquery.bootstrap-touchspin.js"></script>
-        <script src="/newupdate/js/jquery.countdown.js"></script>
-        <script src="/newupdate/js/jquery.fancybox.js"></script>
-        <script src="/newupdate/js/jquery.js"></script>
-        <script src="/newupdate/js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="/newupdate/js/jquery.paroller.min.js"></script>
-        <script src="/newupdate/js/mixitup.js"></script>
-        <script src="/newupdate/js/nav-tool.js"></script>
-        <script src="/newupdate/js/owl.js"></script>
-        <script src="/newupdate/js/parallax.min.js"></script>
-        <script src="/newupdate/js/popper.min.js"></script>
-        <script src="/newupdate/js/script.js"></script>
-        <script src="/newupdate/js/tilt.jquery.min.js"></script>
-        <script src="/newupdate/js/validate.js"></script>
-        <script src="/newupdate/js/wow.js"></script>
-
-        {/* js end */}
-      </Head>
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -102,7 +40,7 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-clock" />
-                        10:00am to 6:00pm <br /> Sunday Closed
+                        10:00am to 6:00pm <br /> Friday Closed
                       </div>
                     </div>
                   </div>
@@ -111,7 +49,7 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-pin" />
-                        13005 Greenville Avenue <br /> California, TX 70240
+                        Warlessgate, Mohakhali <br /> Dhaka, Bangladesh
                       </div>
                     </div>
                   </div>
@@ -120,8 +58,8 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-phone-call" />
-                        <a href="tel:+1-000999-0099">+1 000999 0099</a>
-                        <a href="mailto:mail@example.com">mail@example.com</a>
+                        <a href="tel:+1-000999-0099">+8801617222302</a> <br />
+                        <a href="mailto:info@upternidea.com">info@upternidea.com</a>
                       </div>
                     </div>
                   </div>
@@ -136,10 +74,10 @@ const ContactUs = () => {
                         </i>
                       </span>
                       <li className="facebook">
-                        <a className="fa fa-facebook-f" href="#" />
+                        <a  href="#" className="fa fa-facebook-f" />
                       </li>
                       <li className="twitter">
-                        <a className="fa fa-twitter" href="#" />
+                        <a  href="#" className="fa fa-twitter" />
                       </li>
                       <li className="linkedin">
                         <a href="#" className="fa fa-google-plus" />
@@ -169,7 +107,7 @@ const ContactUs = () => {
           </section>
           {/* End Contact Info Section */}
           {/* Contact Form Section */}
-        <ContactForm/> 
+        <ContactForm/>
           {/* End Contact Form Section */}
 
         </div>

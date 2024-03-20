@@ -1,5 +1,5 @@
 import React from "react";
-import CountUp from "react-countup"; 
+import CountUp from "react-countup";
 
 const Countup = () => {
   return (
@@ -27,7 +27,7 @@ const Countup = () => {
                         </span> */}
                       <CountUp
                         start={0}
-                        end={12}
+                        end={3}
                         duration={2.75}
                         // delay={3}
                       ></CountUp>
@@ -55,7 +55,7 @@ const Countup = () => {
                         </span> */}
                       <CountUp
                         start={0}
-                        end={1000}
+                        end={500}
                         duration={2.75}
                         // delay={3}
                       ></CountUp>
@@ -83,7 +83,7 @@ const Countup = () => {
                         </span> */}
                       <CountUp
                         start={0}
-                        end={27}
+                        end={20}
                         duration={2.75}
                         // delay={3}
                       ></CountUp>

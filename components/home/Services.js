@@ -2,66 +2,94 @@ import React from "react";
 
 const serviceData = [
   {
-    title: "Digital Marketing",
+    title: "Search Engine Optimization (SEO)",
     description:
-      "Digital marketing creates opportunities for small and medium business enterprises to compete with larger business entities.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Search Engine Optimization",
-    description:
-      "SEO is a part of Digital marketing that help your targeted customers to find you in search engine results and take action.",
+      "Increase your website's search engine rankings to generate more organic visitors and customers.",
     logoInClass: "icon flaticon-line-chart",
     link: "/contentMarketing",
   },
   {
-    title: "Web Design and Development",
+    title: "Social Media Marketing (SMM)",
     description:
-      "Professional web Designing is the first step to showcase your brand and convert visitors into buyers.",
-    logoInClass: "icon flaticon-bar-chart",
+      "Engage with your audience on major social platforms to grow your brand and build a community around your products or services.",
+    logoInClass: "icon flaticon-pie-chart",
     link: "/contentMarketing",
-  },
+  }, 
+
   {
-    title: "Software Development",
+    title: "Marketing Analytics",
     description:
-      "Building reliable and scalable software development to meet your business goals.",
-    logoInClass: "icon flaticon-search-1",
-    link: "/contentMarketing",
-  },
-  {
-    title: "E-commerce SEO",
-    description:
-      "SEO has the potential to boost your e-commerce site’s sales and revenue and make you the market leader in your industry.",
+      "Our free analytics service empowers your strategy by delivering campaign performance information and optimization options.",
     logoInClass: "icon flaticon-gear",
     link: "/contentMarketing",
   },
   {
-    title: "Social Media Marketing",
+    title: "Video Editing",
     description:
-      "If you aren’t sure how you should proceed in promoting your brand let us analyze your business to take most effective plan.",
+      "We create audience-grabbing reels, shorts, commercial, and motion videos.",
     logoInClass: "icon flaticon-pie-chart",
     link: "/contentMarketing",
   },
   {
-    title: "Clipping Path",
+    title: "YouTube Marketing",
     description:
-      "From a simple white background to the most complex clipping paths. Get pixel perfect image editing services, whenever you need them.",
+      "Use video to attract attention, build brand awareness, and spread your message on the world's largest video platform.",
     logoInClass: "icon flaticon-line-chart",
     link: "/contentMarketing",
   },
   {
-    title: "Video Production",
+    title: "Graphics Design",
     description:
-      "Our video production services can help direct people to your business, build your reputation, and expand your sales.",
+      "We offer logo design and complete visual branding solutions to enhance your brand's appearance",
     logoInClass: "icon flaticon-bar-chart",
     link: "/contentMarketing",
   },
   {
-    title: "Web Hosting",
+    title: "Media Buying Services",
     description:
-      "We offer web hosting services that will provide you with reliable access to the internet and the ability to host a website more securely.",
+      "Place advertisements strategically on Facebook and Google to maximize visibility and audience interaction.",
     logoInClass: "icon flaticon-cloud-computing",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Google Shopping Ad & Search Ad",
+    description:
+      "Targeted Google Shopping and search advertisements improve sales and visibility.",
+    logoInClass: "icon flaticon-line-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Small Business 360 Marketing Services:",
+    description:
+      "Customized digital marketing solutions for small businesses to maximize online growth.",
+    logoInClass: "icon flaticon-pie-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Dedicated Landing Page",
+    description:
+      "A dedicated landing page may advance your online marketing by converting visitors into leads or customers.",
+    logoInClass: "icon flaticon-bar-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Media Buying (Facebook Ads & Google Ads)",
+    description: "We maximize your advertising ROI on Facebook and Google.",
+    logoInClass: "icon flaticon-search-1",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Email Marketing",
+    description:
+      "Build customer loyalty and sales with personalized email marketing.",
+    logoInClass: "icon flaticon-bar-chart",
+    link: "/contentMarketing",
+  },
+  {
+    title: "Pay Per Click (PPC)",
+    description:
+      "Use search engines and social media to acquire rapid exposure and tailored website visitors.",
+    logoInClass: "icon flaticon-search-1",
     link: "/contentMarketing",
   },
 ];

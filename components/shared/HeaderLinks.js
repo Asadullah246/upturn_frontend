@@ -410,49 +410,6 @@ const HeaderLinks = () => {
                 <ul className="navigation clearfix homeLinksLatest">
                   <li className="current ">
                     <a href="/">Home</a>
-                    {/* <ul>
-                      <li>
-                        <a href="/">Homepage One</a>
-                      </li>
-                      <li>
-                        <a href="index-2.html">Homepage Two</a>
-                      </li>
-                      <li>
-                        <a href="index-3.html">Homepage Three</a>
-                      </li>
-                      <li>
-                        <a href="index-4.html">Homepage Four</a>
-                      </li>
-                      <li>
-                        <a href="index-5.html">Homepage Five</a>
-                      </li>
-                      <li>
-                        <a href="index-6.html">Homepage Six</a>
-                      </li>
-                      <li className="dropdown">
-                        <a href="#">Header Styles</a>
-                        <ul>
-                          <li>
-                            <a href="/">Header Style One</a>
-                          </li>
-                          <li>
-                            <a href="index-2.html">Header Style Two</a>
-                          </li>
-                          <li>
-                            <a href="index-3.html">Header Style Three</a>
-                          </li>
-                          <li>
-                            <a href="index-4.html">Header Style Four</a>
-                          </li>
-                          <li>
-                            <a href="index-5.html">Header Style Five</a>
-                          </li>
-                          <li>
-                            <a href="index-6.html">Header Style Six</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul> */}
                   </li>
                   <li className="dropdown">
                     <a href="/aboutUs">About</a>
@@ -681,7 +638,7 @@ const HeaderLinks = () => {
               </div>
               {/* Search Btn */}
               <div className="search-box-btn search-box-outer">
-                <span className="icon fa fa-search" /> 
+                <span className="icon fa fa-search" />
               </div>
             </div>
           </div>

@@ -157,7 +157,7 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
         </Toolbar>
-        <div className='text-black '>thisidf</div>
+        {/* <div className='text-black '>thisidf</div> */}
       </AppBar>
       <Box
         component="nav"

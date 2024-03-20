@@ -5,6 +5,7 @@ import SearchPopUp from "../components/shared/SearchPopUp";
 import PageHeader from "../components/shared/pageHeader";
 import SidebarServiceLinks from "../components/service/SidebarServiceLinks";
 import SidebarSubLinks from "../components/service/SidebarSubLinks";
+import Localseo from "../components/service/Localseo";
 
 const Seo = () => {
 
@@ -105,33 +106,19 @@ const Seo = () => {
                       <div className="lower-content">
                         <h3>SEO Optimization</h3>
                         <p>
-                          Having been around for over a decade, Basecamp is
-                          considered a reliable tool that excels at giving
-                          organizations a high-level view of their teams. Like
-                          Asana, Basecamp can help monitor tracking, but also
-                          offers additional features like direct messaging
-                          chats, centralized document storage, and a scheduling
-                          tool.Basecamp aims to take on Slack, Asana, Google
-                          Drive, and Dropbox by melding all of their competitors
-                          into one robust management tool.
+                        Beat your competition with the best SEO company in Bangladesh! Don’t be fed up with so-called SEO experts (who make more excuses than results)! Let our SEO services be your secret weapon!
                         </p>
-                        <h4>Features</h4>
+                        <h4 id="localseo">Local SEO</h4>
                         <p>
-                          Designed with the harried business person in mind,
-                          Basecamp helps managers and team members stay on top
-                          of their professional lives. The app boasts that users
-                          will no longer drown in a sea of emails as that
-                          feature is already embedded into the app.
-                          Additionally, the scheduling and tracking features
-                          help ensure teams never again miss a deadline. Another
-                          interesting component of Basecamp is that managercan
-                          eliminate the need for “check-in” meetings by sending
-                          an automated message daily to employees that ask for a
-                          recap of what they accomplished that day. Then
-                          employees can “tag” teammates in their recaps to
-                          explain what they need help with or what they
-                          finished.
+                        Here’s the deal, people are looking for the best and quickest ways to access nearby businesses. If you’re not listed in the local search results, you’re not being found.
                         </p>
+                        <p>
+                        In fact, 50% of mobile consumers are likely to visit local businesses after conducting a local search (according to Google). And these people are ready to make a purchase once they visit the shop.
+                        </p>
+                        <p>
+                        Securing your local presence, you can really set yourself apart from the competition.
+                        </p>
+                        <Localseo/> 
                         <div className="two-columns">
                           <div className="row clearfix">
                             <div className="column col-lg-6 col-md-6 col-sm-12">
