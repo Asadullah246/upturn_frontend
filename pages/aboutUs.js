@@ -7,6 +7,7 @@ import ScrollToTop from "../components/shared/ScrollToTop";
 import CountManage from "../components/shared/CountManage";
 import SearchPopUp from "../components/shared/SearchPopUp";
 import TopScrolling from "../components/shared/ScrollToTop";
+import ReadyToBuild from "../components/home/ReadyToBuild";
 
 const AboutUs = () => {
 
@@ -23,69 +24,7 @@ const AboutUs = () => {
   return (
     <div >
 
-      <Head>
-        {/* font  */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        ></link>
 
-        {/* font end */}
-
-        {/* styles  */}
-        <link rel="stylesheet" href="/newupdate/css/animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/animation.css" />
-        <link rel="stylesheet" href="/newupdate/css/bootstrap.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/color-switcher-design.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/custom-animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/flaticon.css" />
-        <link rel="stylesheet" href="/newupdate/css/font-awesome.css" />
-        <link rel="stylesheet" href="/newupdate/css/jquery-ui.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.bootstrap-touchspin.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/jquery.fancybox.min.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.mCustomScrollbar.min.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/owl.css" />
-        <link rel="stylesheet" href="/newupdate/css/responsive.css" />
-        <link rel="stylesheet" href="/newupdate/css/style.css" />
-
-        {/* styles end  */}
-
-        {/* js  */}
-        <script src="/newupdate/js/appear.js"></script>
-        <script src="/newupdate/js/bootstrap.min.js"></script>
-        <script src="/newupdate/js/color-settings.js"></script>
-        <script src="/newupdate/js/jquery-ui.js"></script>
-        <script src="/newupdate/js/jquery.bootstrap-touchspin.js"></script>
-        <script src="/newupdate/js/jquery.countdown.js"></script>
-        <script src="/newupdate/js/jquery.fancybox.js"></script>
-        <script src="/newupdate/js/jquery.js"></script>
-        <script src="/newupdate/js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="/newupdate/js/jquery.paroller.min.js"></script>
-        <script src="/newupdate/js/mixitup.js"></script>
-        <script src="/newupdate/js/nav-tool.js"></script>
-        <script src="/newupdate/js/owl.js"></script>
-        <script src="/newupdate/js/parallax.min.js"></script>
-        <script src="/newupdate/js/popper.min.js"></script>
-        <script src="/newupdate/js/script.js"></script>
-        <script src="/newupdate/js/tilt.jquery.min.js"></script>
-        <script src="/newupdate/js/validate.js"></script>
-        <script src="/newupdate/js/wow.js"></script>
-
-        {/* js end */}
-      </Head>
 
       {/* body  */}
       <body className="hidden-bar-wrapper"  ref={ref}  >
@@ -215,25 +154,22 @@ const AboutUs = () => {
                       </h2>
                     </div>
                     <div className="bold-text">
-                      From keyword research to technical auditing to site
-                      migration, our team of technical SEOs are true experts in
-                      their field.
+                    We are desperate, dedicated, and keen to learn new things to prove ourselves. It grew even bigger in the last couple of years that goes beyond 60 years of cumulative experience.
                     </div>
                     <ul className="list-style-three">
                       <li>
-                        We've been supporting WordPress since the beginning.
+                      We provide a complete digital marketing solution for all sorts of business.
                       </li>
                       <li>
-                        Perfect for large sites or agencies managing multiple
-                        clients.
+                      Try our tailored SEO packages to rank better in the SERP.
                       </li>
                       <li>
-                        Our easy-to-use control panel and API let you spend
+                      Be competent in visually and grab the attention. We design your dream on the web.
                       </li>
                     </ul>
-                    <a href="/contactUs" className="theme-btn btn-style-five">
+                    {/* <a href="/contactUs" className="theme-btn btn-style-five">
                       <span className="txt">Learn More</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -248,7 +184,7 @@ const AboutUs = () => {
                 <div className="fact-counter-two">
                   <div className="row clearfix">
                     {/* Column */}
-                    <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
+                    <div className="column counter-column col-lg-4 col-md-4 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
                         data-wow-delay="0ms"
@@ -265,17 +201,17 @@ const AboutUs = () => {
 
                             </span> */}
                             <CountUp  start={0}
-                              end={500}
+                              end={12}
                               duration={4.75} />
 
                             +
                           </div>
-                          <h4 className="counter-title">ACTIVE CLIENTS</h4>
+                          <h4 className="counter-title">Years Of Experience</h4>
                         </div>
                       </div>
                     </div>
                     {/* Column */}
-                    <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
+                    <div className="column counter-column col-lg-4 col-md-4 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
                         data-wow-delay="300ms"
@@ -292,16 +228,16 @@ const AboutUs = () => {
                               0
                             </span> */}
                             <CountUp  start={0}
-                              end={30}
+                              end={1000}
                               duration={4.75} />
                             +
                           </div>
-                          <h4 className="counter-title">TEAM ADVISORS</h4>
+                          <h4 className="counter-title">Happy Clients</h4>
                         </div>
                       </div>
                     </div>
                     {/* Column */}
-                    <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
+                    <div className="column counter-column col-lg-4 col-md-4 col-sm-12">
                       <div
                         className="inner wow fadeInLeft"
                         data-wow-delay="600ms"
@@ -318,40 +254,16 @@ const AboutUs = () => {
                               0
                             </span> */}
                             <CountUp  start={0}
-                              end={600}
+                              end={27}
                               duration={4.75} />
                             +
                           </div>
-                          <h4 className="counter-title">PROJECTS DONE</h4>
+                          <h4 className="counter-title">Brains To Support</h4>
                         </div>
                       </div>
                     </div>
                     {/* Column */}
-                    <div className="column counter-column col-lg-3 col-md-6 col-sm-12">
-                      <div
-                        className="inner wow fadeInLeft"
-                        data-wow-delay="900ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="content">
-                          <div className="icon flaticon-united" />
-                          <div className="count-outer count-box">
-                            {/* <span
-                              className="count-text"
-                              data-speed={2000}
-                              data-stop={25}
-                            >
-                              0
-                            </span> */}
-                            <CountUp  start={0}
-                              end={7}
-                              duration={4.75} />
-                            +
-                          </div>
-                          <h4 className="counter-title">GLORIOUS YEARS</h4>
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -645,6 +557,11 @@ const AboutUs = () => {
             </div>
           </section>
           {/* End Skill Section */}
+
+          {/* ready to build */}
+          <ReadyToBuild/>
+          {/* end of ready to build */}
+
           {/* Newsleter Section */}
           <section className="newsletter-section">
             <div className="auto-container">
@@ -668,8 +585,7 @@ const AboutUs = () => {
                       <h2>Subscribe Our Newsletter</h2>
                     </div>
                     <div className="text">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit
-                      donec tempus pellentesque dui vel tristique purus justo{" "}
+                    Elevate your online presence with cutting-edge digital solutions tailored to your business needs. Experience seamless integration of web development, SEO, and digital marketing strategies for optimal results.{" "}
                     </div>
                     <div className="newsletter-form">
                       <form

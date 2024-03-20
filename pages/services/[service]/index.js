@@ -1,14 +1,24 @@
 import Head from "next/head";
 import React from "react";
-import TopScrolling from "../components/shared/ScrollToTop";
-import SearchPopUp from "../components/shared/SearchPopUp";
-import PageHeader from "../components/shared/pageHeader";
+import SidebarServiceLinks from "../../../components/service/SidebarServiceLinks";
+import SearchPopUp from "../../../components/shared/SearchPopUp";
+import TopScrolling from "../../../components/shared/ScrollToTop";
+import PageHeader from "../../../components/shared/pageHeader";
 
-const SocialMarketing = () => {
+const ServiceDetails = () => {
+
+    const serviceData=[
+       {
+        title:"Search Engine Optimization (SEO)",
+        description:"Having been around for over a decade, Basecamp is considered a reliable tool that excels at giving organizations a high-level view of their teams. Like Asana, Basecamp can help monitor tracking, but also offers additional features like direct messaging chats, centralized document storage, and a scheduling tool.Basecamp aims to take on Slack, Asana, Google Drive, and Dropbox by melding all of their competitors into one robust management tool.",
+        feature:"Designed with the harried business person in mind, Basecamp helps managers and team members stay on top of their professional lives. The app boasts that users will no longer drown in a sea of emails as that feature is already embedded into the app. Additionally, the scheduling and tracking features help ensure teams never again miss a deadline. Another interesting component of Basecamp is that managercan eliminate the need for “check-in” meetings by sending an automated message daily to employees that ask for a recap of what they accomplished that day. Then employees can “tag” teammates in their recaps to explain what they need help with or what they finished.",
+        cost:"A unique feature of Basecamp is that the app doesn’t charge for an increase in the number of users or projects. So unlike some of its peers, Basecamp charges a flat-fixed fee of $99 a month for a team, no matter the size.",
+        importance:"By offering one of the best all-encompassing software solutions, Basecamp helps busy SEO pros stay on top of their entire business by more efficiently checking in with their team and deadlines in one easy to use the app.Casie Gillette, senior director of digital marketing at KoMarketing, uses Basecamp mainly for communicating to clients. \n Basecamp is our primary means of communication with clients,” Gillette said. “For any deliverable, it allows an easy way to track the conversation and adjust docs accordingly."
+
+    },
+    ]
   return (
     <div>
-    
-
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -18,7 +28,7 @@ const SocialMarketing = () => {
           </div>
           {/* Main Header*/}
 
-          <PageHeader pagename={"Social Marketing"}/>
+          <PageHeader pagename={"Social Marketing"} />
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
@@ -28,52 +38,7 @@ const SocialMarketing = () => {
                 <div className="sidebar-side left-sidebar col-lg-4 col-md-12 col-sm-12">
                   <aside className="sidebar sticky-top">
                     {/* Services */}
-                    <div className="sidebar-widget">
-                      <ul className="service-list">
-                        <li>
-                          <a href="services.html">
-                            <span className="color-layer" />
-                            All Services
-                          </a>
-                        </li>
-                        <li>
-                          <a href="content-marketing.html">
-                            <span className="color-layer" />
-                            Content Marketing
-                          </a>
-                        </li>
-                        <li className="current">
-                          <a href="social-marketing.html">
-                            <span className="color-layer" />
-                            Social Marketing
-                          </a>
-                        </li>
-                        <li>
-                          <a href="app-development.html">
-                            <span className="color-layer" />
-                            App Development
-                          </a>
-                        </li>
-                        <li>
-                          <a href="seo.html">
-                            <span className="color-layer" />
-                            SEO Optimization
-                          </a>
-                        </li>
-                        <li>
-                          <a href="web-development.html">
-                            <span className="color-layer" />
-                            Web Development
-                          </a>
-                        </li>
-                        <li>
-                          <a href="advertising.html">
-                            <span className="color-layer" />
-                            PPC Advertising
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                    <SidebarServiceLinks />
                     {/* Broucher Widget */}
                     <div className="broucher-widget">
                       <div
@@ -108,13 +73,13 @@ const SocialMarketing = () => {
                           <li>
                             <a href="tel:+0-000-0000-000">
                               <span className="icon fa fa-phone" />
-                              +0 000 0000 000
+                              +8801617222302
                             </a>
                           </li>
                           <li>
                             <a href="mailto:upTurnIdea@example.com">
                               <span className="icon fa fa-envelope-o" />
-                              upTurnIdea@example.com
+                              info@upteridea.com
                             </a>
                           </li>
                         </ul>
@@ -127,37 +92,19 @@ const SocialMarketing = () => {
                   <div className="service-detail">
                     <div className="inner-box">
                       <div className="image">
-                        <img src="/newupdate/images/resource/service-1.jpg" alt="" />
+                        <img
+                          src="/newupdate/images/resource/service-1.jpg"
+                          alt=""
+                        />
                       </div>
                       <div className="lower-content">
-                        <h3>Social Marketing</h3>
+                        <h3>{serviceData[0]?.title}</h3>
                         <p>
-                          Having been around for over a decade, Basecamp is
-                          considered a reliable tool that excels at giving
-                          organizations a high-level view of their teams. Like
-                          Asana, Basecamp can help monitor tracking, but also
-                          offers additional features like direct messaging
-                          chats, centralized document storage, and a scheduling
-                          tool.Basecamp aims to take on Slack, Asana, Google
-                          Drive, and Dropbox by melding all of their competitors
-                          into one robust management tool.
+                        {serviceData[0]?.description}
                         </p>
                         <h4>Features</h4>
                         <p>
-                          Designed with the harried business person in mind,
-                          Basecamp helps managers and team members stay on top
-                          of their professional lives. The app boasts that users
-                          will no longer drown in a sea of emails as that
-                          feature is already embedded into the app.
-                          Additionally, the scheduling and tracking features
-                          help ensure teams never again miss a deadline. Another
-                          interesting component of Basecamp is that managercan
-                          eliminate the need for “check-in” meetings by sending
-                          an automated message daily to employees that ask for a
-                          recap of what they accomplished that day. Then
-                          employees can “tag” teammates in their recaps to
-                          explain what they need help with or what they
-                          finished.
+                        {serviceData[0]?.feature}
                         </p>
                         <div className="two-columns">
                           <div className="row clearfix">
@@ -172,23 +119,19 @@ const SocialMarketing = () => {
                             <div className="column col-lg-6 col-md-6 col-sm-12">
                               <h4>Cost</h4>
                               <p>
-                                A unique feature of Basecamp is that the app
-                                doesn’t charge for an increase in the number of
-                                users or projects. So unlike some of its peers,
-                                Basecamp charges a flat-fixed fee of $99 a month
-                                for a team, no matter the size.
+                              {serviceData[0]?.cost}
                               </p>
                             </div>
                           </div>
                         </div>
                         <h4>Why It’s Good for SEO Pros</h4>
-                        <p>
-                          Managing a client’s SEO consists of many different
-                          timelines and action items. Keeping track of client
-                          emails, meetings, and central documents is a full-time
-                          job.
-                        </p>
-                        <div className="two-columns">
+                        {serviceData[0]?.importance?.split("\n").map((para, index)=>{
+                            return(
+                                <p key={index} style={{marginBottom:"20px"}}>{para}</p>
+                            )
+                        })}
+
+                        {/* <div className="two-columns">
                           <div className="row clearfix">
                             <div className="column col-lg-6 col-md-6 col-sm-12">
                               <p>
@@ -217,7 +160,7 @@ const SocialMarketing = () => {
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -293,8 +236,6 @@ const SocialMarketing = () => {
             </div>
           </section>
           {/* End Clients Section */}
-
-
         </div>
         {/*End pagewrapper*/}
         <SearchPopUp />
@@ -305,5 +246,4 @@ const SocialMarketing = () => {
   );
 };
 
-export default SocialMarketing;
-
+export default ServiceDetails;

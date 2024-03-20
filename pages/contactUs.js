@@ -3,73 +3,12 @@ import React from "react";
 import PageHeader from "../components/shared/pageHeader";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
+import ContactForm from "../components/shared/ContactForm";
 
 const ContactUs = () => {
   return (
     <div>
-      <Head>
-        {/* font  */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        ></link>
 
-        {/* font end */}
-
-        {/* styles  */}
-        <link rel="stylesheet" href="/newupdate/css/animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/animation.css" />
-        <link rel="stylesheet" href="/newupdate/css/bootstrap.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/color-switcher-design.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/custom-animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/flaticon.css" />
-        <link rel="stylesheet" href="/newupdate/css/font-awesome.css" />
-        <link rel="stylesheet" href="/newupdate/css/jquery-ui.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.bootstrap-touchspin.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/jquery.fancybox.min.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.mCustomScrollbar.min.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/owl.css" />
-        <link rel="stylesheet" href="/newupdate/css/responsive.css" />
-        <link rel="stylesheet" href="/newupdate/css/style.css" />
-
-        {/* styles end  */}
-
-        {/* js  */}
-        <script src="/newupdate/js/appear.js"></script>
-        <script src="/newupdate/js/bootstrap.min.js"></script>
-        <script src="/newupdate/js/color-settings.js"></script>
-        <script src="/newupdate/js/jquery-ui.js"></script>
-        <script src="/newupdate/js/jquery.bootstrap-touchspin.js"></script>
-        <script src="/newupdate/js/jquery.countdown.js"></script>
-        <script src="/newupdate/js/jquery.fancybox.js"></script>
-        <script src="/newupdate/js/jquery.js"></script>
-        <script src="/newupdate/js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="/newupdate/js/jquery.paroller.min.js"></script>
-        <script src="/newupdate/js/mixitup.js"></script>
-        <script src="/newupdate/js/nav-tool.js"></script>
-        <script src="/newupdate/js/owl.js"></script>
-        <script src="/newupdate/js/parallax.min.js"></script>
-        <script src="/newupdate/js/popper.min.js"></script>
-        <script src="/newupdate/js/script.js"></script>
-        <script src="/newupdate/js/tilt.jquery.min.js"></script>
-        <script src="/newupdate/js/validate.js"></script>
-        <script src="/newupdate/js/wow.js"></script>
-
-        {/* js end */}
-      </Head>
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -101,7 +40,7 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-clock" />
-                        10:00am to 6:00pm <br /> Sunday Closed
+                        10:00am to 6:00pm <br /> Friday Closed
                       </div>
                     </div>
                   </div>
@@ -110,7 +49,7 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-pin" />
-                        13005 Greenville Avenue <br /> California, TX 70240
+                        Warlessgate, Mohakhali <br /> Dhaka, Bangladesh
                       </div>
                     </div>
                   </div>
@@ -119,8 +58,8 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-phone-call" />
-                        <a href="tel:+1-000999-0099">+1 000999 0099</a>
-                        <a href="mailto:mail@example.com">mail@example.com</a>
+                        <a href="tel:+1-000999-0099">+8801617222302</a> <br />
+                        <a href="mailto:info@upternidea.com">info@upternidea.com</a>
                       </div>
                     </div>
                   </div>
@@ -135,10 +74,10 @@ const ContactUs = () => {
                         </i>
                       </span>
                       <li className="facebook">
-                        <a className="fa fa-facebook-f" href="#" />
+                        <a  href="#" className="fa fa-facebook-f" />
                       </li>
                       <li className="twitter">
-                        <a className="fa fa-twitter" href="#" />
+                        <a  href="#" className="fa fa-twitter" />
                       </li>
                       <li className="linkedin">
                         <a href="#" className="fa fa-google-plus" />
@@ -168,318 +107,9 @@ const ContactUs = () => {
           </section>
           {/* End Contact Info Section */}
           {/* Contact Form Section */}
-          <section className="contact-form-section">
-            <div className="auto-container">
-              {/* Sec Title */}
-              <div className="sec-title centered">
-                <div className="title">Don’t Hasitate To Contact With us</div>
-                <h2>Now Very Easy</h2>
-                <div className="text">
-                  Our approach to SEO is uniquely built around what we know
-                  works…and what we know <br /> doesn’t work. With over 200
-                  verified factors in play.
-                </div>
-              </div>
-              <div className="inner-container">
-                {/* Contact Form */}
-                <div className="contact-form">
-                  {/*Contact Form*/}
-                  <form
-                    method="post"
-                    action="https://///sendemail.php"
-                    id="contact-form"
-                  >
-                    <div className="row clearfix">
-                      <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                        <span className="icon flaticon-user-2" />
-                        <input
-                          type="text"
-                          name="username"
-                          placeholder="Your Name"
-                          required=""
-                        />
-                      </div>
-                      <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                        <span className="icon flaticon-phone-call" />
-                        <input
-                          type="text"
-                          name="phone"
-                          placeholder="Your Phone"
-                          required=""
-                        />
-                      </div>
-                      <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                        <span className="icon flaticon-big-envelope" />
-                        <input
-                          type="email"
-                          name="email"
-                          placeholder="Email"
-                          required=""
-                        />
-                      </div>
-                      <div className="col-lg-6 col-md-6 col-sm-12 form-group">
-                        <span className="icon flaticon-notepad" />
-                        <input
-                          type="text"
-                          name="subject"
-                          placeholder="Subject"
-                          required=""
-                        />
-                      </div>
-                      <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-                        <span className="icon flaticon-message" />
-                        <textarea
-                          name="message"
-                          placeholder="Message"
-                          defaultValue={""}
-                        />
-                      </div>
-                      <div className="col-lg-12 col-md-12 col-sm-12 text-center form-group">
-                        <button
-                          className="theme-btn btn-style-three"
-                          type="submit"
-                          name="submit-form"
-                        >
-                          <span className="txt">Submit Now</span>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                  {/*End Contact Form */}
-                </div>
-              </div>
-            </div>
-          </section>
+        <ContactForm/>
           {/* End Contact Form Section */}
-          {/* Main Footer */}
-          <footer className="main-footer">
-            <div
-              className="pattern-layer"
-              style={{
-                backgroundImage: "url(images/background/pattern-3.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-two"
-              style={{
-                backgroundImage: "url(images/background/pattern-4.png)",
-              }}
-            />
-            <div
-              className="pattern-layer-three"
-              style={{
-                backgroundImage: "url(images/background/pattern-5.png)",
-              }}
-            />
-            <div className="auto-container">
-              {/*Widgets Section*/}
-              <div className="widgets-section">
-                <div className="row clearfix">
-                  {/* Column */}
-                  <div className="big-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="row clearfix">
-                      {/* Footer Column */}
-                      <div className="footer-column col-lg-7 col-md-6 col-sm-12">
-                        <div className="footer-widget logo-widget">
-                          <div className="logo">
-                            <a href="/">
-                              <img src="images/logo.png" alt="" />
-                            </a>
-                          </div>
-                          <div className="text">
-                            Our approach to SEO is uniquely built around what we
-                            know works…and what we know doesn’t work. With over
-                            200 verified factors in play.
-                          </div>
-                          {/* Social Box */}
-                          <ul className="social-box">
-                            <li>
-                              <a href="#" className="fa fa-facebook-f" />
-                            </li>
-                            <li>
-                              <a href="#" className="fa fa-linkedin" />
-                            </li>
-                            <li>
-                              <a href="#" className="fa fa-twitter" />
-                            </li>
-                            <li>
-                              <a href="#" className="fa fa-google" />
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      {/* Footer Column */}
-                      <div className="footer-column col-lg-5 col-md-6 col-sm-12">
-                        <div className="footer-widget links-widget">
-                          <h4>Services</h4>
-                          <ul className="list-link">
-                            <li>
-                              <a href="#">SEO for Small Business</a>
-                            </li>
-                            <li>
-                              <a href="#">SEO for Local Services</a>
-                            </li>
-                            <li>
-                              <a href="#">Enterprise SEO</a>
-                            </li>
-                            <li>
-                              <a href="#">National SEO</a>
-                            </li>
-                            <li>
-                              <a href="#">International SEO</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Column */}
-                  <div className="big-column col-lg-6 col-md-12 col-sm-12">
-                    <div className="row clearfix">
-                      {/*Footer Column*/}
-                      <div className="footer-column col-lg-6 col-md-6 col-sm-12">
-                        <div className="footer-widget gallery-widget">
-                          <h4>instagram</h4>
-                          <div className="widget-content">
-                            <div className="images-outer clearfix">
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/1.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-1.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/2.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-2.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/3.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-3.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/4.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-4.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/1.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-5.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                              {/*Image Box*/}
-                              <figure className="image-box">
-                                <a
-                                  href="images/gallery/2.jpg"
-                                  className="lightbox-image"
-                                  data-fancybox="footer-gallery"
-                                  title="Image Title Here"
-                                  data-fancybox-group="footer-gallery"
-                                >
-                                  <img
-                                    src="images/gallery/footer-gallery-thumb-6.jpg"
-                                    alt=""
-                                  />
-                                </a>
-                              </figure>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      {/* Footer Column */}
-                      <div className="footer-column col-lg-5 col-md-6 col-sm-12">
-                        <div className="footer-widget links-widget">
-                          <h4>Contact info</h4>
-                          <ul className="list-style-two">
-                            <li>
-                              <span className="icon flaticon-wall-clock" />
-                              Mon – Sat 10:00pm - 8:00pm
-                            </li>
-                            <li>
-                              <span className="icon flaticon-phone-call" />
-                              <a href="tel:+0987-654-321">0987 654 321</a>{" "}
-                              <a href="tel:+0123-456-789">0123 456 789</a>
-                            </li>
-                            <li>
-                              <span className="icon flaticon-email" />
-                              <a href="mailto:upTurnIdea@gmail.com">
-                                upTurnIdea@gmail.com
-                              </a>
-                            </li>
-                            <li>
-                              <span className="icon flaticon-maps-and-flags" />
-                              16122 Collins Street West, Melbourne, VIC Srsars
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* Footer Bottom */}
-              <div className="footer-bottom">
-                <div className="copyright">
-                  Copyright © 2020 upTurnIdea by{" "}
-                  <a href="https://themeforest.net/user/themerange">
-                    ThemeRange
-                  </a>
-                  . All Rights Reserved. All Rights Reserved.
-                </div>
-              </div>
-            </div>
-          </footer>
-          {/* End Main Footer */}
+
         </div>
         {/*End pagewrapper*/}
 

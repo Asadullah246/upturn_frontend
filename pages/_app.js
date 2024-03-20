@@ -37,9 +37,7 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-
-
-<Head>
+      <Head>
         {/* font  */}
         <link
           href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
@@ -107,14 +105,14 @@ function MyApp({ Component, pageProps }) {
       {/* <Nav></Nav> */}
       {/* <Navbar2/> */}
       <Loader />
-      <Preloader/>
+      <Preloader />
 
-      <HandlePreloader /> 
+      <HandlePreloader />
       <WowHandle />
       <HeaderStyle />
       <SearchBox />
-      <MobileMenu/>
-      <SubmenuDropdownToggle/>
+      <MobileMenu />
+      <SubmenuDropdownToggle />
       <HiddenBar />
       <HiddenBar2 />
       <HiddenBarMenuConfig />

@@ -36,8 +36,8 @@ const FooterNew = () => {
                     <div className="footer-widget logo-widget">
                       <div className="logo">
                         <a href="/">
-                          <img style={{height:"50px"}}
-                            src="/newupdate/images/newIcons/logo.png"
+                          <img style={{height:"40px"}}
+                            src="/newupdate/images/newIcons/logo.svg"
                             alt=""
                           />
                         </a>
@@ -94,102 +94,25 @@ const FooterNew = () => {
                 <div className="row clearfix">
                   {/*Footer Column*/}
                   <div className="footer-column col-lg-6 col-md-6 col-sm-12">
-                    <div className="footer-widget gallery-widget">
-                      <h4>instagram</h4>
-                      <div className="widget-content">
-                        <div className="images-outer clearfix">
-                          {/*Image Box*/}
-                          <figure className="image-box">
-                            <a
-                              href="images/gallery/1.jpg"
-                              className="lightbox-image"
-                              data-fancybox="footer-gallery"
-                              title="Image Title Here"
-                              data-fancybox-group="footer-gallery"
-                            >
-                              <img
-                                src="/newupdate/images/gallery/footer-gallery-thumb-1.jpg"
-                                alt=""
-                              />
-                            </a>
-                          </figure>
-                          {/*Image Box*/}
-                          <figure className="image-box">
-                            <a
-                              href="images/gallery/2.jpg"
-                              className="lightbox-image"
-                              data-fancybox="footer-gallery"
-                              title="Image Title Here"
-                              data-fancybox-group="footer-gallery"
-                            >
-                              <img
-                                src="/newupdate/images/gallery/footer-gallery-thumb-2.jpg"
-                                alt=""
-                              />
-                            </a>
-                          </figure>
-                          {/*Image Box*/}
-                          <figure className="image-box">
-                            <a
-                              href="images/gallery/3.jpg"
-                              className="lightbox-image"
-                              data-fancybox="footer-gallery"
-                              title="Image Title Here"
-                              data-fancybox-group="footer-gallery"
-                            >
-                              <img
-                                src="/newupdate/images/gallery/footer-gallery-thumb-3.jpg"
-                                alt=""
-                              />
-                            </a>
-                          </figure>
-                          {/*Image Box*/}
-                          <figure className="image-box">
-                            <a
-                              href="images/gallery/4.jpg"
-                              className="lightbox-image"
-                              data-fancybox="footer-gallery"
-                              title="Image Title Here"
-                              data-fancybox-group="footer-gallery"
-                            >
-                              <img
-                                src="/newupdate/images/gallery/footer-gallery-thumb-4.jpg"
-                                alt=""
-                              />
-                            </a>
-                          </figure>
-                          {/*Image Box*/}
-                          <figure className="image-box">
-                            <a
-                              href="images/gallery/1.jpg"
-                              className="lightbox-image"
-                              data-fancybox="footer-gallery"
-                              title="Image Title Here"
-                              data-fancybox-group="footer-gallery"
-                            >
-                              <img
-                                src="/newupdate/images/gallery/footer-gallery-thumb-5.jpg"
-                                alt=""
-                              />
-                            </a>
-                          </figure>
-                          {/*Image Box*/}
-                          <figure className="image-box">
-                            <a
-                              href="images/gallery/2.jpg"
-                              className="lightbox-image"
-                              data-fancybox="footer-gallery"
-                              title="Image Title Here"
-                              data-fancybox-group="footer-gallery"
-                            >
-                              <img
-                                src="/newupdate/images/gallery/footer-gallery-thumb-6.jpg"
-                                alt=""
-                              />
-                            </a>
-                          </figure>
-                        </div>
-                      </div>
+                    <div className="footer-widget links-widget">
+                      <h4>Important Links</h4>
+                      <ul className="list-link">
+                        <li>
+                          <a href="/">Home</a>
+                        </li>
+                        <li>
+                          <a href="/aboutUs">About</a>
+                        </li>
+                        <li>
+                          <a href="/contactUs">Contact</a>
+                        </li>
+                        <li>
+                          <a href="/terms">Terms & conditions</a>
+                        </li>
+                        <li>
+                          <a href="/privacy">Privacy Policy</a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                   {/* Footer Column */}
