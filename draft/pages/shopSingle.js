@@ -1,7 +1,7 @@
 import React from "react";
-import PageHeader from "../components/shared/pageHeader";
-import SearchPopUp from "../components/shared/SearchPopUp";
-import TopScrolling from "../components/shared/ScrollToTop";
+import PageHeader from "../../components/shared/pageHeader";
+import SearchPopUp from "../../components/shared/SearchPopUp";
+import TopScrolling from "../../components/shared/ScrollToTop";
 
 const shopSingle = () => {
   return (
@@ -68,7 +68,7 @@ const shopSingle = () => {
                                 method="post"
                                 action="#"
                               >
-                                <div className="form-group"> 
+                                <div className="form-group">
                                   <input
                                     type="text"
                                     name="text"

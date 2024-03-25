@@ -1,15 +1,79 @@
 import Head from "next/head";
 import React from "react";
-import TopScrolling from "../components/shared/ScrollToTop";
-import SearchPopUp from "../components/shared/SearchPopUp";
-import PageHeader from "../components/shared/pageHeader";
+import TopScrolling from "../../components/shared/ScrollToTop";
+import SearchPopUp from "../../components/shared/SearchPopUp";
+import PageHeader from "../../components/shared/pageHeader";
 
-const SocialMarketing = () => {
+const WebDevelopment = () => {
   return (
     <div>
-    
+      <Head>
+        {/* font  */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet"
+        ></link>
+
+        {/* font end */}
+
+        {/* styles  */}
+        <link rel="stylesheet" href="/newupdate/css/animate.css" />
+        <link rel="stylesheet" href="/newupdate/css/animation.css" />
+        <link rel="stylesheet" href="/newupdate/css/bootstrap.css" />
+        <link
+          rel="stylesheet"
+          href="/newupdate/css/color-switcher-design.css"
+        />
+        <link rel="stylesheet" href="/newupdate/css/custom-animate.css" />
+        <link rel="stylesheet" href="/newupdate/css/flaticon.css" />
+        <link rel="stylesheet" href="/newupdate/css/font-awesome.css" />
+        <link rel="stylesheet" href="/newupdate/css/jquery-ui.css" />
+        <link
+          rel="stylesheet"
+          href="/newupdate/css/jquery.bootstrap-touchspin.css"
+        />
+        <link rel="stylesheet" href="/newupdate/css/jquery.fancybox.min.css" />
+        <link
+          rel="stylesheet"
+          href="/newupdate/css/jquery.mCustomScrollbar.min.css"
+        />
+        <link rel="stylesheet" href="/newupdate/css/owl.css" />
+        <link rel="stylesheet" href="/newupdate/css/responsive.css" />
+        <link rel="stylesheet" href="/newupdate/css/style.css" />
+
+        {/* styles end  */}
+
+        {/* js  */}
+        <script src="/newupdate/js/appear.js"></script>
+        <script src="/newupdate/js/bootstrap.min.js"></script>
+        <script src="/newupdate/js/color-settings.js"></script>
+        <script src="/newupdate/js/jquery-ui.js"></script>
+        <script src="/newupdate/js/jquery.bootstrap-touchspin.js"></script>
+        <script src="/newupdate/js/jquery.countdown.js"></script>
+        <script src="/newupdate/js/jquery.fancybox.js"></script>
+        <script src="/newupdate/js/jquery.js"></script>
+        <script src="/newupdate/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="/newupdate/js/jquery.paroller.min.js"></script>
+        <script src="/newupdate/js/mixitup.js"></script>
+        <script src="/newupdate/js/nav-tool.js"></script>
+        <script src="/newupdate/js/owl.js"></script>
+        <script src="/newupdate/js/parallax.min.js"></script>
+        <script src="/newupdate/js/popper.min.js"></script>
+        <script src="/newupdate/js/script.js"></script>
+        <script src="/newupdate/js/tilt.jquery.min.js"></script>
+        <script src="/newupdate/js/validate.js"></script>
+        <script src="/newupdate/js/wow.js"></script>
+
+        {/* js end */}
+      </Head>
 
       {/* body  */}
+
+   
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
@@ -17,9 +81,7 @@ const SocialMarketing = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-
-          <PageHeader pagename={"Social Marketing"}/>
-          {/* End Page Title Section */}
+        <PageHeader pagename={"Web Development"}/>
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
             <div className="auto-container">
@@ -42,7 +104,7 @@ const SocialMarketing = () => {
                             Content Marketing
                           </a>
                         </li>
-                        <li className="current">
+                        <li>
                           <a href="social-marketing.html">
                             <span className="color-layer" />
                             Social Marketing
@@ -60,7 +122,7 @@ const SocialMarketing = () => {
                             SEO Optimization
                           </a>
                         </li>
-                        <li>
+                        <li className="current">
                           <a href="web-development.html">
                             <span className="color-layer" />
                             Web Development
@@ -109,9 +171,9 @@ const SocialMarketing = () => {
                             <a href="tel:+0-000-0000-000">
                               <span className="icon fa fa-phone" />
                               +0 000 0000 000
-                            </a>
+                            </a>upTurnIdea
                           </li>
-                          <li>
+                          <li>upTurnIdea
                             <a href="mailto:upTurnIdea@example.com">
                               <span className="icon fa fa-envelope-o" />
                               upTurnIdea@example.com
@@ -130,7 +192,7 @@ const SocialMarketing = () => {
                         <img src="/newupdate/images/resource/service-1.jpg" alt="" />
                       </div>
                       <div className="lower-content">
-                        <h3>Social Marketing</h3>
+                        <h3>Web Development</h3>
                         <p>
                           Having been around for over a decade, Basecamp is
                           considered a reliable tool that excels at giving
@@ -294,7 +356,6 @@ const SocialMarketing = () => {
           </section>
           {/* End Clients Section */}
 
-
         </div>
         {/*End pagewrapper*/}
         <SearchPopUp />
@@ -305,5 +366,4 @@ const SocialMarketing = () => {
   );
 };
 
-export default SocialMarketing;
-
+export default WebDevelopment;

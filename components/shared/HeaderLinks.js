@@ -308,8 +308,8 @@ const HeaderLinks = () => {
                         <a href="/account">Account</a>
                       </li>
                     </ul>
-                  </li> */} 
-                  <li className="dropdown">
+                  </li> */}
+                  {/* <li className="dropdown">
                     <a href="/blog">Blog</a>
                     <ul>
                       <li>
@@ -319,6 +319,9 @@ const HeaderLinks = () => {
                         <a href="#">Blog Classic</a>
                       </li>
                     </ul>
+                  </li> */} 
+                  <li>
+                    <a href="/blog">Blog</a>
                   </li>
                   <li>
                     <a href="/contactUs">Contact us</a>

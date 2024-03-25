@@ -1,11 +1,11 @@
 import Head from "next/head";
 import React from "react";
-import TopScrolling from "../components/shared/ScrollToTop";
-import SearchPopUp from "../components/shared/SearchPopUp";
-import PageHeader from "../components/shared/pageHeader";
-import SidebarServiceLinks from "../components/service/SidebarServiceLinks";
-import SidebarSubLinks from "../components/service/SidebarSubLinks";
-import Localseo from "../components/service/Localseo";
+import TopScrolling from "../../components/shared/ScrollToTop";
+import SearchPopUp from "../../components/shared/SearchPopUp";
+import PageHeader from "../../components/shared/pageHeader";
+import SidebarServiceLinks from "../../components/service/SidebarServiceLinks";
+import SidebarSubLinks from "../../components/service/SidebarSubLinks";
+import Localseo from "../../components/service/Localseo";
 
 const Seo = () => {
 
@@ -118,7 +118,7 @@ const Seo = () => {
                         <p>
                         Securing your local presence, you can really set yourself apart from the competition.
                         </p>
-                        <Localseo/> 
+                        <Localseo/>
                         <div className="two-columns">
                           <div className="row clearfix">
                             <div className="column col-lg-6 col-md-6 col-sm-12">
