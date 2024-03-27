@@ -22,6 +22,7 @@ import Preloader from "../components/shared/Preloader";
 import MobileMenu from "../components/shared/MobileMenu";
 import SubmenuDropdownToggle from "../components/shared/SubmenuDropdownToggle";
 import Head from "next/head";
+import Navtool from "../components/shared/Navtool";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -74,9 +75,7 @@ function MyApp({ Component, pageProps }) {
         {/* styles end  */}
 
         {/* js  */}
-        <script src="/newupdate/js/appear.js"></script>
-        <script src="/newupdate/js/bootstrap.min.js"></script>
-        <script src="/newupdate/js/color-settings.js"></script>
+
         <script src="/newupdate/js/jquery-ui.js"></script>
         <script src="/newupdate/js/jquery.bootstrap-touchspin.js"></script>
         <script src="/newupdate/js/jquery.countdown.js"></script>
@@ -84,12 +83,15 @@ function MyApp({ Component, pageProps }) {
         <script src="/newupdate/js/jquery.js"></script>
         <script src="/newupdate/js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="/newupdate/js/jquery.paroller.min.js"></script>
+        <script src="/newupdate/js/appear.js"></script>
+        <script src="/newupdate/js/bootstrap.min.js"></script>
+        <script src="/newupdate/js/color-settings.js"></script>
         <script src="/newupdate/js/mixitup.js"></script>
         <script src="/newupdate/js/nav-tool.js"></script>
         <script src="/newupdate/js/owl.js"></script>
         <script src="/newupdate/js/parallax.min.js"></script>
         <script src="/newupdate/js/popper.min.js"></script>
-        <script src="/newupdate/js/script.js"></script>
+        {/* <script src="/newupdate/js/script.js"></script>  */}
         <script src="/newupdate/js/tilt.jquery.min.js"></script>
         <script src="/newupdate/js/validate.js"></script>
         <script src="/newupdate/js/wow.js"></script>
@@ -112,6 +114,7 @@ function MyApp({ Component, pageProps }) {
       <HeaderStyle />
       <SearchBox />
       <MobileMenu />
+      <Navtool/> 
       <SubmenuDropdownToggle />
       <HiddenBar />
       <HiddenBar2 />
