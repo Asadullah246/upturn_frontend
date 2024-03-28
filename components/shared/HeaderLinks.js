@@ -861,7 +861,7 @@ const HeaderLinks = () => {
                         <a href="/account">Account</a>
                       </li>
                     </ul>
-                  </li> */} 
+                  </li> */} 2
 
                     <li  className={parentRoute=="blog"?"current":""}>
                       <a href="/blog">Blog</a>

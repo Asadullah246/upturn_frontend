@@ -1256,7 +1256,7 @@ img{
 
 .main-header{
 	position:absolute;
-	z-index:99;
+	z-index:9999; 
 	width:100%;
 	padding-top:60px;
 }
@@ -1780,7 +1780,7 @@ img.homepageLogo {
 	width:100%;
 	padding:0px 0px;
 	background:#ffffff;
-	z-index:200 !important;
+	z-index:2000000 !important;
 	border-bottom:1px solid #e8f1f7;
 	transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
@@ -1794,7 +1794,7 @@ img.homepageLogo {
 }
 
 .fixed-header .sticky-header{
-	z-index:999;
+	z-index:200;
 	opacity:1;
 	visibility:visible;
 	-ms-animation-name: fadeInDown;
@@ -2494,7 +2494,7 @@ img.homepageLogo {
 .header-style-one .main-menu .navigation > li.current > a{
 	background-color:#1519b2;
 	border-radius:50px;
-	color:#ffffff !important; 
+	color:#ffffff !important;
 }
 
 .header-style-one .main-menu .navigation > li:hover > a::before,
