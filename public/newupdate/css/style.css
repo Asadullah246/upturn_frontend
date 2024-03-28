@@ -1256,7 +1256,7 @@ img{
 
 .main-header{
 	position:absolute;
-	z-index:9999; 
+	z-index:9999;
 	width:100%;
 	padding-top:60px;
 }
@@ -2904,7 +2904,7 @@ img.homepageLogo {
 	height: 100%;
 	opacity: 0;
 	visibility: hidden;
-	z-index: 999999;
+	z-index: 9999999;
 }
 
 .mobile-menu .nav-logo{

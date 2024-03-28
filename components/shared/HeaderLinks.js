@@ -36,7 +36,7 @@ const HeaderLinks = () => {
             <div className="logo">
               <a href="/">
                 <img
-                  src="/newupdate/images/newIcons/logo.svg"
+                  src="/newupdate/images/newIcons/Logo.svg"
                   alt=""
                   title=""
                   className="homepageLogo"
@@ -53,7 +53,7 @@ const HeaderLinks = () => {
               <div className="">
                 <a href="/">
                   <img
-                    src="/newupdate/images/newIcons/logo.svg"
+                    src="/newupdate/images/newIcons/Logo.svg"
                     alt=""
                     title=""
                     className="homepageLogo"
@@ -91,7 +91,7 @@ const HeaderLinks = () => {
                 <div className="logo  logonewdesign">
                   <a href="/">
                     <img
-                      src="/newupdate/images/newIcons/logo.svg"
+                      src="/newupdate/images/newIcons/Logo.svg"
                       alt=""
                       title=""
                       className="homepageLogo"
@@ -321,7 +321,7 @@ const HeaderLinks = () => {
             <div className="logo">
               <a href="/">
                 <img
-                  src="/newupdate/images/newIcons/logo.svg"
+                  src="/newupdate/images/newIcons/Logo.svg"
                   alt=""
                   title=""
                   className="homepageLogo"
@@ -342,7 +342,7 @@ const HeaderLinks = () => {
               <div className="">
                 <a href="/">
                   <img
-                    src="/newupdate/images/newIcons/logo.svg"
+                    src="/newupdate/images/newIcons/Logo.svg"
                     alt=""
                     title=""
                     className="homepageLogo"
@@ -380,7 +380,7 @@ const HeaderLinks = () => {
                 <div className="logo  logonewdesign">
                   <a href="/">
                     <img
-                      src="/newupdate/images/newIcons/logo.svg"
+                      src="/newupdate/images/newIcons/Logo.svg"
                       alt=""
                       title=""
                       className="homepageLogo"
@@ -617,7 +617,7 @@ const HeaderLinks = () => {
           <nav className="menu-box">
             <div className="nav-logo">
               {/* <a href="/">
-              <img src="/newupdate/images/newIcons/logo.svg" alt="" title="" />
+              <img src="/newupdate/images/newIcons/Logo.svg" alt="" title="" />
             </a> */}
             </div>
             <div className="menu-outer">
@@ -648,7 +648,7 @@ const HeaderLinks = () => {
                     <a href="/">
                       <img
                         style={{ marginLeft: "43px !important" }}
-                        src="/newupdate/images/newIcons/logo.svg"
+                        src="/newupdate/images/newIcons/Logo.svg"
                         alt=""
                         title=""
                         className="homepageLogo "
