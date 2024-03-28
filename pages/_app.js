@@ -87,7 +87,7 @@ function MyApp({ Component, pageProps }) {
         <script src="/newupdate/js/bootstrap.min.js"></script>
         <script src="/newupdate/js/color-settings.js"></script>
         <script src="/newupdate/js/mixitup.js"></script>
-        <script src="/newupdate/js/nav-tool.js"></script>
+        {/* <script src="/newupdate/js/nav-tool.js"></script> */}
         <script src="/newupdate/js/owl.js"></script>
         <script src="/newupdate/js/parallax.min.js"></script>
         <script src="/newupdate/js/popper.min.js"></script>
@@ -112,13 +112,13 @@ function MyApp({ Component, pageProps }) {
       <HandlePreloader />
       <WowHandle />
       <HeaderStyle />
-      <SearchBox />
+      {/* <SearchBox /> */} 
       <MobileMenu />
-      <Navtool/> 
+      <Navtool/>
       <SubmenuDropdownToggle />
-      <HiddenBar />
+      {/* <HiddenBar />
       <HiddenBar2 />
-      <HiddenBarMenuConfig />
+      <HiddenBarMenuConfig /> */}
 
       <SSRProvider>
         <Component {...pageProps} />
