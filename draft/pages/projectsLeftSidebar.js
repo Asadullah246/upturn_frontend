@@ -1,13 +1,13 @@
 import Head from "next/head";
 import React from "react";
-import TopScrolling from "../components/shared/ScrollToTop";
-import SearchPopUp from "../components/shared/SearchPopUp";
-import PageHeader from "../components/shared/pageHeader";
+import TopScrolling from "../../components/shared/ScrollToTop";
+import SearchPopUp from "../../components/shared/SearchPopUp";
+import PageHeader from "../../components/shared/pageHeader";
 
-const ProjectsRightSidebar = () => {
+const ProjectsLeftSidebar = () => {
   return (
     <div>
-   
+
 
       {/* body  */}
       <body className="hidden-bar-wrapper">
@@ -18,14 +18,236 @@ const ProjectsRightSidebar = () => {
           </div>
           {/* Main Header*/}
 
-          <PageHeader pagename={"Projects Right Sidebar"}/>
+          <PageHeader pagename={"Projects Left Sidebar"}/>
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
             <div className="auto-container">
               <div className="row clearfix">
+                {/* Sidebar Side */}
+                <div className="sidebar-side left-sidebar col-lg-4 col-md-12 col-sm-12">
+                  <aside className="sidebar sticky-top">
+                    {/* Search */}
+                    <div className="sidebar-widget search-box">
+                      <form
+                        method="post"
+                        action="https://///contact.html"
+                      >
+                        <div className="form-group">
+                          <input
+                            type="search"
+                            name="search-field"
+                            defaultValue=""
+                            placeholder="Search Here"
+                            required=""
+                          />
+                          <button type="submit">
+                            <span className="icon fa fa-search" />
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    {/* Categories Widget */}
+                    <div className="sidebar-widget categories-widget">
+                      <div className="sidebar-title">
+                        <h4>Categories</h4>
+                      </div>
+                      <div className="widget-content">
+                        <ul className="blog-cat">
+                          <li>
+                            <a href="#">
+                              Content Marketing <span>( 01 )</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Social Marketing <span>( 25 )</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              App Development <span>( 66 )</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              SEO Optimization <span>( 12 )</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Web Development <span>( 11 )</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              PPC Advertising <span>( 02 )</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    {/* Categories Widget */}
+                    <div className="sidebar-widget popular-posts">
+                      <div className="sidebar-title">
+                        <h4>Recent Post</h4>
+                      </div>
+                      <div className="widget-content">
+                        <article className="post">
+                          <figure className="post-thumb">
+                            <img
+                              src="/newupdate/images/resource/post-thumb-1.jpg"
+                              alt=""
+                            />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                          <div className="text">
+                            <a href="news-detail.html">
+                              Google now disregards overlooks all links.
+                            </a>
+                          </div>
+                          <div className="post-info">November 21, 2020</div>
+                        </article>
+                        <article className="post">
+                          <figure className="post-thumb">
+                            <img
+                              src="/newupdate/images/resource/post-thumb-2.jpg"
+                              alt=""
+                            />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                          <div className="text">
+                            <a href="news-detail.html">
+                              How to increase your ROI through scientific SEM?
+                            </a>
+                          </div>
+                          <div className="post-info">November 28, 2020</div>
+                        </article>
+                        <article className="post">
+                          <figure className="post-thumb">
+                            <img
+                              src="/newupdate/images/resource/post-thumb-3.jpg"
+                              alt=""
+                            />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                          <div className="text">
+                            <a href="news-detail.html">
+                              A Guide to Google SEO <br /> Algorithm Updates
+                            </a>
+                          </div>
+                          <div className="post-info">December 04, 2020</div>
+                        </article>
+                      </div>
+                    </div>
+                    {/* Author Widget */}
+                    <div className="sidebar-widget author-widget">
+                      <div
+                        className="widget-content"
+                        style={{
+                          backgroundImage:
+                            "url(/newupdate/images//background/author-bg.jpg)",
+                        }}
+                      >
+                        <div className="image">
+                          <img src="/newupdate/images/resource/author-7.jpg" alt="" />
+                        </div>
+                        <div className="name">Pablo Villalpando</div>
+                        <div className="text">
+                          I got lucky because I never gave up the search. Are
+                          you quitting too soon? Or, are you willing to pursue
+                          luck with a vengeance?
+                        </div>
+                        {/* Social Box */}
+                        <ul className="social-box">
+                          <li>
+                            <a href="#" className="fa fa-facebook-f" />
+                          </li>
+                          <li>
+                            <a href="#" className="fa fa-linkedin" />
+                          </li>
+                          <li>
+                            <a href="#" className="fa fa-twitter" />
+                          </li>
+                          <li>
+                            <a href="#" className="fa fa-google" />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    {/* Instagram Widget */}
+                    <div className="sidebar-widget instagram-widget">
+                      <div className="sidebar-title">
+                        <h4>Instagram</h4>
+                      </div>
+                      <div className="widget-content">
+                        <div className="clearfix">
+                          <figure className="post-thumb">
+                            <img src="/newupdate/images/resource/instagram-1.jpg" alt="" />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                          <figure className="post-thumb">
+                            <img src="/newupdate/images/resource/instagram-2.jpg" alt="" />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                          <figure className="post-thumb">
+                            <img src="/newupdate/images/resource/instagram-3.jpg" alt="" />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                          <figure className="post-thumb">
+                            <img src="/newupdate/images/resource/instagram-4.jpg" alt="" />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                          <figure className="post-thumb">
+                            <img src="/newupdate/images/resource/instagram-5.jpg" alt="" />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                          <figure className="post-thumb">
+                            <img src="/newupdate/images/resource/instagram-6.jpg" alt="" />
+                            <a href="news-detail.html" className="overlay-box">
+                              <span className="icon fa fa-link" />
+                            </a>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Popular Posts */}
+                    <div className="sidebar-widget popular-tags">
+                      <div className="sidebar-title">
+                        <h4>Tags</h4>
+                      </div>
+                      <div className="widget-content">
+                        <a href="#">Business</a>
+                        <a href="#">Marketing</a>
+                        <a href="#">SEO</a>
+                        <a href="#">SEO</a>
+                        <a href="#">SMM</a>
+                        <a href="#">Solution</a>
+                        <a href="#">Tips</a>
+                        <a href="#">Startup</a>
+                        <a href="#">Strategy</a>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
                 {/* Content Side */}
-                <div className="content-side col-lg-8 col-md-12 col-sm-12">
+                <div className="content-side right-sidebar col-lg-8 col-md-12 col-sm-12">
                   <div className="row clearfix">
                     {/* Gallery Block */}
                     <div className="gallery-block col-lg-6 col-md-6 col-sm-12">
@@ -361,228 +583,6 @@ const ProjectsRightSidebar = () => {
                     </div>
                   </div>
                 </div>
-                {/* Sidebar Side */}
-                <div className="sidebar-side col-lg-4 col-md-12 col-sm-12">
-                  <aside className="sidebar sticky-top">
-                    {/* Search */}
-                    <div className="sidebar-widget search-box">
-                      <form
-                        method="post"
-                        action="https://///contact.html"
-                      >
-                        <div className="form-group">
-                          <input
-                            type="search"
-                            name="search-field"
-                            defaultValue=""
-                            placeholder="Search Here"
-                            required=""
-                          />
-                          <button type="submit">
-                            <span className="icon fa fa-search" />
-                          </button>
-                        </div>
-                      </form>
-                    </div>
-                    {/* Categories Widget */}
-                    <div className="sidebar-widget categories-widget">
-                      <div className="sidebar-title">
-                        <h4>Categories</h4>
-                      </div>
-                      <div className="widget-content">
-                        <ul className="blog-cat">
-                          <li>
-                            <a href="#">
-                              Content Marketing <span>( 01 )</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              Social Marketing <span>( 25 )</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              App Development <span>( 66 )</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              SEO Optimization <span>( 12 )</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              Web Development <span>( 11 )</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              PPC Advertising <span>( 02 )</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    {/* Categories Widget */}
-                    <div className="sidebar-widget popular-posts">
-                      <div className="sidebar-title">
-                        <h4>Recent Post</h4>
-                      </div>
-                      <div className="widget-content">
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-1.jpg"
-                              alt=""
-                            />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="news-detail.html">
-                              Google now disregards overlooks all links.
-                            </a>
-                          </div>
-                          <div className="post-info">November 21, 2020</div>
-                        </article>
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-2.jpg"
-                              alt=""
-                            />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="news-detail.html">
-                              How to increase your ROI through scientific SEM?
-                            </a>
-                          </div>
-                          <div className="post-info">November 28, 2020</div>
-                        </article>
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-3.jpg"
-                              alt=""
-                            />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="news-detail.html">
-                              A Guide to Google SEO <br /> Algorithm Updates
-                            </a>
-                          </div>
-                          <div className="post-info">December 04, 2020</div>
-                        </article>
-                      </div>
-                    </div>
-                    {/* Author Widget */}
-                    <div className="sidebar-widget author-widget">
-                      <div
-                        className="widget-content"
-                        style={{
-                          backgroundImage:
-                            "url(/newupdate/images/background/author-bg.jpg)",
-                        }}
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/author-7.jpg" alt="" />
-                        </div>
-                        <div className="name">Pablo Villalpando</div>
-                        <div className="text">
-                          I got lucky because I never gave up the search. Are
-                          you quitting too soon? Or, are you willing to pursue
-                          luck with a vengeance?
-                        </div>
-                        {/* Social Box */}
-                        <ul className="social-box">
-                          <li>
-                            <a href="#" className="fa fa-facebook-f" />
-                          </li>
-                          <li>
-                            <a href="#" className="fa fa-linkedin" />
-                          </li>
-                          <li>
-                            <a href="#" className="fa fa-twitter" />
-                          </li>
-                          <li>
-                            <a href="#" className="fa fa-google" />
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    {/* Instagram Widget */}
-                    <div className="sidebar-widget instagram-widget">
-                      <div className="sidebar-title">
-                        <h4>Instagram</h4>
-                      </div>
-                      <div className="widget-content">
-                        <div className="clearfix">
-                          <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-1.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-2.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-3.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-4.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-5.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-6.jpg" alt="" />
-                            <a href="news-detail.html" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                        </div>
-                      </div>
-                    </div>
-                    {/* Popular Posts */}
-                    <div className="sidebar-widget popular-tags">
-                      <div className="sidebar-title">
-                        <h4>Tags</h4>
-                      </div>
-                      <div className="widget-content">
-                        <a href="#">Business</a>
-                        <a href="#">Marketing</a>
-                        <a href="#">SEO</a>
-                        <a href="#">SEO</a>
-                        <a href="#">SMM</a>
-                        <a href="#">Solution</a>
-                        <a href="#">Tips</a>
-                        <a href="#">Startup</a>
-                        <a href="#">Strategy</a>
-                      </div>
-                    </div>
-                  </aside>
-                </div>
               </div>
             </div>
           </div>
@@ -658,19 +658,19 @@ const ProjectsRightSidebar = () => {
             <div
               className="pattern-layer"
               style={{
-                backgroundImage: "url(/newupdate/images/background/pattern-3.png)",
+                backgroundImage: "url(/newupdate/images//background/pattern-3.png)",
               }}
             />
             <div
               className="pattern-layer-two"
               style={{
-                backgroundImage: "url(/newupdate/images/background/pattern-4.png)",
+                backgroundImage: "url(/newupdate/images//background/pattern-4.png)",
               }}
             />
             <div
               className="pattern-layer-three"
               style={{
-                backgroundImage: "url(/newupdate/images/background/pattern-5.png)",
+                backgroundImage: "url(/newupdate/images//background/pattern-5.png)",
               }}
             />
             <div className="auto-container">
@@ -894,4 +894,4 @@ const ProjectsRightSidebar = () => {
   );
 };
 
-export default ProjectsRightSidebar;
+export default ProjectsLeftSidebar;

@@ -1,24 +1,24 @@
 import Head from "next/head";
 // import { Raleway, Poppins } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-import Hero from "../components/Hero";
-import Service from "../components/Service";
-import Career from "../components/Career";
-import Mentor from "../components/Mentor";
-import Question from "../components/Question";
-import LearnIndustry from "../components/LearnIndustry";
-import Upcoming_courses from "../components/Upcoming_courses";
+import Hero from "../../components/Hero";
+import Service from "../../components/Service";
+import Career from "../../components/Career";
+import Mentor from "../../components/Mentor";
+import Question from "../../components/Question";
+import LearnIndustry from "../../components/LearnIndustry";
+import Upcoming_courses from "../../components/Upcoming_courses";
 import React, { useState, useEffect, useRef } from "react";
-import Slider from "../components/Slider";
-import AboutUs from "../components/home/AboutUs";
-import VideoSection from "../components/home/VideoSection";
-import TargetMarketPlace from "../components/home/TargetMarketPlace";
-import AboutCeo from "../components/home/AboutCeo";
-import PopularCourses from "../components/home/PopularCourses";
-import Podcast from "../components/home/Podcast";
-import Success from "../components/home/Success";
-import StudentFeedback from "../components/home/StudentFeedback";
-import StudentSuccess from "../components/home/StudentSuccess";
+import Slider from "../../components/Slider";
+import AboutUs from "../../components/home/AboutUs";
+import VideoSection from "../../components/home/VideoSection";
+import TargetMarketPlace from "../../components/home/TargetMarketPlace";
+import AboutCeo from "../../components/home/AboutCeo";
+import PopularCourses from "../../components/home/PopularCourses";
+import Podcast from "../../components/home/Podcast";
+import Success from "../../components/home/Success";
+import StudentFeedback from "../../components/home/StudentFeedback";
+import StudentSuccess from "../../components/home/StudentSuccess";
 
 // const Heading = Raleway({ weight: ["600", "700"], subsets: ["sans-serif"] });
 // const paragraph_font = Poppins({ weight: "500", subsets: ["sans-serif"] });
@@ -40,7 +40,7 @@ export default function Home(props) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@600&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/mainLogo.png" /> 
+        <link rel="icon" href="/mainLogo.png" />
 
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"

@@ -37,7 +37,7 @@ const FooterNew = () => {
                       <div className="logo">
                         <a href="/">
                           <img style={{height:"40px"}}
-                            src="/newupdate/images/newIcons/logo.svg"
+                            src="/newupdate/images/newIcons/Logo.svg" 
                             alt=""
                           />
                         </a>

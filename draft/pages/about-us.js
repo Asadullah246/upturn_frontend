@@ -3,11 +3,11 @@ import React from "react";
 import design from "../styles/Services.module.css";
 import styles from "../styles/about.module.css";
 import Link from "next/link";
-import TopHeader from "../components/shared/TopHeader";
+import TopHeader from "../../components/shared/TopHeader";
 import SupportIcon from "@mui/icons-material/Support";
-import SectionTitle from "../components/shared/SectionTitle";
-import TopScrolling from "../components/shared/ScrollToTop";
-import SearchPopUp from "../components/shared/SearchPopUp";
+import SectionTitle from "../../components/shared/SectionTitle";
+import TopScrolling from "../../components/shared/ScrollToTop";
+import SearchPopUp from "../../components/shared/SearchPopUp";
 
 const aboutUs = () => {
   const data = [

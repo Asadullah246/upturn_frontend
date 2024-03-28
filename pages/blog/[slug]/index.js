@@ -1,85 +1,69 @@
 import Head from "next/head";
-import React from "react";
-import SearchPopUp from "../components/shared/SearchPopUp";
-import TopScrolling from "../components/shared/ScrollToTop";
-import PageHeader from "../components/shared/pageHeader";
+import React, { Fragment } from "react";
+import SearchPopUp from "../../../components/shared/SearchPopUp";
+import TopScrolling from "../../../components/shared/ScrollToTop";
+import PageHeader from "../../../components/shared/pageHeader";
 
 const NewsDetail = () => {
+  const blog = {
+    image: "/newupdate/images/resource/news-7.jpg",
+    author: {
+      name: "Pablo Villalpando",
+      designation: "author",
+      image: "/newupdate/images/resource/author-8.jpg",
+      links: {
+        facebook: "facebook.com",
+        twitter: "twitter.com",
+        linkedIn: "linkedIn.com",
+      },
+      description:
+        "He is attended the State University of New York at Oswego where he majored in English Literature and Creative Writing.",
+    },
+    date: "10/02/2020",
+    description: [
+      {
+        title: " Absolute Links vs. Relative Links – SEO Intrinsic Value",
+        details:
+          " It has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. \n It has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. \nIt has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+      },
+      {
+        title: " Absolute Links vs. Relative Links – SEO Intrinsic Value",
+        details:
+          " It has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. \n It has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. \nIt has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+      },
+    ],
+    ratings: [
+      {
+        name: "William cobus",
+        date: "10-9-2022",
+        image: "/newupdate/images/resource/author-1.png",
+        rating: 5,
+        status: true,
+        comment:
+          "There anyone who loves or pursues or desires to obtain pain itself, because it is pain sed, because occasionally circumstances occur some great pleasure.",
+      },
+      {
+        name: "William cobus",
+        date: "10-9-2022",
+        image: "/newupdate/images/resource/author-2.png", 
+        rating: 3,
+        status: true,
+        comment:
+          "There anyone who loves or pursues or desires to obtain pain itself, because it is pain sed, because occasionally circumstances occur some great pleasure.",
+      },
+    ],
+  };
   return (
     <div>
-      <Head>
-        {/* font  */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet"
-        ></link>
-
-        {/* font end */}
-
-        {/* styles  */}
-        <link rel="stylesheet" href="/newupdate/css/animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/animation.css" />
-        <link rel="stylesheet" href="/newupdate/css/bootstrap.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/color-switcher-design.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/custom-animate.css" />
-        <link rel="stylesheet" href="/newupdate/css/flaticon.css" />
-        <link rel="stylesheet" href="/newupdate/css/font-awesome.css" />
-        <link rel="stylesheet" href="/newupdate/css/jquery-ui.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.bootstrap-touchspin.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/jquery.fancybox.min.css" />
-        <link
-          rel="stylesheet"
-          href="/newupdate/css/jquery.mCustomScrollbar.min.css"
-        />
-        <link rel="stylesheet" href="/newupdate/css/owl.css" />
-        <link rel="stylesheet" href="/newupdate/css/responsive.css" />
-        <link rel="stylesheet" href="/newupdate/css/style.css" />
-
-        {/* styles end  */}
-
-        {/* js  */}
-        <script src="/newupdate/js/appear.js"></script>
-        <script src="/newupdate/js/bootstrap.min.js"></script>
-        <script src="/newupdate/js/color-settings.js"></script>
-        <script src="/newupdate/js/jquery-ui.js"></script>
-        <script src="/newupdate/js/jquery.bootstrap-touchspin.js"></script>
-        <script src="/newupdate/js/jquery.countdown.js"></script>
-        <script src="/newupdate/js/jquery.fancybox.js"></script>
-        <script src="/newupdate/js/jquery.js"></script>
-        <script src="/newupdate/js/jquery.mCustomScrollbar.concat.min.js"></script>
-        <script src="/newupdate/js/jquery.paroller.min.js"></script>
-        <script src="/newupdate/js/mixitup.js"></script>
-        <script src="/newupdate/js/nav-tool.js"></script>
-        <script src="/newupdate/js/owl.js"></script>
-        <script src="/newupdate/js/parallax.min.js"></script>
-        <script src="/newupdate/js/popper.min.js"></script>
-        <script src="/newupdate/js/script.js"></script>
-        <script src="/newupdate/js/tilt.jquery.min.js"></script>
-        <script src="/newupdate/js/validate.js"></script>
-        <script src="/newupdate/js/wow.js"></script>
-
-        {/* js end */}
-      </Head>
-
       {/* body  */}
-      <body className="hidden-bar-wrapper">
+      <div className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
           <div className="preloader">
             <div className="box" />
           </div>
           {/* Main Header*/}
-         < PageHeader pagename="Blog Details" />
+          <PageHeader pagename="Blog Details" />
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
             <div className="auto-container">
@@ -90,57 +74,35 @@ const NewsDetail = () => {
                   <div className="news-detail">
                     <div className="inner-box">
                       <div className="image">
-                        <img src="/newupdate/images/resource/news-7.jpg" alt="" />
+                        <img src={blog?.image} alt="" />
                       </div>
                       <div className="lower-content">
                         <ul className="post-meta">
                           <li>
-                            <span className="icon fa fa-user" /> Pablo
-                            Villalpando
+                            <span className="icon fa fa-user" />{" "}
+                            {blog?.author?.name}
                           </li>
                           <li>
-                            <span className="icon fa fa-calendar" /> November
-                            21, 2020
+                            <span className="icon fa fa-calendar" />{" "}
+                            {blog?.date}
                           </li>
                         </ul>
-                        <h2>
-                          Absolute Links vs. Relative Links – SEO Intrinsic
-                          Value
-                        </h2>
-                        <p>
-                          It has survived not only five centuries, but also the
-                          leap into electronic typesetting. Neque porro quisquam
-                          est, qui dolorem ipsum quia dolor sit amet,
-                          consectetur, adipisci velit.
-                        </p>
-                        <p>
-                          The basic premise of search engine reputation
-                          management in to use the greate work Why I say old
-                          chap that is, spiffing jolly good a load of old tosh
-                          spend a penny tosser arse over{" "}
-                        </p>
-                        <p>
-                          Spring is often associated with a fresh, new, clean
-                          start and a renewed sense of life. For many, this
-                          getting rid of the old and in with the new takes on
-                          the form of spring cleaning. While you may be thinking
-                          about the house, why not think of refreshing and
-                          reviving your business’ website? After all, your
-                          website is your business’ presence online and is the
-                          first interaction customers have with your company.
-                        </p>
-                        <p>
-                          Does your website accurately display your company’s
-                          character, personality and culture? Is it current and
-                          up to date?
-                        </p>
-                        <p>
-                          Like your home, you may acquire a different taste in
-                          décor and choose to go beyond cleaning to overhauling
-                          a room’s look. Spring is a great time to do the same
-                          for your business website.
-                        </p>
-                        <blockquote>
+                        {blog?.description?.map((desc, index) => {
+                          return (
+                            <Fragment key={index}>
+                              <h2>{desc?.title}</h2>
+                              {desc?.details?.split("\n")?.map((para, i) => {
+                                return (
+                                  <Fragment key={i}>
+                                    <p>{para}</p>
+                                  </Fragment>
+                                );
+                              })}
+                            </Fragment>
+                          );
+                        })}
+
+                        {/* <blockquote>
                           “I cannot give you the formula for success, but I can
                           give you the formula for failure. It is: Try to please
                           everybody.”
@@ -149,32 +111,22 @@ const NewsDetail = () => {
                         <div className="row clearfix">
                           <div className="column col-lg-6 col-md-6 col-sm-12">
                             <div className="image">
-                              <img src="/newupdate/images/resource/news-12.jpg" alt="" />
+                              <img
+                                src="/newupdate/images/resource/news-12.jpg"
+                                alt=""
+                              />
                             </div>
                           </div>
                           <div className="column col-lg-6 col-md-6 col-sm-12">
                             <div className="image">
-                              <img src="/newupdate/images/resource/news-13.jpg" alt="" />
+                              <img
+                                src="/newupdate/images/resource/news-13.jpg"
+                                alt=""
+                              />
                             </div>
                           </div>
-                        </div>
-                        <h3>
-                          Absolute Links vs. Relative Links – SEO Intrinsic
-                          Value
-                        </h3>
-                        <p>
-                          Some SEO-related tools such as the Google Keyword
-                          Planner and Google Analytics provide quantitative data
-                          to help you understand your market, analyze the
-                          trends, and know your competitors’ standings. It helps
-                          you identify popular and valuable keywords so you can
-                          decide how to structure or revise your content. It
-                          also gives you insights on your market’s behavior such
-                          as location, times of activity, frequency of searches,
-                          technologies used, product preferences, etc. All these
-                          metrics are useful in helping you get to know your
-                          audience, their needs, and their expectations.
-                        </p>
+                        </div> */}
+
                         {/* Post Share Options*/}
                         <div className="post-share-options">
                           <div className="post-share-inner clearfix">
@@ -228,33 +180,34 @@ const NewsDetail = () => {
                     <div className="authors-box">
                       <div className="author-inner">
                         <div className="thumb">
-                          <img src="/newupdate/images/resource/author-8.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/author-8.jpg"
+                            alt=""
+                          />
                         </div>
-                        <div className="author">Author</div>
-                        <h4 className="name">Manika Rock</h4>
-                        <div className="text">
-                          He is attended the State University of New York at
-                          Oswego where he majored in English Literature and
-                          Creative Writing.
+                        <div className="author">
+                          {blog?.author?.designation}
                         </div>
+                        <h4 className="name">{blog?.author?.name}</h4>
+                        <div className="text">{blog?.author?.description}</div>
                         <ul className="social-icon clearfix">
                           <li>
-                            <a href="#">
+                            <a href={blog?.author?.facebook}>
                               <i className="fa fa-facebook-f" />
                             </a>
                           </li>
-                          <li>
-                            <a href="#">
+                          {/* <li>
+                            <a href={blog?.author?.facebook}>
                               <i className="fa fa-google-plus" />
                             </a>
-                          </li>
+                          </li> */}
                           <li>
-                            <a href="#">
+                            <a href={blog?.author?.twitter}>
                               <i className="fa fa-twitter" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href={blog?.author?.linkedIn}>
                               <i className="fa fa-linkedin" />
                             </a>
                           </li>
@@ -267,57 +220,41 @@ const NewsDetail = () => {
                         <h4>Read Comments</h4>
                       </div>
                       {/*Comment Box*/}
-                      <div className="comment-box">
-                        <div className="comment">
-                          <div className="author-thumb">
-                            <img src="/newupdate/images/resource/author-1.png" alt="" />
+                      {blog?.ratings?.map((rating, index) => {
+                        return (
+                          <div key={index} className="comment-box">
+                            <div className="comment">
+                              <div className="author-thumb">
+                                <img src={rating?.image} alt="" />
+                              </div>
+                              <div className="comment-inner">
+                                <div className="comment-info clearfix">
+                                  {rating?.name} – {rating?.date}
+                                </div>
+                                <div className="rating">
+                                  {[...Array(rating?.rating)]?.map(
+                                    (singleRating, i) => {
+                                      return (
+                                        <span key={i} className="fa fa-star" />
+                                      );
+                                    }
+                                  )}
+
+                                  {/* <span className="fa fa-star" />
+                                  <span className="fa fa-star" />
+                                  <span className="fa fa-star" />
+                                  <span className="fa fa-star light" /> */}
+                                </div>
+                                <div className="text">
+                                  {rating?.comment}
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div className="comment-inner">
-                            <div className="comment-info clearfix">
-                              Steven Rich – Dec 17, 2020
-                            </div>
-                            <div className="rating">
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star light" />
-                            </div>
-                            <div className="text">
-                              How all this mistaken idea of denouncing pleasure
-                              and praising pain was born and I will give you a
-                              complete account of the system, and expound the
-                              actual teachings.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                        );
+                      })}
                       {/*Comment Box*/}
-                      <div className="comment-box reply-comment">
-                        <div className="comment">
-                          <div className="author-thumb">
-                            <img src="/newupdate/images/resource/author-2.png" alt="" />
-                          </div>
-                          <div className="comment-inner">
-                            <div className="comment-info clearfix">
-                              William Cobus – Dec 20, 2020
-                            </div>
-                            <div className="rating">
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star" />
-                              <span className="fa fa-star-half-empty" />
-                            </div>
-                            <div className="text">
-                              There anyone who loves or pursues or desires to
-                              obtain pain itself, because it is pain sed,
-                              because occasionally circumstances occur some
-                              great pleasure.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+
                     </div>
                     {/* Comment Form */}
                     <div className="comment-form">
@@ -382,10 +319,7 @@ const NewsDetail = () => {
                           </a>
                         </div>
                       </div>
-                      <form
-                        method="post"
-                        action="https://///contact.html"
-                      >
+                      <form method="post" action="https://///contact.html">
                         <div className="row clearfix">
                           <div className="col-md-6 col-sm-6 col-xs-12 form-group">
                             <label>Your Name*</label>
@@ -441,10 +375,7 @@ const NewsDetail = () => {
                   <aside className="sidebar sticky-top">
                     {/* Search */}
                     <div className="sidebar-widget search-box">
-                      <form
-                        method="post"
-                        action="https://///contact.html"
-                      >
+                      <form method="post" action="https://///contact.html">
                         <div className="form-group">
                           <input
                             type="search"
@@ -568,7 +499,10 @@ const NewsDetail = () => {
                         }}
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/author-7.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/author-7.jpg"
+                            alt=""
+                          />
                         </div>
                         <div className="name">Pablo Villalpando</div>
                         <div className="text">
@@ -601,37 +535,55 @@ const NewsDetail = () => {
                       <div className="widget-content">
                         <div className="clearfix">
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-1.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-1.jpg"
+                              alt=""
+                            />
                             <a href="news-detail.html" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-2.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-2.jpg"
+                              alt=""
+                            />
                             <a href="news-detail.html" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-3.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-3.jpg"
+                              alt=""
+                            />
                             <a href="news-detail.html" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-4.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-4.jpg"
+                              alt=""
+                            />
                             <a href="news-detail.html" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-5.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-5.jpg"
+                              alt=""
+                            />
                             <a href="news-detail.html" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-6.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-6.jpg"
+                              alt=""
+                            />
                             <a href="news-detail.html" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
@@ -735,8 +687,8 @@ const NewsDetail = () => {
         {/*End pagewrapper*/}
         <SearchPopUp />
         <TopScrolling />
-      </body>
-      {/* body end  */} 
+      </div>
+      {/* body end  */}
     </div>
   );
 };
