@@ -19,7 +19,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import Dashboard from '../components/admin_dashboard/Dashboard';
-import Mentor from '../components/admin_dashboard/Mentor';
+import WebsiteInfo from '../components/admin_dashboard/WebsiteInfo';
 import User from '../components/admin_dashboard/User';
 // edit user icon
 import EditIcon from '@mui/icons-material/Edit';
@@ -33,7 +33,7 @@ const drawerWidth = 240;
 function ResponsiveDrawer(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [page, setPage] = React.useState("Dashboard")
+  const [page, setPage] = React.useState("Website Info") 
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -48,8 +48,8 @@ function ResponsiveDrawer(props) {
       case "Dashboard":
         return <Dashboard/>
 
-      case "Mentor":
-        return <Mentor/>
+      case "Website Info":
+        return <WebsiteInfo/>
 
 
         // edit users I will remove this code When I finished this work
@@ -73,7 +73,7 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div style={{backgroundColor:"rgba(233, 196, 106, 0.6)", color:"black !important" }}>
+    <div style={{backgroundColor:"rgb(0, 0, 139)", color:"black !important", minHeight:"100vh" }}>
       <Toolbar>
       <ListItem  disablePadding>
                 <ListItemButton style={{paddingLeft:0, paddingRight:0}}>
@@ -104,7 +104,7 @@ function ResponsiveDrawer(props) {
             // ]
             [
                 { text: 'Dashboard', icon:"/icon/dashboardAdmin.png"  },
-                { text: 'Mentor', icon:"/icon/mentorAdmin.png"},
+                { text: 'Website Info', icon:"/icon/mentorAdmin.png"},
                 { text: 'User', icon: "/icon/userAdmin.png" },
                 { text: 'Edit User', icon:"/icon/dashboardAdmin.png"},
                 { text: 'Virtual Classroom', icon: "/icon/virtualClassroomAdmin.png"},

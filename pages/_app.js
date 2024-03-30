@@ -23,6 +23,8 @@ import MobileMenu from "../components/shared/MobileMenu";
 import SubmenuDropdownToggle from "../components/shared/SubmenuDropdownToggle";
 import Head from "next/head";
 import Navtool from "../components/shared/Navtool";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -112,9 +114,9 @@ function MyApp({ Component, pageProps }) {
       <HandlePreloader />
       <WowHandle />
       <HeaderStyle />
-      {/* <SearchBox /> */} 
+      {/* <SearchBox /> */}
       <MobileMenu />
-      <Navtool/>
+      <Navtool />
       <SubmenuDropdownToggle />
       {/* <HiddenBar />
       <HiddenBar2 />
@@ -123,8 +125,8 @@ function MyApp({ Component, pageProps }) {
       <SSRProvider>
         <Component {...pageProps} />
       </SSRProvider>
-
-      <FooterNew />
+      <ToastContainer />
+      {/* <FooterNew /> */}
       {/* <Footer>
 
       </Footer> */}
