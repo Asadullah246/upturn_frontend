@@ -27,13 +27,14 @@ import Edit_user from '../components/admin_dashboard/Edit_user';
 import UpcomingCourse from '../components/admin_dashboard/UpcomingCourse';
 import OfferCourse from '../components/admin_dashboard/OfferCourse';
 import Image from 'next/image';
+import UploadBlog from '../components/admin_dashboard/UploadBlog';
 
 const drawerWidth = 240;
 
 function ResponsiveDrawer(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [page, setPage] = React.useState("Website Info") 
+  const [page, setPage] = React.useState("Blogs") 
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -50,6 +51,8 @@ function ResponsiveDrawer(props) {
 
       case "Website Info":
         return <WebsiteInfo/>
+      case "Blogs":
+        return <UploadBlog/>
 
 
         // edit users I will remove this code When I finished this work
@@ -105,7 +108,7 @@ function ResponsiveDrawer(props) {
             [
                 { text: 'Dashboard', icon:"/icon/dashboardAdmin.png"  },
                 { text: 'Website Info', icon:"/icon/mentorAdmin.png"},
-                { text: 'User', icon: "/icon/userAdmin.png" },
+                { text: 'Blogs', icon: "/icon/userAdmin.png" },
                 { text: 'Edit User', icon:"/icon/dashboardAdmin.png"},
                 { text: 'Virtual Classroom', icon: "/icon/virtualClassroomAdmin.png"},
                 { text: 'Upcoming Course', icon:"/icon/upcomingCourseAdmin.png" },

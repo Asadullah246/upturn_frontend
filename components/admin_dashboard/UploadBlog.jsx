@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CreateNew } from "../shared/Api";
 import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
 
-const WebsiteInfo = () => {
+const UploadBlog = () => {
   const [uploadingStatus, setUploadingStatus] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -81,7 +81,7 @@ const WebsiteInfo = () => {
             width="30"
             height="45"
           ></img>
-          <h2>Website Info</h2>
+          <h2>Blogs</h2>
         </div>
         <div style={{ backgroundColor: ["#DDDDDD"], borderRadius: "10px" }}>
           <form
@@ -451,4 +451,4 @@ const WebsiteInfo = () => {
   );
 };
 
-export default WebsiteInfo;
+export default UploadBlog;

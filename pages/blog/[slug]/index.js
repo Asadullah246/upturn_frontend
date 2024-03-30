@@ -32,7 +32,7 @@ const NewsDetail = () => {
           " It has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. \n It has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. \nIt has survived not only five centuries, but also the leap into electronic typesetting. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
       },
     ],
-    ratings: [
+    reviews: [
       {
         name: "William cobus",
         date: "10-9-2022",
@@ -45,7 +45,7 @@ const NewsDetail = () => {
       {
         name: "William cobus",
         date: "10-9-2022",
-        image: "/newupdate/images/resource/author-2.png", 
+        image: "/newupdate/images/resource/author-2.png",
         rating: 3,
         status: true,
         comment:
