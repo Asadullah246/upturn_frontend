@@ -377,11 +377,14 @@ color:#d63384 ;
   bottom: 0;
   left: 0;
   overflow: auto;
-  z-index: 999999 !important; 
+  z-index: 999999 !important;
 
 }
 
 
+.css-d9ml5t-MuiDrawer-docked , .MuiDrawer-paper{
+background-color:gray !important ; 
+}
 
 
 

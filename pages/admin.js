@@ -80,7 +80,7 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div style={{backgroundColor:"rgb(0, 0, 139)", color:"black !important", minHeight:"100vh" }}>
+    <div style={{color:"black !important", minHeight:"100vh" }}> 
       <Toolbar>
       <ListItem  disablePadding>
                 <ListItemButton style={{paddingLeft:0, paddingRight:0}}>

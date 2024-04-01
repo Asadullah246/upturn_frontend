@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import axios from "axios";
+import { deleteData, getData } from "../shared/Api";
+import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
 
 const Blogs = () => {
+  const [blogs, setBlogs] = useState([]);
+  const [refresh, setRefresh]=useState(false)
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData("blogs");
+      setBlogs(res?.data);
+      return res?.data;
+    };
+    blogsData(); 
+  }, [refresh]);
+
+  const handleDelete=async(id)=>{
+    const res = await deleteData(id, "blogs");
+
+      if (res?.status === "success") {
+        ToastSuccess("Successfully Deleted");
+        setRefresh(!refresh)
+      } else {
+        ToastError(res?.message || "Something error");
+      }
+
+  }
   return (
     <div className="container">
       {/* image and title  */}
@@ -55,25 +80,29 @@ const Blogs = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Latif Hassan</td>
-              <td>latifhassan@gmail.com</td>
-              <td>Kalighat,Mirpur, Dhaka</td>
+           {blogs?.map(blog=>{
+            return (
+              <tr key={blog?._id}>
+              <td>
+                <img src={blog?.image} height={50} width={60} alt="" />
+              </td>
+              <td>{blog?.title}</td>
+              <td >{blog?.author?.name}</td>
               {/* <td>0191xxxxxxx</td> */}
-              <td className="d-flex justify-content-around">
-                <div>
+              <td className="text-end ">
+                {/* <div>
                   <button className="btn btn-success">
                     Edit
-                    {/* <img
+                    <img
                       className="ms-2"
                       src="https://i.ibb.co/q1v598Y/tabler-edit.png"
                       alt="tabler-edit"
                       border="0"
-                    /> */}
+                    />
                   </button>
-                </div>
+                </div> */}
                 <div>
-                  <button className="btn btn-info"> 
+                  <button className="btn btn-info" onClick={()=>handleDelete(blog?._id)}>
                     Delete
                     {/* <img
                       className="ms-2"
@@ -85,6 +114,8 @@ const Blogs = () => {
                 </div>
               </td>
             </tr>
+            )
+           })}
           </tbody>
         </table>
         {/* next and previous arrow */}
