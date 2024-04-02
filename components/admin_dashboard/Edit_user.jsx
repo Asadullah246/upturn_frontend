@@ -1,6 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getData, updateData } from "../shared/Api";
+import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
+import { uploadImageToCloudinaryWithExist } from "../shared/uploadImageToCloudinary";
 
 const Edit_user = () => {
+  const [refresh, setRefresh] = useState(false);
+  const [user, setUser] = useState();
+  const [uploadingStatus, setUploadingStatus] = useState(false);
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const userId = localStorage.getItem("adminId");
+      const res = await getData(`user/${userId}`);
+      setUser(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, [refresh]);
+
+  const handleSubmit = async (e) => {
+    setUploadingStatus(true);
+    e.preventDefault();
+    const target = e.target;
+    const blogImage = target?.userImage?.files[0];
+
+    try {
+
+      // Upload blog image
+      const blogImageLink = await uploadImageToCloudinaryWithExist(blogImage, (user?.image || ""));
+
+      const inputData = {
+        name: target?.userName?.value,
+        email: target?.email?.value,
+        password: target?.password?.value,
+        image: blogImageLink
+      };
+      console.log("data", inputData);
+      // Save data to database
+      const res = await updateData(inputData, `user/${user?._id}`);
+console.log("res", res );
+      if (res?.status === "success") {
+        setRefresh(!refresh)
+        ToastSuccess("Successfully updated");
+      } else {
+        ToastError(res?.message || "Something error");
+      }
+    } catch (error) {
+      ToastError(error?.message || "Something error");
+    }
+
+    setUploadingStatus(false);
+  };
   return (
     <div>
       <div>
@@ -14,7 +64,7 @@ const Edit_user = () => {
               width="30"
               height="45"
             ></img>
-            <h2>Edit Users Info</h2>
+            <h2>Edit User Info</h2>
           </div>
           <div style={{ backgroundColor: ["#DDDDDD"], borderRadius: "10px" }}>
             <div
@@ -27,13 +77,13 @@ const Edit_user = () => {
             >
               <div className="row">
                 <div className="col-12">
-                  <div>
+                  <form onSubmit={handleSubmit}>
                     <div className="container mt-2">
                       <div className="col-md-12">
                         <div className="row justify-content-center">
                           <div>
                             {/* form for label and value */}
-                            <form>
+                            <div>
                               <div className="col-12 mb-3 ">
                                 <label for="name" className="form-label">
                                   <h5 className="mt-2 mb-0">Name</h5>
@@ -42,7 +92,9 @@ const Edit_user = () => {
                                   type="text"
                                   className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                   id="name"
-                                  placeholder="Enter User Name"
+                                  name="userName"
+                                  defaultValue={user?.name}
+                                  placeholder="Enter Name"
                                   required
                                 />
                               </div>
@@ -52,25 +104,6 @@ const Edit_user = () => {
                                   <div>
                                     <form>
                                       <div className="row">
-                                        <div className="col-md-6">
-                                          <div className="mb-3">
-                                            <label
-                                              for="schedule"
-                                              className="form-label"
-                                            >
-                                              <h5 className="mt-2 mb-0">
-                                                Mobile Number
-                                              </h5>
-                                            </label>
-                                            <input
-                                              type="number"
-                                              className="form-control shadow-sm p-2 mb-1 bg-body rounded"
-                                              id="mobile_number"
-                                              placeholder="Enter your mobile number "
-                                              required
-                                            />
-                                          </div>
-                                        </div>
                                         <div className="col-md-6">
                                           <div className="mb-3">
                                             <label
@@ -85,7 +118,29 @@ const Edit_user = () => {
                                               type="email"
                                               className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                               id="class_time"
+                                              defaultValue={user?.email}
                                               placeholder="Enter your email address"
+                                              required
+                                            />
+                                          </div>
+                                        </div>
+
+                                        <div className="col-md-6">
+                                          <div className="mb-3">
+                                            <label
+                                              for="schedule"
+                                              className="form-label"
+                                            >
+                                              <h5 className="mt-2 mb-0">
+                                                Password
+                                              </h5>
+                                            </label>
+                                            <input
+                                              type="password"
+                                              className="form-control shadow-sm p-2 mb-1 bg-body rounded"
+                                              id="mobile_number"
+                                              defaultValue={user?.password}
+                                              placeholder="Enter your password  "
                                               required
                                             />
                                           </div>
@@ -95,40 +150,7 @@ const Edit_user = () => {
                                   </div>
                                 </div>
                               </div>
-
-                              <div className="mb-3">
-                                <label for="title" className="form-label">
-                                  <h5 className="mt-2 mb-0">Address</h5>
-                                </label>
-                                <input
-                                  type="text"
-                                  className="form-control shadow-sm p-2 mb-1 bg-body rounded"
-                                  id="title"
-                                  placeholder="Enter Your Address "
-                                  required
-                                />
-                              </div>
-
-                              <div className="row">
-                                <div className="col-md-6">
-                                  <div className="mb-3">
-                                    <label
-                                      for="schedule"
-                                      className="form-label"
-                                    >
-                                      <h5 className="mt-2 mb-0">Password</h5>
-                                    </label>
-                                    <input
-                                      type="password"
-                                      className="form-control shadow-sm p-2 mb-1 bg-body rounded"
-                                      id="mobile_number"
-                                      placeholder="Enter your password  "
-                                      required
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -141,7 +163,7 @@ const Edit_user = () => {
                             <input
                               className="d-flex justify-content-center w-100 p-5"
                               type="file"
-                              name="Drop your image here or Browser"
+                              name="userImage"
                               id="profile_picture"
                               style={{
                                 height: "150px",
@@ -156,23 +178,18 @@ const Edit_user = () => {
 
                       {/* button cancel and proceed */}
                       <div className="row mt-4">
-                        <div className="col-md-6"></div>
-                        <div className="col-md-6">
-                          <div class="d-flex justify-content-center align-items-center mt-2 mb-5">
-                            <button
-                              type="submit"
-                              className="btn btn-warning me-4 bordered"
-                            >
-                              Cancel
-                            </button>
-                            <button type="submit" className="btn btn-warning">
-                              Proceed
-                            </button>
-                          </div>
-                        </div>
+
+
+                        <button
+                        type="submit"
+                        disabled={uploadingStatus}
+                        className="btn btn-info"
+                      >
+                        {uploadingStatus ? "Uploading" : "Submit"}
+                      </button>
                       </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>

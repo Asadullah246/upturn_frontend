@@ -31,6 +31,8 @@ import UploadBlog from "../components/admin_dashboard/UploadBlog";
 import Blogs from "../components/admin_dashboard/Blogs";
 import { useRouter } from "next/router";
 import { ToastSuccess } from "../components/shared/ToastAlerts";
+import AddService from "../components/admin_dashboard/AddService";
+import Services from "../components/admin_dashboard/Services";
 const drawerWidth = 240;
 
 function ResponsiveDrawer(props) {
@@ -50,14 +52,22 @@ function ResponsiveDrawer(props) {
 
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [page, setPage] = React.useState("Blogs"); 
+  const [page, setPage] = React.useState("Dashboard"); 
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
 
   const handlePage = (pageName) => {
-    setPage(pageName);
+    if(pageName==="Log Out"){
+      localStorage.removeItem("token")
+      localStorage.removeItem("adminId")
+      router.push("/")
+    }
+    else {
+      setPage(pageName);
+    }
+
   };
 
   const managePage = (currentPage) => {
@@ -72,7 +82,12 @@ function ResponsiveDrawer(props) {
       case "New Blog":
         return <UploadBlog />;
 
-      // edit users I will remove this code When I finished this work
+        case "Services":
+          return <Services />;
+
+      case "Add Service":
+        return <AddService />;
+
       case "Edit User":
         return <Edit_user />;
 
@@ -122,14 +137,11 @@ function ResponsiveDrawer(props) {
             { text: "Website Info", icon: "/icon/mentorAdmin.png" },
             { text: "Blogs", icon: "/icon/userAdmin.png" },
             { text: "New Blog", icon: "/icon/userAdmin.png" },
-
             { text: "Edit User", icon: "/icon/dashboardAdmin.png" },
-            {
-              text: "Virtual Classroom",
-              icon: "/icon/virtualClassroomAdmin.png",
-            },
-            { text: "Upcoming Course", icon: "/icon/upcomingCourseAdmin.png" },
-            { text: "Offer Course", icon: "/icon/offerCourseAdmin.png" },
+            { text: "Services", icon: "/icon/dashboardAdmin.png" },
+            { text: "Add Service", icon: "/icon/dashboardAdmin.png" },
+            { text: "Log Out", icon: "/icon/dashboardAdmin.png" },
+
           ].map((item, index) => (
             <ListItem key={item.text} disablePadding>
               <ListItemButton onClick={() => handlePage(item.text)}>

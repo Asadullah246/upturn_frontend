@@ -23,6 +23,23 @@ export const CreateNew = async (data, endpoint) => {
     console.log("err is", error);
   }
 };
+export const updateData = async (data, endpoint) => {
+  try {
+    const token = localStorage.getItem("token");
+
+    const headers = {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    };
+
+    const res = await axios.patch(`${base}/api/v1/${endpoint}`, data, { 
+      headers,
+    });
+    if (res) return res.data;
+  } catch (error) {
+    console.log("err is", error);
+  }
+};
 // data getting method
 export const getData = async (endpoint) => {
   try {
@@ -32,7 +49,7 @@ export const getData = async (endpoint) => {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     };
-    const res = await axios.get(`${base}/api/v1/${endpoint}`, { headers }); 
+    const res = await axios.get(`${base}/api/v1/${endpoint}`, { headers });
     if (res) return res.data;
   } catch (error) {
     console.log("err is", error);

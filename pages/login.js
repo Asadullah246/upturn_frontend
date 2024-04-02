@@ -22,7 +22,7 @@ function Login() {
     try {
       const res = await axios.post(`${base}/api/v1/user/login`, data);
       localStorage.setItem('token', res.data.token);
-      console.log("res", res);
+      localStorage.setItem('adminId', res.data._id);
       router.push('/admin');
     } catch (error) {
       console.log("err", error );
