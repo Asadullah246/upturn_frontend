@@ -1,41 +1,56 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import PersonIcon from '@mui/icons-material/Person';
-import Person2Icon from '@mui/icons-material/Person2';
-import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import LocalOfferIcon from '@mui/icons-material/LocalOffer';
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
-import Dashboard from '../components/admin_dashboard/Dashboard';
-import WebsiteInfo from '../components/admin_dashboard/WebsiteInfo';
-import User from '../components/admin_dashboard/User';
+import * as React from "react";
+import PropTypes from "prop-types";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import CssBaseline from "@mui/material/CssBaseline";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import MenuIcon from "@mui/icons-material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import PersonIcon from "@mui/icons-material/Person";
+import Person2Icon from "@mui/icons-material/Person2";
+import MeetingRoomIcon from "@mui/icons-material/MeetingRoom";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+import Dashboard from "../components/admin_dashboard/Dashboard";
+import WebsiteInfo from "../components/admin_dashboard/WebsiteInfo";
+import User from "../components/admin_dashboard/User";
 // edit user icon
-import EditIcon from '@mui/icons-material/Edit';
-import Edit_user from '../components/admin_dashboard/Edit_user';
-import UpcomingCourse from '../components/admin_dashboard/UpcomingCourse';
-import OfferCourse from '../components/admin_dashboard/OfferCourse';
-import Image from 'next/image';
-import UploadBlog from '../components/admin_dashboard/UploadBlog';
-import Blogs from '../components/admin_dashboard/Blogs';
-
+import EditIcon from "@mui/icons-material/Edit";
+import Edit_user from "../components/admin_dashboard/Edit_user";
+import UpcomingCourse from "../components/admin_dashboard/UpcomingCourse";
+import OfferCourse from "../components/admin_dashboard/OfferCourse";
+import Image from "next/image";
+import UploadBlog from "../components/admin_dashboard/UploadBlog";
+import Blogs from "../components/admin_dashboard/Blogs";
+import { useRouter } from "next/router";
+import { ToastSuccess } from "../components/shared/ToastAlerts";
 const drawerWidth = 240;
 
 function ResponsiveDrawer(props) {
+  const router = useRouter();
+
+  React.useEffect(() => {
+    const checkAuth = async () => {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        router.push("/login");
+        return;
+      }
+    };
+
+    checkAuth();
+  }, []);
+
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [page, setPage] = React.useState("Blogs")
+  const [page, setPage] = React.useState("Blogs"); 
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -48,111 +63,103 @@ function ResponsiveDrawer(props) {
   const managePage = (currentPage) => {
     switch (currentPage) {
       case "Dashboard":
-        return <Dashboard/>
+        return <Dashboard />;
 
       case "Website Info":
-        return <WebsiteInfo/>
-        case "Blogs":
-          return <Blogs/>
+        return <WebsiteInfo />;
+      case "Blogs":
+        return <Blogs />;
       case "New Blog":
-        return <UploadBlog/>
+        return <UploadBlog />;
 
-
-
-        // edit users I will remove this code When I finished this work
+      // edit users I will remove this code When I finished this work
       case "Edit User":
-        return <Edit_user/>
+        return <Edit_user />;
 
       // You can have more cases as needed
       case "User":
-        return <User/>
+        return <User />;
 
       case "Upcoming Course":
-        return <UpcomingCourse/>
+        return <UpcomingCourse />;
 
       case "Offer Course":
-        return <OfferCourse/>
+        return <OfferCourse />;
 
       default:
-        <Dashboard/>
-        // Code to be executed if none of the cases match the expression
+        <Dashboard />;
+      // Code to be executed if none of the cases match the expression
     }
   };
 
   const drawer = (
-    <div style={{color:"black !important", minHeight:"100vh" }}> 
+    <div style={{ color: "black !important", minHeight: "100vh" }}>
       <Toolbar>
-      <ListItem  disablePadding>
-                <ListItemButton style={{paddingLeft:0, paddingRight:0}}>
-                    <ListItemIcon style={{minWidth:"36px "}}>
-                    {/* <img src={"icon/adminLogo.png"} alt="Admin" /> */}
-                    <Image
-                      src="/icon/adminLogo.png"
-                      alt=""
-                      height="24"
-                      width="24"
-                    />
-                    </ListItemIcon>
-                    {/* <ListItemText primary={"Admin Panel"} style={{fontSize:"2rem", fontWeight:"700"}} /> */}
-                    <h4 className='mb-0 fw-bold'>Admin Panel</h4>
-                </ListItemButton>
-                </ListItem>
-        </Toolbar>
+        <ListItem disablePadding>
+          <ListItemButton style={{ paddingLeft: 0, paddingRight: 0 }}>
+            <ListItemIcon style={{ minWidth: "36px " }}>
+              {/* <img src={"icon/adminLogo.png"} alt="Admin" /> */}
+              <Image src="/icon/adminLogo.png" alt="" height="24" width="24" />
+            </ListItemIcon>
+            {/* <ListItemText primary={"Admin Panel"} style={{fontSize:"2rem", fontWeight:"700"}} /> */}
+            <h4 className="mb-0 fw-bold">Admin Panel</h4>
+          </ListItemButton>
+        </ListItem>
+      </Toolbar>
       <List>
-            {
-            // [
-            //     { text: 'Dashboard', icon: <AdminPanelSettingsIcon style={{height:24,  width:24}} /> },
-            //     { text: 'Mentor', icon: <PersonIcon style={{height:24,  width:24}} /> },
-            //     { text: 'User', icon: <Person2Icon style={{height:24,  width:24}} /> },
-            //     { text: 'Edit User', icon: <EditIcon style={{height:24,  width:24}} /> },
-            //     { text: 'Virtual Classroom', icon: <MeetingRoomIcon style={{height:24,  width:24}} /> },
-            //     { text: 'Upcoming Course', icon: <CalendarMonthIcon style={{height:24,  width:24}} /> },
-            //     { text: 'Offer Course', icon: <LocalOfferIcon /> },
-            // ]
-            [
-                { text: 'Dashboard', icon:"/icon/dashboardAdmin.png"  },
-                { text: 'Website Info', icon:"/icon/mentorAdmin.png"},
-                { text: 'Blogs', icon: "/icon/userAdmin.png" },
-                { text: 'New Blog', icon: "/icon/userAdmin.png" },
+        {
+          // [
+          //     { text: 'Dashboard', icon: <AdminPanelSettingsIcon style={{height:24,  width:24}} /> },
+          //     { text: 'Mentor', icon: <PersonIcon style={{height:24,  width:24}} /> },
+          //     { text: 'User', icon: <Person2Icon style={{height:24,  width:24}} /> },
+          //     { text: 'Edit User', icon: <EditIcon style={{height:24,  width:24}} /> },
+          //     { text: 'Virtual Classroom', icon: <MeetingRoomIcon style={{height:24,  width:24}} /> },
+          //     { text: 'Upcoming Course', icon: <CalendarMonthIcon style={{height:24,  width:24}} /> },
+          //     { text: 'Offer Course', icon: <LocalOfferIcon /> },
+          // ]
+          [
+            { text: "Dashboard", icon: "/icon/dashboardAdmin.png" },
+            { text: "Website Info", icon: "/icon/mentorAdmin.png" },
+            { text: "Blogs", icon: "/icon/userAdmin.png" },
+            { text: "New Blog", icon: "/icon/userAdmin.png" },
 
-                { text: 'Edit User', icon:"/icon/dashboardAdmin.png"},
-                { text: 'Virtual Classroom', icon: "/icon/virtualClassroomAdmin.png"},
-                { text: 'Upcoming Course', icon:"/icon/upcomingCourseAdmin.png" },
-                { text: 'Offer Course', icon: "/icon/offerCourseAdmin.png" },
-            ]
-            .map((item, index) => (
-                <ListItem key={item.text} disablePadding>
-                <ListItemButton onClick={()=>handlePage(item.text)}>
-                    <ListItemIcon style={{minWidth:"36px"}}>
-                    {/* {item.icon} */}
-                    <Image
-                      src={item.icon}
-                      alt=""
-                      height="20"
-                      width="20"
-                    />
-                    </ListItemIcon>
-                    <ListItemText primary={item.text} />
-                </ListItemButton>
-                </ListItem>
-            ))}
-        </List>
+            { text: "Edit User", icon: "/icon/dashboardAdmin.png" },
+            {
+              text: "Virtual Classroom",
+              icon: "/icon/virtualClassroomAdmin.png",
+            },
+            { text: "Upcoming Course", icon: "/icon/upcomingCourseAdmin.png" },
+            { text: "Offer Course", icon: "/icon/offerCourseAdmin.png" },
+          ].map((item, index) => (
+            <ListItem key={item.text} disablePadding>
+              <ListItemButton onClick={() => handlePage(item.text)}>
+                <ListItemIcon style={{ minWidth: "36px" }}>
+                  {/* {item.icon} */}
+                  <Image src={item.icon} alt="" height="20" width="20" />
+                </ListItemIcon>
+                <ListItemText primary={item.text} />
+              </ListItemButton>
+            </ListItem>
+          ))
+        }
+      </List>
     </div>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
         position="fixed"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
-          backgroundColor:"white",
-          boxShadow:"none",
-          borderBottom:"4px solid #DCDCDC"
+          backgroundColor: "white",
+          boxShadow: "none",
+          borderBottom: "4px solid #DCDCDC",
         }}
       >
         <Toolbar>
@@ -161,7 +168,7 @@ function ResponsiveDrawer(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -183,8 +190,11 @@ function ResponsiveDrawer(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
@@ -192,8 +202,11 @@ function ResponsiveDrawer(props) {
         <Drawer
           variant="permanent"
           sx={{
-            display: { xs: 'none', sm: 'block' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            display: { xs: "none", sm: "block" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth,
+            },
           }}
           open
         >
@@ -202,12 +215,14 @@ function ResponsiveDrawer(props) {
       </Box>
       <Box
         component="main"
-        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+        sx={{
+          flexGrow: 1,
+          p: 3,
+          width: { sm: `calc(100% - ${drawerWidth}px)` },
+        }}
       >
         {/* <Toolbar /> */}
-        {
-          managePage(page)
-        }
+        {managePage(page)}
       </Box>
     </Box>
   );
