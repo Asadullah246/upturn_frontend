@@ -1,22 +1,42 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SidebarServiceLinks from "../../../components/service/SidebarServiceLinks";
 import SearchPopUp from "../../../components/shared/SearchPopUp";
 import TopScrolling from "../../../components/shared/ScrollToTop";
 import PageHeader from "../../../components/shared/pageHeader";
-// import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
+import { getData } from "../../../components/shared/Api";
+
 const ServiceDetails = () => {
+    const router = useRouter();
+    const { slug } = router.query;
+    const [service, setService]=useState()
+    const [info, setInfo]=useState()
+    const dataId="660895de0608b63dc8814028"
 
-    const serviceData=[
-       {
-        title:"Search Engine Optimization (SEO)",
-        description:"Having been around for over a decade, Basecamp is considered a reliable tool that excels at giving organizations a high-level view of their teams. Like Asana, Basecamp can help monitor tracking, but also offers additional features like direct messaging chats, centralized document storage, and a scheduling tool.Basecamp aims to take on Slack, Asana, Google Drive, and Dropbox by melding all of their competitors into one robust management tool.",
-        feature:"Designed with the harried business person in mind, Basecamp helps managers and team members stay on top of their professional lives. The app boasts that users will no longer drown in a sea of emails as that feature is already embedded into the app. Additionally, the scheduling and tracking features help ensure teams never again miss a deadline. Another interesting component of Basecamp is that managercan eliminate the need for “check-in” meetings by sending an automated message daily to employees that ask for a recap of what they accomplished that day. Then employees can “tag” teammates in their recaps to explain what they need help with or what they finished.",
-        cost:"A unique feature of Basecamp is that the app doesn’t charge for an increase in the number of users or projects. So unlike some of its peers, Basecamp charges a flat-fixed fee of $99 a month for a team, no matter the size.",
-        importance:"By offering one of the best all-encompassing software solutions, Basecamp helps busy SEO pros stay on top of their entire business by more efficiently checking in with their team and deadlines in one easy to use the app.Casie Gillette, senior director of digital marketing at KoMarketing, uses Basecamp mainly for communicating to clients. \n Basecamp is our primary means of communication with clients,” Gillette said. “For any deliverable, it allows an easy way to track the conversation and adjust docs accordingly."
+    useEffect(() => {
+      const blogsData = async () => {
+        const res = await getData(`websiteInfo/${dataId}`);
+        setInfo(res?.data);
+        return res?.data;
+      };
+      blogsData();
+    }, []);
 
-    },
-    ]
+
+    useEffect(() => {
+
+      if (slug) {
+        const blogsData = async () => {
+          const res = await getData(`services/${slug}`);
+          setService(res?.data);
+          return res?.data;
+        };
+
+        blogsData();
+      }
+    }, [slug]);
+
   return (
     <div>
       {/* body  */}
@@ -28,7 +48,7 @@ const ServiceDetails = () => {
           </div>
           {/* Main Header*/}
 
-          <PageHeader pagename={"Social Marketing"} />
+          <PageHeader pagename={service?.name} />
           {/* End Page Title Section */}
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
@@ -40,7 +60,7 @@ const ServiceDetails = () => {
                     {/* Services */}
                     <SidebarServiceLinks />
                     {/* Broucher Widget */}
-                    <div className="broucher-widget">
+                    {/* <div className="broucher-widget">
                       <div
                         className="widget-content"
                         style={{
@@ -60,7 +80,7 @@ const ServiceDetails = () => {
                           Click here to download
                         </a>
                       </div>
-                    </div>
+                    </div> */}
                     {/* Help Widget */}
                     <div className="help-widget">
                       <div className="widget-content">
@@ -71,15 +91,16 @@ const ServiceDetails = () => {
                         </div>
                         <ul className="help-list">
                           <li>
-                            <a href="tel:+0-000-0000-000">
+                            <a href={`tel:${info?.phone}`}>
                               <span className="icon fa fa-phone" />
-                              +8801617222302
+
+                              {info?.phone}
                             </a>
                           </li>
                           <li>
-                            <a href="mailto:upTurnIdea@example.com">
+                            <a href={`mailto:${info?.email}`}>
                               <span className="icon fa fa-envelope-o" />
-                              info@upteridea.com
+                              {info?.email}
                             </a>
                           </li>
                         </ul>
@@ -93,74 +114,27 @@ const ServiceDetails = () => {
                     <div className="inner-box">
                       <div className="image">
                         <img
-                          src="/newupdate/images/resource/service-1.jpg"
+                          // src="/newupdate/images/resource/service-1.jpg"
+                          src={service?.image}
                           alt=""
                         />
                       </div>
                       <div className="lower-content">
-                        <h3>{serviceData[0]?.title}</h3>
+                        <h3>{service?.name}</h3>
                         <p>
-                        {serviceData[0]?.description}
+                        {service?.shortDescription}
                         </p>
-                        <h4>Features</h4>
-                        <p>
-                        {serviceData[0]?.feature}
-                        </p>
-                        <div className="two-columns">
-                          <div className="row clearfix">
-                            <div className="column col-lg-6 col-md-6 col-sm-12">
-                              <div className="image">
-                                <img
-                                  src="/newupdate/images/resource/service-2.jpg"
-                                  alt=""
-                                />
-                              </div>
+                        {service?.description?.map(s=>{
+                          return(
+                            <div>
+                               <h4>{s?.title}</h4>
+                               <p>{s?.details}</p>
                             </div>
-                            <div className="column col-lg-6 col-md-6 col-sm-12">
-                              <h4>Cost</h4>
-                              <p>
-                              {serviceData[0]?.cost}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <h4>Why It’s Good for SEO Pros</h4>
-                        {serviceData[0]?.importance?.split("\n").map((para, index)=>{
-                            return(
-                                <p key={index} style={{marginBottom:"20px"}}>{para}</p>
-                            )
+                          )
                         })}
 
-                        {/* <div className="two-columns">
-                          <div className="row clearfix">
-                            <div className="column col-lg-6 col-md-6 col-sm-12">
-                              <p>
-                                By offering one of the best all-encompassing
-                                software solutions, Basecamp helps busy SEO pros
-                                stay on top of their entire business by more
-                                efficiently checking in with their team and
-                                deadlines in one easy to use the app.Casie
-                                Gillette, senior director of digital marketing
-                                at KoMarketing, uses Basecamp mainly for
-                                communicating to clients.
-                              </p>
-                              <p>
-                                “Basecamp is our primary means of communication
-                                with clients,” Gillette said. “For any
-                                deliverable, it allows an easy way to track the
-                                conversation and adjust docs accordingly.”
-                              </p>
-                            </div>
-                            <div className="column col-lg-6 col-md-6 col-sm-12">
-                              <div className="image">
-                                <img
-                                  src="/newupdate/images/resource/service-3.jpg"
-                                  alt=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div> */}
+
+
                       </div>
                     </div>
                   </div>
@@ -238,8 +212,8 @@ const ServiceDetails = () => {
           {/* End Clients Section */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

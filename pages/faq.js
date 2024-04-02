@@ -22,7 +22,7 @@ const Faq = () => {
           <PageHeader pagename={"Faq"} />
           {/* End Page Title Section */}
           {/* Faq Page Section */}
-         <FaqNew/> 
+         <FaqNew/>
           {/* End Faq Page Section */}
           {/* Faq's Form Section */}
           <section className="faq-form-section">
@@ -96,8 +96,8 @@ const Faq = () => {
         </div>
         {/*End pagewrapper*/}
 
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { getData } from './Api';
 
 const FooterNew = () => {
+
+  const [info, setInfo]=useState()
+  const dataId="660895de0608b63dc8814028"
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`websiteInfo/${dataId}`);
+      setInfo(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+
+
     return (
         <footer className="main-footer">
         <div
@@ -37,30 +52,29 @@ const FooterNew = () => {
                       <div className="logo">
                         <a href="/">
                           <img style={{height:"40px"}}
-                            src="/newupdate/images/newIcons/Logo.svg" 
+                            src={info?.logo}
+                            // src="/newupdate/images/newIcons/Logo.svg"
                             alt=""
                           />
                         </a>
                       </div>
                       <div className="text">
-                        Our approach to SEO is uniquely built around what we
-                        know works…and what we know doesn’t work. With over
-                        200 verified factors in play.
+                       {info?.description}
                       </div>
                       {/* Social Box */}
                       <ul className="social-box">
                         <li>
-                          <a href="#" className="fa fa-facebook-f" />
+                          <a href={info?.facebook || "#"} target='_blank' className="fa fa-facebook-f" />
                         </li>
                         <li>
-                          <a href="#" className="fa fa-linkedin" />
+                          <a href={info?.linkedIn || "#"} target='_blank' className="fa fa-linkedin" />
                         </li>
                         <li>
-                          <a href="#" className="fa fa-twitter" />
+                          <a href={info?.twitter || "#"} target='_blank' className="fa fa-twitter" />
                         </li>
-                        <li>
-                          <a href="#" className="fa fa-google" />
-                        </li>
+                        {/* <li>
+                          <a href={info?.facebook} target='_blank' className="fa fa-google" />
+                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -126,18 +140,18 @@ const FooterNew = () => {
                         </li>
                         <li>
                           <span className="icon flaticon-phone-call" />
-                          <a href="tel:+0987-654-321">+88016 1722 2302</a>{" "}
+                          <a href={`tel:${info?.phone}`}>{info?.phone}</a>{" "}
                           {/* <a href="tel:+0123-456-789">0123 456 789</a> */}
                         </li>
                         <li>
                           <span className="icon flaticon-email" />
-                          <a href="mailto:upTurnIdea@gmail.com">
-                            upTurnIdea@gmail.com
+                          <a href={`mailto:${info?.email}`}>
+                           {info?.email}
                           </a>
                         </li>
                         <li>
                           <span className="icon flaticon-maps-and-flags" />
-                         Warlessgate, Mohakhali, Dhaka, Bangladesh
+                        {info?.address}
                         </li>
                       </ul>
                     </div>
@@ -150,7 +164,7 @@ const FooterNew = () => {
           <div className="footer-bottom">
             <div className="copyright">
               Copyright © 2024 UpTurn Idea
-              . All Rights Reserved. All Rights Reserved.
+              . All Rights Reserved.
             </div>
           </div>
         </div>

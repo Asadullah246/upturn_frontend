@@ -7,7 +7,7 @@ import PageHeader from "../components/shared/pageHeader";
 const NotFound = () => {
   return (
     <div>
-    
+
 
       <PageHeader pagename={"Not Found"} />
       {/* body  */}
@@ -719,8 +719,8 @@ const NotFound = () => {
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

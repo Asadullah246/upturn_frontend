@@ -252,8 +252,8 @@ const Privacy = () => {
           {/* End Newsleter Section */}
         </div>
 
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
     </div>
   );

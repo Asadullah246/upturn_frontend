@@ -476,12 +476,12 @@ const Checkout = () => {
             </div>
           </section>
           {/* End Newsleter Section */}
-         
+
         </div>
         {/*End pagewrapper*/}
 
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
 
       {/* body end  */}

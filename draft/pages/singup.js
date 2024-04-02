@@ -1,6 +1,6 @@
 import React from 'react';
-import TopScrolling from '../components/shared/ScrollToTop';
-import SearchPopUp from '../components/shared/SearchPopUp';
+import TopScrolling from '../../components/shared/ScrollToTop';
+import SearchPopUp from '../../components/shared/SearchPopUp';
 
 const SingUp = () => {
     return (
@@ -56,7 +56,7 @@ const SingUp = () => {
                                                         <input type="text" className="form-control shadow-sm p-2 mb-1 bg-body rounded" id="transection_number" placeholder="Enter Your transection" required/>
                                                     </div>
                                                     <div className="mb-3">
-                                                        
+
 
                                                     {/* div */}
                                                     <div>
@@ -71,7 +71,7 @@ const SingUp = () => {
                                                 </form>
                                             </div>
                                         </div>
-                                        
+
                                         </div>
                                         <div className='d-flex align-items-center'>
                                             <input className='mb-3' type="checkbox" name="vehicle1" value="Bike"/>

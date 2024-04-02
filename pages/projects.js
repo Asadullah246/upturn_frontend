@@ -306,12 +306,12 @@ const Projects = () => {
           </section>
           {/* End Newsleter Section */}
           {/* Main Footer */}
-       
+
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import { ToastError, ToastSuccess } from "./ToastAlerts";
 
 
 const ContactForm = () => {
@@ -26,12 +27,12 @@ emailjs
 .then(
   () => {
     console.log('SUCCESS!');
-    alert("Thank you for contacting with us")
+    ToastSuccess("Thank you for contacting with us")
   },
   (error) => {
-    console.log('FAILED...', error.text);
-    alert("Sorry, message not sent")
-  }, 
+    console.log('FAILED...', error.text); 
+    ToastError("Sorry, message not sent")
+  },
 );
   }
   return (
@@ -62,7 +63,7 @@ emailjs
                     type="text"
                     name="name"
                     placeholder="Your Name"
-                    required=""
+                    required
                   />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -71,7 +72,7 @@ emailjs
                     type="text"
                     name="phone"
                     placeholder="Your Phone"
-                    required=""
+                    required={false}
                   />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -80,7 +81,7 @@ emailjs
                     type="email"
                     name="email"
                     placeholder="Email"
-                    required=""
+                    required
                   />
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 form-group">
@@ -89,7 +90,7 @@ emailjs
                     type="text"
                     name="subject"
                     placeholder="Subject"
-                    required=""
+                    required
                   />
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -98,6 +99,7 @@ emailjs
                     name="description"
                     placeholder="Message"
                     defaultValue={""}
+                    required
                   />
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 text-center form-group">

@@ -1,79 +1,28 @@
-import React from "react";
-
-const serviceData = [
-  {
-    title: "Digital Marketing",
-    description:
-      "Digital marketing creates opportunities for small and medium business enterprises to compete with larger business entities.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Search Engine Optimization",
-    description:
-      "SEO is a part of Digital marketing that help your targeted customers to find you in search engine results and take action.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Web Design and Development",
-    description:
-      "Professional web Designing is the first step to showcase your brand and convert visitors into buyers.",
-    logoInClass: "icon flaticon-bar-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Software Development",
-    description:
-      "Building reliable and scalable software development to meet your business goals.",
-    logoInClass: "icon flaticon-search-1",
-    link: "/contentMarketing",
-  },
-  {
-    title: "E-commerce SEO",
-    description:
-      "SEO has the potential to boost your e-commerce site’s sales and revenue and make you the market leader in your industry.",
-    logoInClass: "icon flaticon-gear",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Social Media Marketing",
-    description:
-      "If you aren’t sure how you should proceed in promoting your brand let us analyze your business to take most effective plan.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Clipping Path",
-    description:
-      "From a simple white background to the most complex clipping paths. Get pixel perfect image editing services, whenever you need them.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Video Production",
-    description:
-      "Our video production services can help direct people to your business, build your reputation, and expand your sales.",
-    logoInClass: "icon flaticon-bar-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Web Hosting",
-    description:
-      "We offer web hosting services that will provide you with reliable access to the internet and the ability to host a website more securely.",
-    logoInClass: "icon flaticon-cloud-computing",
-    link: "/contentMarketing",
-  },
-];
+import React, { useEffect, useState } from "react";
+import { getData } from "../shared/Api";
 
 const AllServices = () => {
+  const logos=["icon flaticon-line-chart", "icon flaticon-pie-chart","icon flaticon-gear", "icon flaticon-pie-chart", "icon flaticon-bar-chart", "icon flaticon-line-chart", "icon flaticon-cloud-computing","icon flaticon-search-1","icon flaticon-line-chart", "icon flaticon-pie-chart","icon flaticon-gear", "icon flaticon-pie-chart", "icon flaticon-bar-chart", "icon flaticon-line-chart","icon flaticon-cloud-computing","icon flaticon-search-1"]
+
+
+  const [services, setservices] = useState([]);
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`services`);
+      setservices(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+
   return (
     <section className="services-page-section">
       <div className="auto-container">
         <div className="row clearfix">
           {/* Service Block Four */}
 
-          {serviceData?.map((service, index)=>{
+          {services?.map((service, index)=>{
             return(
                 <div key={index} className="service-block-four col-lg-4 col-md-6 col-sm-12">
                 <div className="inner-box">
@@ -103,7 +52,7 @@ const AllServices = () => {
                     }}
                   />
                   <div className="icon-box">
-                    <span className={service?.logoInClass} />
+                    <span className={logos[index]} />
                     <div
                       className="icon-five"
                       style={{
@@ -112,20 +61,20 @@ const AllServices = () => {
                     />
                   </div>
                   <h5>
-                    <a href="/contentMarketing">{service?.title}</a>
+                    <a href={`/services/${service?._id}`} >{service?.name}</a>
                   </h5>
                   <div className="text">
-                  {service?.description}
+                  {service?.shortDescription?.slice(0,100)}
                   </div>
                   <a
-                    href="/contentMarketing"
+                    href={`/services/${service?._id}`}
                     className="arrow-icon flaticon-arrow-pointing-to-right"
                   />
                 </div>
               </div>
             )
           })}
-        
+
         </div>
       </div>
     </section>

@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Whisper&display=swap')
-
-:root {
-  --color-primary:#d63384 ;
-  --color-secondary:#045280 ;
-  --bg-color-primary:#d63384 ;
-  --bg-color-secondary:#045280 ;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Whisper&display=swap"):
+  root {
+  --color-primary: #d63384;
+  --color-secondary: #045280;
+  --bg-color-primary: #d63384;
+  --bg-color-secondary: #045280;
 
   --text-white: white;
   --text-black: black;
@@ -27,10 +26,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary:#d63384 ;
-    --color-secondary:#045280 ;
-    --bg-color-primary:#d63384 ;
-    --bg-color-secondary:#045280 ;
+    --color-primary: #d63384;
+    --color-secondary: #045280;
+    --bg-color-primary: #d63384;
+    --bg-color-secondary: #045280;
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
@@ -75,7 +74,7 @@ body {
   font-family: var(--heading-font);
 }
 
-.baloo-2  {
+.baloo-2 {
   font-family: "Baloo 2", sans-serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
@@ -110,7 +109,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-p{
+p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -121,16 +120,15 @@ p{
 }
 
 .custom-container {
-  width:85% ;
-  margin: 0 auto ;
+  width: 85%;
+  margin: 0 auto;
 }
 @media screen and (max-width: 600px) {
   .custom-container {
-    width:90% ;
-    margin: 0 auto ;
+    width: 90%;
+    margin: 0 auto;
   }
 }
-
 
 .primary_background {
   background-color: #fefaed;
@@ -159,232 +157,261 @@ p{
   /* background-color: rgb(0, 0, 139) !important;  */
 }
 .mainLogo {
-  width:50px ;
-  height: auto ;
+  width: 50px;
+  height: auto;
 }
 
-.activeNav{
-  background-color:#d63384 !important;
-  color:white !important ;
+.activeNav {
+  background-color: #d63384 !important;
+  color: white !important ;
   /* padding:10px !important;   */
 }
-a{
-  text-decoration:none !important;
+a {
+  text-decoration: none !important;
 }
-.logoText{
-  color:#045280 ;
+.logoText {
+  color: #045280;
   font-family: "Rubik", sans-serif;
-  font-weight:800 ;
-  margin-bottom:0;
-  padding-bottom:0;
-
+  font-weight: 800;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-
 
 .color-primary {
-  color:#d63384;
+  color: #d63384;
 }
 .color-secondary {
-  color:#045280;
+  color: #045280;
 }
-.color-gray{
-  color:gray ;
+.color-gray {
+  color: gray;
 }
 .color-white {
-  color:white ;
+  color: white;
 }
 .bg-color-primary {
-  background-color:#d63384;
+  background-color: #d63384;
 }
 .bg-color-secondary {
-  background-color:#0dcaf0;
+  background-color: #0dcaf0;
 }
 
-.grayis{
-  color:#F0F0F0;
+.grayis {
+  color: #f0f0f0;
 }
 
 .aTag {
-  color:inherit ;
-  text-decoration:none ;
+  color: inherit;
+  text-decoration: none;
 }
-.cursor-pointer{
-  cursor:pointer ;
+.cursor-pointer {
+  cursor: pointer;
 }
 .custom-border {
-  border:2px solid gray ;
-  border-radius:10px ;
+  border: 2px solid gray;
+  border-radius: 10px;
 }
-.hoverEffect{
-  transition:transform ease-in-out 0.4s ;
+.hoverEffect {
+  transition: transform ease-in-out 0.4s;
 }
 .hoverEffect:hover {
-  color:#0dcaf0 !important;
+  color: #0dcaf0 !important;
   transform: translateX(5px);
 }
-.headingText{
-  font-weight:800 ;
-  font-size:3.7rem ;
+.headingText {
+  font-weight: 800;
+  font-size: 3.7rem;
   letter-spacing: 2px;
   /* font-family: "Rubik sans-serif "!important;  */
   font-family: "Rubik", sans-serif !important;
-
 }
-.headingLink{
-  color:#d63384 ;
+.headingLink {
+  color: #d63384;
 }
 
 .dark-overlay {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/header.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/header.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
 /* about us page  */
 
-.expDiv{
-  width:230px ;
-  height:140px ;
-  position:absolute;
-  top:0;
-  left:0;
-  clip-path: polygon(0% 0%, 86% 0%, 86% 85%,  100% 100%, 0% 100%) ;
+.expDiv {
+  width: 230px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 0%, 86% 0%, 86% 85%, 100% 100%, 0% 100%);
 }
 
-.teamCard{
-  position:relative ;
-  border-radius:16px ;
+.teamCard {
+  position: relative;
+  border-radius: 16px;
 }
-.teamCardImg{
-  width:100% ;
-  border-radius:16px ;
+.teamCardImg {
+  width: 100%;
+  border-radius: 16px;
 }
-.teamCardTextDiv{
-  position:absolute ;
-  width:90% ;
-  bottom:10px;
-  left:50% ;
+.teamCardTextDiv {
+  position: absolute;
+  width: 90%;
+  bottom: 10px;
+  left: 50%;
   transform: translate(-50%);
-  background-color:white;
-  border-radius:16px ;
-
-
+  background-color: white;
+  border-radius: 16px;
 }
-.teamCardImg{
-  height:400px ;
-
+.teamCardImg {
+  height: 400px;
 }
 
 .TeamCardIconsDiv {
-  width:100% ;
-  height:100% ;
-  position:relative ;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-.TeamCardIconsDivInside{
-  position:absolute ;
-  top:-14px;
-  right:10px ;
-  z-index:9999 ;
+.TeamCardIconsDivInside {
+  position: absolute;
+  top: -14px;
+  right: 10px;
+  z-index: 9999;
 }
-.smallIcon{
-  width:40px ;
-  height:40px ;
+.smallIcon {
+  width: 40px;
+  height: 40px;
 }
-.teamDescDiv{
-  position:absolute;
-  z-index : 3 ;
-  width:80% ;
-  height: 90% ;
-  top:50% ;
-  left:50% ;
+.teamDescDiv {
+  position: absolute;
+  z-index: 3;
+  width: 80%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius:16px ;
-  color:white ;
-  padding:20px ;
-  display:none;
+  border-radius: 16px;
+  color: white;
+  padding: 20px;
+  display: none;
 }
-
 
 .teamCard:hover .teamDescDiv {
-  display:block ;
-
+  display: block;
 }
-.teamCard:hover .teamCardTextDiv{
-  display:none ;
+.teamCard:hover .teamCardTextDiv {
+  display: none;
 }
-
 
 /* about us page end */
 
-
 /* service page  */
 
-
-.serviceBtn{
-  border: 1px solid gray ;
-  border-radius:8px ;
-  transition:transform ease-in-out 0.4s ;
-  width:100% ;
+.serviceBtn {
+  border: 1px solid gray;
+  border-radius: 8px;
+  transition: transform ease-in-out 0.4s;
+  width: 100%;
 }
-.servicesMiniBtn{
-  border:none;
-  background-color:#d63384;
-  color:white ;
+.servicesMiniBtn {
+  border: none;
+  background-color: #d63384;
+  color: white;
   /* border-radius:16px ; */
-padding: 4px 14px ;
-border:2px solid #d63384 ;
+  padding: 4px 14px;
+  border: 2px solid #d63384;
 }
 
 .serviceBtn:hover span {
-color:#d63384 ;
+  color: #d63384;
 }
-.serviceBtn:hover .servicesBtnIcon{
-  color:#d63384 !important ;
-
+.serviceBtn:hover .servicesBtnIcon {
+  color: #d63384 !important ;
 }
-.serviceBtn:hover .servicesMiniBtn{
-  background-color:white;
-
+.serviceBtn:hover .servicesMiniBtn {
+  background-color: white;
 }
 
-.serviceTextHeading{
-  border-left:4px solid #d63384 ;
+.serviceTextHeading {
+  border-left: 4px solid #d63384;
   box-shadow: 4px 4px 20px 2px rgba(0, 0, 0, 0.08);
-  padding: 30px ;
+  padding: 30px;
 }
 
-.ls{
-  letter-spacing:1px ;
-  font-weight:600 ;
-  font-size:1rem !important;
+.ls {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1rem !important;
 }
-.Home_circle__phm3R{
-  opacity:0 ;
+.Home_circle__phm3R {
+  opacity: 0;
 }
 
 /* service page end */
 
+[data-nextjs-dialog-overlay] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 999999 !important;
+}
 
+.css-d9ml5t-MuiDrawer-docked,
+.MuiDrawer-paper {
+  background-color: rgb(0, 50, 150) !important ;
+  color: white !important;
+}
+.MuiBox-root.css-1v5u2yv {
+  z-index: 99999;
+}
 
+@media (min-width: 600px) {
+  .css-hyum1k-MuiToolbar-root {
+    padding-left: 16px !important;
+    padding-right: 0px !important;
+  }
+}
 
+.sticky-header .main-menu .navigation > li:hover > a,
+.sticky-header .main-menu .navigation > li.current > a {
+  color: #1519b2 !important;
+  background-color: transparent !important;
+}
 
+.whatsappDiv {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999999;
+  background-color: #32d951;
+  padding: 6px;
+  border-radius: 50%;
+}
+.whatsappIcon{
+  width:2.2rem;
+  height:2.2rem;
+}
+@media only screen and (max-width:767px) {
+  .whatsappDiv {
+    position: fixed;
+		bottom: 10px;
+		right: 10px;
 
-
-
-
-
-
+	  }
+    .whatsappIcon{
+      width:1.3rem;
+      height:1.3rem;
+    }
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
-
-
-
-
-

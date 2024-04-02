@@ -7,7 +7,7 @@ import PageHeader from "../components/shared/pageHeader";
 const ProjectsDetail = () => {
   return (
     <div>
-   
+
 
       {/* body  */}
       <body className="hidden-bar-wrapper">
@@ -736,8 +736,8 @@ const ProjectsDetail = () => {
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

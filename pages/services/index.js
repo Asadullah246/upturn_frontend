@@ -1,111 +1,16 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TopScrolling from "../../components/shared/ScrollToTop";
 import SearchPopUp from "../../components/shared/SearchPopUp";
 import PageHeader from "../../components/shared/pageHeader";
 import Countup from "../../components/shared/Countup";
 import ReadyToBuild from "../../components/home/ReadyToBuild";
 import AllServices from "../../components/service/AllServices";
-
-
-const serviceData = [
-  {
-    title: "Search Engine Optimization (SEO)",
-    description:
-      "Increase your website's search engine rankings to generate more organic visitors and customers.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Social Media Marketing (SMM)",
-    description:
-      "Engage with your audience on major social platforms to grow your brand and build a community around your products or services.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-
-  {
-    title: "Marketing Analytics",
-    description:
-      "Our free analytics service empowers your strategy by delivering campaign performance information and optimization options.",
-    logoInClass: "icon flaticon-gear",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Video Editing",
-    description:
-      "We create audience-grabbing reels, shorts, commercial, and motion videos.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "YouTube Marketing",
-    description:
-      "Use video to attract attention, build brand awareness, and spread your message on the world's largest video platform.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Graphics Design",
-    description:
-      "We offer logo design and complete visual branding solutions to enhance your brand's appearance",
-    logoInClass: "icon flaticon-bar-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Media Buying Services",
-    description:
-      "Place advertisements strategically on Facebook and Google to maximize visibility and audience interaction.",
-    logoInClass: "icon flaticon-cloud-computing",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Google Shopping Ad & Search Ad",
-    description:
-      "Targeted Google Shopping and search advertisements improve sales and visibility.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Small Business 360 Marketing Services:",
-    description:
-      "Customized digital marketing solutions for small businesses to maximize online growth.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Dedicated Landing Page",
-    description:
-      "A dedicated landing page may advance your online marketing by converting visitors into leads or customers.",
-    logoInClass: "icon flaticon-bar-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Media Buying (Facebook Ads & Google Ads)",
-    description: "We maximize your advertising ROI on Facebook and Google.",
-    logoInClass: "icon flaticon-search-1",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Email Marketing",
-    description:
-      "Build customer loyalty and sales with personalized email marketing.",
-    logoInClass: "icon flaticon-bar-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Pay Per Click (PPC)",
-    description:
-      "Use search engines and social media to acquire rapid exposure and tailored website visitors.",
-    logoInClass: "icon flaticon-search-1",
-    link: "/contentMarketing",
-  },
-];
+import { getData } from "../../components/shared/Api";
 
 const Services = () => {
   return (
     <div>
-
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -118,7 +23,7 @@ const Services = () => {
           <PageHeader pagename={"Services1"} />
           {/* End Page Title Section */}
           {/* Services Page Section */}
-       <AllServices/>
+          <AllServices />
           {/* End Services Page Section */}
           {/* Clients Section */}
           <section className="clients-section">
@@ -385,8 +290,8 @@ const Services = () => {
           {/* End Newsleter Section */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

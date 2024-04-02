@@ -23,6 +23,10 @@ import MobileMenu from "../components/shared/MobileMenu";
 import SubmenuDropdownToggle from "../components/shared/SubmenuDropdownToggle";
 import Head from "next/head";
 import Navtool from "../components/shared/Navtool";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/router";
+import Whatsapp from "../components/shared/Whatsapp";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -36,6 +40,11 @@ import Navtool from "../components/shared/Navtool";
 // });
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  // Check if the current route is '/admin'
+  const showFooter = router.pathname !== "/admin";
+
   return (
     <>
       <Head>
@@ -112,9 +121,9 @@ function MyApp({ Component, pageProps }) {
       <HandlePreloader />
       <WowHandle />
       <HeaderStyle />
-      {/* <SearchBox /> */} 
+      {/* <SearchBox /> */}
       <MobileMenu />
-      <Navtool/>
+      <Navtool />
       <SubmenuDropdownToggle />
       {/* <HiddenBar />
       <HiddenBar2 />
@@ -123,11 +132,9 @@ function MyApp({ Component, pageProps }) {
       <SSRProvider>
         <Component {...pageProps} />
       </SSRProvider>
-
-      <FooterNew />
-      {/* <Footer>
-
-      </Footer> */}
+      <ToastContainer />
+      <Whatsapp/> 
+      {showFooter && <FooterNew />}
     </>
   );
 }

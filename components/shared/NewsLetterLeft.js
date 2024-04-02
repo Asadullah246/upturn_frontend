@@ -1,6 +1,11 @@
 import React from 'react';
+import { ToastSuccess } from './ToastAlerts';
 
 const NewsLetterLeft = () => {
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    ToastSuccess("Thank you for subscribe")
+  }
     return (
         <section className="newsletter-section">
         <div className="auto-container">
@@ -18,16 +23,15 @@ const NewsLetterLeft = () => {
                 </div>
                 <div className="newsletter-form">
                   <form
-                    // method="post"
-                    action=""
+                onSubmit={handleSubmit}
                   >
                     <div className="form-group">
                       <input
                         type="email"
-                        name="email" src="/newupdate/images"
+                        name="email"
                         defaultValue=""
                         placeholder="Enter Your Email"
-                        required=""
+                        required
                       />
                       <button
                         type="submit"

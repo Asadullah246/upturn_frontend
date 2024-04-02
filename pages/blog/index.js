@@ -1,13 +1,28 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PageHeader from "../../components/shared/pageHeader";
 import SearchPopUp from "../../components/shared/SearchPopUp";
 import TopScrolling from "../../components/shared/ScrollToTop";
+import { getData } from "../../components/shared/Api";
+import FormatDate from "../../components/shared/FormatDate";
 
 const Blog = () => {
+  const [blogs, setblogs] = useState([]);
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`blogs`);
+      setblogs(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+
+  const handleSearch=(e)=>{
+    e.preventDefault() ;
+  }
   return (
     <div>
-
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -16,7 +31,7 @@ const Blog = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-        <PageHeader pagename={"Blogs"}/>
+          <PageHeader pagename={"Blogs"} />
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
             <div className="auto-container">
@@ -24,542 +39,59 @@ const Blog = () => {
                 {/* Content Side */}
                 <div className="content-side col-lg-8 col-md-12 col-sm-12">
                   <div className="row clearfix">
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInLeft"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-1.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
+
+                  {blogs?.map((blog) => {
+                      return (
+                        <div key={blog?._id} className="news-block col-lg-6 col-md-6 col-sm-12">
+                          <div
+                            className="inner-box wow fadeInLeft"
+                            data-wow-delay="0ms"
+                            data-wow-duration="1500ms"
+                          >
+                            <div className="image">
+                              <img
+                                src={blog?.image}
+                                alt=""
+                              />
+                              {/* Overlay Box */}
+                              <div className="overlay-box">
+                                <div className="overlay-inner">
+                                  <div className="content">
+                                    <a
+                                      href={`/blog/${blog?._id}`}
+                                      className="icon flaticon-unlink"
+                                    />
+                                  </div>
+                                </div>
                               </div>
+                            </div>
+                            <div className="lower-content">
+                              <ul className="post-meta">
+                                <li>
+                                  <a href={`/blog/${blog?._id}`}>
+                                    <span className="icon fa fa-user" /> {blog?.author?.name}
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href={`/blog/${blog?._id}`}>
+                                    <span className="icon fa fa-calendar" />{" "}
+                                    {FormatDate(blog?.createdAt)}
+                                  </a>
+                                </li>
+                              </ul>
+                              <h5>
+                                <a href={`/blog/${blog?._id}`}>
+                                  {blog?.title}
+                                </a>
+                              </h5>
                             </div>
                           </div>
                         </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              Google now disregards or overlooks all reciprocal
-                              links
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInUp"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-2.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              Absolute Links vs. Relative Links – SEO Intrinsic
-                              Value
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInRight"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-3.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              How to increase your ROI through scientific SEM?
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInLeft"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-1.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              Google now disregards or overlooks all reciprocal
-                              links
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInUp"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-2.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              Absolute Links vs. Relative Links – SEO Intrinsic
-                              Value
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInRight"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-3.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              How to increase your ROI through scientific SEM?
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInLeft"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-1.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              Google now disregards or overlooks all reciprocal
-                              links
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInUp"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-2.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              Absolute Links vs. Relative Links – SEO Intrinsic
-                              Value
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInRight"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-3.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              How to increase your ROI through scientific SEM?
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInLeft"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-1.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              Google now disregards or overlooks all reciprocal
-                              links
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInUp"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-2.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              Absolute Links vs. Relative Links – SEO Intrinsic
-                              Value
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                    {/* News Block */}
-                    <div className="news-block col-lg-6 col-md-6 col-sm-12">
-                      <div
-                        className="inner-box wow fadeInRight"
-                        data-wow-delay="0ms"
-                        data-wow-duration="1500ms"
-                      >
-                        <div className="image">
-                          <img src="/newupdate/images/resource/news-3.jpg" alt="" />
-                          {/* Overlay Box */}
-                          <div className="overlay-box">
-                            <div className="overlay-inner">
-                              <div className="content">
-                                <a
-                                  href="/blog/id"
-                                  className="icon flaticon-unlink"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="lower-content">
-                          <ul className="post-meta">
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-user" /> Pablo
-                                Villalpando
-                              </a>
-                            </li>
-                            <li>
-                              <a href="/blog/id">
-                                <span className="icon fa fa-calendar" />{" "}
-                                November 21, 2020
-                              </a>
-                            </li>
-                          </ul>
-                          <h5>
-                            <a href="/blog/id">
-                              How to increase your ROI through scientific SEM?
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
+
+
+
                   </div>
                   {/* Post Share Options */}
                   <div className="styled-pagination text-center">
@@ -591,17 +123,14 @@ const Blog = () => {
                   <aside className="sidebar sticky-top">
                     {/* Search */}
                     <div className="sidebar-widget search-box">
-                      <form
-                        method="post"
-                        action="https://///contact.html"
-                      >
+                      <form onSubmit={handleSearch}>
                         <div className="form-group">
                           <input
                             type="search"
                             name="search-field"
                             defaultValue=""
                             placeholder="Search Here"
-                            required=""
+                            required
                           />
                           <button type="submit">
                             <span className="icon fa fa-search" />
@@ -610,7 +139,7 @@ const Blog = () => {
                       </form>
                     </div>
                     {/* Categories Widget */}
-                    <div className="sidebar-widget categories-widget">
+                    {/* <div className="sidebar-widget categories-widget">
                       <div className="sidebar-title">
                         <h4>Categories</h4>
                       </div>
@@ -648,64 +177,35 @@ const Blog = () => {
                           </li>
                         </ul>
                       </div>
-                    </div>
+                    </div> */}
                     {/* Categories Widget */}
                     <div className="sidebar-widget popular-posts">
                       <div className="sidebar-title">
                         <h4>Recent Post</h4>
                       </div>
                       <div className="widget-content">
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-1.jpg"
-                              alt=""
-                            />
-                            <a href="/blog/id" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="/blog/id">
-                              Google now disregards overlooks all links.
-                            </a>
-                          </div>
-                          <div className="post-info">November 21, 2020</div>
-                        </article>
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-2.jpg"
-                              alt=""
-                            />
-                            <a href="/blog/id" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="/blog/id">
-                              How to increase your ROI through scientific SEM?
-                            </a>
-                          </div>
-                          <div className="post-info">November 28, 2020</div>
-                        </article>
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-3.jpg"
-                              alt=""
-                            />
-                            <a href="/blog/id" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="/blog/id">
-                              A Guide to Google SEO <br /> Algorithm Updates
-                            </a>
-                          </div>
-                          <div className="post-info">December 04, 2020</div>
-                        </article>
+                        {blogs?.slice(0,5)?.map(blog=>{
+                          return (
+                            <article key={blog?._id} className="post">
+                            <figure className="post-thumb">
+                              <img
+                                src={blog?.image}
+                                alt=""
+                              />
+                              <a href={`/blog/${blog?._id}`} className="overlay-box">
+                                <span className="icon fa fa-link" />
+                              </a>
+                            </figure>
+                            <div className="text">
+                              <a href={`/blog/${blog?._id}`}>
+                               {blog?.title}
+                              </a>
+                            </div>
+                            <div className="post-info">{FormatDate(blog?.createdAt)}</div>
+                          </article>
+                          )
+                        })}
+
                       </div>
                     </div>
                     {/* Author Widget */}
@@ -718,9 +218,12 @@ const Blog = () => {
                         }}
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/author-7.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/team/jonaki.png"
+                            alt=""
+                          />
                         </div>
-                        <div className="name">Pablo Villalpando</div>
+                        <div className="name">Jonaki Khanam</div>
                         <div className="text">
                           I got lucky because I never gave up the search. Are
                           you quitting too soon? Or, are you willing to pursue
@@ -744,53 +247,71 @@ const Blog = () => {
                       </div>
                     </div>
                     {/* Instagram Widget */}
-                    <div className="sidebar-widget instagram-widget">
+                    {/* <div className="sidebar-widget instagram-widget">
                       <div className="sidebar-title">
                         <h4>Instagram</h4>
                       </div>
                       <div className="widget-content">
                         <div className="clearfix">
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-1.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-1.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-2.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-2.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-3.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-3.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-4.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-4.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-5.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-5.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-6.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-6.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                     {/* Popular Posts */}
-                    <div className="sidebar-widget popular-tags">
+                    {/* <div className="sidebar-widget popular-tags">
                       <div className="sidebar-title">
                         <h4>Tags</h4>
                       </div>
@@ -805,17 +326,17 @@ const Blog = () => {
                         <a href="#">Startup</a>
                         <a href="#">Strategy</a>
                       </div>
-                    </div>
+                    </div> */}
                   </aside>
                 </div>
               </div>
             </div>
           </div>
-          {/* Clients Section */}
-          <section className="clients-section style-two">
+          {/* Clients Section */} 
+          {/* <section className="clients-section style-two">
             <div className="auto-container">
               <div className="sponsors-outer">
-                {/*Sponsors Carousel*/}
+
                 <ul className="sponsors-carousel owl-carousel owl-theme">
                   <li className="slide-item">
                     <figure className="image-box">
@@ -876,14 +397,13 @@ const Blog = () => {
                 </ul>
               </div>
             </div>
-          </section>
+          </section> */}
           {/* End Clients Section */}
-
         </div>
         {/*End pagewrapper*/}
         {/* Color Palate / Color Switcher */}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
 
       {/* body end  */}
