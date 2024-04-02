@@ -1,13 +1,24 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PageHeader from "../../components/shared/pageHeader";
 import SearchPopUp from "../../components/shared/SearchPopUp";
 import TopScrolling from "../../components/shared/ScrollToTop";
+import { getData } from "../../components/shared/Api";
 
 const Blog = () => {
+  const [blogs, setblogs] = useState([]);
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`blogs`);
+      setblogs(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+  console.log("blog", blogs);
   return (
     <div>
-
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -16,7 +27,7 @@ const Blog = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-        <PageHeader pagename={"Blogs"}/>
+          <PageHeader pagename={"Blogs"} />
           {/* Sidebar Page Container */}
           <div className="sidebar-page-container">
             <div className="auto-container">
@@ -24,6 +35,58 @@ const Blog = () => {
                 {/* Content Side */}
                 <div className="content-side col-lg-8 col-md-12 col-sm-12">
                   <div className="row clearfix">
+
+                  {blogs?.map((blog) => {
+                      return (
+                        <div key={blog?._id} className="news-block col-lg-6 col-md-6 col-sm-12">
+                          <div
+                            className="inner-box wow fadeInLeft"
+                            data-wow-delay="0ms"
+                            data-wow-duration="1500ms"
+                          >
+                            <div className="image">
+                              <img
+                                src={blog?.image}
+                                alt=""
+                              />
+                              {/* Overlay Box */}
+                              <div className="overlay-box">
+                                <div className="overlay-inner">
+                                  <div className="content">
+                                    <a
+                                      href={`/blog/${blog?._id}`}
+                                      className="icon flaticon-unlink"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="lower-content">
+                              <ul className="post-meta">
+                                <li>
+                                  <a href={`/blog/${blog?._id}`}>
+                                    <span className="icon fa fa-user" /> {blog?.author?.name}
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href={`/blog/${blog?._id}`}>
+                                    <span className="icon fa fa-calendar" />{" "}
+                                    November 21, 2020
+                                  </a>
+                                </li>
+                              </ul>
+                              <h5>
+                                <a href={`/blog/${blog?._id}`}>
+                                  {blog?.title} 
+                                </a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+
+
                     {/* News Block */}
                     <div className="news-block col-lg-6 col-md-6 col-sm-12">
                       <div
@@ -32,7 +95,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-1.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-1.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -77,7 +143,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-2.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-2.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -122,7 +191,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-3.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-3.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -166,7 +238,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-1.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-1.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -211,7 +286,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-2.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-2.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -256,7 +334,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-3.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-3.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -300,7 +381,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-1.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-1.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -345,7 +429,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-2.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-2.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -390,7 +477,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-3.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-3.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -434,7 +524,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-1.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-1.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -479,7 +572,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-2.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-2.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -524,7 +620,10 @@ const Blog = () => {
                         data-wow-duration="1500ms"
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/news-3.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/news-3.jpg"
+                            alt=""
+                          />
                           {/* Overlay Box */}
                           <div className="overlay-box">
                             <div className="overlay-inner">
@@ -591,10 +690,7 @@ const Blog = () => {
                   <aside className="sidebar sticky-top">
                     {/* Search */}
                     <div className="sidebar-widget search-box">
-                      <form
-                        method="post"
-                        action="https://///contact.html"
-                      >
+                      <form method="post" action="https://///contact.html">
                         <div className="form-group">
                           <input
                             type="search"
@@ -718,7 +814,10 @@ const Blog = () => {
                         }}
                       >
                         <div className="image">
-                          <img src="/newupdate/images/resource/author-7.jpg" alt="" />
+                          <img
+                            src="/newupdate/images/resource/author-7.jpg"
+                            alt=""
+                          />
                         </div>
                         <div className="name">Pablo Villalpando</div>
                         <div className="text">
@@ -751,37 +850,55 @@ const Blog = () => {
                       <div className="widget-content">
                         <div className="clearfix">
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-1.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-1.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-2.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-2.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-3.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-3.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-4.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-4.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-5.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-5.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
                           </figure>
                           <figure className="post-thumb">
-                            <img src="/newupdate/images/resource/instagram-6.jpg" alt="" />
+                            <img
+                              src="/newupdate/images/resource/instagram-6.jpg"
+                              alt=""
+                            />
                             <a href="/blog/id" className="overlay-box">
                               <span className="icon fa fa-link" />
                             </a>
@@ -878,7 +995,6 @@ const Blog = () => {
             </div>
           </section>
           {/* End Clients Section */}
-
         </div>
         {/*End pagewrapper*/}
         {/* Color Palate / Color Switcher */}

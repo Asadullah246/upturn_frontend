@@ -1,11 +1,25 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PageHeader from "../components/shared/pageHeader";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
 import ContactForm from "../components/shared/ContactForm";
+import { getData } from "../components/shared/Api";
 
 const ContactUs = () => {
+
+  const [info, setInfo]=useState()
+  const dataId="660895de0608b63dc8814028"
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`websiteInfo/${dataId}`);
+      setInfo(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+
   return (
     <div>
       {/* body  */}
@@ -48,7 +62,7 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-pin" />
-                        Warlessgate, Mohakhali <br /> Dhaka, Bangladesh
+                        {info?.address}
                       </div>
                     </div>
                   </div>
@@ -57,10 +71,10 @@ const ContactUs = () => {
                     <div className="info-box">
                       <div className="box-inner">
                         <div className="icon flaticon-phone-call" />
-                        <a href="tel:+1-000999-0099">+880161 7222 302</a> <br />
-                        <a href="mailto:info@upternidea.com">
-                          info@upternidea.com
-                        </a>
+                        <a href={`tel:${info?.phone}`}>{info?.phone}</a> <br />
+                        <a href={`mailto:${info?.email}`}>
+                           {info?.email}
+                          </a>
                       </div>
                     </div>
                   </div>
@@ -75,17 +89,17 @@ const ContactUs = () => {
                         </i>
                       </span>
                       <li className="facebook">
-                        <a href="#" className="fa fa-facebook-f" />
+                        <a href={info?.facebook || "#"} className="fa fa-facebook-f" />
                       </li>
                       <li className="twitter">
-                        <a href="#" className="fa fa-twitter" />
+                        <a href={info?.twitter || "#"} className="fa fa-twitter" />
                       </li>
                       <li className="linkedin">
-                        <a href="#" className="fa fa-google-plus" />
+                        <a href={info?.linkedin || "#"} className="fa fa-google-plus" />
                       </li>
-                      <li className="pinterest">
-                        <a href="#" className="fa fa-pinterest-p" />
-                      </li>
+                      {/* <li className="pinterest">
+                        <a href={info?.facebook || "#"} className="fa fa-pinterest-p" />
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -94,7 +108,7 @@ const ContactUs = () => {
               <div className="map-boxed">
                 {/* Map Outer */}
                 <div className="map-outer">
-               
+
 
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.5393653104136!2d90.4013445983948!3d23.7802106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c73ba848a2fb%3A0xae12bfcecf23f8ab!2sMohakhali%20wirelessgate!5e0!3m2!1sen!2sbd!4v1710959115156!5m2!1sen!2sbd"

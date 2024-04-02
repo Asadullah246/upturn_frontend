@@ -52,7 +52,7 @@ function ResponsiveDrawer(props) {
 
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [page, setPage] = React.useState("Dashboard"); 
+  const [page, setPage] = React.useState("Website Info");
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -108,7 +108,7 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div style={{ color: "black !important", minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
       <Toolbar>
         <ListItem disablePadding>
           <ListItemButton style={{ paddingLeft: 0, paddingRight: 0 }}>
@@ -117,7 +117,7 @@ function ResponsiveDrawer(props) {
               <Image src="/icon/adminLogo.png" alt="" height="24" width="24" />
             </ListItemIcon>
             {/* <ListItemText primary={"Admin Panel"} style={{fontSize:"2rem", fontWeight:"700"}} /> */}
-            <h4 className="mb-0 fw-bold">Admin Panel</h4>
+            <h5 className="mb-0 fw-bold">Admin Panel</h5>
           </ListItemButton>
         </ListItem>
       </Toolbar>
@@ -133,7 +133,7 @@ function ResponsiveDrawer(props) {
           //     { text: 'Offer Course', icon: <LocalOfferIcon /> },
           // ]
           [
-            { text: "Dashboard", icon: "/icon/dashboardAdmin.png" },
+            // { text: "Dashboard", icon: "/icon/dashboardAdmin.png" },
             { text: "Website Info", icon: "/icon/mentorAdmin.png" },
             { text: "Blogs", icon: "/icon/userAdmin.png" },
             { text: "New Blog", icon: "/icon/userAdmin.png" },

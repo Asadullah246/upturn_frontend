@@ -4,6 +4,7 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import axios from "axios";
 import { deleteData, getData } from "../shared/Api";
 import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
+import HeaderText from "./HeaderText";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -14,7 +15,7 @@ const Blogs = () => {
       setBlogs(res?.data);
       return res?.data;
     };
-    blogsData(); 
+    blogsData();
   }, [refresh]);
 
   const handleDelete=async(id)=>{
@@ -31,17 +32,7 @@ const Blogs = () => {
   return (
     <div className="container">
       {/* image and title  */}
-      <div className="mb-4 d-flex align-items-center">
-        <img
-          className="me-3"
-          src="https://i.ibb.co/VqL2CLG/Polygon-1.jpg"
-          alt="Polygon-1"
-          border="0"
-          width="30"
-          height="45"
-        ></img>
-        <h2>Users</h2>
-      </div>
+      <HeaderText text="Blogs"/>
 
       {/* search and add add user button */}
       <div className="row align-items-center">

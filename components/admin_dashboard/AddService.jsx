@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CreateNew } from "../shared/Api";
 import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
 import uploadImageToCloudinary from "../shared/uploadImageToCloudinary";
+import HeaderText from "./HeaderText";
 
 const AddService = () => {
   const [uploadingStatus, setUploadingStatus] = useState(false);
@@ -63,17 +64,7 @@ const AddService = () => {
   return (
     <div>
       <div className="container">
-        <div className="mb-4 d-flex align-items-center">
-          <img
-            className="me-3"
-            src="https://i.ibb.co/VqL2CLG/Polygon-1.jpg"
-            alt="Polygon-1"
-            border="0"
-            width="30"
-            height="45"
-          ></img>
-          <h2>Blogs</h2>
-        </div>
+      <HeaderText text="Create Service"/> 
         <div style={{ backgroundColor: ["#DDDDDD"], borderRadius: "10px" }}>
           <form
             onSubmit={handleSubmit}
@@ -258,11 +249,11 @@ const AddService = () => {
                         />
                       </div>
                     </div>
-                    <div className="me-auto text-end mt-4">
+                    <div className="row mt-4">
                       <button
                         type="submit"
                         disabled={uploadingStatus}
-                        className="btn btn-warning"
+                        className="btn btn-info"
                       >
                         {uploadingStatus ? "Uploading" : "Submit"}
                       </button>

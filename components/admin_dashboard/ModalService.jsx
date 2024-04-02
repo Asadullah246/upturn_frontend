@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { CreateNew, updateData } from "../shared/Api";
 import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
 import uploadImageToCloudinary, { uploadImageToCloudinaryWithExist } from "../shared/uploadImageToCloudinary";
+import HeaderText from "./HeaderText";
 
 const ModalService = ({data, handleClose, refresh , setRefresh}) => {
   const [uploadingStatus, setUploadingStatus] = useState(false);
@@ -55,7 +56,7 @@ const ModalService = ({data, handleClose, refresh , setRefresh}) => {
       const res = await updateData(inputData, `services/${data?._id}`);
 
       if (res?.status === "success") {
-        setRefresh(!refresh) 
+        setRefresh(!refresh)
         ToastSuccess("Successfully updated");
 
         handleClose()
@@ -74,10 +75,7 @@ const ModalService = ({data, handleClose, refresh , setRefresh}) => {
   return (
     <div>
       <div className="container">
-        <div className="mb-4 d-flex align-items-center">
-
-          <h2>Edit Service</h2>
-        </div>
+      <HeaderText text="Update Service"/>
         <div style={{ backgroundColor: ["#DDDDDD"], borderRadius: "10px" }}>
           <form
             onSubmit={handleSubmit}

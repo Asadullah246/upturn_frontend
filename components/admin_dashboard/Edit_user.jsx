@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getData, updateData } from "../shared/Api";
 import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
 import { uploadImageToCloudinaryWithExist } from "../shared/uploadImageToCloudinary";
+import HeaderText from "./HeaderText";
 
 const Edit_user = () => {
   const [refresh, setRefresh] = useState(false);
@@ -25,22 +26,24 @@ const Edit_user = () => {
     const blogImage = target?.userImage?.files[0];
 
     try {
-
       // Upload blog image
-      const blogImageLink = await uploadImageToCloudinaryWithExist(blogImage, (user?.image || ""));
+      const blogImageLink = await uploadImageToCloudinaryWithExist(
+        blogImage,
+        user?.image || ""
+      );
 
       const inputData = {
         name: target?.userName?.value,
         email: target?.email?.value,
         password: target?.password?.value,
-        image: blogImageLink
+        image: blogImageLink,
       };
       console.log("data", inputData);
       // Save data to database
       const res = await updateData(inputData, `user/${user?._id}`);
-console.log("res", res );
+      console.log("res", res);
       if (res?.status === "success") {
-        setRefresh(!refresh)
+        setRefresh(!refresh);
         ToastSuccess("Successfully updated");
       } else {
         ToastError(res?.message || "Something error");
@@ -55,17 +58,7 @@ console.log("res", res );
     <div>
       <div>
         <div className="container">
-          <div className="mb-4 d-flex align-items-center">
-            <img
-              className="me-3"
-              src="https://i.ibb.co/VqL2CLG/Polygon-1.jpg"
-              alt="Polygon-1"
-              border="0"
-              width="30"
-              height="45"
-            ></img>
-            <h2>Edit User Info</h2>
-          </div>
+          <HeaderText text="Edit User" />
           <div style={{ backgroundColor: ["#DDDDDD"], borderRadius: "10px" }}>
             <div
               style={{
@@ -178,15 +171,13 @@ console.log("res", res );
 
                       {/* button cancel and proceed */}
                       <div className="row mt-4">
-
-
                         <button
-                        type="submit"
-                        disabled={uploadingStatus}
-                        className="btn btn-info"
-                      >
-                        {uploadingStatus ? "Uploading" : "Submit"}
-                      </button>
+                          type="submit"
+                          disabled={uploadingStatus}
+                          className="btn btn-info"
+                        >
+                          {uploadingStatus ? "Uploading" : "Submit"}
+                        </button>
                       </div>
                     </div>
                   </form>

@@ -1,88 +1,61 @@
 import React, { useState } from "react";
-import { CreateNew } from "../shared/Api";
+import { CreateNew, updateData } from "../shared/Api";
 import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import HeaderText from "./HeaderText";
+import { uploadImageToCloudinaryWithExist } from "../shared/uploadImageToCloudinary";
 
 const WebsiteInfo = () => {
   const [uploadingStatus, setUploadingStatus] = useState(false);
+  const dataId="660895de0608b63dc8814028"
 
   const handleSubmit = async (e) => {
     setUploadingStatus(true)
     e.preventDefault();
     const target = e.target;
     const logo = target?.logo?.files[0];
-    const inputData = {
-      websiteName: target?.websiteName.value,
-      metaText: target?.metaText.value,
-      phone: target?.phone.value,
-      email: target?.email.value,
-      address: target?.address.value,
-      facebook: target?.facebook.value,
-      twitter: target?.twitter.value,
-      instagram: target?.instagram.value,
-      description: target?.description.value,
-    };
 
 
+    try {
+      // Upload blog image
+      const blogImageLink = await uploadImageToCloudinaryWithExist(
+        logo,
+         ""
+      );
 
-
-    if(logo) {
-
-      const data = new FormData();
-      data.append("file", logo);
-      data.append("upload_preset", "ml_defaultru");
-      data.append("cloud_name", "dc7xchqbj");
-
-      fetch("http://api.cloudinary.com/v1_1/dc7xchqbj/image/upload", {
-        method: "POST",
-        body: data,
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          const newInputData = {...inputData, logo: data?.url}
-          const res = CreateNew(newInputData, "websiteInfo")
-
-          if (res?.status === "success") {
-            ToastSuccess("Successfully updated");
-          } else {
-            ToastError(res?.message || "Something error");
-          }
-
-
-        })
-        .catch(err=>{
-          ToastError(err?.message || "Something error");
-        })
-
-
-    }
-    else {
-      const res =await CreateNew(inputData, "websiteInfo")
-
+      const inputData = {
+        websiteName: target?.websiteName.value,
+        metaText: target?.metaText.value,
+        phone: target?.phone.value,
+        email: target?.email.value,
+        address: target?.address.value,
+        facebook: target?.facebook.value,
+        twitter: target?.twitter.value,
+        instagram: target?.instagram.value,
+        description: target?.description.value,
+        logo:blogImageLink 
+      };
+      console.log("data", inputData);
+      // Save data to database
+      const res = await updateData(inputData, `websiteInfo/${dataId}`);
+      console.log("res", res);
       if (res?.status === "success") {
+        // setRefresh(!refresh);
         ToastSuccess("Successfully updated");
       } else {
         ToastError(res?.message || "Something error");
       }
-
-
+    } catch (error) {
+      ToastError(error?.message || "Something error");
     }
+
     setUploadingStatus(false)
 
   };
   return (
     <div>
       <div className="container">
-        <div className="mb-4 d-flex align-items-center">
-          <img
-            className="me-3"
-            src="https://i.ibb.co/VqL2CLG/Polygon-1.jpg"
-            alt="Polygon-1"
-            border="0"
-            width="30"
-            height="45"
-          ></img>
-          <h2>Website Info</h2>
-        </div>
+       <HeaderText text="Website Info"/>
         <div style={{ backgroundColor: ["#DDDDDD"], borderRadius: "10px" }}>
           <form
             onSubmit={handleSubmit}
@@ -431,11 +404,11 @@ const WebsiteInfo = () => {
                         </div>
                       </div>
                     </div> */}
-                    <div className="me-auto text-end mt-4">
+                    <div className="row mt-4">
                       <button
                         type="submit"
                         disabled={uploadingStatus}
-                        className="btn btn-warning"
+                        className="btn btn-info"
                       >
                         {uploadingStatus ? "Uploading" : "Submit"}
                       </button>

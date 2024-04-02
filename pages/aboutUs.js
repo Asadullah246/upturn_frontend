@@ -8,6 +8,7 @@ import CountManage from "../components/shared/CountManage";
 import SearchPopUp from "../components/shared/SearchPopUp";
 import TopScrolling from "../components/shared/ScrollToTop";
 import ReadyToBuild from "../components/home/ReadyToBuild";
+import { ToastSuccess } from "../components/shared/ToastAlerts";
 
 const AboutUs = () => {
 
@@ -20,6 +21,12 @@ const AboutUs = () => {
       setStartCountUp(true);
     }
   }, [inView]);
+
+
+  const handleSubmit =(e)=>{
+e.preventDefault()
+ToastSuccess("Thank you for subscribe")
+  } 
 
   return (
     <div >
@@ -589,9 +596,10 @@ const AboutUs = () => {
                     </div>
                     <div className="newsletter-form">
                       <form
-                        method="post"
+                        // method="post"
                         // action="https://///contact.html"
-                        action="#"
+                        // action="#"
+                        onSubmit={handleSubmit}
                       >
                         <div className="form-group">
                           <input
@@ -599,7 +607,7 @@ const AboutUs = () => {
                             name="email"
                             defaultValue=""
                             placeholder="Enter Your Email"
-                            required=""
+                            required
                           />
                           <button
                             type="submit"

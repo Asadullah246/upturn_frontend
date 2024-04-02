@@ -383,8 +383,20 @@ color:#d63384 ;
 
 
 .css-d9ml5t-MuiDrawer-docked , .MuiDrawer-paper{
-background-color:gray !important ; 
+background-color:rgb(0, 50, 150) !important ;
+color:white !important;
 }
+.MuiBox-root.css-1v5u2yv {
+  z-index:99999 ;
+}
+
+@media (min-width: 600px) {
+  .css-hyum1k-MuiToolbar-root {
+    padding-left: 16px !important;
+    padding-right: 0px !important; 
+}
+}
+
 
 
 

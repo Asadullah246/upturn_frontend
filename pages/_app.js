@@ -25,6 +25,7 @@ import Head from "next/head";
 import Navtool from "../components/shared/Navtool";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter } from "next/router";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -38,6 +39,11 @@ import "react-toastify/dist/ReactToastify.css";
 // });
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  // Check if the current route is '/admin'
+  const showFooter = router.pathname !== "/admin";
+
   return (
     <>
       <Head>
@@ -126,10 +132,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </SSRProvider>
       <ToastContainer />
-      {/* <FooterNew /> */}
-      {/* <Footer>
-
-      </Footer> */}
+      {showFooter && <FooterNew />} 
     </>
   );
 }

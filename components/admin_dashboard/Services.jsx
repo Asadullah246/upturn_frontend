@@ -75,17 +75,7 @@ const Services = () => {
 
       <div className="container">
         {/* image and title  */}
-        <div className="mb-4 d-flex align-items-center">
-          <img
-            className="me-3"
-            src="https://i.ibb.co/VqL2CLG/Polygon-1.jpg"
-            alt="Polygon-1"
-            border="0"
-            width="30"
-            height="45"
-          ></img>
-          <h2>Users</h2>
-        </div>
+        <HeaderText text="Services"/>
 
         {/* search and add add user button */}
         <div className="row align-items-center">

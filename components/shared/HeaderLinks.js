@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
+import { getData } from "./Api";
 
 const HeaderLinks = () => {
   const [showNav, setShowNav] = useState(false);
@@ -7,7 +8,19 @@ const HeaderLinks = () => {
   const router = useRouter();
   const currentPath = router.pathname;
   const parentRoute = currentPath.split('/')[1]
-  console.log("parent", parentRoute);
+  const [info, setInfo]=useState()
+  const dataId="660895de0608b63dc8814028"
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`websiteInfo/${dataId}`);
+      setInfo(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -26,6 +39,7 @@ const HeaderLinks = () => {
     };
   }, []);
 
+  console.log("info", info );
   return (
     <header className="main-header header-style-one">
       {/*Header-Upper*/}
@@ -36,7 +50,8 @@ const HeaderLinks = () => {
             <div className="logo">
               <a href="/">
                 <img
-                  src="/newupdate/images/newIcons/Logo.svg"
+                  // src="/newupdate/images/newIcons/Logo.svg"
+                  src={info?.logo} 
                   alt=""
                   title=""
                   className="homepageLogo"
