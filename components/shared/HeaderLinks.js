@@ -39,7 +39,6 @@ const HeaderLinks = () => {
     };
   }, []);
 
-  console.log("info", info );
   return (
     <header className="main-header header-style-one">
       {/*Header-Upper*/}
@@ -51,7 +50,7 @@ const HeaderLinks = () => {
               <a href="/">
                 <img
                   // src="/newupdate/images/newIcons/Logo.svg"
-                  src={info?.logo} 
+                  src={info?.logo}
                   alt=""
                   title=""
                   className="homepageLogo"

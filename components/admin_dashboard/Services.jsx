@@ -9,6 +9,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import ModalService from "./ModalService";
+import HeaderText from "./HeaderText";
 
 const style = {
   position: "absolute",
@@ -46,7 +47,7 @@ const Services = () => {
   }, [refresh]);
 
   const handleDelete = async (id) => {
-    const res = await deleteData(id, "blogs");
+    const res = await deleteData(id, "services"); 
 
     if (res?.status === "success") {
       ToastSuccess("Successfully Deleted");
