@@ -79,7 +79,7 @@ const Account = () => {
             <div className="box" />
           </div>
           {/* Main Header*/}
-         <PageHeader pagename={"Account"}/> 
+         <PageHeader pagename={"Account"}/>
           {/*Register Section*/}
           <section className="register-section">
             <div className="auto-container">
@@ -508,8 +508,8 @@ const Account = () => {
         </div>
         {/*End pagewrapper*/}
 
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
 
       </body>
 

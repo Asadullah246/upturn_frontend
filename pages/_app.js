@@ -26,6 +26,7 @@ import Navtool from "../components/shared/Navtool";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
+import Whatsapp from "../components/shared/Whatsapp";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -132,7 +133,8 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </SSRProvider>
       <ToastContainer />
-      {showFooter && <FooterNew />} 
+      <Whatsapp/> 
+      {showFooter && <FooterNew />}
     </>
   );
 }

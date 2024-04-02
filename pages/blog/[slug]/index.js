@@ -692,8 +692,8 @@ const NewsDetail = () => {
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </div>
       {/* body end  */}
     </div>

@@ -18,6 +18,9 @@ const Blog = () => {
     blogsData();
   }, []);
 
+  const handleSearch=(e)=>{
+    e.preventDefault() ;
+  }
   return (
     <div>
       {/* body  */}
@@ -120,14 +123,14 @@ const Blog = () => {
                   <aside className="sidebar sticky-top">
                     {/* Search */}
                     <div className="sidebar-widget search-box">
-                      <form method="post" action="https://///contact.html">
+                      <form onSubmit={handleSearch}>
                         <div className="form-group">
                           <input
                             type="search"
                             name="search-field"
                             defaultValue=""
                             placeholder="Search Here"
-                            required=""
+                            required
                           />
                           <button type="submit">
                             <span className="icon fa fa-search" />
@@ -136,7 +139,7 @@ const Blog = () => {
                       </form>
                     </div>
                     {/* Categories Widget */}
-                    <div className="sidebar-widget categories-widget">
+                    {/* <div className="sidebar-widget categories-widget">
                       <div className="sidebar-title">
                         <h4>Categories</h4>
                       </div>
@@ -174,64 +177,35 @@ const Blog = () => {
                           </li>
                         </ul>
                       </div>
-                    </div>
+                    </div> */}
                     {/* Categories Widget */}
                     <div className="sidebar-widget popular-posts">
                       <div className="sidebar-title">
                         <h4>Recent Post</h4>
                       </div>
                       <div className="widget-content">
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-1.jpg"
-                              alt=""
-                            />
-                            <a href="/blog/id" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="/blog/id">
-                              Google now disregards overlooks all links.
-                            </a>
-                          </div>
-                          <div className="post-info">November 21, 2020</div>
-                        </article>
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-2.jpg"
-                              alt=""
-                            />
-                            <a href="/blog/id" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="/blog/id">
-                              How to increase your ROI through scientific SEM?
-                            </a>
-                          </div>
-                          <div className="post-info">November 28, 2020</div>
-                        </article>
-                        <article className="post">
-                          <figure className="post-thumb">
-                            <img
-                              src="/newupdate/images/resource/post-thumb-3.jpg"
-                              alt=""
-                            />
-                            <a href="/blog/id" className="overlay-box">
-                              <span className="icon fa fa-link" />
-                            </a>
-                          </figure>
-                          <div className="text">
-                            <a href="/blog/id">
-                              A Guide to Google SEO <br /> Algorithm Updates
-                            </a>
-                          </div>
-                          <div className="post-info">December 04, 2020</div>
-                        </article>
+                        {blogs?.slice(0,5)?.map(blog=>{
+                          return (
+                            <article key={blog?._id} className="post">
+                            <figure className="post-thumb">
+                              <img
+                                src={blog?.image}
+                                alt=""
+                              />
+                              <a href={`/blog/${blog?._id}`} className="overlay-box">
+                                <span className="icon fa fa-link" />
+                              </a>
+                            </figure>
+                            <div className="text">
+                              <a href={`/blog/${blog?._id}`}>
+                               {blog?.title}
+                              </a>
+                            </div>
+                            <div className="post-info">{FormatDate(blog?.createdAt)}</div>
+                          </article>
+                          )
+                        })}
+
                       </div>
                     </div>
                     {/* Author Widget */}
@@ -245,11 +219,11 @@ const Blog = () => {
                       >
                         <div className="image">
                           <img
-                            src="/newupdate/images/resource/author-7.jpg"
+                            src="/newupdate/images/team/jonaki.png"
                             alt=""
                           />
                         </div>
-                        <div className="name">Pablo Villalpando</div>
+                        <div className="name">Jonaki Khanam</div>
                         <div className="text">
                           I got lucky because I never gave up the search. Are
                           you quitting too soon? Or, are you willing to pursue
@@ -273,7 +247,7 @@ const Blog = () => {
                       </div>
                     </div>
                     {/* Instagram Widget */}
-                    <div className="sidebar-widget instagram-widget">
+                    {/* <div className="sidebar-widget instagram-widget">
                       <div className="sidebar-title">
                         <h4>Instagram</h4>
                       </div>
@@ -335,9 +309,9 @@ const Blog = () => {
                           </figure>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                     {/* Popular Posts */}
-                    <div className="sidebar-widget popular-tags">
+                    {/* <div className="sidebar-widget popular-tags">
                       <div className="sidebar-title">
                         <h4>Tags</h4>
                       </div>
@@ -352,17 +326,17 @@ const Blog = () => {
                         <a href="#">Startup</a>
                         <a href="#">Strategy</a>
                       </div>
-                    </div>
+                    </div> */}
                   </aside>
                 </div>
               </div>
             </div>
           </div>
-          {/* Clients Section */}
-          <section className="clients-section style-two">
+          {/* Clients Section */} 
+          {/* <section className="clients-section style-two">
             <div className="auto-container">
               <div className="sponsors-outer">
-                {/*Sponsors Carousel*/}
+
                 <ul className="sponsors-carousel owl-carousel owl-theme">
                   <li className="slide-item">
                     <figure className="image-box">
@@ -423,13 +397,13 @@ const Blog = () => {
                 </ul>
               </div>
             </div>
-          </section>
+          </section> */}
           {/* End Clients Section */}
         </div>
         {/*End pagewrapper*/}
         {/* Color Palate / Color Switcher */}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
 
       {/* body end  */}

@@ -82,7 +82,7 @@ const Team = () => {
                     <div className="team-block style-two col-lg-4 col-md-6 col-sm-12">
                     <div className="inner-box">
                       <div className="image">
-                        <img src={member?.image} style={{height:"500px" }} alt="" /> 
+                        <img src={member?.image} style={{height:"500px" }} alt="" />
                         {/* Social Box */}
                         <ul className="social-box">
                           <li>
@@ -172,8 +172,8 @@ const Team = () => {
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

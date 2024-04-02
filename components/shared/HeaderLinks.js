@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 import { getData } from "./Api";
+import Link from "next/link";
 
 const HeaderLinks = () => {
   const [showNav, setShowNav] = useState(false);
@@ -10,11 +11,22 @@ const HeaderLinks = () => {
   const parentRoute = currentPath.split('/')[1]
   const [info, setInfo]=useState()
   const dataId="660895de0608b63dc8814028"
-
+  const [services, setservices] = useState([]);
   useEffect(() => {
     const blogsData = async () => {
       const res = await getData(`websiteInfo/${dataId}`);
       setInfo(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+
+
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`services`);
+      setservices(res?.data);
       return res?.data;
     };
     blogsData();
@@ -154,50 +166,17 @@ const HeaderLinks = () => {
                   <li className={` dropdown ${parentRoute=="services"?"current":""}`}  >
                     <a href="/services">Services</a>
                     <ul>
-                      <li>
-                        <a href="/services">Services</a>
-                      </li>
-                      <li>
-                        <a href="/contentMarketing">Content Marketing</a>
-                      </li>
-                      <li>
-                        <a href="/socialMarketing">Social Marketing</a>
-                      </li>
-                      <li>
-                        <a href="/appDevelopment">App Development</a>
-                      </li>
-                      <li>
-                        <a href="/seo">SEO Optimization</a>
-                      </li>
-                      <li>
-                        <a href="/webDevelopment">Web Development</a>
-                      </li>
-                      <li>
-                        <a href="/advertising">PPC Advertising</a>
-                      </li>
+                      {services?.map(s=>{
+                        return(
+                          <li>
+                          <a href={`/services/${s?._id}`}>{s?.name}</a>
+                        </li>
+                        )
+                      })}
+
                     </ul>
                   </li>
-                  <li  className={parentRoute=="projects"?"current":""}>
-                    <a href="/projects">Projects</a>
-                    {/* <ul>
-                      <li>
-                        <a href="/project">Projects</a>
-                      </li>
-                      <li>
-                        <a href="projects-left-sidebar.html">
-                          Projects Left Sidebar
-                        </a>
-                      </li>
-                      <li>
-                        <a href="projects-right-sidebar.html">
-                          Projects Right Sidebar
-                        </a>
-                      </li>
-                      <li>
-                        <a href="projects-detail.html">Projects Detail</a>
-                      </li>
-                    </ul> */}
-                  </li>
+
                   <li className="dropdown has-mega-menu">
                     <a href="#">Pages</a>
                     <div className="mega-menu">
@@ -233,24 +212,13 @@ const HeaderLinks = () => {
                         <div className="column col-lg-3 col-md-4 col-sm-12">
                           <h3 style={{ marginLeft: "30px" }}>Services</h3>
                           <ul>
-                            <li>
-                              <a href="/contentMarketing">Content Marketing</a>
-                            </li>
-                            <li>
-                              <a href="/socialMarketing">Social Marketing</a>
-                            </li>
-                            <li>
-                              <a href="/appDevelopment">App Development</a>
-                            </li>
-                            <li>
-                              <a href="/seo">SEO Optimization</a>
-                            </li>
-                            <li>
-                              <a href="/webDevelopment">Web Development</a>
-                            </li>
-                            <li>
-                              <a href="/advertising">PPC Advertising</a>
-                            </li>
+                          {services?.map(s=>{
+                        return(
+                          <li>
+                          <a href={`/services/${s?._id}`}>{s?.name}</a>
+                        </li>
+                        )
+                      })}
                           </ul>
                         </div>
                         <div className="column col-lg-3 col-md-4 col-sm-12">
@@ -443,27 +411,13 @@ const HeaderLinks = () => {
                   <li  className={` dropdown ${parentRoute=="services"?"current":""}`} >
                     <a href="/services">Services</a>
                     <ul>
-                      <li>
-                        <a href="/services">Services</a>
-                      </li>
-                      <li>
-                        <a href="/contentMarketing">Content Marketing</a>
-                      </li>
-                      <li>
-                        <a href="/socialMarketing">Social Marketing</a>
-                      </li>
-                      <li>
-                        <a href="/appDevelopment">App Development</a>
-                      </li>
-                      <li>
-                        <a href="/seo">SEO Optimization</a>
-                      </li>
-                      <li>
-                        <a href="/webDevelopment">Web Development</a>
-                      </li>
-                      <li>
-                        <a href="/advertising">PPC Advertising</a>
-                      </li>
+                    {services?.map(s=>{
+                        return(
+                          <li>
+                          <a href={`/services/${s?._id}`}>{s?.name}</a>
+                        </li>
+                        )
+                      })}
                     </ul>
                   </li>
                   <li  className={parentRoute=="projects"?"current":""}>
@@ -571,23 +525,7 @@ const HeaderLinks = () => {
                       </div>
                     </div>
                   </li>
-                  {/* <li className="dropdown">
-                    <a href="/shop">Shop</a>
-                    <ul>
-                      <li>
-                        <a href="/shop">Our Products</a>
-                      </li>
-                      <li>
-                        <a href="/shoppingCart">Shopping Cart</a>
-                      </li>
-                      <li>
-                        <a href="/checkout">Checkout</a>
-                      </li>
-                      <li>
-                        <a href="/account">Account</a>
-                      </li>
-                    </ul>
-                  </li> */}
+
                   <li  className={parentRoute=="blog"?"current":""}>
                     <a href="/blog">Blog</a>
 
@@ -710,51 +648,21 @@ const HeaderLinks = () => {
                     </li>
                     <li  className={` dropdown ${parentRoute=="services"?"current":""}`} >
                       <a href="/services">Services</a>
+                      
                       <ul>
-                        <li>
-                          <a href="/services">Services</a>
+                      {services?.map(s=>{
+                        return(
+                          <li>
+                          <a href={`/services/${s?._id}`}>{s?.name}</a>
                         </li>
-                        <li>
-                          <a href="/contentMarketing">Content Marketing</a>
-                        </li>
-                        <li>
-                          <a href="/socialMarketing">Social Marketing</a>
-                        </li>
-                        <li>
-                          <a href="/appDevelopment">App Development</a>
-                        </li>
-                        <li>
-                          <a href="/seo">SEO Optimization</a>
-                        </li>
-                        <li>
-                          <a href="/webDevelopment">Web Development</a>
-                        </li>
-                        <li>
-                          <a href="/advertising">PPC Advertising</a>
-                        </li>
+                        )
+                      })}
                       </ul>
                     </li>
-                    <li  className={parentRoute=="projects"?"current":""}>
+                    {/* <li  className={parentRoute=="projects"?"current":""}>
                       <a href="/projects">Projects</a>
-                      {/* <ul>
-                      <li>
-                        <a href="/project">Projects</a>
-                      </li>
-                      <li>
-                        <a href="projects-left-sidebar.html">
-                          Projects Left Sidebar
-                        </a>
-                      </li>
-                      <li>
-                        <a href="projects-right-sidebar.html">
-                          Projects Right Sidebar
-                        </a>
-                      </li>
-                      <li>
-                        <a href="projects-detail.html">Projects Detail</a>
-                      </li>
-                    </ul> */}
-                    </li>
+
+                    </li> */}
                     <li className="dropdown has-mega-menu">
                       <a href="#">Pages</a>
                       <div className="mega-menu">
@@ -858,24 +766,7 @@ const HeaderLinks = () => {
                         </div>
                       </div>
                     </li>
-                    {/* <li className="dropdown">
-                    <a href="/shop">Shop</a>
-                    <ul>
-                      <li>
-                        <a href="/shop">Our Products</a>
-                      </li>
 
-                      <li>
-                        <a href="/shoppingCart">Shopping Cart</a>
-                      </li>
-                      <li>
-                        <a href="/checkout">Checkout</a>
-                      </li>
-                      <li>
-                        <a href="/account">Account</a>
-                      </li>
-                    </ul>
-                  </li> */} 2
 
                     <li  className={parentRoute=="blog"?"current":""}>
                       <a href="/blog">Blog</a>

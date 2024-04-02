@@ -1,102 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getData } from "../shared/Api";
 
-const serviceData = [
-
-  {
-    title: "Search Engine Optimization (SEO)",
-    description:
-      "Increase your website's search engine rankings to generate more organic visitors and customers.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Social Media Marketing (SMM)",
-    description:
-      "Engage with your audience on major social platforms to grow your brand and build a community around your products or services.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Media Buying Services",
-    description:
-      "Place advertisements strategically on Facebook and Google to maximize visibility and audience interaction.",
-    logoInClass: "icon flaticon-cloud-computing",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Google Shopping Ad & Search Ad",
-    description:
-      "Targeted Google Shopping and search advertisements improve sales and visibility.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Small Business 360 Marketing Services:",
-    description:
-      "Customized digital marketing solutions for small businesses to maximize online growth.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Dedicated Landing Page",
-    description:
-      "A dedicated landing page may advance your online marketing by converting visitors into leads or customers.",
-    logoInClass: "icon flaticon-bar-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Media Buying (Facebook Ads & Google Ads)",
-    description: "We maximize your advertising ROI on Facebook and Google.",
-    logoInClass: "icon flaticon-search-1",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Email Marketing",
-    description:
-      "Build customer loyalty and sales with personalized email marketing.",
-    logoInClass: "icon flaticon-bar-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Pay Per Click (PPC)",
-    description:
-      "Use search engines and social media to acquire rapid exposure and tailored website visitors.",
-    logoInClass: "icon flaticon-search-1",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Marketing Analytics",
-    description:
-      "Our free analytics service empowers your strategy by delivering campaign performance information and optimization options.",
-    logoInClass: "icon flaticon-gear",
-    link: "/contentMarketing",
-  },
-  {
-    title: "YouTube Marketing",
-    description:
-      "Use video to attract attention, build brand awareness, and spread your message on the world's largest video platform.",
-    logoInClass: "icon flaticon-line-chart",
-    link: "/contentMarketing",
-  },
-
-
-  {
-    title: "Video Editing",
-    description:
-      "We create audience-grabbing reels, shorts, commercial, and motion videos.",
-    logoInClass: "icon flaticon-pie-chart",
-    link: "/contentMarketing",
-  },
-  {
-    title: "Graphics Design",
-    description:
-      "We offer logo design and complete visual branding solutions to enhance your brand's appearance",
-    logoInClass: "icon flaticon-bar-chart",
-    link: "/contentMarketing",
-  },
-
-];
 const Services = () => {
+  const logos=["icon flaticon-line-chart", "icon flaticon-pie-chart","icon flaticon-gear", "icon flaticon-pie-chart", "icon flaticon-bar-chart", "icon flaticon-line-chart", "icon flaticon-cloud-computing","icon flaticon-search-1","icon flaticon-line-chart", "icon flaticon-pie-chart","icon flaticon-gear", "icon flaticon-pie-chart", "icon flaticon-bar-chart", "icon flaticon-line-chart","icon flaticon-cloud-computing","icon flaticon-search-1"]
+
+  const [services, setservices] = useState([]);
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`services`);
+      setservices(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+
   return (
     <section className="services-section-two style-two">
       <div className="auto-container">
@@ -109,7 +27,7 @@ const Services = () => {
           <div className="clearfix row">
             {/* Service Block Two / Style Two */}
 
-            {serviceData?.map((service, index) => {
+            {services?.map((service, index) => {
               return (
                 <div
                   key={index}
@@ -146,12 +64,12 @@ const Services = () => {
                       }}
                     />
                     <div className="icon-box">
-                      <span className={service?.logoInClass} />
+                      <span className={logos[index]} />
                     </div>
                     <h5>
-                      <a href="content-marketing.html">{service?.title}</a>
+                      <a href={`/services/${service?._id}`}>{service?.title}</a>
                     </h5>
-                    <div className="text">{service?.description}</div>
+                    <div className="text">{service?.shortDescription?.slice(0,152)}...</div>
                   </div>
                 </div>
               );
@@ -161,7 +79,7 @@ const Services = () => {
         {/* Lower Box */}
         <div className="lower-box">
           <div className="text">
-            If You See All Service <a href="/services1">Click Hare</a> Now.
+            If You See All Service <a href="/services">Click Hare</a> Now.
           </div>
         </div>
       </div>

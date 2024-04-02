@@ -44,7 +44,7 @@ const ServiceDetails = () => {
         <div className="page-wrapper">
           {/* Preloader */}
           <div className="preloader">
-            <div className="box" /> 
+            <div className="box" />
           </div>
           {/* Main Header*/}
 
@@ -212,8 +212,8 @@ const ServiceDetails = () => {
           {/* End Clients Section */}
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

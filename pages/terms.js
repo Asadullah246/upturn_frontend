@@ -6,9 +6,14 @@ import PageHeader from "../components/shared/pageHeader";
 import NewsLetterLeft from "../components/shared/NewsLetterLeft";
 
 const Terms = () => {
+
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    ToastSuccess("Thank you for subscribe")
+  }
   return (
     <div>
-    
+
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -214,8 +219,8 @@ const Terms = () => {
 
         </div>
         {/*End pagewrapper*/}
-        <SearchPopUp />
-        <TopScrolling />
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>

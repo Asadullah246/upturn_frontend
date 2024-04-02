@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import PageHeader from "../components/shared/pageHeader";
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import ScrollToTop from "../components/shared/ScrollToTop";
 import CountManage from "../components/shared/CountManage";
@@ -11,8 +11,6 @@ import ReadyToBuild from "../components/home/ReadyToBuild";
 import { ToastSuccess } from "../components/shared/ToastAlerts";
 
 const AboutUs = () => {
-
-
   const [startCountUp, setStartCountUp] = useState(false);
   const { ref, inView } = useInView();
 
@@ -22,19 +20,15 @@ const AboutUs = () => {
     }
   }, [inView]);
 
-
-  const handleSubmit =(e)=>{
-e.preventDefault()
-ToastSuccess("Thank you for subscribe")
-  } 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    ToastSuccess("Thank you for subscribe");
+  };
 
   return (
-    <div >
-
-
-
+    <div>
       {/* body  */}
-      <body className="hidden-bar-wrapper"  ref={ref}  >
+      <body className="hidden-bar-wrapper" ref={ref}>
         <div className="page-wrapper">
           {/* Preloader */}
 
@@ -42,7 +36,7 @@ ToastSuccess("Thank you for subscribe")
             <div className="box" />
           </div>
           {/* Main Header*/}
-        <PageHeader pagename="About Us"/>
+          <PageHeader pagename="About Us" />
           {/* End Main Header */}
 
           {/* Services Section Three */}
@@ -161,17 +155,23 @@ ToastSuccess("Thank you for subscribe")
                       </h2>
                     </div>
                     <div className="bold-text">
-                    We are desperate, dedicated, and keen to learn new things to prove ourselves. It grew even bigger in the last couple of years that goes beyond 60 years of cumulative experience.
+                      We are desperate, dedicated, and keen to learn new things
+                      to prove ourselves. It grew even bigger in the last couple
+                      of years that goes beyond 60 years of cumulative
+                      experience.
                     </div>
                     <ul className="list-style-three">
                       <li>
-                      We provide a complete digital marketing solution for all sorts of business.
+                        We provide a complete digital marketing solution for all
+                        sorts of business.
                       </li>
                       <li>
-                      Try our tailored SEO packages to rank better in the SERP.
+                        Try our tailored SEO packages to rank better in the
+                        SERP.
                       </li>
                       <li>
-                      Be competent in visually and grab the attention. We design your dream on the web.
+                        Be competent in visually and grab the attention. We
+                        design your dream on the web.
                       </li>
                     </ul>
                     {/* <a href="/contactUs" className="theme-btn btn-style-five">
@@ -207,11 +207,7 @@ ToastSuccess("Thank you for subscribe")
                             >
 
                             </span> */}
-                            <CountUp  start={0}
-                              end={12}
-                              duration={4.75} />
-
-                            +
+                            <CountUp start={0} end={12} duration={4.75} />+
                           </div>
                           <h4 className="counter-title">Years Of Experience</h4>
                         </div>
@@ -234,10 +230,7 @@ ToastSuccess("Thank you for subscribe")
                             >
                               0
                             </span> */}
-                            <CountUp  start={0}
-                              end={1000}
-                              duration={4.75} />
-                            +
+                            <CountUp start={0} end={1000} duration={4.75} />+
                           </div>
                           <h4 className="counter-title">Happy Clients</h4>
                         </div>
@@ -260,17 +253,13 @@ ToastSuccess("Thank you for subscribe")
                             >
                               0
                             </span> */}
-                            <CountUp  start={0}
-                              end={27}
-                              duration={4.75} />
-                            +
+                            <CountUp start={0} end={27} duration={4.75} />+
                           </div>
                           <h4 className="counter-title">Brains To Support</h4>
                         </div>
                       </div>
                     </div>
                     {/* Column */}
-
                   </div>
                 </div>
               </div>
@@ -460,13 +449,12 @@ ToastSuccess("Thank you for subscribe")
                               >
                                 0
                               </span> */}
-                                 <CountUp
-                              start={0}
-                              end={70}
-                              duration={2.75}
-                              delay={3}
+                              <CountUp
+                                start={0}
+                                end={70}
+                                duration={2.75}
+                                delay={3}
                               ></CountUp>
-
                               %
                             </div>
                           </div>
@@ -493,11 +481,11 @@ ToastSuccess("Thank you for subscribe")
                               >
                                 0
                               </span> */}
-                                  <CountUp
-                              start={0}
-                              end={80}
-                              duration={2.75}
-                              delay={3}
+                              <CountUp
+                                start={0}
+                                end={80}
+                                duration={2.75}
+                                delay={3}
                               ></CountUp>
                               %
                             </div>
@@ -527,11 +515,11 @@ ToastSuccess("Thank you for subscribe")
                               >
                                 0
                               </span> */}
-                                  <CountUp
-                              start={0}
-                              end={60}
-                              duration={2.75}
-                              delay={3}
+                              <CountUp
+                                start={0}
+                                end={60}
+                                duration={2.75}
+                                delay={3}
                               ></CountUp>
                               %
                             </div>
@@ -553,10 +541,7 @@ ToastSuccess("Thank you for subscribe")
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img
-                        src="/newupdate/images/resource/skill.png"
-                        alt=""
-                      />
+                      <img src="/newupdate/images/resource/skill.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -566,7 +551,7 @@ ToastSuccess("Thank you for subscribe")
           {/* End Skill Section */}
 
           {/* ready to build */}
-          <ReadyToBuild/>
+          <ReadyToBuild />
           {/* end of ready to build */}
 
           {/* Newsleter Section */}
@@ -592,7 +577,10 @@ ToastSuccess("Thank you for subscribe")
                       <h2>Subscribe Our Newsletter</h2>
                     </div>
                     <div className="text">
-                    Elevate your online presence with cutting-edge digital solutions tailored to your business needs. Experience seamless integration of web development, SEO, and digital marketing strategies for optimal results.{" "}
+                      Elevate your online presence with cutting-edge digital
+                      solutions tailored to your business needs. Experience
+                      seamless integration of web development, SEO, and digital
+                      marketing strategies for optimal results.{" "}
                     </div>
                     <div className="newsletter-form">
                       <form
@@ -629,9 +617,8 @@ ToastSuccess("Thank you for subscribe")
           {/* End Main Footer */}
         </div>
         {/*End pagewrapper*/}
-      <SearchPopUp />
-        <TopScrolling />
-
+        {/* <SearchPopUp />
+        <TopScrolling /> */}
       </body>
       {/* body end  */}
     </div>
