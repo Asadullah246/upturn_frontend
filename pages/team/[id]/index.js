@@ -1,10 +1,37 @@
 import Head from "next/head";
-import React from "react";
-import TopScrolling from "../components/shared/ScrollToTop";
-import SearchPopUp from "../components/shared/SearchPopUp";
-import PageHeader from "../components/shared/pageHeader";
+import React, { useEffect, useState } from "react";
+import TopScrolling from "../../../components/shared/ScrollToTop";
+import SearchPopUp from "../../../components/shared/SearchPopUp";
+import PageHeader from "../../../components/shared/pageHeader";
+import { useRouter } from "next/router";
+import { getData } from "../../../components/shared/Api";
 
 const TeamDetail = () => {
+
+  const router = useRouter();
+  const { id } = router.query;
+  const [team, setteam] = useState();
+  const [value, setValue] = useState(0);
+  const [refresh, setRefresh]=useState(false)
+
+
+  useEffect(() => {
+
+    if (id) {
+      const blogsData = async () => {
+        const res = await getData(`team/${id}`);
+        setteam(res?.data);
+        return res?.data;
+      };
+
+      blogsData();
+    }
+  }, [id, refresh]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div>
 
@@ -30,7 +57,7 @@ const TeamDetail = () => {
                     data-wow-duration="1500ms"
                   >
                     <div className="image">
-                      <img src="/newupdate/images/resource/team-1.jpg" alt="" />
+                      <img src={team?.image} alt="" />
                     </div>
                   </div>
                 </div>
@@ -38,40 +65,29 @@ const TeamDetail = () => {
                 <div className="content-column col-lg-8 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <h2>
-                      Monark Malocm{" "}
-                      <span className="category">Web Developer</span>
+                      {team?.name}
+                      <span className="category">{team?.designation}</span>
                     </h2>
                     <ul className="post-meta">
                       <li>
                         <span className="icon flaticon-big-envelope" />{" "}
-                        <a href="mailto:upTurnIdea@gmail.com">upTurnIdea@gmail.com</a>
+                        <a href={`mailto:${team?.email}`}>{team?.email}</a>
                       </li>
                       <li>
                         <span className="icon flaticon-phone-call" />{" "}
-                        <a href="tel:999-999-9999">999 - 999 - 9999</a>
+                        <a href={`tel:${team?.phone}`}>{team?.phone}</a>
                       </li>
-                      <li>
-                        <span className="icon fa fa-whatsapp" />{" "}
-                        <a href="tel:000-000-0000">000 - 000 - 0000</a>
-                      </li>
+
                     </ul>
                     <div className="text">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Fusce laoreet, ligula Lorem ipsum dolor sit amet, Lorem
-                        in ipsum dolor sit amet, consectetur adipiscing elit.
-                        Fusce laoreet, ligula Lorem ipsum dolor sit amet, Fusce
-                        laoreet in ligula consectetur dolor non nulla
-                        porttitorcondimentum tincidunt,
-                      </p>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Fusce laoreet, ligula Lorem ipsum dolor sit amet, Lorem
-                        in ipsum dolor sit amet, consectetur adipiscing elit.
-                        Fusce laoreet, ligula Lorem ipsum dolor sit amet.
-                      </p>
+                      {team?.description?.split("\\n")?.map((para, index)=>{
+                        return (
+                          <p key={index}>{para}</p>
+                        )
+                      })}
+
                     </div>
-                    <div className="row clearfix">
+                    {/* <div className="row clearfix">
                       <div className="column col-lg-6 col-md-6 col-sm-12">
                         <ul className="list-style-three">
                           <li>SEO for Small Business</li>
@@ -89,7 +105,7 @@ const TeamDetail = () => {
                         </ul>
                       </div>
                     </div>
-                    {/* Social Box */}
+
                     <ul className="social-icon-one">
                       <li>
                         <a href="#" className="fa fa-facebook-f" />
@@ -106,7 +122,7 @@ const TeamDetail = () => {
                       <li>
                         <a href="#" className="fa fa-whatsapp" />
                       </li>
-                    </ul>
+                    </ul> */} 
                   </div>
                 </div>
               </div>

@@ -109,7 +109,7 @@ const NewsDetail = () => {
                           return (
                             <Fragment key={index}>
                               <h2>{desc?.title}</h2>
-                              {desc?.details?.split("\n")?.map((para, i) => {
+                              {desc?.details?.split("\\n")?.map((para, i) => {
                                 return <p key={i}>{para}</p>;
                               })}
                             </Fragment>

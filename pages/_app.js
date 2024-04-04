@@ -133,8 +133,9 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </SSRProvider>
       <ToastContainer />
-      <Whatsapp/> 
+
       {showFooter && <FooterNew />}
+      {showFooter && <Whatsapp />} 
     </>
   );
 }

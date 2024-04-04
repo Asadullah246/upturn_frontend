@@ -1,8 +1,9 @@
 import Head from "next/head";
-import React from "react";
-import TopScrolling from "../components/shared/ScrollToTop";
-import SearchPopUp from "../components/shared/SearchPopUp";
-import PageHeader from "../components/shared/pageHeader";
+import React, { useEffect, useState } from "react";
+import TopScrolling from "../../components/shared/ScrollToTop";
+import SearchPopUp from "../../components/shared/SearchPopUp";
+import PageHeader from "../../components/shared/pageHeader";
+import { getData } from "../../components/shared/Api";
 
 const team = [
   {
@@ -62,6 +63,22 @@ const team = [
 ];
 
 const Team = () => {
+
+  const [teammembers, setteammembers] = useState([]);
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`team`);
+      setteammembers(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
+
+  const handlenewsLetter=(e)=>{
+    e.preventDefault()
+  }
+
   return (
     <div>
       {/* body  */}
@@ -77,7 +94,7 @@ const Team = () => {
           <section className="team-page-section">
             <div className="auto-container">
               <div className="row clearfix">
-                {team?.map((member,index)=>{
+                {teammembers?.map((member,index)=>{
                   return(
                     <div className="team-block style-two col-lg-4 col-md-6 col-sm-12">
                     <div className="inner-box">
@@ -86,13 +103,13 @@ const Team = () => {
                         {/* Social Box */}
                         <ul className="social-box">
                           <li>
-                            <a href={member?.facebook} className="fa fa-facebook-f" />
+                            <a href={member?.facebook} target="_blank" className="fa fa-facebook-f" />
                           </li>
                           <li>
-                            <a href={member?.linkedIn} className="fa fa-linkedin" />
+                            <a href={member?.linkedIn} target="_blank" className="fa fa-linkedin" />
                           </li>
                           <li>
-                            <a href={member?.twitter} className="fa fa-twitter" />
+                            <a href={member?.twitter} target="_blank" className="fa fa-twitter" />
                           </li>
                           {/* <li>
                             <a href={member?.google} className="fa fa-google" />
@@ -102,7 +119,7 @@ const Team = () => {
                       <div className="lower-content">
                         <div className="content">
                           <h4>
-                            <a href="/teamDetail">{member?.name}</a>
+                            <a href={`team/${member?._id}`}>{member?.name}</a> 
                           </h4>
                           <div className="designation">{member?.designation}</div>
                         </div>
@@ -132,14 +149,14 @@ const Team = () => {
                       donec tempus pellentesque dui vel tristique purus justo{" "}
                     </div>
                     <div className="newsletter-form">
-                      <form method="post" action="https://///contact.html">
+                      <form onSubmit={handlenewsLetter}>
                         <div className="form-group">
                           <input
                             type="email"
                             name="email"
                             defaultValue=""
                             placeholder="Enter Your Email"
-                            required=""
+                            required
                           />
                           <button
                             type="submit"

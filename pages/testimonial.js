@@ -1,19 +1,30 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TopScrolling from "../components/shared/ScrollToTop";
 import SearchPopUp from "../components/shared/SearchPopUp";
 import PageHeader from "../components/shared/pageHeader";
 import { ToastSuccess } from "../components/shared/ToastAlerts";
+import { getData } from "../components/shared/Api";
 
 const Testimonial = () => {
-  const handleSubmit=(e)=>{
+  const [blogs, setBlogs] = useState([]);
+  const [refresh, setRefresh] = useState(false);
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData("testimonial");
+      setBlogs(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, [refresh]);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    ToastSuccess("Thank you for subscribe")
-  }
+    ToastSuccess("Thank you for subscribe");
+  };
+
   return (
     <div>
-
-
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
@@ -23,177 +34,60 @@ const Testimonial = () => {
           </div>
           {/* Main Header*/}
 
-          <PageHeader pagename={"Testimonial"}/>
+          <PageHeader pagename={"Testimonial"} />
           {/* End Page Title Section */}
           {/* Testimonial Page Section */}
           <section className="testimonial-page-section">
             <div className="auto-container">
               <div className="row clearfix">
-                {/* Testimonial Block */}
-                <div className="testimonial-block col-lg-6 col-md-12 col-sm-12">
-                  <div className="inner-box">
-                    <div className="pattern-layer" />
-                    <div className="author-image-outer">
-                      <div className="author-image">
-                        <img src="/newupdate/images/resource/author-1.png" alt="" />
-                      </div>
-                      <div className="rating">
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                      </div>
-                      <div className="text">
-                        I had so much fun working with your specialists on my
-                        business project that we will come back soom!
-                      </div>
-                      <div className="lower-box">
-                        <div className="quote-icon fa fa-quote-left" />
-                        <h6>Margaret Sunsan</h6>
-                        <div className="designation">Develper</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Testimonial Block */}
-                <div className="testimonial-block col-lg-6 col-md-12 col-sm-12">
-                  <div className="inner-box">
-                    <div className="pattern-layer" />
-                    <div className="author-image-outer">
-                      <div className="author-image">
-                        <img src="/newupdate/images/resource/author-2.png" alt="" />
-                      </div>
-                      <div className="rating">
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star dark" />
-                      </div>
-                      <div className="text">
-                        i liked working with these creative guys, who know
-                        everything about quality design, innovations and
-                        usability,
-                      </div>
-                      <div className="lower-box">
-                        <div className="quote-icon fa fa-quote-left" />
-                        <h6>Eizabeth Blackwell</h6>
-                        <div className="designation">Web Designer</div>
+                {blogs?.map((testimonial) => {
+                  return (
+                    <div
+                      key={testimonial?._id}
+                      className="testimonial-block col-lg-6 col-md-12 col-sm-12"
+                    >
+                      <div className="inner-box">
+                        <div className="pattern-layer" />
+                        <div className="author-image-outer">
+                          <div className="author-image">
+                            {testimonial?.image ? (
+                              <img src={testimonial?.image} alt="" />
+                            ) : (
+                              <img
+                                height={95}
+                                width={95}
+                                style={{ borderRadius: "50%" }}
+                                src={`https://ui-avatars.com/api/?name=${testimonial?.name}&background=C140D8&color=fff`}
+                                alt=""
+                              />
+                            )}
+                          </div>
+                          <div className="rating">
+                            {[...Array(5)].map((rating, index) => {
+                              return (
+                                <span
+                                  className={`${
+                                    testimonial?.rating < index + 1
+                                      ? "fa fa-star dark"
+                                      : "fa fa-star "
+                                  }`}
+                                />
+                              );
+                            })}
+                          </div>
+                          <div className="text">{testimonial?.description}</div>
+                          <div className="lower-box">
+                            <div className="quote-icon fa fa-quote-left" />
+                            <h6>{testimonial?.name}</h6>
+                            <div className="designation">
+                              {testimonial?.designation}
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                {/* Testimonial Block */}
-                <div className="testimonial-block col-lg-6 col-md-12 col-sm-12">
-                  <div className="inner-box">
-                    <div className="pattern-layer" />
-                    <div className="author-image-outer">
-                      <div className="author-image">
-                        <img src="/newupdate/images/resource/author-1.png" alt="" />
-                      </div>
-                      <div className="rating">
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                      </div>
-                      <div className="text">
-                        I had so much fun working with your specialists on my
-                        business project that we will come back soom!
-                      </div>
-                      <div className="lower-box">
-                        <div className="quote-icon fa fa-quote-left" />
-                        <h6>Margaret Sunsan</h6>
-                        <div className="designation">Develper</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Testimonial Block */}
-                <div className="testimonial-block col-lg-6 col-md-12 col-sm-12">
-                  <div className="inner-box">
-                    <div className="pattern-layer" />
-                    <div className="author-image-outer">
-                      <div className="author-image">
-                        <img src="/newupdate/images/resource/author-2.png" alt="" />
-                      </div>
-                      <div className="rating">
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star dark" />
-                      </div>
-                      <div className="text">
-                        i liked working with these creative guys, who know
-                        everything about quality design, innovations and
-                        usability,
-                      </div>
-                      <div className="lower-box">
-                        <div className="quote-icon fa fa-quote-left" />
-                        <h6>Eizabeth Blackwell</h6>
-                        <div className="designation">Web Designer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Testimonial Block */}
-                <div className="testimonial-block col-lg-6 col-md-12 col-sm-12">
-                  <div className="inner-box">
-                    <div className="pattern-layer" />
-                    <div className="author-image-outer">
-                      <div className="author-image">
-                        <img src="/newupdate/images/resource/author-1.png" alt="" />
-                      </div>
-                      <div className="rating">
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                      </div>
-                      <div className="text">
-                        I had so much fun working with your specialists on my
-                        business project that we will come back soom!
-                      </div>
-                      <div className="lower-box">
-                        <div className="quote-icon fa fa-quote-left" />
-                        <h6>Margaret Sunsan</h6>
-                        <div className="designation">Develper</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Testimonial Block */}
-                <div className="testimonial-block col-lg-6 col-md-12 col-sm-12">
-                  <div className="inner-box">
-                    <div className="pattern-layer" />
-                    <div className="author-image-outer">
-                      <div className="author-image">
-                        <img src="/newupdate/images/resource/author-2.png" alt="" />
-                      </div>
-                      <div className="rating">
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star" />
-                        <span className="fa fa-star dark" />
-                      </div>
-                      <div className="text">
-                        i liked working with these creative guys, who know
-                        everything about quality design, innovations and
-                        usability,
-                      </div>
-                      <div className="lower-box">
-                        <div className="quote-icon fa fa-quote-left" />
-                        <h6>Eizabeth Blackwell</h6>
-                        <div className="designation">Web Designer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
             </div>
           </section>
@@ -214,9 +108,7 @@ const Testimonial = () => {
                       donec tempus pellentesque dui vel tristique purus justo{" "}
                     </div>
                     <div className="newsletter-form">
-                      <form
-                       onSubmit={handleSubmit}
-                      >
+                      <form onSubmit={handleSubmit}>
                         <div className="form-group">
                           <input
                             type="email"
@@ -240,7 +132,10 @@ const Testimonial = () => {
                 <div className="image-column col-lg-6 col-md-12 col-sm-12">
                   <div className="inner-column">
                     <div className="image titlt" data-tilt="" data-tilt-max={3}>
-                      <img src="/newupdate/images/resource/newsletter.png" alt="" />
+                      <img
+                        src="/newupdate/images/resource/newsletter.png"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -248,7 +143,6 @@ const Testimonial = () => {
             </div>
           </section>
           {/* End Newsleter Section */}
-
         </div>
         {/*End pagewrapper*/}
         {/* <SearchPopUp />
@@ -259,5 +153,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial; 
-
+export default Testimonial;

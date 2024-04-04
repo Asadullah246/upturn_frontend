@@ -1,11 +1,20 @@
 import React from "react";
-import SectionTitle from "../shared/SectionTitle";
 
 const TargetMarketPlace = () => {
   return (
-    <div style={{ marginTop: "120px" }} className="">
-      <SectionTitle text={"Target Marketplaces"}></SectionTitle>
-      <div className="container mx-auto mt-5  d-flex align-items-center justify-content-between gap-5">
+    <div className="">
+      {/* <SectionTitle text={"Target Marketplaces"}></SectionTitle> */}
+
+
+
+      <section className="team-section-two" style={{padding:"60px 0", marginBottom:"80px" }}>
+      <div className="auto-container">
+        {/* Sec Title */}
+        <div className="sec-title centered">
+          <div className="title">Our Clients</div>
+          <h2>Our Successful Clients</h2>
+        </div>
+        <div className="container mx-auto mt-5  d-flex align-items-center justify-content-between gap-5">
         <div className="shadow-lg px-4 py-3  bg-white rounded-4 ">
           <img
             className=""
@@ -47,7 +56,13 @@ const TargetMarketPlace = () => {
           />
         </div>
       </div>
+      </div>
+    </section>
+
     </div>
+
+
+
   );
 };
 
