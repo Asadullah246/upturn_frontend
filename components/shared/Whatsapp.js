@@ -14,7 +14,7 @@ const Whatsapp = () => {
         //     borderRadius:"50%"
         // }}
         >
-             <a href={`https://wa.me/+8801617222302`} target="_blank">
+             <a href={`https://wa.me/+8801617222302`} target="_blank" style={{height:"fit-content !important", width:"fit-content !important" }}>
              <WhatsAppIcon className='whatsappIcon' style={{color:"white", backgroundColor:"#32D951"}}/>
              </a>
 

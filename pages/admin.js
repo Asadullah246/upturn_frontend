@@ -33,6 +33,10 @@ import { useRouter } from "next/router";
 import { ToastSuccess } from "../components/shared/ToastAlerts";
 import AddService from "../components/admin_dashboard/AddService";
 import Services from "../components/admin_dashboard/Services";
+import TeamMembers from "../components/admin_dashboard/TeamMembers";
+import CreateTeam from "../components/admin_dashboard/CreateTeam";
+import CreateTestimonial from "../components/admin_dashboard/CreateTestimonial";
+import Testimonials from "../components/admin_dashboard/Testimonials";
 const drawerWidth = 240;
 
 function ResponsiveDrawer(props) {
@@ -90,19 +94,18 @@ function ResponsiveDrawer(props) {
 
       case "Edit User":
         return <Edit_user />;
+      case "Team":
+        return <TeamMembers />;
+      case "New Team Member":
+        return <CreateTeam />;
+      case "Testimonial":
+        return <Testimonials />;
+      case "Create Testimonial":
+        return <CreateTestimonial/>;
 
-      // You can have more cases as needed
-      case "User":
-        return <User />;
-
-      case "Upcoming Course":
-        return <UpcomingCourse />;
-
-      case "Offer Course":
-        return <OfferCourse />;
 
       default:
-        <Dashboard />;
+        <WebsiteInfo /> ;
       // Code to be executed if none of the cases match the expression
     }
   };
@@ -140,6 +143,10 @@ function ResponsiveDrawer(props) {
             { text: "Edit User", icon: "/icon/dashboardAdmin.png" },
             { text: "Services", icon: "/icon/dashboardAdmin.png" },
             { text: "Add Service", icon: "/icon/dashboardAdmin.png" },
+            { text: "Team", icon: "/icon/userAdmin.png" },
+            { text: "New Team Member", icon: "/icon/userAdmin.png" },
+            { text: "Testimonial", icon: "/icon/mentorAdmin.png" },
+            { text: "Create Testimonial", icon: "/icon/mentorAdmin.png" },
             { text: "Log Out", icon: "/icon/dashboardAdmin.png" },
 
           ].map((item, index) => (
