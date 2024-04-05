@@ -53,6 +53,7 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/newupdate/images/newIcons/Logo.svg" /> 
 
         {/* font end */}
 
@@ -116,7 +117,7 @@ function MyApp({ Component, pageProps }) {
       {/* <Nav></Nav> */}
       {/* <Navbar2/> */}
       <Loader />
-      {/* <Preloader /> */} 
+      {/* <Preloader /> */}
 
       <HandlePreloader />
       <WowHandle />
