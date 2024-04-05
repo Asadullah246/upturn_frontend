@@ -37,12 +37,12 @@ const NewHome = () => {
     <div>
       {/* main content  */}
 
-      <body className="hidden-bar-wrapper">
+      <body className="hidden-bar-wrapper"> 
         <div className="page-wrapper">
           {/* Preloader */}
-          <div className="preloader">
+          {/* {/*<div className="preloader">
             <div className="box" />
-          </div>
+          </div> */}
           {/* Main Header*/}
 
           <HeaderLinks />
@@ -479,7 +479,7 @@ const NewHome = () => {
 
             {/* new  */}
             <TargetMarketPlace/>
-          {/* new  */} 
+          {/* new  */}
 
           {/* contact form  */}
           <ContactForm />

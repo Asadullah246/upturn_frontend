@@ -85,9 +85,9 @@ const Team = () => {
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
-          <div className="preloader">
+          {/*<div className="preloader">
             <div className="box" />
-          </div>
+          </div> */}
           {/* Main Header*/}
           <PageHeader pagename="Team" />
           {/* Team Page Section */}
@@ -119,7 +119,7 @@ const Team = () => {
                       <div className="lower-content">
                         <div className="content">
                           <h4>
-                            <a href={`team/${member?._id}`}>{member?.name}</a> 
+                            <a href={`team/${member?._id}`}>{member?.name}</a>
                           </h4>
                           <div className="designation">{member?.designation}</div>
                         </div>

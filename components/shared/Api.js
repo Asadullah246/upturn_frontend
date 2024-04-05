@@ -1,5 +1,6 @@
 import axios from "axios";
-export const base = "http://localhost:5000";
+// export const base = "http://localhost:5000";
+export const base = "https://backend.upturnidea.com"; 
 
 
 // admin routes -----------------------------------------------------------------------------------
@@ -32,7 +33,7 @@ export const updateData = async (data, endpoint) => {
       "Content-Type": "application/json",
     };
 
-    const res = await axios.patch(`${base}/api/v1/${endpoint}`, data, { 
+    const res = await axios.patch(`${base}/api/v1/${endpoint}`, data, {
       headers,
     });
     if (res) return res.data;

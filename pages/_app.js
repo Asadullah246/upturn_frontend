@@ -116,7 +116,7 @@ function MyApp({ Component, pageProps }) {
       {/* <Nav></Nav> */}
       {/* <Navbar2/> */}
       <Loader />
-      <Preloader />
+      {/* <Preloader /> */} 
 
       <HandlePreloader />
       <WowHandle />
@@ -135,7 +135,7 @@ function MyApp({ Component, pageProps }) {
       <ToastContainer />
 
       {showFooter && <FooterNew />}
-      {showFooter && <Whatsapp />} 
+      {showFooter && <Whatsapp />}
     </>
   );
 }

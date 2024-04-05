@@ -6,15 +6,15 @@ import SearchPopUp from "../../components/shared/SearchPopUp";
 const BlogLeftSidebar = () => {
   return (
     <div>
-  
+
 
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
-          <div className="preloader">
+          {/*<div className="preloader">
             <div className="box" />
-          </div>
+          </div> */}
           {/* Main Header*/}
           <header className="main-header">
             {/*Header-Upper*/}
