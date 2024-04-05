@@ -10269,7 +10269,7 @@ img.homepageLogo {
 }
 
 .sticky-top{
-	z-index:1;
+	z-index:1 !important; 
 	top:90px;
 }
 

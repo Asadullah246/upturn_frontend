@@ -368,7 +368,7 @@ a {
   color: white !important;
 }
 .MuiBox-root.css-1v5u2yv {
-  z-index: 99999;
+  z-index: 1111; 
 }
 
 @media (min-width: 600px) {
