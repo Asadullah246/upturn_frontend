@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import axios from "axios";
 import { deleteData, getData } from "../shared/Api";
 import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
 import Box from "@mui/material/Box";
@@ -47,7 +46,7 @@ const Services = () => {
   }, [refresh]);
 
   const handleDelete = async (id) => {
-    const res = await deleteData(id, "services"); 
+    const res = await deleteData(id, "services");
 
     if (res?.status === "success") {
       ToastSuccess("Successfully Deleted");
