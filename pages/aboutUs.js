@@ -32,9 +32,9 @@ const AboutUs = () => {
         <div className="page-wrapper">
           {/* Preloader */}
 
-          <div className="preloader">
+          {/*<div className="preloader">
             <div className="box" />
-          </div>
+          </div> */} 
           {/* Main Header*/}
           <PageHeader pagename="About Us" />
           {/* End Main Header */}

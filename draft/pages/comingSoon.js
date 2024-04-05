@@ -6,14 +6,14 @@ import SearchPopUp from "../../components/shared/SearchPopUp";
 const ComingSoon = () => {
   return (
     <div>
-   
+
       {/* body  */}
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
-          <div className="preloader">
+          {/*<div className="preloader">
             <div className="box" />
-          </div>
+          </div> */}
           {/* Coming Soon */}
           <section
             className="coming-soon"

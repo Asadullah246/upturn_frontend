@@ -40,9 +40,9 @@ const TeamDetail = () => {
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
-          <div className="preloader">
+          {/*<div className="preloader">
             <div className="box" />
-          </div>
+          </div> */}
           {/* Main Header*/}
         <PageHeader pagename={"Team Details"}/>
           {/* Team Detail Section */}
@@ -122,7 +122,7 @@ const TeamDetail = () => {
                       <li>
                         <a href="#" className="fa fa-whatsapp" />
                       </li>
-                    </ul> */} 
+                    </ul> */}
                   </div>
                 </div>
               </div>

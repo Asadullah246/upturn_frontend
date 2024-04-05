@@ -41,6 +41,7 @@ const drawerWidth = 240;
 
 function ResponsiveDrawer(props) {
   const router = useRouter();
+  const [loginStatus, setLoginStatus]=React.useState(true)
 
   React.useEffect(() => {
     const checkAuth = async () => {
@@ -48,6 +49,9 @@ function ResponsiveDrawer(props) {
       if (!token) {
         router.push("/login");
         return;
+      }
+      else {
+        setLoginStatus(false)
       }
     };
 
@@ -166,7 +170,11 @@ function ResponsiveDrawer(props) {
   );
 
   const container =
-    window !== undefined ? () => window().document.body : undefined;
+    window !== undefined ? () => window().document.body : undefined; 
+
+    if(loginStatus){
+      return <h4 style={{marginTop:"120px", textAlign:"center"}}>Loading...</h4>
+    }
 
   return (
     <Box sx={{ display: "flex" }}>

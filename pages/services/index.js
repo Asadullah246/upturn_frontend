@@ -15,9 +15,9 @@ const Services = () => {
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
-          <div className="preloader">
+          {/*<div className="preloader">
             <div className="box" />
-          </div>
+          </div> */}
           {/* Main Header*/}
 
           <PageHeader pagename={"Services1"} />

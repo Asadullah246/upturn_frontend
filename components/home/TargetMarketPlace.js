@@ -5,7 +5,7 @@ const TargetMarketPlace = () => {
     <div className="">
       {/* <SectionTitle text={"Target Marketplaces"}></SectionTitle> */}
 
-
+ 
 
       <section className="team-section-two" style={{padding:"60px 0", marginBottom:"80px" }}>
       <div className="auto-container">

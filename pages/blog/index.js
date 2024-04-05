@@ -27,9 +27,9 @@ const Blog = () => {
       <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
-          <div className="preloader">
+          {/*<div className="preloader">
             <div className="box" />
-          </div>
+          </div> */}
           {/* Main Header*/}
           <PageHeader pagename={"Blogs"} />
           {/* Sidebar Page Container */}
@@ -332,7 +332,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-          {/* Clients Section */} 
+          {/* Clients Section */}
           {/* <section className="clients-section style-two">
             <div className="auto-container">
               <div className="sponsors-outer">
