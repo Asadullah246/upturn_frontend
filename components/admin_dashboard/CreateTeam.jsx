@@ -71,7 +71,7 @@ const CreateTeam = () => {
         <HeaderText text="Create Team Member" />
         <div style={{ backgroundColor: ["#DDDDDD"], borderRadius: "10px" }}>
           <form
-            onSubmit={handleSubmit} 
+            onSubmit={handleSubmit}
             style={{
               paddingTop: "35px",
               paddingLeft: "22px",
@@ -256,7 +256,7 @@ const CreateTeam = () => {
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="schedule"
                                             placeholder="email"
-                                            required
+                                            // required
                                           />
                                         </div>
                                       </div>
