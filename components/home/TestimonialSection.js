@@ -71,11 +71,12 @@ const TestimonialSection = () => {
         <div className="sec-title centered">
           <div className="title">Real Testimonials</div>
           <h2>
-            What They Say About Our <br /> Company?
+          LISTEN TO OUR CLIENTS
           </h2>
           <div className="text">
-            We know how important customer experience is for a busines and
-            therefore, <br /> we trive to make your company excel in this.
+          We know the importance of customers. <br/> We ensure to get the best experience
+
+           
           </div>
         </div>
         <Carousel
@@ -116,7 +117,7 @@ const TestimonialSection = () => {
                         />
                       )}
                     </div>
-                    <div className="rating"> 
+                    <div className="rating">
                     {[...Array(5)].map((rating, index) => {
                               return (
                                 <span

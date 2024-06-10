@@ -20,9 +20,9 @@ const ReadyToBuild = () => {
             {/* Title Column */}
             <div className="title-column col-lg-6 col-md-12 col-sm-12">
               <div className="inner-column">
-                <h2>Ready To Build Your Brand?</h2>
-                <div className="text">
-                YOU ARE JUST ONE STEP AWAY TO EXPERIENCE THE PROGRESS.
+                <h2>Ready to Achieve Your Goal?</h2>
+                <div className="text" style={{textTransform:"uppercase"}}> 
+                Keep your feet one step forward to experience our service.
                 </div>
                 <a href="/contactUs" className="theme-btn btn-style-eleven">
                   <span className="txt">Lets Us Build Your Business</span>

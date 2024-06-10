@@ -37,7 +37,7 @@ const NewHome = () => {
     <div>
       {/* main content  */}
 
-      <body className="hidden-bar-wrapper"> 
+      <body className="hidden-bar-wrapper">
         <div className="page-wrapper">
           {/* Preloader */}
           {/* {/*<div className="preloader">
@@ -72,16 +72,14 @@ const NewHome = () => {
                       <div className="inner-column">
                         {/* <div className="title">What’s Your SEO Score</div> */}
                         <h1>
-                          Digital Marketing with <br /> Skin in the Game
+                        Elevate Your Marketing Strategy <br /> Expand Your Reach
                         </h1>
                         <p className="text-white ">
-                          With a decade of experience in the digital industry,
-                          we proved that the combination of strategic thinking
-                          and expertise creates fascinating results.
+                        Unlock the Full Potential of Your Business with combination of strategic thinking and expertise solution.
                         </p>
-                        <p className="text-white">
-                          Let’s put the skin in the game!{" "}
-                        </p>
+                        {/* <p className="text-white">
+                          Let’s put  the skin in the game!{" "}
+                        </p> */}
                         <div className="btns-box">
                           <a
                             href="/contactUs"
@@ -203,9 +201,7 @@ const NewHome = () => {
                       <a href="content-marketing.html">Proof of Results</a>
                     </h5>
                     <div className="text">
-                      Every SEO company says that they can deliver you results,
-                      but we don’t just say but also show you the proof from our
-                      real projects.
+                    We don't just promise results; we deliver them. Explore tangible proof from our real projects.
                     </div>
                     <a
                       href="/contentMarketing"
@@ -243,9 +239,7 @@ const NewHome = () => {
                       <a href="content-marketing.html">Experience</a>
                     </h5>
                     <div className="text">
-                      Experience is such a thing that you can’t make with money.
-                      Our 3+ years of experience of excellent data-driven
-                      results make us different from all other SEO companies.
+                    Experience is a priceless resource that money cannot afford. We stand out from the competition. In the SEO space with our three years of outstanding, data-driven results delivery.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -283,8 +277,7 @@ const NewHome = () => {
                       <a href="content-marketing.html">Keep Your Groth</a>
                     </h5>
                     <div className="text">
-                      Your company will groth continusely. Our recent result
-                      prove this. We will continue support you till you want.
+                    A well-planned marketing strategy can significantly impact a company's growth trajectory. Our technique delights your audience and increases revenue. At our end, we assure you of continued support.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -322,9 +315,7 @@ const NewHome = () => {
                       <a href="content-marketing.html">Industry Experts</a>
                     </h5>
                     <div className="text">
-                      We are led by biggest industry experts in Bangladesh who
-                      give services to the biggest Bangladeshi companies like
-                      Rokomari.com, BITM, BASIS and many more.
+                    We provide services to companies like Rokomari.com, BITM, BASIS, and many more. Our expertise knows very well how to generate consumers.
                     </div>
                     <a
                       href="content-marketing.html"
@@ -364,17 +355,13 @@ const NewHome = () => {
                     {/* Sec Title */}
                     <div className="sec-title">
                       <div className="title">ABOUT US</div>
-                      <h2>Grow Your Business</h2>
+                      <h2>Unlock Your Business's Potential</h2>
                     </div>
                     <div className="bold-text">
-                      Over 3 years Upturn idea helping companies reach their
-                      financial and branding goals.
+                    Upturn Idea will assist you in reaching your financial and branding goals.
                     </div>
                     <div className="text">
-                      Upturn idea helps you achieve more sales and revenue from
-                      our Digital Marketing services. As we are in the industry
-                      for more than 3 years now (from 2021) we have grown
-                      high-level expertise in this industry.
+                    Our expertise will provide the exact service you need to drive your brand long. We proved our efficiency in the last three years. Now, here to excel your brand at the peak
                     </div>
                     <a href="/aboutUs" className="theme-btn btn-style-eleven">
                       <span className="txt">Learn More</span>

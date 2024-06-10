@@ -10,6 +10,7 @@ const Services = () => {
     const blogsData = async () => {
       const res = await getData(`services`);
       setservices(res?.data);
+      console.log("servuce", res?.data);
       return res?.data;
     };
     blogsData();
@@ -67,7 +68,7 @@ const Services = () => {
                       <span className={logos[index]} />
                     </div>
                     <h5>
-                      <a href={`/services/${service?._id}`}>{service?.title}</a>
+                      <a href={`/services/${service?._id}`}>{service?.name}</a> 
                     </h5>
                     <div className="text">{service?.shortDescription?.slice(0,152)}...</div>
                   </div>

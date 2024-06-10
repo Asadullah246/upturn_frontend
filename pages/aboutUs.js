@@ -34,7 +34,7 @@ const AboutUs = () => {
 
           {/*<div className="preloader">
             <div className="box" />
-          </div> */} 
+          </div> */}
           {/* Main Header*/}
           <PageHeader pagename="About Us" />
           {/* End Main Header */}
@@ -79,8 +79,7 @@ const AboutUs = () => {
                             <a href="content-marketing.html">Best Security</a>
                           </h5>
                           <div className="text">
-                            We have seen great successes with everyone
-                            companies.
+                          We've seen phenomenal outcomes with the companies we've worked with
                           </div>
                         </div>
                       </div>
@@ -98,8 +97,7 @@ const AboutUs = () => {
                             <a href="content-marketing.html">Risk Manage</a>
                           </h5>
                           <div className="text">
-                            Every business and industry requires an approach in
-                            our Heand.
+                          Every company or industry demands a different approach
                           </div>
                         </div>
                       </div>
@@ -117,8 +115,7 @@ const AboutUs = () => {
                             <a href="content-marketing.html">Growth Revenue</a>
                           </h5>
                           <div className="text">
-                            You make sure you know how campaign is performing
-                            Business
+                          We will accelerate the growth by expanding your revenue
                           </div>
                         </div>
                       </div>
@@ -133,11 +130,10 @@ const AboutUs = () => {
                             <span className="icon flaticon-management" />
                           </div>
                           <h5>
-                            <a href="content-marketing.html">Greate Support</a>
+                            <a href="content-marketing.html">Great Support</a>
                           </h5>
                           <div className="text">
-                            To generate highly focused leads ready to purchases
-                            our service
+                          We are devoted to offering support and making your journey seamless
                           </div>
                         </div>
                       </div>
@@ -149,29 +145,23 @@ const AboutUs = () => {
                   <div className="inner-column">
                     {/* Sec Title */}
                     <div className="sec-title">
-                      <div className="title">WHY US CHOOSE NOW</div>
+                      <div className="title">WHY UPTURN IDEA</div>
                       <h2>
-                        We Provide the Best <br /> Facilites For Business
+                      We will Provide Free Marketing Analytics for Business
                       </h2>
                     </div>
                     <div className="bold-text">
-                      We are desperate, dedicated, and keen to learn new things
-                      to prove ourselves. It grew even bigger in the last couple
-                      of years that goes beyond 60 years of cumulative
-                      experience.
+                    As a customer-first organization, we maintain the highest norms of honesty and integrity. We are committed to our fundamental principles. So, our service is the foundation for our path to long-term success.
                     </div>
                     <ul className="list-style-three">
                       <li>
-                        We provide a complete digital marketing solution for all
-                        sorts of business.
+                      360 marketing services, SEO integration will reach to your organic customer.
                       </li>
                       <li>
-                        Try our tailored SEO packages to rank better in the
-                        SERP.
+                      Social media and email marketing methods in conjunction with targeted media purchasing services like as Facebook Ads and Google Ads will assist to increase organic user.
                       </li>
                       <li>
-                        Be competent in visually and grab the attention. We
-                        design your dream on the web.
+                      Video content, marketing analysis and PPC is needed to monitor your performance
                       </li>
                     </ul>
                     {/* <a href="/contactUs" className="theme-btn btn-style-five">
@@ -292,14 +282,13 @@ const AboutUs = () => {
                     <div className="sec-title">
                       <div className="title">WHO WE ARE</div>
                       <h2>
-                        To Change Your View For <br /> SEO Our Mission
+                      Let's Succeed in Your <br /> Mission Together
+
+
                       </h2>
                     </div>
                     <div className="bold-text">
-                      upTurnIdea is a brand of digital agency. Competen novate
-                      synergstic vortas through forward strategic theme areas
-                      Compelling extend super was that Proactive myocardinate
-                      vertical strategic
+                      uUpTurn Idea is a "Digital marketing' agency. The right strategy can make a brand successful.
                     </div>
                     <ul className="mission-list">
                       <li>
@@ -309,8 +298,7 @@ const AboutUs = () => {
                             alt=""
                           />
                         </span>
-                        If Google can’t crawl your site, it’s not going to rank
-                        – but that doesn’t mean avoiding Javascript.
+                        If Google can’t crack your site, it’s not raking– that doesn’t mean avoiding Javascript.
                       </li>
                       <li>
                         <span className="icon">
@@ -319,8 +307,7 @@ const AboutUs = () => {
                             alt=""
                           />
                         </span>
-                        For businesses which sell products online &amp; and
-                        improve their product listings in the search results..
+                        For businesses selling items want to see the top of the listing.
                       </li>
                       <li>
                         <span className="icon">
@@ -329,8 +316,7 @@ const AboutUs = () => {
                             alt=""
                           />
                         </span>
-                        If you’re investing in a new website it’s important to
-                        ensure it’s built to succeed in the search results too.
+                        If you’ve launched a new website, needs to show in search results.
                       </li>
                     </ul>
                   </div>
@@ -426,13 +412,12 @@ const AboutUs = () => {
                     <div className="sec-title">
                       <div className="title">Why Choose Us</div>
                       <h2>
-                        We dedicate for Company <br /> with SEO work
+                      We dedicate for the Company <br /> with Digital Marketing
+
                       </h2>
                     </div>
                     <div className="text">
-                      From keyword research to technical auditing to site
-                      migration, our team of technical SEOs are true experts in
-                      their field.
+                    From keyword research to technical audits to site visits, our  SEOs are genuine experts in their fields.
                     </div>
                     {/* Skills */}
                     <div className="skills">
@@ -577,10 +562,7 @@ const AboutUs = () => {
                       <h2>Subscribe Our Newsletter</h2>
                     </div>
                     <div className="text">
-                      Elevate your online presence with cutting-edge digital
-                      solutions tailored to your business needs. Experience
-                      seamless integration of web development, SEO, and digital
-                      marketing strategies for optimal results.{" "}
+                    Our solution has been designed to adapt the solution to your company's requirements. Expertise will integrate site development, SEO, and digital marketing tactics to achieve the best outcomes.{" "}
                     </div>
                     <div className="newsletter-form">
                       <form
