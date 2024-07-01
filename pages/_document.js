@@ -1,11 +1,15 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta
+          name="google-site-verification"
+          content="GjGFsLQWzf-r0z8hT37YNPYeMZsP65mg8vwpeQbtBpA"
+        />
 
-      <script
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -16,7 +20,6 @@ export default function Document() {
             `,
           }}
         />
-
       </Head>
 
       <body>
@@ -27,10 +30,10 @@ export default function Document() {
             src="https://www.googletagmanager.com/ns.html?id=GTM-PZQM72CT"
             height="0"
             width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
-        </noscript> 
+        </noscript>
       </body>
     </Html>
-  )
+  );
 }
