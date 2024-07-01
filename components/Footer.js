@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="row ">
             <div className="col-lg-3 col-md-6  ">
               <div className="d-flex align-items-center  gap-2">
-                <img src="/mainLogo.png" width="44px" height="49px" /> 
+                <img src="/mainLogo.png" width="44px" height="49px" />
                 <h3 className="mb-0 color-secondary fw-bold">Upturn Idea</h3>
               </div>
               <h4 className={"mt-3"}>Contact Us: </h4>
@@ -139,7 +139,7 @@ const Footer = () => {
           </div>
 
           <div className="text-center p-3">
-            Copyright © 2024 Upturn Idea. All rights reserved.
+            Copyright © 2024 Upturn idea. All rights reserved.
             {/* <a className="text-white" href="https://m...content-available-to-author-only...p.com/">MDBootstrap.com</a> */}
           </div>
         </footer>

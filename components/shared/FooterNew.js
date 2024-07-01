@@ -72,9 +72,12 @@ const FooterNew = () => {
                         <li>
                           <a href={info?.twitter || "#"} target='_blank' className="fa fa-twitter" />
                         </li>
-                        {/* <li>
-                          <a href={info?.facebook} target='_blank' className="fa fa-google" />
-                        </li> */}
+                        <li>
+                          <a href={info?.instagram} target='_blank' className="fa fa-instagram" />
+                        </li>
+                        <li>
+                          <a href={info?.youtube} target='_blank' className="fa fa-youtube" /> 
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -163,7 +166,7 @@ const FooterNew = () => {
           {/* Footer Bottom */}
           <div className="footer-bottom">
             <div className="copyright">
-              Copyright © 2024 UpTurn Idea
+              Copyright © 2024 <a href="/" className='aTag'>Upturn idea</a>
               . All Rights Reserved.
             </div>
           </div>

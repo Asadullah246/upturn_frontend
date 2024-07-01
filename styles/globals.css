@@ -368,7 +368,11 @@ a {
   color: white !important;
 }
 .MuiBox-root.css-1v5u2yv {
-  z-index: 1111; 
+  z-index: 1111;
+}
+.aTag:hover {
+  color: #007A00; 
+
 }
 
 @media (min-width: 600px) {
