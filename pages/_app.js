@@ -27,6 +27,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
 import Whatsapp from "../components/shared/Whatsapp";
+import GTM from "../components/GTM";
 
 // const Heading = Raleway({
 //   weight: ["600", "700"],
@@ -53,7 +54,7 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/newupdate/images/newIcons/Logo.svg" /> 
+        <link rel="icon" href="/newupdate/images/newIcons/Logo.svg" />
 
         {/* font end */}
 
@@ -81,6 +82,10 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="/newupdate/css/owl.css" />
         <link rel="stylesheet" href="/newupdate/css/responsive.css" />
         <link rel="stylesheet" href="/newupdate/css/style.css" />
+
+
+
+
 
         {/* styles end  */}
 
@@ -131,6 +136,7 @@ function MyApp({ Component, pageProps }) {
       <HiddenBarMenuConfig /> */}
 
       <SSRProvider>
+        <GTM/> 
         <Component {...pageProps} />
       </SSRProvider>
       <ToastContainer />
