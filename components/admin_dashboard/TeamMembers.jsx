@@ -11,6 +11,7 @@ const TeamMembers = () => {
   useEffect(() => {
     const blogsData = async () => {
       const res = await getData("team");
+      console.log("team", res?.data);
       setBlogs(res?.data);
       return res?.data;
     };

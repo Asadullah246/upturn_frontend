@@ -44,10 +44,12 @@ const CreateTeam = () => {
         description: target?.description.value,
         facebook: target?.facebook.value,
         twitter: target?.twitter.value,
-        linkedIn: target?.lindedIn.value,
+        linkedIn: target?.linkedIn.value,
         phone: target?.phone.value,
         email: target?.email.value,
-        showInHomePage:target?.showInHomePage.value
+        showInHomePage:target?.showInHomePage.value,
+        role:target?.role.value,
+        youtube:target?.youtube.value
       };
       console.log("in", inputData );
       // Save data to database
@@ -222,10 +224,10 @@ const CreateTeam = () => {
                                           </label>
                                           <input
                                             type="text"
-                                            name="lindedIn"
+                                            name="linkedIn"
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="class_time"
-                                            placeholder="lindedIn"
+                                            placeholder="linkedIn"
                                             // required
                                           />
                                         </div>
@@ -280,6 +282,59 @@ const CreateTeam = () => {
                                           >
                                             <option value={true} selected >Yes </option>
                                             <option value={false}>No </option>
+                                          </select>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-md-12">
+                              <div className="row justify-content-center">
+                                <div>
+                                  <div>
+                                    <div className="row">
+                                    <div className="col-md-6">
+                                        <div className="mb-3">
+                                          <label
+                                            for="schedule"
+                                            className="form-label"
+                                          >
+                                            <h5 className="mt-2 mb-0">Youtube</h5>
+                                          </label>
+                                          <input
+                                            type="text"
+                                            name="youtube"
+                                            className="form-control shadow-sm p-2 mb-1 bg-body rounded"
+                                            id="schedule"
+                                            placeholder="Youtube"
+                                            // required
+                                          />
+                                        </div>
+                                      </div>
+
+                                      <div className="col-md-6">
+                                        <div className="mb-3">
+                                          <label
+                                            for="schedule"
+                                            className="form-label"
+                                          >
+                                            <h5 className="mt-2 mb-0">
+                                              Role
+                                            </h5>
+                                          </label>
+                                          <select
+                                            // type="email"
+                                            name="role"
+                                            className="form-control shadow-sm p-2 mb-1 bg-body rounded"
+                                            id="schedule"
+                                            required
+                                            defaultValue={"management"}
+                                          >
+                                            <option value={"management"} selected >Management </option>
+                                            <option value={"teamMember"}>Team Member </option>
                                           </select>
                                         </div>
                                       </div>
