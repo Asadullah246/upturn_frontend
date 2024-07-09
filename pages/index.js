@@ -29,6 +29,7 @@ import Whatsapp from "../components/shared/Whatsapp";
 import BlogSection from "../components/home/BlogSection";
 import TestimonialSection from "../components/home/TestimonialSection";
 import TargetMarketPlace from "../components/home/TargetMarketPlace";
+import Management from "../components/home/Management";
 
 const NewHome = () => {
 
@@ -384,6 +385,7 @@ const NewHome = () => {
           <ReadyToBuild />
           {/* End Call To Action Section */}
           {/* Team Section Two */}
+          <Management/>
           <TeamLeaders />
           {/* End Team Section Two */}
           {/* Testimonial Section */}

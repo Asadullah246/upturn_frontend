@@ -2,8 +2,36 @@ import React, { useEffect, useState } from "react";
 import { getData } from "../shared/Api";
 import { getSorted } from "../shared/SortingData";
 
-
-const TeamLeaders = () => {
+const team = [
+  {
+    name: "Jonaki Khanam",
+    image: "/newupdate/images/team/jonaki.png",
+    youtube: "#",
+    linkedIn: "#",
+    facebook: "#",
+    twitter: "#",
+    designation: "Founder & COO",
+  },
+  {
+    // name:"MD Rezaul Islam",
+    // image:"/newupdate/images/team/rezaul.png",
+    youtube: "#",
+    linkedIn: "#",
+    facebook: "#",
+    twitter: "#",
+    designation: "Co-Founder & CEO",
+  },
+  {
+    name: "MD Rezaul Islam",
+    image: "/newupdate/images/team/rezaul.png",
+    youtube: "#",
+    linkedIn: "#",
+    facebook: "#",
+    twitter: "#",
+    designation: "Co-Founder & Head of Creative Media",
+  },
+];
+const Management = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const blogsData = async () => {
@@ -14,18 +42,20 @@ const TeamLeaders = () => {
     };
     blogsData();
   }, []);
+
+  console.log("team", blogs );
   return (
     <section className="team-section-two">
       <div className="auto-container">
         {/* Sec Title */}
         <div className="sec-title centered">
-          <div className="title">Our Team</div>
-          <h2>Our Expert Team Members</h2>
+          <div className="title">Management</div>
+          <h2>Our Expert Leadership</h2>
         </div>
         <div className="row justify-content-center clearfix"> 
           {/* Team Block Two */}
           {blogs?.map((p, index) => {
-            if (p?.showInHomePage == true && p?.role == "teamMember") {
+            if (p?.showInHomePage == true && p?.role=="management") {
               return (
                 <div
                   key={index}
@@ -48,6 +78,10 @@ const TeamLeaders = () => {
                       <li className="twitter">
                         <a href={p?.twitter} className="fa fa-twitter" />
                         <span className="social-name">twitter</span>
+                      </li>
+                      <li className="twitter">
+                        <a href={p?.youtube} className="fa fa-youtube" />
+                        <span className="social-name">youtube</span>
                       </li>
                     </ul>
                     <div className="image">
@@ -78,4 +112,4 @@ const TeamLeaders = () => {
   );
 };
 
-export default TeamLeaders;
+export default Management;
