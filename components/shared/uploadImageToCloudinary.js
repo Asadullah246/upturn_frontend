@@ -2,7 +2,7 @@ import { ToastError } from "./ToastAlerts";
 
 const preset="ml_default"
 const cloudName="dpmxjw26u"
-const uploadurl="http://api.cloudinary.com/v1_1/dpmxjw26u/image/upload"
+const uploadurl="https://api.cloudinary.com/v1_1/dpmxjw26u/image/upload" 
 
  const uploadImageToCloudinary = (imageFile) => {
     return new Promise(async (resolve, reject) => {
