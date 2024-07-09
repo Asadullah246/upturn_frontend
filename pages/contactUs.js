@@ -7,9 +7,8 @@ import ContactForm from "../components/shared/ContactForm";
 import { getData } from "../components/shared/Api";
 
 const ContactUs = () => {
-
-  const [info, setInfo]=useState()
-  const dataId="660895de0608b63dc8814028"
+  const [info, setInfo] = useState();
+  const dataId = "660895de0608b63dc8814028";
 
   useEffect(() => {
     const blogsData = async () => {
@@ -72,9 +71,7 @@ const ContactUs = () => {
                       <div className="box-inner">
                         <div className="icon flaticon-phone-call" />
                         <a href={`tel:${info?.phone}`}>{info?.phone}</a> <br />
-                        <a href={`mailto:${info?.email}`}>
-                           {info?.email}
-                          </a>
+                        <a href={`mailto:${info?.email}`}>{info?.email}</a>
                       </div>
                     </div>
                   </div>
@@ -88,15 +85,45 @@ const ContactUs = () => {
                           vectors.
                         </i>
                       </span>
-                      <li className="facebook">
-                        <a href={info?.facebook || "#"} className="fa fa-facebook-f" />
-                      </li>
-                      <li className="twitter">
-                        <a href={info?.twitter || "#"} className="fa fa-twitter" />
-                      </li>
+                      {info?.facebook && (
+                        <li className="facebook">
+                          <a
+                            href={info?.facebook}
+                            className="fa fa-facebook-f"
+                          />
+                        </li>
+                      )}
+                      {info?.twitter && (
+                        <li className="twitter">
+                          <a href={info?.twitter} className="fa fa-twitter" />
+                        </li>
+                      )}
+                      {info?.linkedIn && (
+                        <li className="linkedin">
+                          <a href={info?.linkedIn} className="fa fa-linkedin" />
+                        </li>
+                      )}
+                      {info?.instagram && (
+                        <li className="instagram">
+                          <a
+                            href={info?.instagram}
+                            className="fa fa-instagram"
+                          />
+                        </li>
+                      )}
+                      {info?.youtube && (
+                        <li className="youtube">
+                          <a href={info?.youtube} className="fa fa-youtube" />
+                        </li>
+                      )}
+
+                      {/*
                       <li className="linkedin">
-                        <a href={info?.linkedin || "#"} className="fa fa-google-plus" />
-                      </li>
+                        <a
+                          href={info?.linkedin || "#"}
+                          className="fa fa-google-plus"
+                        />
+                      </li> */}
                       {/* <li className="pinterest">
                         <a href={info?.facebook || "#"} className="fa fa-pinterest-p" />
                       </li> */}
@@ -108,8 +135,6 @@ const ContactUs = () => {
               <div className="map-boxed">
                 {/* Map Outer */}
                 <div className="map-outer">
-
-
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.5393653104136!2d90.4013445983948!3d23.7802106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c73ba848a2fb%3A0xae12bfcecf23f8ab!2sMohakhali%20wirelessgate!5e0!3m2!1sen!2sbd!4v1710959115156!5m2!1sen!2sbd"
                     width="100%"

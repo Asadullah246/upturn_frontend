@@ -1,13 +1,25 @@
-import React, { useState } from "react";
-import { CreateNew, updateData } from "../shared/Api";
+import React, { useEffect, useState } from "react";
+import { CreateNew, getData, updateData } from "../shared/Api";
 import { ToastError, ToastSuccess } from "../shared/ToastAlerts";
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import HeaderText from "./HeaderText";
-import { uploadImageToCloudinaryWithExist } from "../shared/uploadImageToCloudinary";
+import uploadImageToCloudinary, { uploadImageToCloudinaryWithExist } from "../shared/uploadImageToCloudinary";
 
 const WebsiteInfo = () => {
   const [uploadingStatus, setUploadingStatus] = useState(false);
+  const [info, setInfo]=useState();
+  const [refresh, setRefresh]=useState(false)
+
   const dataId="660895de0608b63dc8814028"
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`websiteInfo/${dataId}`);
+      console.log("res", res?.data );
+      setInfo(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, [refresh]);
 
   const handleSubmit = async (e) => {
     setUploadingStatus(true)
@@ -18,10 +30,19 @@ const WebsiteInfo = () => {
 
     try {
       // Upload blog image
-      const blogImageLink = await uploadImageToCloudinaryWithExist(
-        logo,
-         ""
-      );
+      // const blogImageLink = await uploadImageToCloudinaryWithExist(
+      //   logo,
+      //    ""
+      // );
+      const personImageLink = await uploadImageToCloudinary(logo);
+      const checkingImgLink=()=>{
+        if(personImageLink=="" || personImageLink== " " || personImageLink==undefined || personImageLink == null) {
+          return info?.logo;
+        }
+        else {
+          return personImageLink ;
+        }
+      }
 
       const inputData = {
         websiteName: target?.websiteName.value,
@@ -31,9 +52,11 @@ const WebsiteInfo = () => {
         address: target?.address.value,
         facebook: target?.facebook.value,
         twitter: target?.twitter.value,
+        youtube: target?.youtube.value,
         instagram: target?.instagram.value,
+        linkedIn: target?.linkedIn.value,
         description: target?.description.value,
-        logo:blogImageLink 
+        logo:checkingImgLink()
       };
       console.log("data", inputData);
       // Save data to database
@@ -106,6 +129,7 @@ const WebsiteInfo = () => {
                                           <input
                                             type="text"
                                             name="websiteName"
+                                            defaultValue={info?.websiteName}
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="schedule"
                                             placeholder="Website Name"
@@ -125,6 +149,7 @@ const WebsiteInfo = () => {
                                           </label>
                                           <input
                                             type="text"
+                                            defaultValue={info?.metaText}
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="class_time"
                                             name="metaText"
@@ -154,6 +179,7 @@ const WebsiteInfo = () => {
                                           <input
                                             type="text"
                                             name="phone"
+                                            defaultValue={info?.phone}
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="schedule"
                                             placeholder="phone"
@@ -170,8 +196,9 @@ const WebsiteInfo = () => {
                                             <h5 className="mt-2 mb-0">Email</h5>
                                           </label>
                                           <input
-                                            type="text"
+                                            type="email"
                                             name="email"
+                                            defaultValue={info?.email}
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="class_time"
                                             placeholder="email"
@@ -202,6 +229,7 @@ const WebsiteInfo = () => {
                                           <input
                                             type="text"
                                             name="address"
+                                            defaultValue={info?.address}
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="schedule"
                                             placeholder="address"
@@ -222,6 +250,7 @@ const WebsiteInfo = () => {
                                           <input
                                             type="text"
                                             name="facebook"
+                                            defaultValue={info?.facebook}
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="class_time"
                                             placeholder="facebook"
@@ -252,6 +281,7 @@ const WebsiteInfo = () => {
                                           <input
                                             type="text"
                                             name="twitter"
+                                            defaultValue={info?.twitter}
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="schedule"
                                             placeholder="twitter"
@@ -272,6 +302,7 @@ const WebsiteInfo = () => {
                                           <input
                                             type="text"
                                             name="instagram"
+                                            defaultValue={info?.instagram}
                                             className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                             id="class_time"
                                             placeholder="instagram"
@@ -284,6 +315,59 @@ const WebsiteInfo = () => {
                                 </div>
                               </div>
                             </div>
+                            <div className="col-md-12">
+                              <div className="row justify-content-center">
+                                <div>
+                                  <div>
+                                    <div className="row">
+                                      <div className="col-md-6">
+                                        <div className="mb-3">
+                                          <label
+                                            for="schedule"
+                                            className="form-label"
+                                          >
+                                            <h5 className="mt-2 mb-0">
+                                              LinkedIn
+                                            </h5>
+                                          </label>
+                                          <input
+                                            type="text"
+                                            name="linkedIn"
+                                            defaultValue={info?.linkedIn}
+                                            className="form-control shadow-sm p-2 mb-1 bg-body rounded"
+                                            id="schedule"
+                                            placeholder="youtube"
+                                            // required
+                                          />
+                                        </div>
+                                      </div>
+                                      <div className="col-md-6">
+                                        <div className="mb-3">
+                                          <label
+                                            for="schedule"
+                                            className="form-label"
+                                          >
+                                            <h5 className="mt-2 mb-0">
+                                              Youtube
+                                            </h5>
+                                          </label>
+                                          <input
+                                            type="text"
+                                            name="youtube"
+                                            defaultValue={info?.youtube}
+                                            className="form-control shadow-sm p-2 mb-1 bg-body rounded"
+                                            id="schedule"
+                                            placeholder="youtube"
+                                            // required
+                                          />
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                             <div className="col-12 mb-3 ">
                               <label for="name" className="form-label">
                                 <h5 className="mt-2 mb-0">Description</h5>
@@ -291,6 +375,7 @@ const WebsiteInfo = () => {
                               <textarea
                                 type="text"
                                 name="description"
+                                defaultValue={info?.description}
                                 className="form-control shadow-sm p-2 mb-1 bg-body rounded"
                                 id="name"
                                 placeholder="description"

@@ -4,63 +4,9 @@ import TopScrolling from "../../components/shared/ScrollToTop";
 import SearchPopUp from "../../components/shared/SearchPopUp";
 import PageHeader from "../../components/shared/pageHeader";
 import { getData } from "../../components/shared/Api";
+import { getSorted } from "../../components/shared/SortingData";
 
-const team = [
-  {
-    name: "Jonaki Khanam",
-    image: "/newupdate/images/team/jonaki.png",
-    youtube: "#",
-    linkedIn: "#",
-    facebook: "#",
-    twitter: "#",
-    designation: "Founder & COO",
-  },
-  {
-    // name:"MD Rezaul Islam",
-    image:"/newupdate/images/team/avatar.png",
-    youtube: "#",
-    linkedIn: "#",
-    facebook: "#",
-    twitter: "#",
-    designation: "Co-Founder & CEO",
-  },
-  {
-    name: "MD Rezaul Islam",
-    image: "/newupdate/images/team/rezaul.png",
-    youtube: "#",
-    linkedIn: "#",
-    facebook: "#",
-    twitter: "#",
-    designation: "Co-Founder & Head of Creative Media",
-  },
-  {
-    name: "Mostafa Rayhan",
-    image: "/newupdate/images/team/rayhan.jpg",
-    youtube: "#",
-    linkedIn: "#",
-    facebook: "#",
-    twitter: "#",
-    designation: "Software Engineer",
-  },
-  {
-    name: "Muhammed Ibrahim Chowdhury",
-    image: "/newupdate/images/team/ebrahim.jpeg",
-    youtube: "#",
-    linkedIn: "#",
-    facebook: "#",
-    twitter: "#",
-    designation: "SEO Expert",
-  },
-  {
-    name: "MD Ariful Islam",
-    image: "/newupdate/images/team/ariful.jpg",
-    youtube: "#",
-    linkedIn: "#",
-    facebook: "#",
-    twitter: "#",
-    designation: "Graphics & UI/UX Designer",
-  },
-];
+
 
 const Team = () => {
 
@@ -69,8 +15,9 @@ const Team = () => {
   useEffect(() => {
     const blogsData = async () => {
       const res = await getData(`team`);
-      setteammembers(res?.data);
-      return res?.data;
+      const sortedData = getSorted(res?.data)
+      setteammembers(sortedData);
+      return sortedData;
     };
     blogsData();
   }, []);
@@ -102,7 +49,27 @@ const Team = () => {
                         <img src={member?.image} style={{height:"500px" }} alt="" />
                         {/* Social Box */}
                         <ul className="social-box">
-                          <li>
+
+                        {member?.facebook &&
+                      <li className="">
+                      <a href={member?.facebook} className="fa fa-facebook-f" />
+                    </li>
+                    }
+                     {member?.linkedIn &&
+                      <li className="">
+                      <a href={member?.linkedIn} className="fa fa-linkedin" />
+                    </li>}
+                    {member?.instagram &&
+                      <li className="">
+                      <a href={member?.instagram} className="fa fa-instagram" />
+                    </li>}
+                     {member?.youtube &&
+                      <li className="">
+                      <a href={member?.youtube} className="fa fa-youtube" />
+                    </li>}
+
+
+                          {/* <li>
                             <a href={member?.facebook} target="_blank" className="fa fa-facebook-f" />
                           </li>
                           <li>
@@ -110,7 +77,7 @@ const Team = () => {
                           </li>
                           <li>
                             <a href={member?.twitter} target="_blank" className="fa fa-twitter" />
-                          </li>
+                          </li> */}
                           {/* <li>
                             <a href={member?.google} className="fa fa-google" />
                           </li> */}
@@ -145,8 +112,8 @@ const Team = () => {
                       <h2>Subscribe Our Newsletter</h2>
                     </div>
                     <div className="text">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit
-                      donec tempus pellentesque dui vel tristique purus justo{" "}
+                    Our services are uniquely around what we know works…and what we know
+                    doesn’t work. With over 200 verified factors in play.
                     </div>
                     <div className="newsletter-form">
                       <form onSubmit={handlenewsLetter}>

@@ -10,6 +10,7 @@ const FooterNew = () => {
     const blogsData = async () => {
       const res = await getData(`websiteInfo/${dataId}`);
       setInfo(res?.data);
+      console.log("res", res?.data);
       return res?.data;
     };
     blogsData();
@@ -63,21 +64,28 @@ const FooterNew = () => {
                       </div>
                       {/* Social Box */}
                       <ul className="social-box">
-                        <li>
-                          <a href={info?.facebook || "#"} target='_blank' className="fa fa-facebook-f" />
-                        </li>
-                        <li>
-                          <a href={info?.linkedIn || "#"} target='_blank' className="fa fa-linkedin" />
-                        </li>
-                        <li>
-                          <a href={info?.twitter || "#"} target='_blank' className="fa fa-twitter" />
-                        </li>
-                        <li>
-                          <a href={info?.instagram} target='_blank' className="fa fa-instagram" />
-                        </li>
-                        <li>
-                          <a href={info?.youtube} target='_blank' className="fa fa-youtube" /> 
-                        </li>
+                        {info?.facebook &&
+                         <li>
+                         <a href={info?.facebook} target='_blank' className="fa fa-facebook-f" />
+                       </li>
+                        }
+                        {info?.linkedIn &&
+                         <li>
+                         <a href={info?.linkedIn} target='_blank' className="fa fa-linkedin" />
+                       </li>
+                        }
+                        {info?.instagram &&
+                         <li>
+                         <a href={info?.instagram} target='_blank' className="fa fa-instagram" />
+                       </li>
+                        }
+                        {info?.youtube &&
+                         <li>
+                         <a href={info?.youtube} target='_blank' className="fa fa-youtube" />
+                       </li>
+                        }
+
+                       
                       </ul>
                     </div>
                   </div>

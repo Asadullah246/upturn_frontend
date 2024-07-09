@@ -16,6 +16,21 @@ const TargetMarketPlace = () => {
     "/newupdate/images/clients/Tycoon Logo png.png",
     "/newupdate/images/clients/Vromon (1).jpg"
   ]
+  const clients2=[
+    "/images/band/ (1).png",
+    "/images/band/ (2).png",
+    "/images/band/ (3).png",
+    "/images/band/ (4).png",
+    "/images/band/ (5).png",
+    "/images/band/ (6).png",
+    "/images/band/ (7).png",
+    "/images/band/ (8).png",
+    "/images/band/ (9).png",
+    "/images/band/ (10).png",
+    "/images/band/ (11).png",
+    "/images/band/ (12).png",
+
+  ]
   return (
     <div className="">
       {/* <SectionTitle text={"Target Marketplaces"}></SectionTitle> */}
@@ -31,7 +46,7 @@ const TargetMarketPlace = () => {
         </div>
         <div className="container mx-auto mt-5  ">
           <div className="row row-cols-3 row-cols-md-4   row-cols-lg-6  row-gap-2 row-gap-md-3 row-gap-lg-4 ">
-          {clients.map((client,index)=>{
+          {clients2.map((client,index)=>{ 
             return(
               <div key={index} className=" px-4 py-3   rounded-4 ">
               <img
@@ -45,48 +60,6 @@ const TargetMarketPlace = () => {
           })}
           </div>
 
-           {/* <div className="shadow-lg px-4 py-3  bg-white rounded-4 ">
-              <img
-                className=""
-                style={{ width: "100% ", height: "70px" }}
-                src="/home/new/upwork.png"
-
-                alt=""
-              />
-            </div> */}
-
-        {/* <div className="shadow-lg px-4 py-3  bg-white rounded-4 ">
-          <img
-            className=""
-            style={{ width: "100% ", height: "70px" }}
-            src="/home/new/fiverr.png"
-            alt=""
-          />
-        </div> */}
-        {/* <div className="shadow-lg px-4 py-3  bg-white rounded-4 ">
-          <img
-            className=""
-            style={{ width: "100% ", height: "70px" }}
-            src="/home/new/peopleperhour.png"
-            alt=""
-          />
-        </div>
-        <div className="shadow-lg px-4 py-3  bg-white rounded-4 ">
-          <img
-            className=""
-            style={{ width: "100% ", height: "70px" }}
-            src="/home/new/freelancer.png"
-            alt=""
-          />
-        </div>
-        <div className="shadow-lg px-4 py-3  bg-white rounded-4 ">
-          <img
-            className=""
-            style={{ width: "100% ", height: "70px" }}
-            src="/home/new/indeed.png"
-            alt=""
-          />
-        </div> */}
       </div>
       </div>
     </section>

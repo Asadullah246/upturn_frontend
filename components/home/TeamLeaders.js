@@ -22,7 +22,7 @@ const TeamLeaders = () => {
           <div className="title">Our Team</div>
           <h2>Our Expert Team Members</h2>
         </div>
-        <div className="row justify-content-center clearfix"> 
+        <div className="row justify-content-center clearfix">
           {/* Team Block Two */}
           {blogs?.map((p, index) => {
             if (p?.showInHomePage == true && p?.role == "teamMember") {
@@ -37,20 +37,9 @@ const TeamLeaders = () => {
                       <a href={p?.youtube} className="fa fa-youtube" />
                       <span className="social-name">youtube</span>
                     </li> */}
-                      <li className="linkedin">
-                        <a href={p?.linkedIn} className="fa fa-linkedin" />
-                        <span className="social-name">linkedin</span>
-                      </li>
-                      <li className="facebook">
-                        <a href={p?.facebook} className="fa fa-facebook-f" />
-                        <span className="social-name">facebook</span>
-                      </li>
-                      <li className="twitter">
-                        <a href={p?.twitter} className="fa fa-twitter" />
-                        <span className="social-name">twitter</span>
-                      </li>
+
                     </ul>
-                    <div className="image">
+                    <div className="image">  
                       {/* <a href="/teamDetail">
                     <img style={{maxHeight:"400px", minHeight:"400px"}} src={p?.image} alt="" />
                     </a> */}

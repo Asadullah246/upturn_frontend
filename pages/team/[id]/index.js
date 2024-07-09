@@ -32,6 +32,10 @@ const TeamDetail = () => {
     e.preventDefault();
   };
 
+  const handlenewsLetter=(e)=>{
+    e.preventDefault()
+  }
+
   return (
     <div>
 
@@ -141,13 +145,12 @@ const TeamDetail = () => {
                       <h2>Subscribe Our Newsletter</h2>
                     </div>
                     <div className="text">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit
-                      donec tempus pellentesque dui vel tristique purus justo{" "}
+                    Our services are uniquely around what we know works…and what we know
+                    doesn’t work. With over 200 verified factors in play.
                     </div>
                     <div className="newsletter-form">
                       <form
-                        method="post"
-                        action="https://///contact.html"
+                        onSubmit={handlenewsLetter}
                       >
                         <div className="form-group">
                           <input
