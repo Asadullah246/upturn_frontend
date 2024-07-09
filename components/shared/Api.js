@@ -1,6 +1,6 @@
 import axios from "axios";
-export const base = "http://localhost:5000";
-// export const base = "https://backend.upturnidea.com"; 
+// export const base = "http://localhost:5000";
+export const base = "https://backend.upturnidea.com";
 
 
 // admin routes -----------------------------------------------------------------------------------
