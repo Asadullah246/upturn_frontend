@@ -27,7 +27,7 @@ const uploadurl="http://api.cloudinary.com/v1_1/dpmxjw26u/image/upload"
         resolve(imageData.url); // Resolve with the uploaded image URL
       } catch (error) {
         console.error("Error uploading image:", error);
-        ToastError("Error uploading image to Cloudinary")
+        ToastError(`Error uploading image `)
         reject(new Error("Error uploading image to Cloudinary"));
       }
     });
@@ -43,7 +43,7 @@ const uploadurl="http://api.cloudinary.com/v1_1/dpmxjw26u/image/upload"
         }
 
         const data = new FormData();
-        data.append("file", imageFile); 
+        data.append("file", imageFile);
         data.append("upload_preset", preset);
         data.append("cloud_name", cloudName);
 
