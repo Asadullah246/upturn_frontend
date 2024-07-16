@@ -45,6 +45,7 @@ const CreateTeam = () => {
         facebook: target?.facebook.value,
         twitter: target?.twitter.value,
         linkedIn: target?.linkedIn.value,
+        instagram: target?.instagram.value,
         phone: target?.phone.value,
         email: target?.email.value,
         showInHomePage:target?.showInHomePage.value,
@@ -339,6 +340,34 @@ const CreateTeam = () => {
                                         </div>
                                       </div>
 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div className="col-md-12">
+                              <div className="row justify-content-center">
+                                <div>
+                                  <div>
+                                    <div className="row">
+                                    <div className="col-md-6">
+                                        <div className="mb-3">
+                                          <label
+                                            for="schedule"
+                                            className="form-label"
+                                          >
+                                            <h5 className="mt-2 mb-0">Instagram</h5>
+                                          </label>
+                                          <input
+                                            type="text"
+                                            name="instagram"
+                                            className="form-control shadow-sm p-2 mb-1 bg-body rounded"
+                                            id="schedule"
+                                            placeholder="instagram"
+                                            // required
+                                          />
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>

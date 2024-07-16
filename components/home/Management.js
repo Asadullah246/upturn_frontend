@@ -45,7 +45,7 @@ const Management = () => {
 
   console.log("team", blogs );
   return (
-    <section className="team-section-two">
+    <section className="team-section-two pt-5 ">
       <div className="auto-container">
         {/* Sec Title */}
         <div className="sec-title centered">
@@ -103,7 +103,8 @@ const Management = () => {
                     <div className="lower-content">
                       <h3>
                         {/* <a href="/teamDetail">{p?.name}</a> */}
-                        {p?.name}
+                        {/* {p?.name} */}
+                        <a href={`team/${p?._id}`}>{p?.name}</a>
                       </h3>
                       <div className="designation">{p?.designation}</div>
                     </div>

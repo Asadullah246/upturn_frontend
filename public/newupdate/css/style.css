@@ -8918,7 +8918,7 @@ img.homepageLogo {
 
 .skills .skill-item{
 	position:relative;
-	margin-bottom:30px;
+	margin-bottom:15px;
 }
 
 .skills .skill-item:last-child{
@@ -8959,7 +8959,7 @@ img.homepageLogo {
 
 .skills .skill-item .skill-header{
 	position:relative;
-	margin-bottom:12px;
+	margin-bottom:6px;
 }
 
 .skills .skill-item .skill-header .skill-title{
@@ -10269,7 +10269,7 @@ img.homepageLogo {
 }
 
 .sticky-top{
-	z-index:1 !important; 
+	z-index:1 !important;
 	top:90px;
 }
 

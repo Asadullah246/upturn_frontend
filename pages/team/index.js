@@ -5,6 +5,10 @@ import SearchPopUp from "../../components/shared/SearchPopUp";
 import PageHeader from "../../components/shared/pageHeader";
 import { getData } from "../../components/shared/Api";
 import { getSorted } from "../../components/shared/SortingData";
+import Management from "../../components/home/Management";
+import TeamLeaders from "../../components/home/TeamLeaders";
+import Management2 from "../../components/home/Management2";
+import TeamLeaders2 from "../../components/home/TeamLeaders2.js"; 
 
 
 
@@ -41,60 +45,10 @@ const Team = () => {
           <section className="team-page-section">
             <div className="auto-container">
               <div className="row clearfix">
-                {teammembers?.map((member,index)=>{
-                  return(
-                    <div className="team-block style-two col-lg-4 col-md-6 col-sm-12">
-                    <div className="inner-box">
-                      <div className="image">
-                        <img src={member?.image} style={{height:"500px" }} alt="" />
-                        {/* Social Box */}
-                        <ul className="social-box">
 
-                        {member?.facebook &&
-                      <li className="">
-                      <a href={member?.facebook} className="fa fa-facebook-f" />
-                    </li>
-                    }
-                     {member?.linkedIn &&
-                      <li className="">
-                      <a href={member?.linkedIn} className="fa fa-linkedin" />
-                    </li>}
-                    {member?.instagram &&
-                      <li className="">
-                      <a href={member?.instagram} className="fa fa-instagram" />
-                    </li>}
-                     {member?.youtube &&
-                      <li className="">
-                      <a href={member?.youtube} className="fa fa-youtube" />
-                    </li>}
+              <Management2/>
+              <TeamLeaders2 />
 
-
-                          {/* <li>
-                            <a href={member?.facebook} target="_blank" className="fa fa-facebook-f" />
-                          </li>
-                          <li>
-                            <a href={member?.linkedIn} target="_blank" className="fa fa-linkedin" />
-                          </li>
-                          <li>
-                            <a href={member?.twitter} target="_blank" className="fa fa-twitter" />
-                          </li> */}
-                          {/* <li>
-                            <a href={member?.google} className="fa fa-google" />
-                          </li> */}
-                        </ul>
-                      </div>
-                      <div className="lower-content">
-                        <div className="content">
-                          <h4>
-                            <a href={`team/${member?._id}`}>{member?.name}</a>
-                          </h4>
-                          <div className="designation">{member?.designation}</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  )
-                })}
 
               </div>
             </div>

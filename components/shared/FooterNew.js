@@ -5,6 +5,16 @@ const FooterNew = () => {
 
   const [info, setInfo]=useState()
   const dataId="660895de0608b63dc8814028"
+  const [services, setservices] = useState([]);
+
+  useEffect(() => {
+    const blogsData = async () => {
+      const res = await getData(`services`);
+      setservices(res?.data);
+      return res?.data;
+    };
+    blogsData();
+  }, []);
 
   useEffect(() => {
     const blogsData = async () => {
@@ -85,7 +95,7 @@ const FooterNew = () => {
                        </li>
                         }
 
-                       
+
                       </ul>
                     </div>
                   </div>
@@ -94,21 +104,14 @@ const FooterNew = () => {
                     <div className="footer-widget links-widget">
                       <h4>Services</h4>
                       <ul className="list-link">
-                        <li>
-                          <a href="#">SEO for Small Business</a>
+                      {services?.map(s=>{
+                        return(
+                          <li>
+                          <a href={`/services/${s?._id}`}>{s?.name}</a>
                         </li>
-                        <li>
-                          <a href="#">SEO for Local Services</a>
-                        </li>
-                        <li>
-                          <a href="#">Enterprise SEO</a>
-                        </li>
-                        <li>
-                          <a href="#">National SEO</a>
-                        </li>
-                        <li>
-                          <a href="#">International SEO</a>
-                        </li>
+                        )
+                      })}
+                        
                       </ul>
                     </div>
                   </div>

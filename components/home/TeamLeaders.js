@@ -39,7 +39,7 @@ const TeamLeaders = () => {
                     </li> */}
 
                     </ul>
-                    <div className="image">  
+                    <div className="image">
                       {/* <a href="/teamDetail">
                     <img style={{maxHeight:"400px", minHeight:"400px"}} src={p?.image} alt="" />
                     </a> */}
@@ -52,7 +52,8 @@ const TeamLeaders = () => {
                     <div className="lower-content">
                       <h3>
                         {/* <a href="/teamDetail">{p?.name}</a> */}
-                        {p?.name}
+                        {/* {p?.name} */}
+                        <a href={`team/${p?._id}`}>{p?.name}</a>
                       </h3>
                       <div className="designation">{p?.designation}</div>
                     </div>
@@ -61,6 +62,7 @@ const TeamLeaders = () => {
               );
             }
           })}
+          
         </div>
       </div>
     </section>

@@ -9,6 +9,7 @@ import SearchPopUp from "../components/shared/SearchPopUp";
 import TopScrolling from "../components/shared/ScrollToTop";
 import ReadyToBuild from "../components/home/ReadyToBuild";
 import { ToastSuccess } from "../components/shared/ToastAlerts";
+import { Line } from 'rc-progress';
 
 const AboutUs = () => {
   const [startCountUp, setStartCountUp] = useState(false);
@@ -197,7 +198,7 @@ const AboutUs = () => {
                             >
 
                             </span> */}
-                            <CountUp start={0} end={12} duration={4.75} />+
+                            <CountUp start={0} end={3} duration={4.75} />+
                           </div>
                           <h4 className="counter-title">Years Of Experience</h4>
                         </div>
@@ -220,7 +221,7 @@ const AboutUs = () => {
                             >
                               0
                             </span> */}
-                            <CountUp start={0} end={1000} duration={4.75} />+
+                            <CountUp start={0} end={300} duration={4.75} />+
                           </div>
                           <h4 className="counter-title">Happy Clients</h4>
                         </div>
@@ -243,7 +244,7 @@ const AboutUs = () => {
                             >
                               0
                             </span> */}
-                            <CountUp start={0} end={27} duration={4.75} />+
+                            <CountUp start={0} end={15} duration={4.75} />+
                           </div>
                           <h4 className="counter-title">Brains To Support</h4>
                         </div>
@@ -288,7 +289,7 @@ const AboutUs = () => {
                       </h2>
                     </div>
                     <div className="bold-text">
-                      uUpTurn Idea is a "Digital marketing' agency. The right strategy can make a brand successful.
+                      Upturn idea is a "Digital marketing' agency. The right strategy can make a brand successful.
                     </div>
                     <ul className="mission-list">
                       <li>
@@ -352,7 +353,7 @@ const AboutUs = () => {
                     <div className="icon-box">
                       <div className="number">01</div>
                     </div>
-                    <h6>Advertising and Marketing</h6>
+                    <h6>Digital Marketing <br /> Consultancy</h6>
                   </div>
                 </div>
                 {/* Step Block */}
@@ -366,7 +367,7 @@ const AboutUs = () => {
                       <div className="number">02</div>
                     </div>
                     <h6>
-                      Web <br /> Development
+                      Media Buying <br /> SMM Advertising
                     </h6>
                   </div>
                 </div>
@@ -381,7 +382,7 @@ const AboutUs = () => {
                       <div className="number">03</div>
                     </div>
                     <h6>
-                      Mobile App <br /> Development
+                      Web Analytics
                     </h6>
                   </div>
                 </div>
@@ -424,7 +425,7 @@ const AboutUs = () => {
                       {/* Skill Item */}
                       <div className="skill-item">
                         <div className="skill-header clearfix">
-                          <div className="skill-title">Keyword Research</div>
+                          <div className="skill-title">Digital Marketing 360 Degree Service</div>
                           <div className="skill-percentage">
                             <div className="count-box">
                               {/* <span
@@ -432,7 +433,7 @@ const AboutUs = () => {
                                 data-speed={2000}
                                 data-stop={70}
                               >
-                                0
+                                50
                               </span> */}
                               <CountUp
                                 start={0}
@@ -444,19 +445,22 @@ const AboutUs = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="skill-bar">
+                        <Line percent={70} strokeWidth={1} strokeColor="#0078D4" />
+                        {/* <div className="skill-bar">
+
                           <div className="bar-inner">
                             <div
                               className="bar progress-line"
                               data-width={70}
                             />
+
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                       {/* Skill Item */}
                       <div className="skill-item">
                         <div className="skill-header clearfix">
-                          <div className="skill-title">Technical SEO Audit</div>
+                          <div className="skill-title">SEM Web Analytics</div>
                           <div className="skill-percentage">
                             <div className="count-box">
                               {/* <span
@@ -476,20 +480,21 @@ const AboutUs = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="skill-bar">
+                        <Line percent={80} strokeWidth={1} strokeColor="#0078D4" />
+                        {/* <div className="skill-bar">
                           <div className="bar-inner">
                             <div
                               className="bar progress-line"
                               data-width={80}
                             />
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                       {/* Skill Item */}
                       <div className="skill-item">
-                        <div className="skill-header clearfix">
+                        <div className="skill-header clearfix">  
                           <div className="skill-title">
-                            Content Optimization
+                            Media Buying. SMM Advertising
                           </div>
                           <div className="skill-percentage">
                             <div className="count-box">
@@ -510,14 +515,15 @@ const AboutUs = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="skill-bar">
+                        <Line percent={60} strokeWidth={1} strokeColor="#0078D4" />
+                        {/* <div className="skill-bar">
                           <div className="bar-inner">
                             <div
                               className="bar progress-line"
                               data-width={60}
                             />
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

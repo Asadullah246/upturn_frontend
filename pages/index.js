@@ -386,7 +386,7 @@ const NewHome = () => {
           {/* End Call To Action Section */}
           {/* Team Section Two */}
           <Management/>
-          <TeamLeaders />
+          {/* <TeamLeaders /> */}
           {/* End Team Section Two */}
           {/* Testimonial Section */}
           <TestimonialSection/>

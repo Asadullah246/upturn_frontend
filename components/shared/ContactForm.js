@@ -21,8 +21,8 @@ const body ={
 }
 console.log("for current", form.current );
 emailjs
-.sendForm('service_sgi3hat', 'template_dht28wl', form.current, {
-  publicKey: 'RfpSlyoQDXNOWTQGE',
+.sendForm('service_f1e1fxp', 'template_i98uw2x', form.current, {
+  publicKey: 'c5Afq-Knqv9G3qAme',
 })
 .then(
   () => {
@@ -30,7 +30,7 @@ emailjs
     ToastSuccess("Thank you for contacting with us")
   },
   (error) => {
-    console.log('FAILED...', error.text); 
+    console.log('FAILED...', error?.text);
     ToastError("Sorry, message not sent")
   },
 );
@@ -40,14 +40,14 @@ emailjs
       <div className="auto-container">
         {/* Sec Title */}
         <div className="sec-title centered">
-          <div className="title">Don’t Hasitate To Contact With us</div>
+          <div className="title">Don’t hesitate To Contact With us</div>
           <h2>Now Very Easy</h2>
           <div className="text">
             Our services are uniquely around what we know works…and what we know{" "}
             <br /> doesn’t work. With over 200 verified factors in play.
           </div>
         </div>
-        <div className="inner-container">
+        <div className="inner-container">   
           {/* Contact Form */}
           <div className="contact-form">
             {/*Contact Form*/}

@@ -55,7 +55,7 @@ const Countup = () => {
                         </span> */}
                       <CountUp
                         start={0}
-                        end={500}
+                        end={300}
                         duration={2.75}
                         // delay={3}
                       ></CountUp>
@@ -83,7 +83,7 @@ const Countup = () => {
                         </span> */}
                       <CountUp
                         start={0}
-                        end={20}
+                        end={15} 
                         duration={2.75}
                         // delay={3}
                       ></CountUp>

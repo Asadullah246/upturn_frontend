@@ -34,6 +34,9 @@ const BlogSection = () => {
                   people at the <br /> right time to increase organic
                   traffic and boost engagement.
                 </div>
+                <div className="text" style={{color:"#1566CD", fontWeight:600}}>   
+                Added Our Latest DBC News
+                </div>
               </div>
               <div className="pull-right">
                 <a href="/blog" className="theme-btn btn-style-eleven">
@@ -42,7 +45,7 @@ const BlogSection = () => {
               </div>
             </div>
           </div>
-          <div className="row clearfix"> 
+          <div className="row clearfix">
             {blogs?.slice(0,3)?.map(b=>{
                 return(
                     <div className="news-block style-two col-lg-4 col-md-6 col-sm-12">
