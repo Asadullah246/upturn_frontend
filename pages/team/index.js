@@ -8,13 +8,13 @@ import { getSorted } from "../../components/shared/SortingData";
 import Management from "../../components/home/Management";
 import TeamLeaders from "../../components/home/TeamLeaders";
 import Management2 from "../../components/home/Management2";
-import TeamLeaders2 from "../../components/home/TeamLeaders2.js"; 
+import TeamLeaders2 from "../../components/home/TeamLeaders2.js";
 
 
 
 const Team = () => {
 
-  const [teammembers, setteammembers] = useState([]);
+  const [teammembers, setteammembers] = useState([]); 
 
   useEffect(() => {
     const blogsData = async () => {
