@@ -1,0 +1,126 @@
+[
+    {
+      "_id":1,
+      "image":"/newupdate/images/gallery/2.jpg",
+      "title":"Complete python course zero to hero with 2024 latest update",
+      "author":"MD. Rayhan, Upturnidea",
+      "rating":4.5,
+      "total_rating":300,
+      "actual_price":199.99,
+      "current_price":59.99,
+      "students":400,
+      "short_description":"Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
+      "language":"Bengali",
+      "learn":["Build 16 web development projects for your portfolio, ready to apply for junior developer jobs.","After the course you will be able to build ANY website you want.","Work as a freelance web developer.","Build fully-fledged websites and web apps for your startup or business.","Learn professional developer best practices."],
+      "requirements":["No programming experience needed - I'll teach you everything you need to know","A computer with access to the internet","No paid software required","I'll walk you through, step-by-step how to get all the software installed and set up"],
+      "full_description":"Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average, my Web Development course is one of the HIGHEST RATED courses in the history of Udemy! At 62+ hours, this Web Development course is without a doubt the most comprehensive web development course available online. Even if you have zero programming experience, this course will take you from beginner to mastery. We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a web developer. The course includes over 62 hours of HD video tutorials and builds your programming knowledge while making real-world websites and web apps.",
+      "includes":["61 hours on-demand video","7 coding exercises","65 articles","194 downloadable resources","Certificate of completion"],
+      "content":[
+        {
+          "title":"Intro to the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        },
+        {
+          "title":"Jump on the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        },
+        {
+          "title":"Additional video of the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        }
+      ]
+    },
+    {
+      "_id":2,
+      "image":"/newupdate/images/gallery/1.jpg",
+      "title":"Complete Javasript course zero to hero with 2024 latest update",
+      "author":"MD. Ariful Islam, Upturnidea",
+      "rating":5,
+      "total_rating":500,
+      "actual_price":179.99,
+      "current_price":69.99,
+      "students":600,
+      "short_description":"Master Js by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
+      "language":"Bengali",
+      "learn":["Build 16 web development projects for your portfolio, ready to apply for junior developer jobs.","After the course you will be able to build ANY website you want.","Work as a freelance web developer.","Build fully-fledged websites and web apps for your startup or business.","Learn professional developer best practices."],
+      "requirements":["No programming experience needed - I'll teach you everything you need to know","A computer with access to the internet","No paid software required","I'll walk you through, step-by-step how to get all the software installed and set up"],
+      "full_description":"Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average, my Web Development course is one of the HIGHEST RATED courses in the history of Udemy! At 62+ hours, this Web Development course is without a doubt the most comprehensive web development course available online. Even if you have zero programming experience, this course will take you from beginner to mastery. We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a web developer. The course includes over 62 hours of HD video tutorials and builds your programming knowledge while making real-world websites and web apps.",
+      "includes":["61 hours on-demand video","7 coding exercises","65 articles","194 downloadable resources","Certificate of completion"],
+      "content":[
+        {
+          "title":"Intro to the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        },
+        {
+          "title":"Jump on the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        },
+        {
+          "title":"Additional video of the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        }
+      ]
+    },
+    {
+      "_id":3,
+      "image":"/newupdate/images/gallery/3.jpg",
+      "title":"Complete PHP course with 2024 latest update basic to advance",
+      "author":"MD. Rayhan, Upturnidea",
+      "rating":55,
+      "total_rating":200,
+      "actual_price":189.99,
+      "current_price":79.99,
+      "students":300,
+      "short_description":"Master PHP by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
+      "language":"Bengali",
+      "learn":["Build 16 web development projects for your portfolio, ready to apply for junior developer jobs.","After the course you will be able to build ANY website you want.","Work as a freelance web developer.","Build fully-fledged websites and web apps for your startup or business.","Learn professional developer best practices."],
+      "requirements":["No programming experience needed - I'll teach you everything you need to know","A computer with access to the internet","No paid software required","I'll walk you through, step-by-step how to get all the software installed and set up"],
+      "full_description":"Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average, my Web Development course is one of the HIGHEST RATED courses in the history of Udemy! At 62+ hours, this Web Development course is without a doubt the most comprehensive web development course available online. Even if you have zero programming experience, this course will take you from beginner to mastery. We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a web developer. The course includes over 62 hours of HD video tutorials and builds your programming knowledge while making real-world websites and web apps.",
+      "includes":["61 hours on-demand video","7 coding exercises","65 articles","194 downloadable resources","Certificate of completion"],
+      "content":[
+        {
+          "title":"Intro to the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        },
+        {
+          "title":"Jump on the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        },
+        {
+          "title":"Additional video of the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        }
+      ]
+    },
+    {
+      "_id":4,
+      "image":"/newupdate/images/gallery/4.jpg",
+      "title":"MERN Stack course zero to hero with 2024 latest update",
+      "author":"MD. Rayhan, Upturnidea",
+      "rating":4.5,
+      "total_rating":300,
+      "actual_price":299.99,
+      "current_price":69.99,
+      "students":400,
+      "short_description":"Master course by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
+      "language":"Bengali",
+      "learn":["Build 16 web development projects for your portfolio, ready to apply for junior developer jobs.","After the course you will be able to build ANY website you want.","Work as a freelance web developer.","Build fully-fledged websites and web apps for your startup or business.","Learn professional developer best practices."],
+      "requirements":["No programming experience needed - I'll teach you everything you need to know","A computer with access to the internet","No paid software required","I'll walk you through, step-by-step how to get all the software installed and set up"],
+      "full_description":"Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer. With 150,000+ ratings and a 4.8 average, my Web Development course is one of the HIGHEST RATED courses in the history of Udemy! At 62+ hours, this Web Development course is without a doubt the most comprehensive web development course available online. Even if you have zero programming experience, this course will take you from beginner to mastery. We'll take you step-by-step through engaging video tutorials and teach you everything you need to know to succeed as a web developer. The course includes over 62 hours of HD video tutorials and builds your programming knowledge while making real-world websites and web apps.",
+      "includes":["61 hours on-demand video","7 coding exercises","65 articles","194 downloadable resources","Certificate of completion"],
+      "content":[
+        {
+          "title":"Intro to the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        },
+        {
+          "title":"Jump on the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        },
+        {
+          "title":"Additional video of the course",
+          "videos":["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor.", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio hic nemo quo nesciunt Lorem ipsum dolor." ]
+        }
+      ]
+    }
+  ]

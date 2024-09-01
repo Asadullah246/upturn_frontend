@@ -163,6 +163,7 @@ const HeaderLinks = () => {
                       </li>
                     </ul>
                   </li>
+
                   <li className={` dropdown ${parentRoute=="services"?"current":""}`}  >
                     <a href="/services">Services</a>
                     <ul>
@@ -175,6 +176,9 @@ const HeaderLinks = () => {
                       })}
 
                     </ul>
+                  </li>
+                  <li className={parentRoute=="courses"?"current":""} >
+                    <a href="/courses">Courses</a>
                   </li>
 
                   <li className="dropdown has-mega-menu">
@@ -420,10 +424,14 @@ const HeaderLinks = () => {
                       })}
                     </ul>
                   </li>
-                  <li  className={parentRoute=="projects"?"current":""}>
-                    <a href="/projects">Projects</a>
+                  <li  className={parentRoute=="courses"?"current":""}>
+                    <a href="/courses">Courses</a>
 
                   </li>
+                  {/* <li  className={parentRoute=="projects"?"current":""}>
+                    <a href="/projects">Projects</a>
+
+                  </li> */}
                   <li className="dropdown has-mega-menu">
                     <a href="#">Pages</a>
                     <div className="mega-menu">
@@ -648,7 +656,7 @@ const HeaderLinks = () => {
                     </li>
                     <li  className={` dropdown ${parentRoute=="services"?"current":""}`} >
                       <a href="/services">Services</a>
-                      
+
                       <ul>
                       {services?.map(s=>{
                         return(

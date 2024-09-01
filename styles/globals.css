@@ -371,16 +371,189 @@ a {
   z-index: 1111;
 }
 .aTag:hover {
-  color: #007A00; 
+  color: #007A00;
 
 }
 
-@media (min-width: 600px) {
-  .css-hyum1k-MuiToolbar-root {
-    padding-left: 16px !important;
-    padding-right: 0px !important;
-  }
+/* course card  */
+
+.courseCardSection{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 10px;
 }
+
+.ratingDiv{
+  display: flex;
+  align-items: center;
+}
+.ratingDiv p {
+font-size: 0.9em;
+margin: 0;
+margin-right: 5px;
+}
+#rating {
+font-size: 1.2em;
+}
+.ratingNumbers{
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.priceDiv{
+  display: flex ;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.currentPrice{
+  font-weight: 700;
+  font-size: 1.1em;
+  margin: 0;
+}
+.actualPrice{
+  font-size: 1.1em;
+  margin-top: -4px;
+
+}
+
+.courseDetailsSection {
+  margin: 120px 0;
+}
+.courseHeader {
+  min-height: 500px;
+  width: 100%;
+  background: linear-gradient(to bottom, #F4F7F5, #57C992);
+}
+
+.courseDetails li a {
+  color: black;
+  font-weight:700;
+}
+.courseDetails .details {
+  color: #57C992 !important;
+  font-weight:700;
+}
+.headerDiv{
+  width: 80%;
+  padding: 50px 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+.headerDiv .textDiv {
+  width: 60%;
+}
+.headerDiv .imageDiv {
+  width: 30%;
+}
+.headerDiv .imageDiv img {
+  height: 100%;
+  width: 100%;
+}
+.cTitle {
+  font-weight: 600;
+  line-height: 60px;
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.courseContentDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  gap: 40px;
+}
+ .contentsSection {
+  width: 70%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+
+}
+
+
+.whatLearn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 5px;
+  margin-top: 30px;
+}
+.learnHeading {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.grayishColor {
+  color: #414141 !important;
+ line-height: 26px;
+ font-weight: 400;
+ margin-bottom: 0;
+
+}
+.nmb {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+.whatLearnDiv {
+  padding-bottom: 40px;
+}
+.whatLearnDiv p {
+  font-size: 1em;
+  /* letter-spacing: 1.2px; */
+  word-spacing: 3px;
+}
+.singleLearn {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+.courseContentSection{
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.courseCardDSection {
+  width: 30%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.courseCardDSection{
+  /* border-radius: 10px; */
+  padding: 15px;
+  padding-bottom: 40px;
+}
+.courseTimeLeft{
+  font-size: 0.95em;
+  color: #FAAF00;
+}
+.courseTimeLeft2{
+  font-size: 0.95em;
+  color: #57C992;
+
+}
+.courseTxt{
+  font-size: 0.95em;
+  font-weight: 400;
+}
+.courseBtn:hover  p{
+opacity: 1 !important;
+color: white !important;
+display: block !important;
+}
+.courseBtn p:hover  {
+opacity: 1 !important;
+color: white;
+display: block !important;
+}
+
+
+
 
 .sticky-header .main-menu .navigation > li:hover > a,
 .sticky-header .main-menu .navigation > li.current > a {
@@ -406,6 +579,7 @@ a {
   width: 100%;
   height:90px ;
 }
+
 @media only screen and (max-width:767px) {
   .whatsappDiv {
     position: fixed;
@@ -421,7 +595,68 @@ a {
     .clientImage{
       height:70px ;
     }
+
+    .courseCardSection{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 10px;
+    }
+
+    .headerDiv{
+      width: 95%;
+      padding: 50px 0;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+      flex-direction: column-reverse;
+    }
+
+    .headerDiv .textDiv {
+      width: 100%;
+    }
+    .headerDiv .imageDiv {
+      width: 100%;
+    }
+    .courseDetails li{
+      padding-left: 0 !important;
+      font-size: 0.9em;
+    }
+    .details, .studentsAmount, .shortDescCourse{
+      font-size: 0.9em !important;
+    }
+    .cTitle{
+      font-size: 2em;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    .courseContentDiv{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 95%;
+      margin: auto;
+      margin-top: 50px;
+      gap: 30px;
+      flex-direction: column-reverse;
+    }
+
+  .contentsSection, .courseCardDSection {
+      width: 100%;
+      padding: 15px;
+
+    }
+    .whatLearn {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 6px 5px;
+      margin-top: 30px;
+    }
+
 }
+
 @media only screen and (max-width:676px) {
 
 
@@ -430,8 +665,25 @@ a {
     }
 }
 
+@media (min-width: 600px) {
+  .css-hyum1k-MuiToolbar-root {
+    padding-left: 16px !important;
+    padding-right: 0px !important;
+  }
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+@media only screen and (max-width:576px) {
+
+  .courseCardSection{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px 10px;
+  }
+  .grayishColor{
+    font-size: 0.9em !important;
   }
 }
