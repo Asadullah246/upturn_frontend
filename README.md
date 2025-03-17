@@ -23,7 +23,7 @@ Upturn Idea is a web application designed to provide an intuitive and seamless l
 To set up and run this project locally:
 ```bash
 # Clone the repository
-git clone https://github.com/Asadullah246/upturn_frontend
+git clone https://github.com/Asadullah246/upturn_frontend.git
 cd upturn_frontend
 
 # Install dependencies
