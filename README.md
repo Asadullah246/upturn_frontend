@@ -1,7 +1,8 @@
-# Basic Education Platform
+# Upturn Idea Platform
+### live link: https://upturnidea.com 
 
 ## Project Overview
-Basic Education is a web application designed to provide an intuitive and seamless learning experience for students. Built using **Next.js**, it leverages modern technologies to deliver a responsive and engaging user interface. 
+Upturn Idea is a web application designed to provide an intuitive and seamless learning experience for students. Built using **Next.js**, it leverages modern technologies to deliver a responsive and engaging user interface. 
 
 ## Features
 - **User-Friendly Interface**: Designed with **MUI (Material UI)** and **Bootstrap** for a smooth user experience.
@@ -22,8 +23,8 @@ Basic Education is a web application designed to provide an intuitive and seamle
 To set up and run this project locally:
 ```bash
 # Clone the repository
-git clone <repo-link>
-cd basic-education
+git clone https://github.com/Asadullah246/upturn_frontend
+cd upturn_frontend
 
 # Install dependencies
 npm install
